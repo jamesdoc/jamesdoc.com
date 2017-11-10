@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+html, body {
+  font-family: 'Space Mono', monospace;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar {
+  background: url('../../james.png') no-repeat bottom right;
+  background-size: 100%;
+  bottom: 0;
+  height: 0;
+  max-width: 200px;
+  padding-bottom: 50%;
+  position: fixed;
+  right: 0;
+  width: 50%;
+}
+
+body {
+  color: #1e2b16;
+}
+
+section {
+  border-radius: 4px;
+  box-shadow: 0 0 40px 10px rgba(206,206,206,0.50);
+  margin: 20px;
+  min-height: calc(100vh - 120px);
+  padding: 40px;
+  position: relative;
+
+  @media (min-width: 980px) {
+    margin: 40px;
+    min-height: calc(100vh - 160px);
+  }
+}
+
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  margin: 0 0 10px;
+  padding: 0;
+
+  &:after {
+    color: #a3de87;
+    content: '_';
+  }
+
+  @media (min-width: 485px) {
+    font-size: 3em;
+  }
+}
+
+p {
+  font-size: 1em;
+  margin: 0;
+  width: 100%;
+  @media (min-width: 485px) {
+    font-size: 1.5em;
+  }
+  @media (min-width: 630px) {
+    max-width: 66%;
+  }
+  @media (min-width: 980px) {
+    font-size: 2em
+  }
+}
+
+
+.things,
+.social_links {
+  margin: 0;
+  padding: 0;
+}
+
+.things {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 40px;
+  max-width: 700px;
+  
+  li {
+    border-radius: 2px;
+    box-shadow: 0 0 40px 10px rgba(200,200,200,0.50);
+    display: block;
+    margin-bottom: calc(7vw);
+    width: 45%;
+
+    @media (min-width: 600px) {
+      width: 30%;
+    }
+
+    @media (max-width: 360px) {
+      &:first-child {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+
+
+.things li a {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  border-radius: 2px;
+  display: block;
+  height: 0;
+  padding-bottom: 100%;
+  text-indent: -99999px;
+  transition: background-size .5s ease-out;
+  width: 100%;
+}
+
+.things li a[href^="http://kingdom"] {
+  background-color: #ee5c53;
+  background-image: url('../../kingdomcode.svg');
+  background-size: 50%;
+}
+
+.things li a[href^="http://kingdom"]:hover {
+  background-size: 25%;
+}
+
+.things li a[href^="http://globe"] {
+  background-color: #d06348;
+  background-image: url('../../globe.svg');
+}
+
+.things li a[href^="http://globe"]:hover {
+  background-size: 50%;
+}
+
+.things li a[href^="http://live"] {
+  background-color: #ffffff;
+  background-image: url('../../livewires.svg');
+}
+
+.things li a[href^="http://live"]:hover {
+  background-size: 50%;
+}
+
+@media (min-height: 600px) and (min-width: 600px) {
+  footer {
+    bottom: 40px;
+    position: absolute;
+  }
+}
+
+
+.social_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social_links li {
+  padding-right: 40px;
+}
+
+@media (min-width: 600px) {
+  .social_links li {
+    display: inline;
+  }
+}
+
+.social_links li:after {
+  content: '.';
+}
+
+.social_links a {
+  border-bottom: 1px solid white;
+  color: #1e2b16;
+  text-decoration: none;
+  transition: color .2s, border-color .2s;
+}
+
+.social_links a:hover {
+  border-bottom: 1px solid;
+}
+
+.social_links a[href^="https://twitter"]:hover {
+  color: #1da1f1;
+  border-color: #1da1f1;
+}
+
+.social_links a[href^="https://instagram"]:hover {
+  border-color: #9e35c3;
+  color: #9e35c3;
+}
+
+.social_links a[href^="https://last"]:hover {
+  border-color: #d21308;
+  color: #d21308;
+}
