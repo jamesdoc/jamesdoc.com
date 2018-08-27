@@ -6,7 +6,12 @@ const clean = require('gulp-clean');
 
 const { buildSrc, buildDest } = require('./paths');
 
-gulp.task('clean-build', function () {
+gulp.task('setup', function() {
+  return gulp.src('*.*', {read: false})
+    .pipe(gulp.dest(`./${buildDest}`));
+})
+
+gulp.task('clean', function () {
   return gulp.src(buildDest, {read: false})
     .pipe(clean());
 });
@@ -30,4 +35,4 @@ gulp.task("watch", function () {
   gulp.watch(buildSrc + "/**/*", gulp.parallel('build'))
 });
 
-gulp.task('build', gulp.series('clean-build', 'generate', 'scss'))
+gulp.task('build', gulp.series('setup', 'clean', 'generate', 'scss'))
