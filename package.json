@@ -1,23 +1,24 @@
 {
-  "name": "jamesdoc",
-  "version": "0.0.0",
-  "description": "James Doc",
-  "keywords": [],
-  "homepage": "http://jamesdoc.com",
-  "license": "MIT",
-  "author": "James Doc",
+  "name": "james-doc.com",
+  "version": "0.0.1",
+  "description": "Personal site",
+  "main": "index.js",
   "scripts": {
-    "build-task:scss-compile": "node-sass-chokidar --source-map true src/scss/ -o build/css",
-    "build-task:autoprefixer": "postcss build/css/*.css --use autoprefixer -d build/css",
-    "sass:build": "npm-run-all -p build-task:*",
-    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
-    "dev": "npm-run-all -p sass:*"
+    "dev": "gulp build & gulp watch & gulp serve",
+    "build": "gulp build"
+  },
+  "author": "James Doc",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.5.2",
+    "gulp": "^4",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-serve": "^1.4.0",
+    "gulp-shell": "^0.6.5",
+    "require-dir": "^1.0.0"
   },
   "dependencies": {
-    "autoprefixer": "^7.1.1",
-    "chokidar-cli": "^1.2.0",
-    "node-sass-chokidar": "^0.0.1",
-    "npm-run-all": "^4.0.2",
-    "postcss-cli": "^4.0.0"
+    "luxon": "^1.3.3"
   }
 }

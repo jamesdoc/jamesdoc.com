@@ -1,2 +1,3 @@
-node_modules/
-build/
+/dist
+!/dist/.keep
+node_modules

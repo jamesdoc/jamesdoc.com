@@ -1,0 +1,22 @@
+---
+layout: layouts/listing.njk
+---
+<h1>Thoughts</h1>
+
+<ul class="listing">
+{% for post in collections.posts | reverse %}
+  {% if post.data.type == 'article' %}
+  <li>
+    {% if post.data.canonical %}
+    <a href="{{ post.data.canonical }}" target="_blank" rel="noopener" class="listing__remote">
+    {% else %}
+    <a href="{{ post.url }}" class="listing__local">
+    {% endif %}
+      <date>{{ post.data.date | readableDate }}</date>
+      <h2>{{ post.data.title }}</h2>
+      <p>{{ post.data.intro }}</p>
+    </a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>

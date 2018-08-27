@@ -1,0 +1,111 @@
+$themeGreen: #a3de87;
+$kingdomcodeOrange: #ee5c53;
+$globeOrange: #d06348;
+$livewiresBlue: #2ba8d8;
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+html, body {
+  font-family: 'Space Mono', monospace;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar {
+  background: url('/_assets/img/james.png') no-repeat bottom right;
+  background-size: 100%;
+  bottom: 0;
+  height: 0;
+  max-width: 200px;
+  padding-bottom: 50%;
+  position: fixed;
+  right: 0;
+  width: 50%;
+}
+
+body {
+  color: #1e2b16;
+}
+
+section {
+  border-radius: 4px;
+  box-shadow: 0 0 40px 10px rgba(206,206,206,0.50);
+  margin: 20px;
+  min-height: calc(100vh - 120px);
+  padding: 40px;
+  position: relative;
+
+  @media (min-width: 980px) {
+    margin: 40px;
+    min-height: calc(100vh - 160px);
+  }
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  margin: 0 0 10px;
+  padding: 0;
+
+  &:before {
+    content: '/';
+  }
+
+  &:after {
+    color: $themeGreen;
+    content: '_';
+  }
+
+  @media (min-width: 485px) {
+    font-size: 3em;
+  }
+}
+
+li, p {
+  font-size: 1em;
+  line-height: 1.45em;
+  margin: 0 0 10px;
+  width: 100%;
+
+  @media (min-width: 485px) {
+    font-size: 1.25em;
+    line-height: 1.6em;
+  }
+  @media (min-width: 630px) {
+    max-width: 550px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  border-bottom: 1px solid $themeGreen;
+  color: black;
+  text-decoration: none;
+  transition: padding .25s;
+
+  &:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+blockquote {
+  border-left: 5px solid $themeGreen;
+  font-style: italic;
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+.breadcrumbs {
+  padding: 10px 0;
+
+  a:before {
+    content: '/';
+  }
+}
+
+@import 'homepage';
+@import 'thoughts';
