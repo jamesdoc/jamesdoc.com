@@ -107,5 +107,9 @@ blockquote {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 @import 'homepage';
 @import 'thoughts';
