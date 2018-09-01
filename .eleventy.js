@@ -2,10 +2,14 @@ const { DateTime } = require("luxon");
 const { buildSrc, buildDest } = require('./paths');
 
 module.exports = function (eleventyConfig) {
-  
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLLL yyyy");
   });
+
+  eleventyConfig.addFilter("dateComparison", (dateObj, compareWith)=> {
+    return DateTime.fromJSDate(dateObj) < DateTime.fromISO(compareWith)
+  })
 
   eleventyConfig.addCollection("posts", function (collection) {
     return collection.getAllSorted().filter(function (item) {

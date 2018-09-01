@@ -1,0 +1,8 @@
+---
+title: Thoughts from Tearfund...
+type: article
+tags: personal
+date: 2013-04-12 13:24:45
+leadImage: /_assets/img/blog/imported/banners/thoughts-from-tearfund.jpg
+---
+<p> Yesterday I was wiring a little bit about sharing skills on a small scale, today I have found myself doing it on a much larger scale. Alongside a group of about 20 others I am in the Tearfund offices in Teddington to think through ideas that would help the international publishing team reach more people, more effectively in a more sustainable manner. No small ask!</p><p> Currently we are working in three teams, thinking about the questions from different angles - one team from a publishing and marketing view, another from a technological view and a third coming at it from a commercial view point.</p><p> We are just coming up to the first feedback session, so this is still early days, but it has been really helpful to think about some of these issues with fresh eyes and with people from many different backgrounds, experiences and point of views.</p><p> One of thing things we have been asked to do is to come back with one or two big ideas and two or three quick wins. Through our discussions as a tech groups it seems that the best method has been to break our bigger goals down into smaller quick wins. Each of these smaller goals building forward towards the building goal. It seems very obvious in hindsight, but the best solutions normally are!</p><p> It&#39;s going to be interesting to look back at the end of the day and see how what we talk about can apply to IFES and the other things that are in my life.</p>

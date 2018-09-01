@@ -1,0 +1,7 @@
+---
+title: Facebook API- Getting counts for likes, comments and shares for pages feed
+type: article
+tags: code
+date: 2015-01-08 17:12:37
+---
+<p> By default when you request a page&rsquo;s feed from the Facebook API via <code>/v2.2/[pageid]/feed</code> a lot a JSON is sent back, including very specific data about likes and comment such as who, what, when, etc. However the actual number of likes or comments for that status is not included. There are API endpoints to hit to get this data on a status by status basis (<code>/v2.2/[status_id]/likes?summary=true</code> and <code>/v2.2/[status_id]/comments?summary=true</code>), however that means making two additional calls for each status. Not ideal.</p><p> To get this data into the feed endpoint request you need to specify the fields you want to return and then state that you want summary to be returned as well</p><blockquote> <p> <code>https://graph.facebook.com/v2.2/[page_id]/feed?fields=id,message,picture,link,shares,created_time,comments.limit(1).summary(true),likes.limit(1).summary(true)&amp;access_token=[YOUR_ACCESS_TOKEN]</code></p></blockquote><p> You&rsquo;ll notice that I&rsquo;ve included <code>limit(1)</code>, for both comments and likes. For the project I am working on I am not interested in the actual content of the comments for the moment, I just need to the raw number. Ideally it would be set to 0, however then the API won&rsquo;t return the summary.</p>

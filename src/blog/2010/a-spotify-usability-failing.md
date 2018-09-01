@@ -1,0 +1,13 @@
+---
+title: A Spotify Usability Failing
+type: article
+tags: tech
+date: 2010-10-15 10:00:00
+leadImage: http://img801.imageshack.us/img801/4940/spotift.jpg
+---
+<p><a href="http://dotknot.blogspot.com/">Nicholas Pierce</a>, a friend of mine from Worthing, will be one of the first people I know to point out a flaw in a user interface. &nbsp;One of his biggest bug bears is Spotify, he gave me a nice long list a while a go of how bad the UI is, there is a brief blog post on one of these failing on his <a href="http://dotknot.blogspot.com/2010/08/further-spotify-usability-failures.html">blog</a>. Today I noticed something within Spotify that will bug me until it gets sorted. &nbsp;It's one of those things that hit me, and the instant thought was 'how did I not notice that before?'</p>
+<p>In almost every program that has some form of search, be this searching your computer or the internet the search box is in the same place; the top right hand corner of the application window, this is true of everything from Windows Explorer to Apple's Finder, iTunes to Windows Media Player, FireFox to even Internet Explorer. &nbsp;All of these programs put the search box in that same place. &nbsp;Why? So that even people like my Mum instantly know where the search box is. &nbsp;The user learns it in one program and the skills are transferable across to every other program. &nbsp;This is really basic human computer interaction principles.</p>
+<p>So where does Spotify put this box? In the not quite top left hand side. &nbsp;You may think this is a really simple small problem, however it can really slow down how you use a piece of software. &nbsp;There is a guy called Jakob Nielsen who wrote down 10 principles of creating a user interface, by not placing the search box on the top right Spotify have broken at least two:</p>
+<ul><li>Principle 4 -&nbsp;Consistency&nbsp;and Standards; A user interface should follow platform standards. &nbsp;In other words - go with the flow, if everyone else is putting the search bar there, people will know where it is. &nbsp;Don't move it to be different!</li><li>Principle 6 - Recognition rather than Recall; This is really linked to the&nbsp;consistency&nbsp;principle - people should recognise what part of the user interface does, not have to hunt around to find the search box, it's all about giving less work for the user.</li></ul>
+<p>You can have a further read of these principles on <a href="http://www.useit.com/papers/heuristic/heuristic_list.html">useit.com</a>&nbsp;(don't worry, it is short and readable).</p>
+<p>There are a couple of other issues with Spotify, however this one was bugging me today. &nbsp;I felt a little rant was needed! &nbsp;Have a good rest of you day.</p>

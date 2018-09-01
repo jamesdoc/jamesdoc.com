@@ -1,0 +1,7 @@
+---
+title: yFriday Calling it a Day...
+type: article
+tags: music
+date: 2010-01-15 11:58:00
+---
+<div style="text-align:center;"><img src="http://img16.imageshack.us/img16/1728/yfriday.jpg" width="400" /><br /></div><br />With five studio albums, a live album/dvd, a six track EP and single to their 17 year career yFriday today announced that the journey as a band would be ending at the end of this year. &nbsp;The Newcastle based band announced today through a press release on Gav's Facebook page that autumn would be the start of a new journey for the band.<br /><br />There will be a few more dates before we see the end of yFriday, the press release mentioned "<i>...some festivals, and friends to revisit...</i>" however the last goodbyes will be said in autumn with "<i>...what should be our best ever dates.</i>"<br /><br />The band signed off saying:<br /><blockquote><i>"And for now... thank you! You've worshipped with us, shared our journey and inspired us to climb beyond what we dared believe.  We pray you keep the torch burning and the revolution alive!"</i><br /></blockquote>&nbsp;The full press release can be read&nbsp;<a href="http://pixelthief.tumblr.com/post/335666842/yfriday-press-release">here</a>.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/31453821-8053561082845879367?l=www.jamesdoc.co.uk' alt='' /></div>

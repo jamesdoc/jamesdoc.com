@@ -1,0 +1,7 @@
+---
+title: Kutless Prepare New Album
+type: article
+tags: music
+date: 2009-07-17 11:40:00
+---
+<div class="separator" style="clear:both;text-align:center;"><a href="http://img142.imageshack.us/img142/4822/barn01800x600.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="315" src="http://img142.imageshack.us/img142/4822/barn01800x600.jpg" width="420" /></a></div><br />Jeff Gilbert, drummer of Kutless, announced through the band's online journal that Kutless have been back in the studio preparing their new album, following on from Strong Tower.  October 20th is the date that has been set down for the second worship album from the band Kutless.  The album, titled It Is Well, will be produced by Dave Lubben.<br /><br />Gilbert said this about the upcoming album:<br /><blockquote>"...we are finishing up the last stages of our new worship record, but I don't even want to call it that. I would rather call it an exaltation record. To Exalt the Lord is to show a feeling or state of extreme happiness!"</blockquote>Kutless are currently on their Welcome to the Family tour alongside Disciple, Stellar Kart, Esterlyn &amp; Chasen which will go through until the end of August.  Tour dates for the band can be found on their <a href="http://www.kutless.com/tour.aspx">website</a>.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/31453821-1125527503523309241?l=www.jamesdoc.co.uk' alt='' /></div>

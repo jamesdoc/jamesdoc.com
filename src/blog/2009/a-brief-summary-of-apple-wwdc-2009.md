@@ -1,0 +1,7 @@
+---
+title: A Brief Summary of Apple WWDC 2009
+type: article
+tags: tech
+date: 2009-06-09 08:23:00
+---
+<div class="separator" style="clear:both;text-align:center;"><a href="http://img37.imageshack.us/img37/184/42833833.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="262" src="http://img37.imageshack.us/img37/184/42833833.jpg" width="420" /></a></div><br />Because I am tired and lazy you can have a brief summary of what went on at the latest Apple event.  If I get some time in the coming week I may do a full round up!<br /><br /><ol><li>Macbook Pro range has been updated</li><ul><li>13", 15" &amp; 17" display</li><li>Better battery</li><li>SD Card (for your digital camera)</li><li>Lower Prices</li><li>Out Now</li></ul><li>Snow Leopard</li><ul><li>It's a faster update to Leopard</li><li>It will be a $29 update</li><li>There is a huge amount more, but not brief!</li><li>Out in September</li></ul><li>iPhone</li><ul><li>New operating system update</li><li>Get movies from the iTunes store 'on the go'</li><li>Share internet connection to other bluetooth connection</li><li>'Find My iPhone' to locate your iPhone around the world</li><li>Updated hardware; it's faster!</li><li>Video recording (and better camera)</li><li>Digital Compass</li><li>Better Battery</li><li>Out 19th June</li></ul></ol><div><br /></div><div><br /></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/31453821-3093895350576643452?l=www.jamesdoc.co.uk' alt='' /></div>

@@ -1,0 +1,7 @@
+---
+title: The Adobe password breach
+type: article
+tags: tech
+date: 2013-11-30 18:13:18
+---
+<p> One of the more impressive security breaches in the technology world this year has been the millions of user account details that was <a href="http://www.reuters.com/article/2013/11/07/us-adobe-cyberattack-idUSBRE9A61D220131107">stolen from Adobe</a> in the last couple of months.</p><p> It turns out that my Adobe account details were part of those that were distributed online.</p><p> However, this wasn&#39;t announced to me by Adobe, instead I received notifications of this from two unrelated services- Eventbright and Evernote. Both companies had cross referenced the leaked data with their own user list, and then sent me an email notifying me that my email address was part of this breach and suggested that I never use the same password again.</p><p> It is these small things that make me appreciate these services and trust them a little bit more.</p><p> There is a wonderful service run by the guys at <a href="https://lastpass.com/adobe/">Last Pass</a> that allows you to cross reference your email address with the leaked data. It also tells you how many people had the same password as you, and displays their password hints. Apparently I share the same Adobe password as 725 other people.</p><p> I have now requested that my Adobe account has now been deleted. It is fortunate that I hadn&#39;t used that password anywhere else!</p>

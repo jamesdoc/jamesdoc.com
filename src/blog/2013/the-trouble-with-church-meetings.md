@@ -1,0 +1,7 @@
+---
+title: The trouble with church meetings
+type: article
+tags: personal
+date: 2013-05-22 14:24:37
+---
+<p> Church meetings have an incredible ability to turn your brain to squish. 45 minutes into last night&#39;s meeting did that to mine as I looked down at my watch, then to the meeting agenda, and then realised that we had only reached the second point.</p><p> That aside, the meeting was an encouraging evening where the whole church family was able to gather and formally hear back on the year and look forward to the plans and dreams for the year ahead.</p><p> The meeting was a reminder for me of the breadth and diversity of my church. James was reporting back from some of the homegroups, saying that in his 6 nationalities were represented, and almost all the age groups! It was a reminder for me of the age and wisdom held within the church membership as The Over Fifty Fives (TOFFs) reported back on the encouragement and the trials that came with the last year. It was also a time of celebration as we were reminder for the weddings and births within the church family.</p><p> There was also lots of looking to the future as the church moves on further with plans to share the gospel further in Oxford, the blessings and challenges that come with two church plants, and the changes that will come alongside with that. It is an exciting time at Magdalen Road Church and I&#39;m excited to see where Gods is leading the church family in the next 12 months.</p>

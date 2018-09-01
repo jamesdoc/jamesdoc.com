@@ -1,0 +1,7 @@
+---
+title: Cycling on the Downs
+type: article
+tags: personal
+date: 2007-03-16 18:30:00
+---
+<p>Wow!&nbsp; The last two weeks have been so nice with the weather all nice and sunny.&nbsp;Last Thursday &amp; Friday we (Matt, Dan, Ben, Caitlin, Rose &amp; myself) sat on the beach for much of the days and on Monday we sat in a park for a few hours, it has been so nice!&nbsp; So with my collage timetable being so nice and giving me Wednesday and Friday afternoon's off I've been getting out on my bike a fair ammount.&nbsp; Wednesday I was just getting back into the swing of things taking the bike up to Lancing and then up over Sompting, pictures are around!</p> <p>However today I really killed myself!&nbsp; Myself and Matt took the bikes from Shoreham, up to Bramber &amp; Steyning then across into the downs, then back over Cissbury ring and down into Worthing.&nbsp; What can I say but woah! The views when we got up on the Downs were spectaular!!! I have never seen anything like it.&nbsp; Everything felt so fresh, and what made it even better was there was not a sound of traffic.&nbsp;&nbsp; Truely amazing.</p> <p>On a slightly different [techy] note... I've managed to get my computer to run duel-monitors so if anyone wants to sell&nbsp;me a matching ProLite E380S I won't say no!&nbsp; In addition does anyone know if the Mac Mini&nbsp;suports duel screen? All very interesting questions!</p>

@@ -1,0 +1,7 @@
+---
+title: Nigel's Eco Friendly Store
+type: article
+tags: personal
+date: 2006-08-19 15:39:00
+---
+<p>Reading through the paper magazine today I came across the advert section and this photo caught my eye.&nbsp; It is a bamboo computer screen, key board and mouse. Why you would want that I have no idea, however I found it amusing and decided to see what else they had to offer.&nbsp; All three of these were sold seperatly at a cost of:</p> <p>-&pound;220 for a 15" Monitor</p> <p>- &pound;25 for the keyboard</p> <p>- &pound;18 for the mouse</p> <p>Now I know it looks good and all the rest but what is wrong with buying a &pound;3 mouse from Argos???</p> <p>I contiuned to look on this site for a little bit longed and found some ultimatly silly things such as Solar Power Headphones (&pound;25) a solar mobile phone charger (&pound;40) etc.&nbsp; However a few things did strike me as being 'quite cool!' The <a href="http://www.nigelsecostore.com/acatalog/water-powered-calculator.html">water powered calculator</a> (&pound;7) looked very good, no more bateries and then there were the kids toys which were great! You can get a <a href="http://www.nigelsecostore.com/acatalog/Helicopter.html">solar powered helicoptor</a> (it doesn't fly, the rotors just go round.) That is brilliant, and it comes in different colours! Maybe I just get excited to quickly?</p> <p>More infomation can be found from <a href="http://www.nigelsecostore.com">www.nigelsecostore.com</a>.</p>

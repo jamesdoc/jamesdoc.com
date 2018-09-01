@@ -1,0 +1,7 @@
+---
+title: Eric Schmidt resigns from Apple Board
+type: article
+tags: tech
+date: 2009-08-04 15:39:00
+---
+<div class="separator" style="clear:both;text-align:center;"><a href="http://img197.imageshack.us/img197/4448/ericschmidtlg.jpg" style="margin-left:1em;margin-right:1em;"><img border="0" height="279" src="http://img197.imageshack.us/img197/4448/ericschmidtlg.jpg" width="420" /></a></div><br /><br />Eric Schmidt, the CEO of Google, has resigned his seat on the board of directors at Apple. &nbsp;This news follows on from last weeks Apple/Google excitement where one of Google's Apps was removed from the Apple App Store for the iPhone.<br /><br />This could mean that Google and Apple are parting ways, over the last several years they have been very chummy with lots and lots of Google services being used on both OS X and the iPhone. &nbsp;However recently Google has been entering "more of Apple's core business, with Android and now Chrome OS" (quote Steve Jobs, Apple CEO).<br /><br />It seems a shame for the two to part company, it makes sense, but is a shame. &nbsp;Having Google and Apple working together has allowed much creativity to ensue... however with both companies working on different mobile phone software it has meant that they have been under a lot of scrutiny from the US government.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/31453821-51650533434178541?l=www.jamesdoc.co.uk' alt='' /></div>

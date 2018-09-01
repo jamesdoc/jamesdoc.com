@@ -32,3 +32,24 @@
   font-size: .75em;
   margin-top: 2em;
 }
+
+.thought-lead-image {
+  max-width: 550px;
+  border-bottom: 5px solid $themeGreen;
+  margin-bottom: 1em;
+}
+
+.old-thought {
+  border: 2px solid #ccc;
+  max-width: 550px;
+  padding: 10px;
+  margin: 1em 0;
+
+  strong {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 60%;
+  }
+}

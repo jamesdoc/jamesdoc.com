@@ -1,0 +1,7 @@
+---
+title: WiFi Gestures
+type: article
+tags: tech
+date: 2013-06-05 11:55:03
+---
+<p> I haven&#39;t written a post about cool new technology in what seems like ages, so it is time to change that! The Verge have just posted a <a href="http://www.theverge.com/2013/6/4/4397458/wisee-prototype-detects-gestures-from-the-next-room-using-only-wi-fi" target="_blank">really interesting article</a> about capturing gestures for input using only WiFi as the detector.</p><p> This is really important because it doesn&#39;t require any additional hardware, or the invasion of privacy through a camera. For example the XBox Kinect requires its users to be standing in front of a set of cameras to gather the gestures, the Wii requires users to be holding a pair of remotes, the iPhone needs it&#39;s capacitive touch screen and gyroscopes, but the WiSee just uses the WiFi in the air.</p><p> The <a href="http://wisee.cs.washington.edu/" target="_blank">demo video</a> shows a user gesturing to control the heating and lighting in a room, however this could be taken much further. The way we move, such as walking, is almost like a finger print, if this can be tuned enough you could use it to unlock your door as you are walking down the path, or find people in a crowded room.</p><p> The article points out that the technology is very news, and it is still being tested on very basic gestures, but the concept is fantastic. Plus the Star Trek geek in me thinks that it is a step towards interacting with holograms too!</p>

@@ -97,6 +97,9 @@ blockquote {
   font-style: italic;
   margin: 1em 0;
   padding-left: 1em;
+  @media (min-width: 630px) {
+    max-width: 575px;
+  }
 }
 
 .breadcrumbs {
