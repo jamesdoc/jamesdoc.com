@@ -20,7 +20,12 @@ layout: layouts/base.njk
 {% endif %}
 
 {% if leadImage %}
-<img src="{{ leadImage }}" alt="" class="thought-lead-image" />
+<img
+	srcset="{{ leadImage | imgSuffix('320') }} 320w, {{ leadImage | imgSuffix('550') }} 550w"
+	sizes= "(max-width: 550px) calc(100vw - 120px), 550px"
+	src="{{ leadImage }}"
+  class="thought-lead-image"
+	alt="">
 {% endif %}
 
 {{ layoutContent | safe }}

@@ -11,6 +11,13 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj) < DateTime.fromISO(compareWith)
   })
 
+  eleventyConfig.addFilter("imgSuffix", (imgStr, suffix)=> {
+    const i = imgStr.lastIndexOf('.');
+    const imgPath = imgStr.substring(0, i);
+    const ext = imgStr.substring(i + 1);
+    return `${imgPath}-${suffix}.${ext}`;
+  })
+
   eleventyConfig.addCollection("posts", function (collection) {
     return collection.getAllSorted().filter(function (item) {
       return item.inputPath.match(/^\.\/src\/11ty\/blog\//) !== null;

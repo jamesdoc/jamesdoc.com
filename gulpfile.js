@@ -34,10 +34,10 @@ gulp.task('images', function() {
       // Resize all JPG images to three different sizes: 200, 500, and 630 pixels
       '**/*': [{
         width: 320,
-        rename: { suffix: '-320px' },
+        rename: { suffix: '-320' },
       }, {
         width: 550,
-        rename: { suffix: '-550px' },
+        rename: { suffix: '-550' },
       }, {
         // Compress, strip metadata
       }],
