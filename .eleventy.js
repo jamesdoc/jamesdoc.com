@@ -1,5 +1,7 @@
 const { DateTime } = require("luxon");
 const { buildSrc, buildDest } = require('./paths');
+const markdownIt = require("markdown-it");
+const markdownItResponsive = require('@gerhobbelt/markdown-it-responsive');
 
 module.exports = function (eleventyConfig) {
 
@@ -24,7 +26,36 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // eleventyConfig.addPassthroughCopy("src/_assets/svg");
+  // Override Markdown config
+
+  const options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  const rwdOptions = {
+    responsive: {
+      'srcset': {
+        '*': [ {
+          width: 320,
+          rename: {
+            suffix: '-320'
+          }
+        }, {
+          width: 550,
+          rename: {
+            suffix: '-550'
+          }
+        } ]
+      },
+      'sizes': {
+        '*': '(max-width: 550px) calc(100vw - 120px), 550px'
+      }
+    }
+  };
+
+  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions));
 
   return {
     templateFormats: ["html", "njk", "md"],
