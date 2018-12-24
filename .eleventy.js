@@ -13,11 +13,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("posts", function (collection) {
     return collection.getAllSorted().filter(function (item) {
-      return item.inputPath.match(/^\.\/src\/blog\//) !== null;
+      return item.inputPath.match(/^\.\/src\/11ty\/blog\//) !== null;
     });
   });
 
-  eleventyConfig.addPassthroughCopy("src/_assets/img");
+  // eleventyConfig.addPassthroughCopy("src/_assets/svg");
 
   return {
     templateFormats: ["html", "njk", "md"],
@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
-      input: buildSrc,
+      input: `${buildSrc}/11ty`,
       output: buildDest,
       data: "_data",
       includes: "_includes"

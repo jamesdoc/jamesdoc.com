@@ -51,7 +51,7 @@
 
 .things li a[href^="https://kingdom"] {
   background-color: $kingdomcodeOrange;
-  background-image: url('/_assets/img/kingdomcode.svg');
+  background-image: url('/_assets/svg/kingdomcode.svg');
   background-size: 50%;
 }
 
@@ -61,7 +61,7 @@
 
 .things li a[href^="https://www.globe"] {
   background-color: $globeOrange;
-  background-image: url('/_assets/img/globe.svg');
+  background-image: url('/_assets/svg/globe.svg');
 }
 
 .things li a[href^="https://www.globe"]:hover {
@@ -70,7 +70,7 @@
 
 .things li a[href^="http://live"] {
   background-color: $livewiresBlue;
-  background-image: url('/_assets/img/livewires.svg');
+  background-image: url('/_assets/svg/livewires.svg');
   background-size: 40%;
 }
 

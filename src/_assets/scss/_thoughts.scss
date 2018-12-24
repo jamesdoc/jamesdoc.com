@@ -34,16 +34,17 @@
 }
 
 .thought-lead-image {
-  max-width: 550px;
   border-bottom: 5px solid $themeGreen;
   margin-bottom: 1em;
+  max-width: 550px;
+  width: 100%;
 }
 
 .old-thought {
   border: 2px solid #ccc;
+  margin: 1em 0;
   max-width: 550px;
   padding: 10px;
-  margin: 1em 0;
 
   strong {
     font-weight: bold;
