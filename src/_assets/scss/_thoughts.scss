@@ -30,6 +30,13 @@
   max-width: 750px;
 }
 
+.thought-content {
+  img {
+    border-bottom: 5px solid $themeGreen;
+    max-width: 550px;
+    width: 100%;
+  }
+}
 
 .thought-canonical {
   display: block;
