@@ -116,6 +116,11 @@
   border-bottom: 1px solid;
 }
 
+.social_links a[href^="/blog"]:hover {
+  color: #a3de87;
+  border-color: #a3de87;
+}
+
 .social_links a[href^="https://twitter"]:hover {
   color: #1da1f1;
   border-color: #1da1f1;
@@ -129,4 +134,9 @@
 .social_links a[href^="https://last"]:hover {
   border-color: #d21308;
   color: #d21308;
+}
+
+.social_links a[href^="https://github"]:hover {
+  border-color: #4078c0;
+  color: #4078c0;
 }
