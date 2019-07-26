@@ -19,4 +19,4 @@ Right now we’re planning an event called Code for the Kingdom in the first wee
 
 We’re setting challenges, encouraging people to think around themes and ideas. How can we use technology to encourage people to be generous with what God has given them? What can we do to enable Christians to build relationships with their Muslim neighbours and bring the gospel to the Islamic world? Can we make something for our children that is more fulfilling than Minecraft, Angry Birds or Temple Run? Then from these challenges we encourage teams to form around the ideas that are triggered, giving up a weekend to put them into motion, not letting the idea get lost or trapped in a notebook.
 
-Code for the Kingdom is taking place on the 2nd-4th October in the Impact Hub, Westminster. You can find out more about joining in with the weekend and about Kingdom Code on our website: [www.kingdomcode.uk](http://www.kingdomcode.uk).
+Code for the Kingdom is taking place on the 2nd-4th October in the Impact Hub, Westminster. You can find out more about joining in with the weekend and about Kingdom Code on our website: [www.kingdomcode.org.uk](http://www.kingdomcode.org.uk).

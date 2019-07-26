@@ -4,14 +4,14 @@ intro: Ideas are cheap… so how do you get your idea ready for a hackathon? Her
 type: article
 tags: post, kingdom code
 date: 2018-09-19
-canonical: https://kingdomcode.uk/blog/moving-your-ideas-forward/
+canonical: https://kingdomcode.org.uk/blog/moving-your-ideas-forward/
 ---
 
 Years ago a friend told me _"ideas are cheap. What sets people apart is the implementation"_. It was a provokation… they had heard me share another wild idea, but were (understandably) frustrated from hearing yet another scheme that probably wouldn't be followed through.
 
 ![Kingdom Code ideaton evening](/_assets/img/blog/2018/kc-ideation-evening.jpg)
 
-At the last Kingdom Code meetup we spent the evening coming up with ideas… we heard from both Bible Society and Stewardship, about their mission, about how their Christian ethos has challenged them to make a difference, how they've been working over many years to see it realised, and where they see their challenges now. Then over the course of the rest of our evening we came up with many ideas riffing off the challenge statements, exploring how digital skillsets could help resource these organisations further. Now what? Do we just sit on our ideas until the [hackathon in October](https://kingdomcode.uk/build)?
+At the last Kingdom Code meetup we spent the evening coming up with ideas… we heard from both Bible Society and Stewardship, about their mission, about how their Christian ethos has challenged them to make a difference, how they've been working over many years to see it realised, and where they see their challenges now. Then over the course of the rest of our evening we came up with many ideas riffing off the challenge statements, exploring how digital skillsets could help resource these organisations further. Now what? Do we just sit on our ideas until the [hackathon in October](https://kingdomcode.org.uk/build)?
 
 Of course not… Now is the time to invest in those ideas…
 
@@ -44,4 +44,4 @@ Remember that a good project isn't a crazy level of functionality - you'll never
 
 It's okay to arrive having done groundwork already, be that sketching out some design concepts, setting up your development environment, installing all of the software libraries you're going to need. Do everything you can so that you and your team can hit the ground running.
 
-There you go, that is four things you can do between now and Friday 19 October to help get your idea ready for the hackathon. And… if you haven't already, you can sign up at [kingdomcode.uk/build](https://kingdomcode.uk/build)
+There you go, that is four things you can do between now and Friday 19 October to help get your idea ready for the hackathon. And… if you haven't already, you can sign up at [kingdomcode.org.uk/build](https://kingdomcode.org.uk/build)

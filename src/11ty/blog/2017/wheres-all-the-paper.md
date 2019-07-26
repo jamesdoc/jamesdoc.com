@@ -31,6 +31,6 @@ There are tools to help, but what if there is a tool in your head waiting to be 
 
 Kingdom Code: BUILD is happening on the 20th to 22nd October in London. It's a weekend to learn, experiment and test digital ideas which can have a Kingdom impact. If you're a developer or digital designer this is a great opportunity to grow your skill-set, meet others working in that world and use your skill-set to push forward the great commission in the digital space.
 
-Find out more at [www.kingdomcode.uk/build](https://kingdomcode.uk/build).
+Find out more at [www.kingdomcode.org.uk/build](https://kingdomcode.org.uk/build).
 
 Oh and for you lovers of a good bargain, get in touch for a cheeky student discount.
