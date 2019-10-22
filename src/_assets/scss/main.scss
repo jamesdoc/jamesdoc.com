@@ -65,11 +65,13 @@ h1 {
 
 li, p {
   font-size: 1em;
+  line-height: 1.45em;
   margin: 0 0 1em;
   width: 100%;
 
   @media (min-width: 485px) {
     font-size: 1.25em;
+    line-height: 1.6em;
   }
   @media (min-width: 630px) {
     max-width: 550px;
@@ -77,18 +79,6 @@ li, p {
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-p {
-  line-height: 1.45em;
-
-  @media (min-width: 485px) {
-    line-height: 1.6em;
-  }
-}
-
-li {
-  line-height: 0;
 }
 
 a {
