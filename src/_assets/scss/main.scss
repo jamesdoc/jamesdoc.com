@@ -65,13 +65,11 @@ h1 {
 
 li, p {
   font-size: 1em;
-  line-height: 1.45em;
   margin: 0 0 1em;
   width: 100%;
 
   @media (min-width: 485px) {
     font-size: 1.25em;
-    line-height: 1.6em;
   }
   @media (min-width: 630px) {
     max-width: 550px;
@@ -81,14 +79,26 @@ li, p {
   }
 }
 
+p {
+  line-height: 1.45em;
+
+  @media (min-width: 485px) {
+    line-height: 1.6em;
+  }
+}
+
+li {
+  line-height: 0;
+}
+
 a {
   border-bottom: 1px solid $themeGreen;
   color: black;
   text-decoration: none;
-  transition: padding .25s;
+  transition: all .25s;
 
   &:hover {
-    border-bottom: 1px solid black;
+    border-bottom-color: black;
   }
 }
 
@@ -122,6 +132,12 @@ pre {
   code {
     line-height: 2em;
   }
+}
+
+hr {
+  border: 0 solid $themeGreen;
+  border-top: 5px solid $themeGreen;
+  margin-bottom: 1em;
 }
 
 @import 'homepage';
