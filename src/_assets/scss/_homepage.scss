@@ -5,38 +5,37 @@
 }
 
 .things {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5%;
+  grid-column-gap: 5%;
   list-style-type: none;
   margin-top: 40px;
   max-width: 700px;
+
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &--smaller {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 2em;
+  }
 
   a {
     border-bottom: none;
   }
 
   li {
-    border-radius: 2px;
-    box-shadow: 0 0 40px 10px rgba(200,200,200,0.50);
     display: block;
-    margin-bottom: calc(7vw);
-    width: 45%;
-
-    @media (min-width: 600px) {
-      width: 30%;
-    }
-
-    @media (max-width: 360px) {
-      &:first-child {
-        width: 100%;
-      }
-    }
-
+    margin-bottom: auto;
+    width: 100%;
   }
 }
 
 .things li a {
+  border-radius: 2px;
+  box-shadow: 0 0 40px 10px rgba(200,200,200,0.50);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 75%;
@@ -45,7 +44,7 @@
   height: 0;
   padding-bottom: 100%;
   text-indent: -99999px;
-  transition: background-size .5s ease-out;
+  transition: all .5s ease-out;
   width: 100%;
 }
 
@@ -59,23 +58,74 @@
   background-size: 25%;
 }
 
+.things li a[href^="https://onesheep"] {
+  background-color: $onesheepPink;
+  background-image: url('/_assets/svg/onesheep.svg');
+  background-size: 100%;
+}
+
+.things li a[href^="https://onesheep"]:hover {
+  background-size: 50%;
+}
+
 .things li a[href^="https://www.globe"] {
   background-color: $globeOrange;
   background-image: url('/_assets/svg/globe.svg');
 }
 
 .things li a[href^="https://www.globe"]:hover {
-  background-size: 50%;
+  background-size: 60%;
+  border-radius: 50%;
 }
 
-.things li a[href^="http://live"] {
+.things li a[href^="https://live"] {
   background-color: $livewiresBlue;
   background-image: url('/_assets/svg/livewires.svg');
   background-size: 40%;
 }
 
-.things li a[href^="http://live"]:hover {
+.things li a[href^="https://live"]:hover {
   background-size: 25%;
+}
+
+.things li a[href^="https://www.lincoln"] {
+  background-color: $lincolnGreen;
+  background-image: url('/_assets/svg/university-of-lincoln.svg');
+  background-size: 50%;
+}
+
+.things li a[href^="https://www.lincoln"]:hover {
+  background-size: 30%;
+}
+
+.things li a[href^="https://ifes"] {
+  background-color: $ifesBlackcurrent;
+  background-image: url('/_assets/svg/ifes.svg');
+  background-size: 40%;
+}
+
+.things li a[href^="https://ifes"]:hover {
+  background-size: 25%;
+}
+
+.things li a[href^="https://vam"] {
+  background-color: $vandaTeal;
+  background-image: url('/_assets/svg/v-and-a.svg');
+  background-size: 75%;
+}
+
+.things li a[href^="https://vam"]:hover {
+  background-size: 50%;
+}
+
+.things li a[href^="https://www.sparks"] {
+  background-color: $sparksBlack;
+  background-image: url('/_assets/svg/sparks.svg');
+  background-size: 120%;
+}
+
+.things li a[href^="https://www.sparks"]:hover {
+  background-size: 100%;
 }
 
 @media (min-height: 600px) and (min-width: 600px) {
