@@ -4,6 +4,7 @@ date: 2019-10-24
 intro: Of course there is the obligatory chapter facing the question 'is it okay for Christians to watch Game of Thrones, or insert any other controversial topic?', but Daniel Strange takes four chapters to get there, because Plugged In is about a lot more than that.
 type: article
 tags: book
+leadImage: /_assets/img/blog/2019/plugged-in-daniel-strange.jpg
 ---
 
 **Of course there is the obligatory chapter facing the question 'is it okay for Christians to watch Game of Thrones, or insert any other controversial topic?', but Daniel Strange takes four chapters to get there, because Plugged In is about a lot more than that.** If you were to look at that title heading on its own you would expect a set of regulations to follow, which is nothing to do with what this book is about!
