@@ -2,8 +2,11 @@ const { DateTime } = require("luxon");
 const { buildSrc, buildDest } = require('./paths');
 const markdownIt = require("markdown-it");
 const markdownItResponsive = require('@gerhobbelt/markdown-it-responsive');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLLL yyyy");
