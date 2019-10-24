@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid $themeGreen;
+  margin-top: 1em;
+  border-radius: 0 0 0 4px;
+
+  &:hover {
+    border-color:  black
+  }
+}
