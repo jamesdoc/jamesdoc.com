@@ -63,7 +63,7 @@ h1 {
   }
 }
 
-li, p {
+li, p, code {
   font-size: 1em;
   line-height: 1.45em;
   margin: 0 0 1em;
@@ -79,6 +79,11 @@ li, p {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+code {
+  color: darken($themeGreen, 40%);
+  font-style: italic;
 }
 
 a {
