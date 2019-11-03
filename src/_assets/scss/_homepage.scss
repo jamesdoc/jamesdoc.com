@@ -129,8 +129,10 @@
   background-size: 100%;
 }
 
-@media (min-height: 600px) and (min-width: 600px) {
-  footer {
+footer {
+  padding-top: 40px;
+
+  @media (min-height: 600px) and (min-width: 600px) {
     bottom: 40px;
     position: absolute;
   }
