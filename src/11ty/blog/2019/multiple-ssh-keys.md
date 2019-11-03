@@ -2,7 +2,7 @@
 title: Multiple BitBucket Accounts, Multiple SSH keys
 type: article
 author: James Doc
-date: 2019-11-01
+date: 2019-11-03
 intro: Recently I found myself with the problem of having to set up a second account on BitBucket; one personal account, and one work account…
 ---
 
