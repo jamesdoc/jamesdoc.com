@@ -16,6 +16,6 @@ If you are using something other than Facebook or YouTube I would encourage you 
 
 If (for some reason) a technically competent member of your church built from scratch their own live streaming platform… PRS for Music has the [Limited Online Music Licence](https://www.prsformusic.com/licences/using-music-online/limited-online-music-licence), band A costs ~£150 year and should cover you, however [have a chat with PRS first](https://www.prsformusic.com/help/contact-us).
 
-**For all other questions related to the church and Coronavirus there is [a growing Google Doc](https://bit.ly/comms-coronavirus) that is being put together by a number of excellent and trusted friends: [bit.ly/comms-coronavirus](https://bit.ly/comms-coronavirus).**
+**For all other questions related to the church and Coronavirus there is [a growing Google Doc](http://covid.churcheshandbook.co.uk/) that is being put together by a number of excellent and trusted friends: [covid.churcheshandbook.co.uk](http://covid.churcheshandbook.co.uk/).**
 
 \*Nb: Strong disclaimer here: I'm not a lawyer, I'm just someone who had a couple of phone calls over lunch. I'll update this post if my understanding of the situation changes.
