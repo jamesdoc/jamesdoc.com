@@ -14,8 +14,14 @@ What you can't do is use commercially recorded music and sing over the top of it
 
 If you are using something other than Facebook or YouTube I would encourage you to double check the service provider's policy for such things. I know of a number of churches that are using services like Skype and Zoom, I doubt that they have that kind of license in place.
 
+**Frustrating the same does not apply to displaying song lyrics** - to get permission for that you need to go to the licence holder. For the moment the safest thing I can suggest is to display lyrics only for songs in the public domain. There is a [list of songs in the public domain on SongSelect](https://songselect.ccli.com/search/results?List=publicdomain).
+
 If (for some reason) a technically competent member of your church built from scratch their own live streaming platform… PRS for Music has the [Limited Online Music Licence](https://www.prsformusic.com/licences/using-music-online/limited-online-music-licence), band A costs ~£150 year and should cover you, however [have a chat with PRS first](https://www.prsformusic.com/help/contact-us).
 
 **For all other questions related to the church and Coronavirus there is [a growing Google Doc](http://covid.churcheshandbook.co.uk/) that is being put together by a number of excellent and trusted friends: [covid.churcheshandbook.co.uk](http://covid.churcheshandbook.co.uk/).**
 
 \*Nb: Strong disclaimer here: I'm not a lawyer, I'm just someone who had a couple of phone calls over lunch. I'll update this post if my understanding of the situation changes.
+
+---
+
+Updated 19th March with details about displaying song lyrics.
