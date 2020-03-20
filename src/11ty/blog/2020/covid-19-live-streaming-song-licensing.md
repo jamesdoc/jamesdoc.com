@@ -10,7 +10,7 @@ _In light of Covid-19 and lots of churches moving their services online I had a 
 
 The short summary of my call - **If you are using streaming services like YouTube or Facebook live you're fine because they have paid the license for _user generated_ content.** This means that your church's band, organist, solo pianist, etc is treated like a covers band on these platforms. Playing 'covers' of the latest worship songs is permitted.
 
-What you can't do is use commercially recorded music and sing over the top of it - don't livestream your church karaoke - that recording is copyrighted.
+What you can't do is use commercially recorded music and sing over the top of it - don't livestream your church karaoke - that recording is copyrighted. If you want to stream recordings of songs (eg: a track from the latest Hillsong album) you’ll need [a streaming license from CCLI](https://uk.ccli.com/streaming/#need-to-know).
 
 If you are using something other than Facebook or YouTube I would encourage you to double check the service provider's policy for such things. I know of a number of churches that are using services like Skype and Zoom, I doubt that they have that kind of license in place.
 
@@ -25,3 +25,5 @@ If (for some reason) a technically competent member of your church built from sc
 ---
 
 Updated 19th March with details about displaying song lyrics.
+
+Updated 20th March with details about the new CCLI streaming license
