@@ -6,7 +6,19 @@ date: 2020-03-16
 intro: In light of Covid-19 and lots of churches moving their services online I had a chat with CCLI and PRS around the legalities of live streaming the sung worship in your church…
 ---
 
-_In light of Covid-19 and lots of churches moving their services online I had a chat with [CCLI](https://uk.ccli.com/) and [PRS for music](https://www.prsformusic.com/) around the legalities of live streaming the sung worship in your church. What follows is my understanding of the situation…_.
+_In light of Covid-19 and lots of churches moving their services online I had a chat with [CCLI](https://uk.ccli.com/) and [PRS for music](https://www.prsformusic.com/) around the legalities of live streaming the sung worship in your church. What follows is my understanding of the situation… please note that I am **not** a copyright lawyer_.
+
+---
+
+**To long… didn't read:**
+
+- [Music in the public domain](https://songselect.ccli.com/search/results?List=publicdomain) is fair game. Do what you want with it.
+- Your church worship leader is treated like a covers band by YouTube and Facebook. They have the license in place for you to livestream them.
+- Streaming publically over other platforms is unclear, but you will probably need a [Limited Online Music Licence from PRS](https://www.prsformusic.com/licences/using-music-online/limited-online-music-licence).
+- Livestreaming recordings (eg from the latest Hillsong album) is not okay, unless permission has been given ([See a list of those who have given permission](https://covid.churcheshandbook.co.uk/livestreaming)).
+- Displaying lyrics is not clear at the moment… however you probably need [CCLI's streaming license](https://uk.ccli.com/streaming/#need-to-know), unless you limit your worship to [music in the public domain](https://songselect.ccli.com/search/results?List=publicdomain) or those who [have given permission](https://covid.churcheshandbook.co.uk/livestreaming).
+
+---
 
 The short summary of my call - **If you are using streaming services like YouTube or Facebook live you're fine because they have paid the license for _user generated_ content.** This means that your church's band, organist, solo pianist, etc is treated like a covers band on these platforms. Playing 'covers' of the latest worship songs is permitted.
 
