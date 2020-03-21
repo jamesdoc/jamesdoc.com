@@ -10,7 +10,7 @@ _In light of Covid-19 and lots of churches moving their services online I had a 
 
 ---
 
-**To long… didn't read:**
+**Too long… didn't read:**
 
 - [Music in the public domain](https://songselect.ccli.com/search/results?List=publicdomain) is fair game. Do what you want with it.
 - Your church worship leader is treated like a covers band by YouTube and Facebook. They have the license in place for you to livestream them.
@@ -43,3 +43,5 @@ If you are using something like [Zoom](https://zoom.us/) or Skype, or if (for so
 Updated 19th March with details about displaying song lyrics.
 
 Updated 20th March with details about the new CCLI streaming license
+
+Updated 21st March with TlDr section and revisions to how lyrics are handled
