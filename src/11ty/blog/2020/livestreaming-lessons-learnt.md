@@ -77,7 +77,7 @@ You're not a big US megachurch with a slick setup, that's okay - that's not what
 
 ## ⚠️ Beware: the novelty will wear off
 
-This week was fun, this is a new way of doing church, it feels novel right!? Next week when we have all spent our lives having conversations mediated by a webcam, sitting infront a computer, tablet or mobile device on Sunday for church won't be as appealing.
+This week was fun, this is a new way of doing church, it feels novel right!? Next week, when we have all spent our lives having conversations mediated by a webcam, sitting in-front a computer, tablet or mobile device on Sunday for church won’t be as appealing. Let's think carefully about how we engage our church families outside the live stream.
 
 ---
 
