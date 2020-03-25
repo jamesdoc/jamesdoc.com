@@ -8,7 +8,7 @@ intro: On Sunday we all learnt a lot of lessons about livestreaming… Here are 
 
 **As we face further into lockdown of the UK, our churches have embraced livestreaming as a way of keeping in touch with our church families.** I'm not going to write a how-to guide, there are [plenty of those on the internet](https://covid.churcheshandbook.co.uk/livestreaming), instead this is a note of the lessons that we learnt this week at [The Globe Church](https://www.globe.church/live).
 
-----
+---
 
 ## ✅ Plan it!
 
@@ -16,7 +16,7 @@ You wouldn't go into a service unplanned. Make sure you have a clear service pla
 
 ## ✅ You don't need to map your normal service to this medium
 
-Our church services run with a certain order to make use of the time and the space. Half way through the service the kids might go out to their seperate groups… this doesn't happen through a livestream… Think carefully about what might need to change, or what you could change.
+Our church services run with a certain order to make use of the time and the space. Half way through the service the kids might go out to their seperate groups… this doesn't happen through a livestream… (admittedly in Zoom, kids can have their own breakout rooms in Zoom). Think carefully about what might need to change, or what you could change.
 
 ## ✅ Make sure you've got the right music license
 
@@ -79,6 +79,6 @@ You're not a big US megachurch with a slick setup, that's okay - that's not what
 
 This week was fun, this is a new way of doing church, it feels novel right!? Next week when we have all spent our lives having conversations mediated by a webcam, sitting infront a computer, tablet or mobile device on Sunday for church won't be as appealing.
 
-----
+---
 
 These are lessons from week one. We're going to learn more next week. Keep going friends!
