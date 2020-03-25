@@ -15,14 +15,14 @@ _In light of Covid-19 and lots of churches moving their services online I had a 
 - [Music in the public domain](https://songselect.ccli.com/search/results?List=publicdomain) is fair game. Do what you want with it.
 - Your church worship leader is treated like a covers band by YouTube and Facebook. They have the license in place for you to livestream them.
 - Streaming publically over other platforms is unclear, but you will probably need a [Limited Online Music Licence from PRS](https://www.prsformusic.com/licences/using-music-online/limited-online-music-licence).
-- Livestreaming recordings (eg from the latest Hillsong album) is not okay, unless permission has been given ([See a list of those who have given permission](https://covid.churcheshandbook.co.uk/livestreaming)).
+- Livestreaming recordings (eg from the latest Hillsong album) is not okay.
 - Displaying lyrics is not clear at the moment… however you probably need [CCLI's streaming license](https://uk.ccli.com/streaming/#need-to-know), unless you limit your worship to [music in the public domain](https://songselect.ccli.com/search/results?List=publicdomain) or those who [have given permission](https://covid.churcheshandbook.co.uk/livestreaming).
 
 ---
 
 The short summary of my call - **If you are using streaming services like YouTube or Facebook live you're fine because they have paid the license for _user generated_ content.** This means that your church's band, organist, solo pianist, etc is treated like a covers band on these platforms. Playing 'covers' of the latest worship songs is permitted.
 
-What you can't do is use commercially recorded music and sing over the top of it - don't livestream your church karaoke - that recording is copyrighted. If you want to stream recordings of songs (eg: a track from the latest Hillsong album) you’ll need [a streaming license from CCLI](https://uk.ccli.com/streaming/#need-to-know).
+What you can't do is use commercially recorded music and sing over the top of it - don't livestream your church karaoke - that recording is copyrighted. If you want to stream recordings of songs (eg: a track from the latest Hillsong album) you’ll need to jump through some hoops with PRS ([unless the artist has given permission](https://covid.churcheshandbook.co.uk/livestreaming) - but even that is problematic because of automatic checking by YouTube and Facebook).
 
 If you are using something other than Facebook or YouTube I would encourage you to double check the service provider's policy for such things. I know of a number of churches that are using services like Skype and Zoom, I doubt that they have that kind of license in place. Read on…
 
