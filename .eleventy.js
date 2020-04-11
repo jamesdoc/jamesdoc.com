@@ -33,6 +33,10 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
+  eleventyConfig.addLayoutAlias("listing", "layouts/listing.njk");
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+
   // Override Markdown config
 
   const options = {
