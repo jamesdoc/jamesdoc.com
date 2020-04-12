@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp build & gulp watch & gulp serve",
-    "build": "gulp build"
+    "build": "npm run importReadingList & gulp build",
+    "importReadingList": "node utils/books.js"
   },
   "author": "James Doc",
   "license": "ISC",
@@ -19,8 +20,12 @@
     "gulp-sass": "^4.0.2",
     "gulp-serve": "^1.4.0",
     "gulp-shell": "^0.8.0",
-    "luxon": "^1.3.3",
     "require-dir": "^1.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dayjs": "^1.8.24",
+    "fs": "0.0.1-security",
+    "url-slug": "^2.3.1"
+  }
 }

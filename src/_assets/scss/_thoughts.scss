@@ -1,31 +1,3 @@
-.listing {
-  list-style: none;
-
-  li {
-    padding: 0 0 1.5em;
-  }
-
-  date {
-    font-size: 0.7em;
-  }
-
-  h2 {
-    display: list-item;
-    list-style-type: disc;
-    margin: 0;
-    padding: 0;
-  }
-
-  p {
-    font-size: 100%;
-  }
-
-  a.listing__remote h2:after {
-    color: $themeGreen;
-    content: '⇢';
-  }
-}
-
 .gist {
   max-width: 750px;
 }
@@ -53,19 +25,4 @@
   margin-bottom: 1em;
   max-width: 550px;
   width: 100%;
-}
-
-.old-thought {
-  border: 2px solid #ccc;
-  margin: 1em 0;
-  max-width: 550px;
-  padding: 10px;
-
-  strong {
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 60%;
-  }
 }

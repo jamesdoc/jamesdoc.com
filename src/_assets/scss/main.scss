@@ -96,7 +96,7 @@ a {
   color: black;
   outline: none;
   text-decoration: none;
-  transition: all .25s;
+  transition: color .25s, border .25s;
 
   &:hover {
     border-bottom-color: black;
@@ -143,5 +143,8 @@ hr {
 
 @import 'homepage';
 @import 'thoughts';
+@import 'listing';
 @import 'btn';
+@import 'shopLinks';
+@import 'boxedMessage';
 @import 'embedWrapper';

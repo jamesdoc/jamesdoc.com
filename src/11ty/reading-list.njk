@@ -1,0 +1,28 @@
+---
+title: Reading list
+layout: listing
+eleventyExcludeFromCollections: true
+---
+{% import "./_includes/macros/book.njk" as mBook %}
+<h1>Reading list</h1>
+
+{% set currentBooks = readingList | activeBook %}
+{% if currentBooks | length > 0 %}
+  <h2>Currently reading:</h2>
+  <ul class="listing">
+  {% for book in currentBooks %}
+    {{ mBook.listItem(book) }}
+  {% endfor %}
+  </ul>
+{% endif %}
+
+<h2>Previously read</h2>
+<ul class="listing">
+{% for book in readingList|sort(true, true, 'readDate') %}
+  {% if book.readDate %}{{ mBook.listItem(book) }}{% endif %}
+{% endfor %}
+</ul>
+
+<hr />
+
+Data imported from Trello. <a href="https://trello.com/b/{{ metadata.readingListId }}" target="_blank" rel="noopener">Go to the board</a>.

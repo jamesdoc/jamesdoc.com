@@ -13,9 +13,18 @@ layout: layouts/base.njk
 </header>
 
 {% if date | dateComparison('2009-12-31') %}
-<div class="old-thought">
-  <p><strong>Welcome to the archive</strong></p>
-  <p>This post is old… It's probably been exported and imported from at least three different blogging platforms over the year. That probably means that there are broken images and links. If the post is technical in nature, any adivce is out of date and irrelevant. Or more likely, it was the wafflings of bored-past me with too much time on his hands. If it is the latter I would probably cringe if I re-read it. But it's here because it's part of my past, not my present.</p>
+<div class="boxedMessage boxedMessage--alert">
+  <p class="boxedMessage__heading">⚠️ This is an old post</p>
+  <p>
+    This post is old… It's probably been exported and imported from at least
+    three different blogging platforms over the year. That probably means, at
+    best, there are broken images and links. If the post is technical in nature,
+    any advice is probably out of date and irrelevant. Or more likely, it was
+    the wafflings of teenage me with too much time on his hands working out what
+    blogging is… If it is the latter I would probably cringe if I re-read it.
+    But it's here because it's part of my past, not my present.
+  </p>
+  <p>You've been warned! Onwards…</p>
 </div>
 {% endif %}
 
