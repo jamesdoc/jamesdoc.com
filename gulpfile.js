@@ -52,6 +52,8 @@ gulp.task('images', function() {
     .pipe(gulp.dest(`${buildDest}/_assets/img`));
 });
 
+gulp.task('trelloImport', shell.task('node utils/books.js'));
+
 gulp.task('generate', shell.task('eleventy'));
 
 gulp.task('scss', function () {
@@ -72,6 +74,7 @@ gulp.task('watch', function () {
 gulp.task('build', gulp.series(
   'setup',
   'clean',
+  'trelloImport',
   'generate',
   gulp.parallel(
     'images',

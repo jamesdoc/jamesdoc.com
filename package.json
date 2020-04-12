@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp build & gulp watch & gulp serve",
-    "build": "npm run importReadingList & gulp build",
-    "importReadingList": "node utils/books.js"
+    "build": "gulp build"
   },
   "author": "James Doc",
   "license": "ISC",
