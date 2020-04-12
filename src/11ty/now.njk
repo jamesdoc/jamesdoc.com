@@ -1,0 +1,44 @@
+---
+title: Now
+layout: listing
+eleventyExcludeFromCollections: true
+---
+{% set currentBooks = readingList | activeBook %}
+{% set latestPost = collections.posts | reverse | first %}
+
+<h1>Now</h1>
+
+<p>Rather than an about page… this is a list of things that are going on <a href="https://nownownow.com/about">now</a>.</p>
+
+<ul class="nowList">
+  <li>
+    Location:<br />
+    <a href="{{ now.location.url }}">{{ now.location.name }}</a>
+  </li>
+
+  <li>
+    Employer:<br />
+    <a href="{{ now.employer.url }}">{{ now.employer.name }}</a>
+  </li>
+
+  <li>
+    Current toolbox:<br />
+    {% for tool in now.toolbox %}
+      <a href="{{ tool.url }}" target="_blank" rel="noopener">{{ tool.name }}</a>{% if loop.last != true %}, {% endif %}
+    {% endfor %}
+  </li>
+
+  <li>
+    Latest blog post:<br />
+    <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
+  </li>
+
+  <li>
+    <a href="/reading-list">Currently reading</a>:<br />
+    {% for book in currentBooks %}
+      {{ book.name }} <em>({{ book.additional.author }})</em>{% if loop.last != true %},{% endif %}<br />
+    {% endfor %}
+  </li>
+</ul>
+
+<p><a href="/">Back</a></p>

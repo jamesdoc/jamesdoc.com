@@ -145,7 +145,7 @@ footer {
 }
 
 .social_links li {
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 @media (min-width: 600px) {
@@ -167,6 +167,11 @@ footer {
 
 .social_links a:hover {
   border-bottom: 1px solid;
+}
+
+.social_links a[href^="/now"]:hover {
+  color: #a3de87;
+  border-color: #a3de87;
 }
 
 .social_links a[href^="/blog"]:hover {
