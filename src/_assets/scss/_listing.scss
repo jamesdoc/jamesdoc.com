@@ -1,0 +1,28 @@
+.listing {
+  list-style: none;
+
+  li {
+    padding: 0 0 1.5rem;
+  }
+
+  date {
+    font-size: 0.825rem;
+  }
+
+  h2, h3 {
+    display: list-item;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 100%;
+    margin-bottom: 0;
+  }
+
+  a.listing__remote h2:after {
+    color: $themeGreen;
+    content: '⇢';
+  }
+}

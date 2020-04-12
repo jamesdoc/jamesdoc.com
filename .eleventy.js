@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon");
+const dayjs = require('dayjs');
 const { buildSrc, buildDest } = require('./paths');
 const markdownIt = require("markdown-it");
 const markdownItResponsive = require('@gerhobbelt/markdown-it-responsive');
@@ -9,15 +9,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLLL yyyy");
+    return dayjs(dateObj).format('dddd, D MMMM YYYY');
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return dayjs(dateObj).format('YYYY-MM-DD');
   });
 
   eleventyConfig.addFilter("dateComparison", (dateObj, compareWith)=> {
-    return DateTime.fromJSDate(dateObj) < DateTime.fromISO(compareWith)
+    return dayjs(dateObj).isBefore(dayjs(compareWith));
   })
 
   eleventyConfig.addFilter("imgSuffix", (imgStr, suffix)=> {
@@ -25,7 +25,11 @@ module.exports = function (eleventyConfig) {
     const imgPath = imgStr.substring(0, i);
     const ext = imgStr.substring(i + 1);
     return `${imgPath}-${suffix}.${ext}`;
-  })
+  });
+
+  eleventyConfig.addFilter("activeBook", (bookList) => {
+    return bookList.filter(item => item.active);
+  });
 
   eleventyConfig.addCollection("posts", function (collection) {
     return collection.getAllSorted().filter(function (item) {

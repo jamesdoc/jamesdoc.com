@@ -1,0 +1,18 @@
+.boxedMessage {
+  border: 2px solid #ccc;
+  margin: 1rem 0;
+  max-width: 550px;
+  padding: 10px;
+
+  &--alert {
+    border-color: #ffeea4;
+  }
+
+  &__heading {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 0.825rem
+  }
+}

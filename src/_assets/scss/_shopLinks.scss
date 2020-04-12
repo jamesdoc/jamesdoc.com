@@ -1,0 +1,52 @@
+.shopLinks {
+  font-size: 0.825rem;
+  line-height: 0.825rem;
+  margin: 0;
+}
+
+.shopLinks__list {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    font-size: 0.825rem;
+  }
+
+  li a[href^="https://amazon"]:hover {
+    border-color: #ffa724;
+    color: #ffa724;
+  }
+
+  li a[href^="https://10ofthose"]:hover {
+    border-color: #1cc457;
+    color: #1cc457;
+  }
+
+  li a[href^="https://thegoodbook"]:hover {
+    border-color: #ee1d25;
+    color: #ee1d25;
+  }
+
+  li a[href^="https://waterstones"]:hover {
+    border-color: #346b75;
+    color: #346b75;
+  }
+
+  li a[href^="https://abebooks"]:hover {
+    border-color: #c7022c;
+    color: #c7022c;
+  }
+
+  li a[href^="https://goodreads"]:hover {
+    border-color: #e2e0d2;
+    color: #46301f;
+  }
+
+  li a[href^="https://worldcat"]:hover {
+    border-color: #125280;
+    color: #125280;
+  }
+}
