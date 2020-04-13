@@ -4,7 +4,7 @@ const fs = require("fs");
 const { trello } = require("../config.js");
 
 const trelloApiBase = `https://api.trello.com/1/boards/${trello.readingList.boardId}/`;
-const outputPath = `${__dirname}/../src/11ty/_data/readingList.json`;
+const outputPath = `${__dirname}/../src/_data/readingList.json`;
 
 const apiCallUrl = {
   cards: `${trelloApiBase}cards?customFieldItems=true&attachment_fields=all&attachments=cover`,
