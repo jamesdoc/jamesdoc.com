@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
   </ul>
 {% endif %}
 
-<h2>Previously read</h2>
+<h2>Previously read:</h2>
 <ul class="listing">
 {% for book in readingList|sort(true, true, 'readDate') %}
   {% if book.readDate %}{{ mBook.listItem(book) }}{% endif %}

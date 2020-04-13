@@ -1,41 +1,31 @@
-const dayjs = require('dayjs');
 const { buildSrc, buildDest } = require('./paths');
 const markdownIt = require("markdown-it");
 const markdownItResponsive = require('@gerhobbelt/markdown-it-responsive');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
+const filters = require('./utils/filters.js');
+const collections = require('./utils/collections.js');
+
 module.exports = function (eleventyConfig) {
 
+  // Plugins
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return dayjs(dateObj).format('dddd, D MMMM YYYY');
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return dayjs(dateObj).format('YYYY-MM-DD');
+  // Collections
+  Object.keys(collections).forEach((collectionName) => {
+    eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
 
-  eleventyConfig.addFilter("dateComparison", (dateObj, compareWith)=> {
-    return dayjs(dateObj).isBefore(dayjs(compareWith));
-  })
-
-  eleventyConfig.addFilter("imgSuffix", (imgStr, suffix)=> {
-    const i = imgStr.lastIndexOf('.');
-    const imgPath = imgStr.substring(0, i);
-    const ext = imgStr.substring(i + 1);
-    return `${imgPath}-${suffix}.${ext}`;
-  });
-
-  eleventyConfig.addFilter("activeBook", (bookList) => {
-    return bookList.filter(item => item.active);
-  });
-
-  eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getAllSorted().filter(function (item) {
-      return item.inputPath.match(/^\.\/src\/11ty\/blog\//) !== null;
-    });
-  });
+  // eleventyConfig.addCollection("posts", function (collection) {
+  //   return collection.getAllSorted().filter(function (item) {
+  //     return item.inputPath.match(/^\.\/src\/11ty\/blog\//) !== null;
+  //   });
+  // });
 
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("listing", "layouts/listing.njk");
