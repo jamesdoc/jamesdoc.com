@@ -34,14 +34,16 @@
 
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/blog/feed.xml" />
 
-    <link rel="icon" type="image/svg" href="/_assets/svg/favicon.svg">
+    <link rel="icon" type="image/svg" href="/assets/svg/favicon.svg">
   </head>
 
   <body>
+
     <section>
       {{ layoutContent | safe }}
     </section>
 
     <span class="avatar"></span>
+    <!-- last build: {{ build.env }} {{ build.timestamp }} -->
   </body>
 </html>
