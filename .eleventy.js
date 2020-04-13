@@ -5,6 +5,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const filters = require('./utils/filters.js');
 const collections = require('./utils/collections.js');
+const shortcodes = require('./utils/shortcodes.js');
 
 module.exports = function (eleventyConfig) {
 
@@ -21,8 +22,18 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
 
+  // Shortcodes
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+  });
+
+  // Watch assets folder for changes
   eleventyConfig.addWatchTarget('./src/_assets');
 
+  // Copy these assets straight across
+  eleventyConfig.addPassthroughCopy({'./src/_assets/svg': 'assets/svg'});
+
+  // Alias these layouts
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("listing", "layouts/listing.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");

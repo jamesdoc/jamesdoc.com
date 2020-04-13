@@ -1,3 +1,6 @@
+// Shamelessly modified from Eleventastic:
+// https://github.com/maxboeck/eleventastic
+
 const fs = require('fs')
 const path = require('path')
 const sass = require('node-sass')
@@ -11,7 +14,7 @@ const fileName = 'main.scss'
 
 module.exports = class {
     async data() {
-      const filePath = path.join(__dirname, `/${fileName}`);
+      const filePath = path.join(__dirname, `/scss/${fileName}`);
       return {
         permalink: `/assets/css/main.css`,
         eleventyExcludeFromCollections: true,
