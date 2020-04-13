@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ELEVENTY_ENV=development eleventy --serve",
-    "build": "gulp build"
+    "build": "node utils/books.js && ELEVENTY_ENV=production eleventy"
   },
   "author": "James Doc",
   "license": "ISC",
