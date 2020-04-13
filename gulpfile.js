@@ -1,5 +1,5 @@
 const gulp        = require('gulp');
-const sass        = require('gulp-sass');
+// const sass        = require('gulp-sass');
 const shell       = require('gulp-shell');
 const serve       = require('gulp-serve');
 const clean       = require('gulp-clean');
@@ -56,18 +56,18 @@ gulp.task('trelloImport', shell.task('node utils/books.js'));
 
 gulp.task('generate', shell.task('eleventy'));
 
-gulp.task('scss', function () {
-  return gulp.src(buildSrc + "/_assets/scss/main.scss")
-    .pipe(sass({
-      outputStyle: "compressed"
-    }).on('error', sass.logError))
-    .pipe(gulp.dest(`${buildDest}/_assets/css`))
-});
+// gulp.task('scss', function () {
+//   return gulp.src(buildSrc + "/_assets/scss/main.scss")
+//     .pipe(sass({
+//       outputStyle: "compressed"
+//     }).on('error', sass.logError))
+//     .pipe(gulp.dest(`${buildDest}/_assets/css`))
+// });
 
 gulp.task('watch', function () {
   gulp.watch(`${buildSrc}/11ty/**/*`, gulp.parallel('generate'));
   gulp.watch(`${buildSrc}/_assets/img/**/*`, gulp.parallel('images'));
-  gulp.watch(`${buildSrc}/_assets/scss/**/*`, gulp.parallel('scss'));
+  // gulp.watch(`${buildSrc}/_assets/scss/**/*`, gulp.parallel('scss'));
   gulp.watch(`${buildSrc}/_assets/svg/**/*`, gulp.parallel('svg'));
 });
 
@@ -78,7 +78,7 @@ gulp.task('build', gulp.series(
   'generate',
   gulp.parallel(
     'images',
-    'scss',
+    // 'scss',
     'svg'
   )
 ));
