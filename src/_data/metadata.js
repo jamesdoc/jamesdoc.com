@@ -1,4 +1,4 @@
-const { trello } = require("../../../config.js");
+const { trello } = require("../../config.js");
 
 module.exports = () => {
   return {

@@ -7,7 +7,6 @@ eleventyExcludeFromCollections: true
 
 <ul class="listing">
 {% for post in collections.posts | reverse %}
-  {% if post.data.type == 'article' %}
   <li>
     {% if post.data.canonical %}
     <a href="{{ post.data.canonical }}" target="_blank" rel="noopener" class="listing__remote">
@@ -19,6 +18,5 @@ eleventyExcludeFromCollections: true
       <p>{{ post.data.intro }}</p>
     </a>
   </li>
-  {% endif %}
 {% endfor %}
 </ul>

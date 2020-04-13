@@ -21,11 +21,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
 
-  // eleventyConfig.addCollection("posts", function (collection) {
-  //   return collection.getAllSorted().filter(function (item) {
-  //     return item.inputPath.match(/^\.\/src\/11ty\/blog\//) !== null;
-  //   });
-  // });
+  eleventyConfig.addWatchTarget('./src/_assets');
 
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("listing", "layouts/listing.njk");
@@ -33,44 +29,46 @@ module.exports = function (eleventyConfig) {
 
   // Override Markdown config
 
-  const options = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
+  // const options = {
+  //   html: true,
+  //   breaks: true,
+  //   linkify: true,
+  // };
 
-  const rwdOptions = {
-    responsive: {
-      'srcset': {
-        '*': [ {
-          width: 320,
-          rename: {
-            suffix: '-320'
-          }
-        }, {
-          width: 550,
-          rename: {
-            suffix: '-550'
-          }
-        } ]
-      },
-      'sizes': {
-        '*': '(max-width: 550px) calc(100vw - 120px), 550px'
-      }
-    }
-  };
+  // const rwdOptions = {
+  //   responsive: {
+  //     'srcset': {
+  //       '*': [ {
+  //         width: 320,
+  //         rename: {
+  //           suffix: '-320'
+  //         }
+  //       }, {
+  //         width: 550,
+  //         rename: {
+  //           suffix: '-550'
+  //         }
+  //       } ]
+  //     },
+  //     'sizes': {
+  //       '*': '(max-width: 550px) calc(100vw - 120px), 550px'
+  //     }
+  //   }
+  // };
 
-  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions));
+  // eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions));
+
+  eleventyConfig.setDataDeepMerge(true);
 
   return {
-    templateFormats: ["html", "njk", "md"],
+    templateFormats: ["html", "njk", "md", "11ty.js"],
     pathPrefix: "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
-      input: `${buildSrc}/11ty`,
+      input: `${buildSrc}`,
       output: buildDest,
       data: "_data",
       includes: "_includes"

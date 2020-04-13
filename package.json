@@ -4,7 +4,7 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp build & gulp watch & gulp serve",
+    "dev": "ELEVENTY_ENV=development eleventy --serve",
     "build": "gulp build"
   },
   "author": "James Doc",
@@ -23,8 +23,11 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "clean-css": "^4.2.3",
+    "cssesc": "^3.0.0",
     "dayjs": "^1.8.24",
     "fs": "0.0.1-security",
+    "node-sass": "^4.13.1",
     "url-slug": "^2.3.1"
   }
 }
