@@ -16,7 +16,7 @@ module.exports = class {
     async data() {
       const filePath = path.join(__dirname, `/scss/${fileName}`);
       return {
-        permalink: `/assets/css/main.css`,
+        permalink: `/_assets/css/main.css`,
         eleventyExcludeFromCollections: true,
         filePath,
       }

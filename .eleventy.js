@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/_assets');
 
   // Copy these assets straight across
-  eleventyConfig.addPassthroughCopy({'./src/_assets/svg': 'assets/svg'});
+  eleventyConfig.addPassthroughCopy({'./src/_assets/svg': '_assets/svg'});
 
   // Alias these layouts
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
@@ -39,35 +39,34 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Override Markdown config
+  const options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
 
-  // const options = {
-  //   html: true,
-  //   breaks: true,
-  //   linkify: true,
-  // };
+  const rwdOptions = {
+    responsive: {
+      'srcset': {
+        '*': [ {
+          width: 320,
+          rename: {
+            suffix: '-320'
+          }
+        }, {
+          width: 550,
+          rename: {
+            suffix: '-550'
+          }
+        } ]
+      },
+      'sizes': {
+        '*': '(max-width: 550px) calc(100vw - 120px), 550px'
+      }
+    }
+  };
 
-  // const rwdOptions = {
-  //   responsive: {
-  //     'srcset': {
-  //       '*': [ {
-  //         width: 320,
-  //         rename: {
-  //           suffix: '-320'
-  //         }
-  //       }, {
-  //         width: 550,
-  //         rename: {
-  //           suffix: '-550'
-  //         }
-  //       } ]
-  //     },
-  //     'sizes': {
-  //       '*': '(max-width: 550px) calc(100vw - 120px), 550px'
-  //     }
-  //   }
-  // };
-
-  // eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions));
+  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions));
 
   eleventyConfig.setDataDeepMerge(true);
 
