@@ -5,6 +5,7 @@ tags: quote
 date: 2011-10-06 07:57:53
 leadImage: /_assets/img/blog/imported/banners/heres-to-the-crazy-ones.jpg
 ---
+
 <blockquote>
  <p>
   Here&rsquo;s to the crazy ones. The misfits. The rebels. The troublemakers.</p>
@@ -20,6 +21,6 @@ leadImage: /_assets/img/blog/imported/banners/heres-to-the-crazy-ones.jpg
   Because the people who are crazy enough to think they can change the world, are the ones who do</p>
 </blockquote>
 <p>
-<iframe allowfullscreen="" frameborder="0" height="600" src="http://www.youtube.com/embed/8rwsuXHA7RA" width="810"></iframe></p>
+<iframe allowfullscreen="" frameborder="0" height="600" src="https://www.youtube.com/embed/8rwsuXHA7RA" width="810"></iframe></p>
 <p>
  Thank you Steve.</p>

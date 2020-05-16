@@ -5,7 +5,8 @@ tags: music
 date: 2011-08-31 22:21:45
 leadImage: /_assets/img/blog/imported/banners/thoughts-on-still-got-legs.jpg
 ---
-<p>Chameleon Circuit are a band that I have been excited about for quite a while, they combine two of my favourite things - proper decent music * and Doctor Who.&nbsp;&nbsp;Their first self-titled album was great, it had some really good tracks on it including&nbsp;<a href="http://www.youtube.com/watch?v=wejl_daRVZU&amp;feature=player_detailpage#t=43s"><span class="s1">Blink</span></a>, based on the David Tennant episode of the same name, and&nbsp;<a href="http://www.youtube.com/watch?v=5OLYQJYHZQo"><span class="s1">Count the Shadows</span></a>&nbsp;taking it&#39;s roots in the episodes where we first meet River Song - Silence in the Library and Forest of the Dead.</p>
+
+<p>Chameleon Circuit are a band that I have been excited about for quite a while, they combine two of my favourite things - proper decent music * and Doctor Who.&nbsp;&nbsp;Their first self-titled album was great, it had some really good tracks on it including&nbsp;<a href="https://www.youtube.com/watch?v=wejl_daRVZU&amp;feature=player_detailpage#t=43s"><span class="s1">Blink</span></a>, based on the David Tennant episode of the same name, and&nbsp;<a href="https://www.youtube.com/watch?v=5OLYQJYHZQo"><span class="s1">Count the Shadows</span></a>&nbsp;taking it&#39;s roots in the episodes where we first meet River Song - Silence in the Library and Forest of the Dead.</p>
  <p>
   A while back Chameleon Circuit released their second album - Still Got Legs, and I have finally got round to writing my thoughts about it down! The first thing to say is that the both the record and album production quality has raised ten fold from the first album, this isn&#39;t to discredit the self-titled album, rather to show just how much the bar has been raised in Still Got Legs.&nbsp;&nbsp;</p>
  <p>
