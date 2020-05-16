@@ -5,6 +5,7 @@ tags: personal
 date: 2012-03-01 22:52:04
 leadImage: /_assets/img/blog/imported/banners/blindness-injustice.jpg
 ---
+
 <p>
  Last week <a href="http://jamesdoc.com/blog/show/relentless-acts-of-sacrifice" target="_null">I wrote about sacrifice</a>; the giving up of something valued for the sake of something else regarded as more important or worthy. I&#39;ve been prompted to think about this as a result of getting involved with <a href="http://www.worldvisionacts.org/" target="_null">World Vision Activism Network</a> who, throughout lent, are encouraging people to really explore what sacrifice is, and what it means for a 21st century world.</p>
 <p>
@@ -18,9 +19,9 @@ leadImage: /_assets/img/blog/imported/banners/blindness-injustice.jpg
 <p>
  Are we broken by the injustice in the world we see? Do we allow ourselves to be interrupted by it? Or do we just harden and close ourselves off to it in the busyness of our lives? One of my prayers this week is that Jesus would open my eyes to see the world as he sees it; to rejoice in all that is good, but to be broken by what cause him to be broken.</p>
 <p>
- I&#39;ve been listening to Brandon Heath&#39;s song titled &#39;Give Me Your Eyes&#39;, the lyrics reflect my prayers this week, I want to encourage you to watch <a href="http://www.youtube.com/watch?v=P5AkNqLuVgY" target="_null">the video below</a> and listen to the lyrics.</p>
+ I&#39;ve been listening to Brandon Heath&#39;s song titled &#39;Give Me Your Eyes&#39;, the lyrics reflect my prayers this week, I want to encourage you to watch <a href="https://www.youtube.com/watch?v=P5AkNqLuVgY" target="_null">the video below</a> and listen to the lyrics.</p>
 <p>
- <iframe allowfullscreen="" frameborder="0" height="450" src="http://www.youtube.com/embed/P5AkNqLuVgY" width="800"></iframe></p>
+ <iframe allowfullscreen="" frameborder="0" height="450" src="https://www.youtube.com/embed/P5AkNqLuVgY" width="800"></iframe></p>
 <hr />
 <p>
  Footnotes:</p>

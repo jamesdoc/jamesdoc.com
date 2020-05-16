@@ -5,6 +5,7 @@ tags: design
 date: 2011-12-26 11:16:20
 leadImage: /_assets/img/blog/imported/banners/keep-calm-its-the-queens-speech.jpg
 ---
+
 <p>
  If there is one thing that is family tradition in the Docherty household it is the Queen&#39;s speech... This is normally something that is inflicted upon us, rather than something we enjoy watching, however Grandpa and Grandma want to watch it, so at 3pm on Christmas Day we all take a seat and watch together.</p>
 <p>
@@ -16,6 +17,6 @@ leadImage: /_assets/img/blog/imported/banners/keep-calm-its-the-queens-speech.jp
   <i>&quot;Forgiveness lies at the heart of the Christian faith. It can heal broken families, it can restore friendships and it can reconcile divided communities. It is in forgiveness that we feel the power of God&rsquo;s love.&quot;</i></p>
 </blockquote>
 <p>
- A full transcript of the speech is avalible on&nbsp;<a href="http://www.royal.gov.uk/ImagesandBroadcasts/TheQueensChristmasBroadcasts/ChristmasBroadcasts/TheQueensChristmasBroadcast.aspx" target="_null">The British Monarchy Website</a>, or if you prefer the whole YouTube thing&nbsp;<a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=olEp_3Spc1g" target="_null">Her Majesty does that too</a>.</p>
+ A full transcript of the speech is avalible on&nbsp;<a href="http://www.royal.gov.uk/ImagesandBroadcasts/TheQueensChristmasBroadcasts/ChristmasBroadcasts/TheQueensChristmasBroadcast.aspx" target="_null">The British Monarchy Website</a>, or if you prefer the whole YouTube thing&nbsp;<a href="https://www.youtube.com/watch?feature=player_embedded&amp;v=olEp_3Spc1g" target="_null">Her Majesty does that too</a>.</p>
 <p>
  I promised myself that I would never create a poster in the &#39;Keep Calm and Carry On&#39; series, however after listening to that speech, it felt only right to! You can download a&nbsp;<a href="http://jamesdoc.com/assets/uploads/misc/keepcalm.jpg" target="_blank">higher res version here</a>.</p>
