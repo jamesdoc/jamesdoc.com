@@ -16,7 +16,7 @@ const resizeConf = {
       rename: { suffix: '-550' },
     }
   ],
-  // // Does nothing:
+  // // Not implemented yet…
   // options: {
   //   quality: 80,
   //   progressive: true,
@@ -52,6 +52,9 @@ module.exports = class {
       const dir = path.dirname(img);
 
       mkdirp.sync(path.join(outputPath, dir));
+
+      let passThroughImg = sharp(imgFolder.file + img);
+      passThroughImg.toFile(path.join(outputPath, dir, base + ext));
 
       resizeConf.sizes.forEach(function (size) {
         const newPath = path.join(outputPath, dir, base + size.rename.suffix + ext);
