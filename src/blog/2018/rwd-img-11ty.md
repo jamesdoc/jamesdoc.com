@@ -11,6 +11,8 @@ There's nothing quite like a little bit of Christmas eve coding… Adding respon
 
 ## Generate all the images
 
+_**May 2020 Update:** I changed this step when I migrated away from Gulp. [Read about the degulpification](/blog/2020/degulpification/)_
+
 When I switched my site across to 11ty I used Gulp as my build tool. There is a handy image generator which you can point at a folder and it will generate different sized images based on a set of configuration. Imaginatively it is called [Gulp Responsive](https://www.npmjs.com/package/gulp-responsive).
 
 You can see the (basic) configuration I'm using over in this [Github commit](https://github.com/jamesdoc/jamesdoc.com/blob/586e6e107ad8f83669831d7df73fe58af2bec676/gulpfile.js#L31-L53). The summary version is that I generate two smaller versions of the input image which have their image width added into the file name (`exampleimage-550.jpg`) and all the metadata is stripped out for a small file size. The newly generated images are then exported into the build folder.
