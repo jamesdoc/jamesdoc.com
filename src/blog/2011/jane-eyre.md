@@ -5,6 +5,7 @@ tags: reading
 date: 2011-10-04 13:30:00
 leadImage: /_assets/img/blog/imported/banners/jane-eyre.gif
 ---
+
 <p>
  Have you ever watched the C4 comedy Spaced? If not you should; firstly it is a fantastic comedy and secondly it has so many references to other television programs and films that just enhance it every time I watch it.&nbsp; Okay I know what you&rsquo;re thinking - the title of this blog post is &lsquo;Jane Eyre&rsquo; and so far this has been about a comedy series that was written over a decade ago*... Don&rsquo;t worry, hopefully it will all make sense soon.</p>
 <p>
@@ -25,9 +26,9 @@ leadImage: /_assets/img/blog/imported/banners/jane-eyre.gif
 <p>Amazon Links:</p>
 <ul>
  <li>
-  <a href="http://www.amazon.co.uk/gp/product/1853260207/ref=as_li_ss_tl?ie=UTF8&amp;tag=jamdoc-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1853260207" target="_blank">Jane Eyre</a> - Charlotte Bront&euml;</li>
+  <a href="https://www.amazon.co.uk/gp/product/1853260207/ref=as_li_ss_tl?ie=UTF8&amp;tag=jamdoc-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1853260207" target="_blank">Jane Eyre</a> - Charlotte Bront&euml;</li>
  <li>
-  <a href="http://www.amazon.co.uk/gp/product/034073356X/ref=as_li_ss_tl?ie=UTF8&amp;tag=jamdoc-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=034073356X" target="_blank">The Eyre Affair</a>&nbsp;- Jasper Fforde</li>
+  <a href="https://www.amazon.co.uk/gp/product/034073356X/ref=as_li_ss_tl?ie=UTF8&amp;tag=jamdoc-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=034073356X" target="_blank">The Eyre Affair</a>&nbsp;- Jasper Fforde</li>
  <li>
-  <a href="http://www.amazon.co.uk/gp/product/B0002LXU6I/ref=as_li_ss_tl?ie=UTF8&amp;tag=jamdoc-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B0002LXU6I" target="_blank">Spaced</a></li>
+  <a href="https://www.amazon.co.uk/gp/product/B0002LXU6I/ref=as_li_ss_tl?ie=UTF8&amp;tag=jamdoc-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B0002LXU6I" target="_blank">Spaced</a></li>
 </ul>

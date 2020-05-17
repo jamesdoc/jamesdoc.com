@@ -5,6 +5,7 @@ tags: personal
 date: 2012-02-21 23:54:03
 leadImage: /_assets/img/blog/imported/banners/relentless-acts-of-sacrifice.jpg
 ---
+
 <p>
  <b>Sacrifice.</b></p>
 <p>
@@ -12,7 +13,7 @@ leadImage: /_assets/img/blog/imported/banners/relentless-acts-of-sacrifice.jpg
 <p>
  Sacrifice is an action. It isn&rsquo;t something we should sit around talking about, it is something that needs to be acted upon. It is an action of giving; taking something that you have, and either passing it on or putting it down. And this thing that you pass on or put down cannot be a thing that is easy to give over; that is not a sacrifice. Sacrifice is giving up something that you care about, something that is important to you, it giving up something that is close to you.</p>
 <p class="p1">
- Therefore to do this, to give up, or to give on, is going to be hard. It is going to be something that is costly to you. This is because the things that we value can come to be a definition of you...</p>
+ Therefore to do this, to give up, or to give on, is going to be hard. It is going to be something that is costly to you. This is because the things that we value can come to be a definition of you…</p>
 <p class="p1">
  And a sacrifice means to giving these things up for the advantage of something else. We sacrifice something that we highly value in exchange for something is regarded as more important, more worthy in our life. It&rsquo;s giving up the things we regard as &lsquo;<i>good</i>&rsquo; in exchange for the things we regard as &lsquo;<i>best</i>&rsquo;. Sacrifice is about taking a risk, it&rsquo;s about letting something hurt, so in exchange for the pain we can see something flourish.</p>
 <p class="p1">
@@ -26,7 +27,7 @@ leadImage: /_assets/img/blog/imported/banners/relentless-acts-of-sacrifice.jpg
 <p class="p1">
  Jesus has made the ultimate sacrifice, giving all he had because he saw me as important and worthy, how does that impact how I live? How do I follow Mary&rsquo;s example in my life? In the letter to the Romans, Paul writes that in the light of Jesus&rsquo; sacrifice and as a result of the mercy shown to us we should become &lsquo;living sacrifices&rsquo; because this is how we can truly worship and honour him.</p>
 <p class="p2">
- In giving riches and dignity Mary&rsquo;s shows us sacrifice. We have so much, more than just the financial or the things we own, we treasure our time, we store up our talents, we have our dreams and aspirations, and these are not wrong things to have... but are we willing to sacrifice them for something more important?</p>
+ In giving riches and dignity Mary&rsquo;s shows us sacrifice. We have so much, more than just the financial or the things we own, we treasure our time, we store up our talents, we have our dreams and aspirations, and these are not wrong things to have… but are we willing to sacrifice them for something more important?</p>
 <p class="p2">
  This year for lent I&#39;m participating in something called &#39;<a href="http://www.worldvisionacts.org/challenges/prepare-for-lent-what-are-you-willing-to-sacrifice" target="_blank"><span class="s4">Relentless Acts of Sacrifice</span></a>&#39; which is all about thinking about what sacrifice means now. One of the things that I&#39;ve been thinking about, something that I don&#39;t do enough, is spending time praying for people or situations. It&#39;s not that I haven&#39;t tried&nbsp;to do more of it before, but it is something that I find very hard to bring in to my daily routine. I walk to work every day now, and I&#39;m accompanied by music in my well loved ear phones to while away the 30/40 minute walk to work. So this lent that is what I&#39;m going to sacrifice; I&#39;m giving up my earphones so that I can spend the time in prayer.</p>
 <p class="p2">

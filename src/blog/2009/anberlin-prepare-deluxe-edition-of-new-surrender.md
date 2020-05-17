@@ -4,4 +4,26 @@ type: article
 tags: music
 date: 2009-11-23 11:12:00
 ---
-<div style="text-align:center;"><img src="http://img264.imageshack.us/img264/2458/anberlin.jpg" width="400" /><br /></div><br />Anberlin have just launched their pre-order form for a deluxe edition of their latest album New Surrender which was released back in September '08. &nbsp;This new edition, being released on the 11th December, contains all the original tracks taken from the album, alongside six extra tracks including their recent cover of True Faith by New Order and an acoustic version of Feel Good Drag. &nbsp;The release also contains a 26 minute documentary DVD following the band while they were touring in Australia and a music video for Feel Good Drag. &nbsp;The full track listing is after the break.<br /><br />You can pre-order the album now from <a href="https://www.shopbenchmark.net/site/anberlin/">Anberlin's website</a> now for $14 (&pound;8.50).<br /><a name='more'></a><br /><br /><br />1  The Resistance<br />2  Breaking<br />3  Blame Me! Blame Me!<br />4  Retrace<br />5  Feel Good Drag<br />6  Disappear<br />7  Breathe<br />8  Burn Out Brighter<br />9  Younglife<br />10  Haight St<br />11  Soft Skeletons<br />12  Miserable Visu (Ex Malo Bonum)<br />13  Mother (B-Side)<br />14  Heavier Things Remain (B-Side)<br />15  True Faith (B-Side)<br />16  Said And Done (B-Side)<br />17  A Perfect Tourniquet (B-Side)<br />18  Feel Good Drag (Acoustic) (B-Side)<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/31453821-1322796020595357036?l=www.jamesdoc.co.uk' alt='' /></div>
+
+Anberlin have just launched their pre-order form for a deluxe edition of their latest album New Surrender which was released back in September '08. This new edition, being released on the 11th December, contains all the original tracks taken from the album, alongside six extra tracks including their recent cover of True Faith by New Order and an acoustic version of Feel Good Drag. The release also contains a 26 minute documentary DVD following the band while they were touring in Australia and a music video for Feel Good Drag. The full track listing is after the break.
+
+You can pre-order the album now from <a href="https://www.shopbenchmark.net/site/anberlin/">Anberlin's website</a> now for \$14 (&pound;8.50).
+
+1. The Resistance
+2. Breaking
+3. Blame Me! Blame Me!
+4. Retrace
+5. Feel Good Drag
+6. Disappear
+7. Breathe
+8. Burn Out Brighter
+9. Younglife
+10. Haight St
+11. Soft Skeletons
+12. Miserable Visu (Ex Malo Bonum)
+13. Mother (B-Side)
+14. Heavier Things Remain (B-Side)
+15. True Faith (B-Side)
+16. Said And Done (B-Side)
+17. A Perfect Tourniquet (B-Side)
+18. Feel Good Drag (Acoustic) (B-Side)

@@ -3,10 +3,15 @@ title: Is Christian Faith Just a Psychological Crutch for the Weak?
 type: article
 tags: personal
 date: 2010-10-27 08:00:00
-leadImage: http://img204.imageshack.us/img204/4102/faitho.png
 ---
-<p>I had the privilege of speaking at the Christian Union meeting looking at the topic of faith being perceived as just a psychological crutch. Below is a copy of my notes, as always comments, thoughts and general feedback always apprecated!</p>
-<blockquote>Imagine there's no Heaven<br />It's easy if you try<br />No hell below us<br />Above us only sky<br /><small>Imagine - John Lennon</small></blockquote>
+
+I had the privilege of speaking at the Christian Union meeting looking at the topic of faith being perceived as just a psychological crutch. Below is a copy of my notes, as always comments, thoughts and general feedback always apprecated!
+
+> Imagine there's no Heaven
+> It's easy if you try
+> No hell below us
+> Above us only sky
+> <small>Imagine - John Lennon</small>
 
 <p>People tend to take these lyrics in one of two ways; the first group listen to this song and love it.  It describes a world of the here and now, what you see is what you get, a world that is explore-able and explainable.  In this world there is no issue with religion getting in the way of science.  To many this is very appealing.</p>
 

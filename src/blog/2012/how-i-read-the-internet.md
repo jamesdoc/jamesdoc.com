@@ -1,5 +1,5 @@
 ---
-title: How I read the internet...
+title: How I read the internet…
 type: article
 tags: design
 date: 2012-09-30 09:22:09
