@@ -30,4 +30,4 @@ leadImage: /_assets/img/blog/imported/banners/fowd-banner.jpg
 </ul>
 <p><a href="notes.zip">Download all as a zipped folder</a></p>
 <p>None of these notes live up to the actual talks presented at Future of Web Design, however they should give a rough indication of what was said.  You can of course download the talks (for a fee) from the <a href="http://futureofwebdesign.com/london-2011/">Future of Web Design website</a>.</p>
-<p>Nb: This site was put together very quickly, there will be a lot of changes being made over the next couple of days as I get time!  If I'm lucky I may even get a chance to browser test it... might not have got round to that yet! Tweet at me (<a href="http://www.twitter.com/jamesdoc">@jamesdoc</a>) if there are major errors!</p>
+<p>Nb: This site was put together very quickly, there will be a lot of changes being made over the next couple of days as I get time!  If I'm lucky I may even get a chance to browser test it... might not have got round to that yet! Tweet at me (<a href="https://www.twitter.com/jamesdoc">@jamesdoc</a>) if there are major errors!</p>

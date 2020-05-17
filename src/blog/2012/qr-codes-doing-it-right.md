@@ -1,12 +1,13 @@
 ---
-title: QR Codes - Doing it Right...
+title: QR Codes - Doing it Right…
 type: article
 tags: tech
 date: 2012-02-20 18:30:53
 leadImage: /_assets/img/blog/imported/banners/qr-codes-doing-it-right.jpg
 ---
+
 <p>
- I initially drafted this post last month, but it quickly became a very long rant that I didn&#39;t want to read! So I shelved it for a bit and have come back to it today; I&#39;ve condensed my thoughts into a &#39;<i>how to use QR codes well</i>&#39; post. &nbsp;Below are a couple of solutions for what has irritated me about how I&#39;ve seen QR codes used...</p>
+ I initially drafted this post last month, but it quickly became a very long rant that I didn&#39;t want to read! So I shelved it for a bit and have come back to it today; I&#39;ve condensed my thoughts into a &#39;<i>how to use QR codes well</i>&#39; post. &nbsp;Below are a couple of solutions for what has irritated me about how I&#39;ve seen QR codes used…</p>
 <p>
  <b>Remember <i>my</i> memory; I can&#39;t remember a QR code.</b></p>
 <p>
@@ -14,7 +15,7 @@ leadImage: /_assets/img/blog/imported/banners/qr-codes-doing-it-right.jpg
 <p>
  <b>Remember <i>my</i> location; can I scan it?</b></p>
 <p>
- Mobile phone cameras have come a long way in the last 5 years, phones being released at the moment have 8 megapixel cameras, pretty fantastic zoom, etc&hellip; but they are still not as good as my eyes. So while I may be able to see your QR code, that doesn&#39;t mean I&#39;ll be able to scan it. Perhaps it has been placed too high on a billboard, perhaps it is too low to the ground, perhaps it has been placed at eye level but the code is too small because I am too far away&hellip; Wherever I am, the code has got to be scannable. Oh, and putting QR codes on the underground&hellip; it is just silly - of course I can scan it, but I don&#39;t have the network coverage to do anything with the web address you give me! This leads me nicely into the next point...</p>
+ Mobile phone cameras have come a long way in the last 5 years, phones being released at the moment have 8 megapixel cameras, pretty fantastic zoom, etc&hellip; but they are still not as good as my eyes. So while I may be able to see your QR code, that doesn&#39;t mean I&#39;ll be able to scan it. Perhaps it has been placed too high on a billboard, perhaps it is too low to the ground, perhaps it has been placed at eye level but the code is too small because I am too far away&hellip; Wherever I am, the code has got to be scannable. Oh, and putting QR codes on the underground&hellip; it is just silly - of course I can scan it, but I don&#39;t have the network coverage to do anything with the web address you give me! This leads me nicely into the next point…</p>
 <p>
  <b>Remember <i>my</i> context; the destination matters.</b></p>
 <p>

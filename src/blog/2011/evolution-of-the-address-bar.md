@@ -4,7 +4,7 @@ intro: While studying at the University of Lincoln one of their research project
 type: article
 tags: post
 date: 2011-04-18
-canonical: http://linkingyou.blogs.lincoln.ac.uk/2011/04/18/the-evolution-of-the-address-bar/
+canonical: https://linkingyou.blogs.lincoln.ac.uk/2011/04/18/the-evolution-of-the-address-bar/
 ---
 
 In the early browsers the address bar was simply a box where users typed the address of the webpage they needed to get to and then clicked a large ‘go’ button. As browsers developed so did the functionality of the address bar, one of the basic updates came with browsers remembering the viewing history of the user. When a user wanted to go back to a site they had visited in the past the browser began to recognise the URL as it was typed from the history and returned suggestions.

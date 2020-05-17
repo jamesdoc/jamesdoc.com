@@ -8,9 +8,10 @@ leadImage: /_assets/img/blog/2008/pleo.jpg
 
 For those who don't know [Pleo](http://www.pleoworld.com/) is an amazing animatronic little robot dinosaur that aside from being totally cute is a stunning piece of engineering. So much so that you can program the thing to do what you want with it, such as a [dances](https://www.youtube.com/watch?v=eJabysPLmps) or just generally messing about with [them](https://www.youtube.com/watch?v=POVFepuGoic).
 
-However some sad, sick, strange person decided to stick it in against a robot from robot wars... WHY WOULD YOU DO THIS TO AN INNOCENT PLEO? I advice that you watch this only if you have a strong nervous disposition:
+However some sad, sick, strange person decided to stick it in against a robot from robot wars… WHY WOULD YOU DO THIS TO AN INNOCENT PLEO? I advice that you watch this only if you have a strong nervous disposition:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/95MAyWE0ERk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embedWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/95MAyWE0ERk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
 I am still shocked.
 

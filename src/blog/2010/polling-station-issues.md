@@ -3,8 +3,8 @@ title: Polling Station Issues
 type: article
 tags: personal
 date: 2010-05-06 23:52:00
-leadImage: http://img532.imageshack.us/img532/5949/polling.jpg
 ---
+
 <p>I'm staying up until at least the Lincoln result comes in at 2:30, and maybe if I'm feeling&nbsp;particularly&nbsp;keen to see the Worthing result at 5:00. &nbsp;This gives me some time to kill! As such I just wanted to take some time to comment on the debate about people being turned away from polling stations tonight.</p>
 <p>For those who haven't been following, or just simply don't care; why are you reading this blog? But I'm going to tell you anyway. Basically a whole load of people turned up at various polling stations late and then when the station closed at 22:00 were refused entry. &nbsp;This caused uproar as people were being refused a vote in a significant election</p>
 <p>My response to this is much the same as Simon Mayo, who said on his Twitter earlier:</p>

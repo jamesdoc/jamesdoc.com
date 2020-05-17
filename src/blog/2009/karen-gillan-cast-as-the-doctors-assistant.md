@@ -4,4 +4,9 @@ type: article
 tags: film-tv
 date: 2009-05-29 17:03:00
 ---
-<div class="separator" style="clear:both;text-align:center;"><a href="http://img297.imageshack.us/img297/9255/karengillanwillplayth00.jpg"><img border="0" height="252" src="http://img297.imageshack.us/img297/9255/karengillanwillplayth00.jpg" width="420" /></a></div><br />News has hit the tubes today that Karen Gillan has been cast alongside Matt Smith in next years series of Doctor Who.  As with Freema Agyeman she was given the role having being cast in a smaller role earlier in the previous series in Fires Of Pompeii as a soothsayer.<br /><br />As with Matt Smith, she is relatively unknown having only had a couple of minor roles in TV before and leading up to the new series of Doctor Who, however it is a logical decision seeing as casting a well known actress for the role would probably of lessened the impact of Matt Smith as the Doctor.<br /><br />As of yet Gillan's character doesn't have a name or a back story yet, however no doubt that will be revealed overtime!<br /><br />A full image of Karen Gillan outside of the TARDIS can be grabbed here: <a href="http://yfrog.com/04gillanj">http://yfrog.com/04gillanj</a><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/31453821-6516675596542998114?l=www.jamesdoc.co.uk' alt='' /></div>
+
+News has hit the tubes today that Karen Gillan has been cast alongside Matt Smith in next years series of Doctor Who. As with Freema Agyeman she was given the role having being cast in a smaller role earlier in the previous series in Fires Of Pompeii as a soothsayer.
+
+As with Matt Smith, she is relatively unknown having only had a couple of minor roles in TV before and leading up to the new series of Doctor Who, however it is a logical decision seeing as casting a well known actress for the role would probably of lessened the impact of Matt Smith as the Doctor.
+
+As of yet Gillan's character doesn't have a name or a back story yet, however no doubt that will be revealed overtime!

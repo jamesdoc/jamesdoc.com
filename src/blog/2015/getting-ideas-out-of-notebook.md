@@ -4,8 +4,9 @@ intro: Guest post on The Media Net blog about working on implementing ideas, not
 type: article
 tags: post
 date: 2015-09-17
-canonical: http://themedianet.org/getting-ideas-out-of-the-notebook/
 ---
+
+_This post was originally written for [Christians in the Media](https://www.christiansinmedia.co.uk/) (Formerly the MediaNet). Their website has since gone. The original post is below._
 
 I love that bit at the beginning of projects when as a team we’re just throwing ideas around. There are post-it notes, sharpies, a big clear bit of wall and each member of the team is just putting their thoughts out there. The harder bit is taking those thoughts and ideas, condensing them down into a plan and then getting on and making that plan happen.
 
