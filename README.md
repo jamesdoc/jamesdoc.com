@@ -5,7 +5,6 @@ Simple static site via [Eleventy](https://www.11ty.io)
 ## What's in the box?
 
 - [Eleventy](https://www.11ty.io)
-- [Gulp](https://www.gulpjs.com)
 
 ## Getting going (dev)
 
