@@ -2,6 +2,7 @@ const axios = require("axios");
 const urlSlug = require('url-slug');
 const fs = require("fs");
 const { trello } = require("../config.js");
+const dayjs = require('dayjs');
 
 const trelloApiBase = `https://api.trello.com/1/boards/${trello.readingList.boardId}/`;
 const outputPath = `${__dirname}/../src/_data/readingList.json`;
@@ -58,6 +59,7 @@ const cardLookup = (lists, customFields) => {
           url: item.shortUrl,
           additional: additional,
           readDate: item.due,
+          epoch: dayjs(item.due).unix(),
           labels: item.labels,
           cover: item.cover,
           active: lists[item.idList] === 'On the go' ? true : false,
