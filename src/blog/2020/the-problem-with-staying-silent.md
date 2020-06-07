@@ -11,7 +11,7 @@ _"Silence is violence"._ These three words were written on one of the placards I
 
 All these phrases, all on the same theme; by staying silent on the topic is an acceptance of the way things are.
 
-It's easy to forget this. Or to not feel the truth of this. Is silence _really_ compliance? It's become relevant to me in a new way in the last six weeks.
+It's easy to forget this. Or to not feel the truth of this. Is silence _really_ compliance? It's become relevant to me in a new way in the last six weeks. What is being experienced by Black Communities is on a completely different level to my month and a half, but it has helped give me a new understanding, and level of empathy…
 
 [Last month I was due to marry](https://jamesdoc.com/blog/2020/not-tomorrow-but-soon/), co-vid has pushed our wedding date into limbo, and with that a whole load of other complications. Many bits of the UK are beginning to get moving again; schools are slowly reopening, businesses are adopting a lot of new social distancing measures to get back going, and MPs are gathering to vote on things. WIth this all these restrictions lifting, all the information about getting married has vanished from the UK government website, [originally the suggested date was 1st June](https://web.archive.org/web/20200520191622/https://www.gov.uk/government/publications/coronavirus-outbreak-faqs-what-you-can-and-cant-do/coronavirus-outbreak-faqs-what-you-can-and-cant-do), this has gone. There is no information, there is no transparency on what government is doing. While I hope that there are working groups being set up to handle this, the silence I hear from the government makes me think that they don't care about marriage; it's just another social gathering.
 
