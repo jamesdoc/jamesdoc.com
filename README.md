@@ -1,6 +1,8 @@
 # JamesDoc.com
 
-Simple static site via [Eleventy](https://www.11ty.io)
+Simple static site via [Eleventy](https://www.11ty.io), deploying to [Netlify](https://jamesdoc.com).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/44c5f763-2223-448e-bcd8-f137d8c778b8/deploy-status)](https://app.netlify.com/sites/jamesdoc/deploys)
 
 ## What's in the box?
 
