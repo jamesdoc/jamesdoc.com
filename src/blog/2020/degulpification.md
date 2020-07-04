@@ -8,7 +8,7 @@ intro: When I rebuilt this site on top of Eleventy Gulp was very firmly wedged i
 
 Back in 2018 when I migrated the site [from Codeigniter to Eleventy](/blog/2018/11ty/) [Gulp](https://gulpjs.com/) was very firmly in my toolbox. It's been a while since I started a new project with Gulp, tending to favour [Laravel Mix](https://laravel-mix.com/), however Mix doesn't feel right for Eleventy.
 
-About a month ago [Max Böck](https://mxb.dev/) shared his Eleventy starter kit call [Eleventastic](https://github.com/maxboeck/eleventastic), it were a whole host of clever things that I didn't know you could do… of note, the `*.11ty.js` template files ([docs](https://www.11ty.dev/docs/languages/javascript/)) which Max used to sort his CSS, JS and SVG.
+About a month ago [Max Böck](https://mxb.dev/) shared his Eleventy starter kit [Eleventastic](https://github.com/maxboeck/eleventastic), it contained a whole host of clever things that I didn't know you could do… of note, the `*.11ty.js` template files ([docs](https://www.11ty.dev/docs/languages/javascript/)) which Max used to sort his CSS, JS and SVG.
 
 Having dug into his code, pulled some across directly (the JS), modified others (CSS and SVG), and used to write my own ([responsive images](https://github.com/jamesdoc/jamesdoc.com/commit/3b03ce38e596d324ea9b78009d1e72081ee45e9e)), the build steps of this site are now 100% degulpified.
 
