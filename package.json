@@ -4,7 +4,7 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy --incremental --serve",
+    "dev": "ELEVENTY_ENV=development eleventy --serve",
     "build": "node utils/books.js && ELEVENTY_ENV=production eleventy"
   },
   "author": "James Doc",

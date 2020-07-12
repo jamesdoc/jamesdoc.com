@@ -3,6 +3,7 @@ const util = require('util');
 const glob = require('glob');
 const sharp = require('sharp');
 const mkdirp = require('mkdirp');
+const { options } = require('cssesc');
 
 const outputPath = 'dist/_assets/img/';
 
@@ -16,15 +17,19 @@ const resizeConf = {
       rename: { suffix: '-550' },
     }
   ],
-  // // Not implemented yet…
-  // options: {
-  //   quality: 80,
-  //   progressive: true,
-  //   withMetadata: false,
+  jpegOptions: {
+    quality: 80,
+    progressive: true,
+    withMetadata: false,
+    force: false
   //   withoutEnlargement: true,
   //   errorOnUnusedImage: false,
   //   errorOnEnlargement: false
-  // }
+  },
+  pngOptions: {
+    compressionLevel: 8,
+    force: false
+  }
 };
 
 module.exports = class {
@@ -59,8 +64,15 @@ module.exports = class {
       resizeConf.sizes.forEach(function (size) {
         const newPath = path.join(outputPath, dir, base + size.rename.suffix + ext);
         const image = sharp(imgFolder.file + img);
-        image.resize(size.width);
-        image.toFile(newPath);
+        image
+          .jpeg( resizeConf.jpegOptions )
+          .png( resizeConf.pngOptions )
+          .resize({
+            width: size.width,
+            withoutEnlargement: true,
+            kernel: 'lanczos2'
+          })
+          .toFile(newPath);
       });
 
       processedImages.push(img);
