@@ -8,17 +8,18 @@ $vandaTeal: #0089a1;
 $lincolnGreen: #afb302;
 $sparksBlack: #000000;
 
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
 
-html, body {
-  font-family: 'Space Mono', monospace;
+html,
+body {
+  font-family: "Space Mono", monospace;
   font-size: 100%;
   margin: 0;
   padding: 0;
 }
 
 .avatar {
-  background: url('/_assets/img/james.png') no-repeat bottom right;
+  background: url("/_assets/img/james.png") no-repeat bottom right;
   background-size: 100%;
   bottom: 0;
   height: 0;
@@ -35,7 +36,7 @@ body {
 
 section {
   border-radius: 4px;
-  box-shadow: 0 0 40px 10px rgba(206,206,206,0.50);
+  box-shadow: 0 0 40px 10px rgba(206, 206, 206, 0.5);
   margin: 20px;
   min-height: calc(100vh - 120px);
   padding: 40px;
@@ -55,12 +56,12 @@ h1 {
   padding: 0;
 
   &:before {
-    content: '/';
+    content: "/";
   }
 
   &:after {
     color: $themeGreen;
-    content: '_';
+    content: "_";
   }
 
   @media (min-width: 485px) {
@@ -68,7 +69,9 @@ h1 {
   }
 }
 
-li, p, code {
+li,
+p,
+code {
   font-size: 1em;
   line-height: 1.45em;
   margin: 0 0 1em;
@@ -96,7 +99,7 @@ a {
   color: black;
   outline: none;
   text-decoration: none;
-  transition: color .25s, border .25s;
+  transition: color 0.25s, border 0.25s;
 
   &:hover {
     border-bottom-color: black;
@@ -117,7 +120,7 @@ blockquote {
   padding: 10px 0;
 
   a:before {
-    content: '/';
+    content: "/";
   }
 }
 
@@ -141,11 +144,13 @@ hr {
   margin-bottom: 1em;
 }
 
-@import 'homepage';
-@import 'thoughts';
-@import 'listing';
-@import 'btn';
-@import 'shopLinks';
-@import 'boxedMessage';
-@import 'embedWrapper';
-@import 'nowList';
+@import "homepage";
+@import "thoughts";
+@import "listing";
+@import "btn";
+@import "shopLinks";
+@import "boxedMessage";
+@import "embedWrapper";
+@import "nowList";
+
+@import "prism";

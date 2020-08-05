@@ -9,7 +9,9 @@ canonical: https://onesheep.org/insights/craft-cms-code-snippets-and-prismjs
 
 In the coming weeks and months ahead in this Insights section we're going to be posting a few tips and tricks that we've discovered as we have been building sites for our partners. One of the key things we've needed on this site to make that possible is the ability to display code snippets in these blog posts…
 
-<pre class="language-html">&lt;h1&gt;Like this HTML block&lt;/h1&gt;</pre>
+```html
+<h1>Like this HTML block</h1>
+```
 
 This syntax highlighting is handled by PrismJS, which touts itself as:
 
@@ -27,29 +29,35 @@ At time of writing we're using:
 
 There are a couple of ways of doing this (such as injecting a `<script>` tag) but it is [packaged on NPM](https://www.npmjs.com/package/prismjs), and there is a [handy babel plugin](https://github.com/mAAdhaTTah/babel-plugin-prismjs) to do some set up for us:
 
-<pre class="language-bash">npm install prismjs babel-plugin-prismjs</pre>
+```bash
+npm install prismjs babel-plugin-prismjs
+```
 
 One of the benefits of Prism, is the [additional plugins that it comes with](https://prismjs.com/#plugins), installing from NPM will pull them all into your node_module folder, but they won't get pulled in straight away; you need to add them to your .babelrc file (if you don't have one and are using Laravel Mix, just create one, it'll know what to do with it):
 
-<pre class="language-json">{
- "plugins": [
-  [
-   "prismjs",
-   {
-    "languages": ["javascript", "css", "markup", "php"],
-    "plugins": ["show-language"],
-    "css": false
-   }
+```json
+{
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "css", "markup", "php"],
+        "plugins": ["show-language"],
+        "css": false
+      }
+    ]
   ]
- ]
-}</pre>
+}
+```
 
 We're adding Prism JS, telling it what languages to look out for, pulling in a plugin, and telling it not to pull in the CSS (that's up to you, we're going to handle the CSS differently later)…
 
 Jumping over to your main Javascript file you can import Prism:
 
-<pre class="language-javascript">import Prism from "prismjs";
-Prism.highlightAll();</pre>
+```javascript
+import Prism from "prismjs";
+Prism.highlightAll();
+```
 
 ## Adding in the styles
 
@@ -57,33 +65,42 @@ Prism comes with a number of different themes you can use, and modify to match y
 
 ## In Redactor…
 
-Over in Craft CMS and Redactor you need to make sure that the code that you want to be highlighted is wrapped as Prism wants it… In a <code class="language-">&lt;pre&gt;</code> and a <code class="language-">&lt;code&gt;</code> tag. Eg:
+Over in Craft CMS and Redactor you need to make sure that the code that you want to be highlighted is wrapped as Prism wants it… In a `<pre><code class="language-"></code></pre>` or just a `<code class="language-">…</code>` tag. Eg:
 
-<pre class="language-html">&lt;pre&gt;&lt;code class="language-css"&gt;p { color: red }&lt;/code&gt;&lt;/pre&gt;</pre>
+```html
+<pre>
+  <code class="language-css">…</code>
+</pre>
+```
 
-If you haven't enable the HTML view in Redactor json config you're going to want to do that so you can tell Prism which language to look at. In Craft, the Redactor config file(s) are found in <code class="language-">config/redactor/{settingsFile}.json</code>.
+If you haven't enable the HTML view in Redactor json config you're going to want to do that so you can tell Prism which language to look at. In Craft, the Redactor config file(s) are found in `<code class="language-">config/redactor/{settingsFile}.json</code>`.
 
 And that's it. Write your blog post, add your code, and hit publish.
 
 ## The gotcha (whitespace)
 
-You may find that Redactor / Craft CMS rips out <code>&amp;nbsp;</code> and replaces them with normal spaces - that means that your code formats really badly! In Craft admin, in the field you have put Redactor on, under Advanced untick 'Replace non-breaking spaces with regular spaces'.
+You may find that Redactor / Craft CMS rips out `&nbsp;` and replaces them with normal spaces - that means that your code formats really badly! In Craft admin, in the field you have put Redactor on, under Advanced untick 'Replace non-breaking spaces with regular spaces'.
 
 ## There's more you can do…
 
-Inspired by [Mike Street's blog post about his integration of Prism and Craft](https://www.mikestreety.co.uk/blog/making-craft-cms-work-with-prism-js-using-pre-and-code-blocks) our Javascript has the following lines to mean that need to wrap code with a <code class="language-">&lt;pre class="language-javascript"&gt;...&lt;/pre&gt;</code>:
+Inspired by [Mike Street's blog post about his integration of Prism and Craft](https://www.mikestreety.co.uk/blog/making-craft-cms-work-with-prism-js-using-pre-and-code-blocks) our Javascript has the following lines to mean that need to wrap code with a `<pre class="language-javascript">…</pre>`:
 
-<pre class="language-javascript">var elements = document.querySelectorAll("pre");
+```js
+var elements = document.querySelectorAll("pre");
 if (elements !== null) {
- Array.prototype.forEach.call(elements, function(el, i) {
-  el.innerHTML = '&lt;code class="' + el.className + '"&gt;' + el.innerHTML + "&lt;/code&gt;";});
-}</pre>
+  Array.prototype.forEach.call(elements, function (el, i) {
+    el.innerHTML =
+      '<code class="' + el.className + '">' + el.innerHTML + "</code>";
+  });
+}
+```
 
 Also, to simplify the process further, we're running the [Redactor Custom Styles plugin](https://github.com/carlcs/craft-redactorcustomstyles). This allows additional buttons and dropdowns to be added to Redactor that create elements with classes added automagically.
 
 Our `article.json` Redactor config has the following (and a little bit more) in:
 
-<pre class="language-json">{
+```json
+{
  "buttons": [...],
  "plugins": ["customstyles"],
  "customStyles": {
@@ -99,7 +116,8 @@ Our `article.json` Redactor config has the following (and a little bit more) in:
    }
   }
  }
-}</pre>
+}
+```
 
 All we have to do now is remember to go back and finish off that class to indicate the language for Prism.
 

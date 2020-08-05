@@ -1,16 +1,17 @@
-const { buildSrc, buildDest } = require('./paths');
+const { buildSrc, buildDest } = require("./paths");
 const markdownIt = require("markdown-it");
-const markdownItResponsive = require('@gerhobbelt/markdown-it-responsive');
+const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const filters = require('./utils/filters.js');
-const collections = require('./utils/collections.js');
-const shortcodes = require('./utils/shortcodes.js');
+const filters = require("./utils/filters.js");
+const collections = require("./utils/collections.js");
+const shortcodes = require("./utils/shortcodes.js");
 
 module.exports = function (eleventyConfig) {
-
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
@@ -28,10 +29,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // Watch assets folder for changes
-  eleventyConfig.addWatchTarget('./src/_assets');
+  eleventyConfig.addWatchTarget("./src/_assets");
 
   // Copy these assets straight across
-  eleventyConfig.addPassthroughCopy({'./src/_assets/svg': '_assets/svg'});
+  eleventyConfig.addPassthroughCopy({ "./src/_assets/svg": "_assets/svg" });
 
   // Alias these layouts
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
@@ -47,26 +48,32 @@ module.exports = function (eleventyConfig) {
 
   const rwdOptions = {
     responsive: {
-      'srcset': {
-        '*': [ {
-          width: 320,
-          rename: {
-            suffix: '-320'
-          }
-        }, {
-          width: 550,
-          rename: {
-            suffix: '-550'
-          }
-        } ]
+      srcset: {
+        "*": [
+          {
+            width: 320,
+            rename: {
+              suffix: "-320",
+            },
+          },
+          {
+            width: 550,
+            rename: {
+              suffix: "-550",
+            },
+          },
+        ],
       },
-      'sizes': {
-        '*': '(max-width: 550px) calc(100vw - 120px), 550px'
-      }
-    }
+      sizes: {
+        "*": "(max-width: 550px) calc(100vw - 120px), 550px",
+      },
+    },
   };
 
-  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions));
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt(options).use(markdownItResponsive, rwdOptions)
+  );
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -81,7 +88,7 @@ module.exports = function (eleventyConfig) {
       input: `${buildSrc}`,
       output: buildDest,
       data: "_data",
-      includes: "_includes"
+      includes: "_includes",
     },
   };
 };

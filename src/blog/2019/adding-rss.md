@@ -4,6 +4,7 @@ date: 2019-10-24
 intro: It turns out that adding RSS into 11ty is pretty simple…
 type: article
 ---
+
 When I switched this site [across to Eleventy](/blog/2018/11ty/) I left myself with a to-do list which I've slowly been working through- one of them was to re-implement the [RSS feed](https://en.wikipedia.org/wiki/RSS). Good news, I did that this evening. Turns out it was really simple 🎉
 
 The steps are trivial:
@@ -14,13 +15,18 @@ The other two things that are useful to do:
 
 **One**: Add the RSS feed to the `head` with a `link` tag:
 
-```HTML
-<link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/blog/feed.xml" />
+```html
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Blog RSS"
+  href="/blog/feed.xml"
+/>
 ```
 
 **Two**: Exclude files that shouldn't be there from collections (like the [blog listing page](https://github.com/jamesdoc/jamesdoc.com/commit/01167cab36485cb83af84a24719e58d1fdf390af)).
 
-```NJK
+```json
 eleventyExcludeFromCollections: true
 ```
 
