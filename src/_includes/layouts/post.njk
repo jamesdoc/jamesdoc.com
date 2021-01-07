@@ -31,7 +31,7 @@ layout: layouts/base.njk
 {% if leadImage %}
 <img
 	srcset="{{ leadImage | imgSuffix('320') }} 320w, {{ leadImage | imgSuffix('550') }} 550w"
-	sizes= "(max-width: 550px) calc(100vw - 120px), 550px"
+	sizes= "(min-width: 550px) 550px, calc(100vw - 120px)"
 	src="{{ leadImage }}"
   class="thought-lead-image"
 	alt="">

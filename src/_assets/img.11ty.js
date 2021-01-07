@@ -18,7 +18,7 @@ const resizeConf = {
     }
   ],
   jpegOptions: {
-    quality: 80,
+    quality: 90,
     progressive: true,
     withMetadata: false,
     force: false

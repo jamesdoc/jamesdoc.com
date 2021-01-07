@@ -3,6 +3,8 @@
 }
 
 .thought-content {
+  margin-top: 1rem;
+
   img {
     border-bottom: 5px solid $themeGreen;
     max-width: 550px;
@@ -22,7 +24,7 @@
 
 .thought-lead-image {
   border-bottom: 5px solid $themeGreen;
-  margin-bottom: 1em;
+  margin: 1rem 0;
   max-width: 550px;
   width: 100%;
 }
