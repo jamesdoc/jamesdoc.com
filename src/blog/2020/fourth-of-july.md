@@ -4,7 +4,6 @@ date: 2020-06-26
 intro: Trying to get married during covid-19 hasn't been the easier process, but now we're doing all the wedmin with 8 days to go…
 type: article
 tags: post
-canonical: https://secondofmay.co.uk/updates/fourth-of-july/
 ---
 
 Our last message to you was to let you know we were in a time of waiting. Many will know how difficult the last couple of months have been for us, being forced to postpone making promises to one another and starting our married life.

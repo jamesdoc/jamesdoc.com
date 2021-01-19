@@ -4,7 +4,6 @@ intro: The Second of May was due to have been our wedding day. As a result of wh
 type: article
 tags: post
 date: 2020-05-01
-canonical: https://secondofmay.co.uk/updates/not-tomorrow-but-soon/
 ---
 
 The Second of May was due to have been our wedding day. As a result of what's happening globally, our plans have had to be postponed; church buildings are closed and paperwork isn't being issued. The implication is that it is not possible to get married in the morning. Even though we desperately want to make these commitments to each other, legally we are restricted.
