@@ -8,14 +8,36 @@ $vandaTeal: #0089a1;
 $lincolnGreen: #afb302;
 $sparksBlack: #000000;
 
-@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --background: #ffffff;
+  --text: #1e2b16;
+  --theme: #a3de87;
+  --glow: rgba(200,200,200,0.50);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --text: #e1e1e1;
+    --glow: rgba(93, 93, 93, 0.5);
+  }
+
+  picture,
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+}
 
 html,
 body {
+  background-color: var(--background);
   font-family: "Space Mono", monospace;
   font-size: 100%;
   margin: 0;
   padding: 0;
+  transition: background-color 0.5s;
 }
 
 .avatar {
@@ -31,12 +53,12 @@ body {
 }
 
 body {
-  color: #1e2b16;
+  color: var(--text);
 }
 
 section {
   border-radius: 4px;
-  box-shadow: 0 0 40px 10px rgba(206, 206, 206, 0.5);
+  box-shadow: 0 0 40px 10px var(--glow);
   margin: 20px;
   min-height: calc(100vh - 120px);
   padding: 40px;
@@ -60,7 +82,7 @@ h1 {
   }
 
   &:after {
-    color: $themeGreen;
+    color: var(--theme);
     content: "_";
   }
 
@@ -95,8 +117,8 @@ code {
 }
 
 a {
-  border-bottom: 1px solid $themeGreen;
-  color: black;
+  border-bottom: 1px solid var(--theme);
+  color: var(--text);
   outline: none;
   text-decoration: none;
   transition: color 0.25s, border 0.25s;
@@ -107,10 +129,11 @@ a {
 }
 
 blockquote {
-  border-left: 5px solid $themeGreen;
+  border-left: 5px solid var(--theme);
   font-style: italic;
   margin: 1em 0;
   padding-left: 1em;
+
   @media (min-width: 630px) {
     max-width: 575px;
   }
@@ -139,8 +162,8 @@ pre {
 }
 
 hr {
-  border: 0 solid $themeGreen;
-  border-top: 5px solid $themeGreen;
+  border: 0 solid var(--theme);
+  border-top: 5px solid var(--theme);
   margin-bottom: 1em;
 }
 

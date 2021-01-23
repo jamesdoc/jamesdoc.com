@@ -35,7 +35,7 @@
 
 .things li a {
   border-radius: 2px;
-  box-shadow: 0 0 40px 10px rgba(200,200,200,0.50);
+  box-shadow: 0 0 40px 10px var(--glow);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 75%;
@@ -46,6 +46,12 @@
   text-indent: -99999px;
   transition: background-size .5s ease-out;
   width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .things li a {
+    filter: brightness(.8) contrast(1.2);
+  }
 }
 
 .things li a[href^="https://kingdom"] {
@@ -160,7 +166,7 @@ footer {
 
 .social_links a {
   border-bottom: 1px solid white;
-  color: #1e2b16;
+  color: var(--text);
   text-decoration: none;
   transition: color .2s, border-color .2s;
 }
