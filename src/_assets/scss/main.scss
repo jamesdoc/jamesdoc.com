@@ -1,27 +1,27 @@
-$themeGreen: #a3de87;
-$kingdomcodeOrange: #ee5c53;
-$globeOrange: #d06348;
-$livewiresBlue: #2ba8d8;
-$onesheepPink: #ff2274;
-$ifesBlackcurrent: #1c1c1c;
-$vandaTeal: #0089a1;
-$lincolnGreen: #afb302;
-$sparksBlack: #000000;
+$themeGreen: hsl(101 ,57%, 70%);
+$kingdomcodeOrange: hsl(3, 82%, 63%);
+$globeOrange: hsl(12, 59%, 55%);
+$livewiresBlue: hsl(197, 69%, 51%);
+$onesheepPink: hsl(338, 100%, 57%);
+$ifesBlackcurrent: hsl(248, 43%, 21%);
+$vandaTeal: hsl(189, 100%, 32%);
+$lincolnGreen: hsl(61, 98%, 35%);
+$sparksBlack: hsl(0, 0%, 0%);
 
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 :root {
-  --background: #ffffff;
-  --text: #1e2b16;
-  --theme: #a3de87;
-  --glow: rgba(200,200,200,0.50);
+  --background: hsl(0, 0%, 100%);
+  --text: hsl(97, 32%, 8%);
+  --theme: hsl(101, 57%, 70%);
+  --glow: hsla(0, 0%, 78%,  0.50);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a1a1a;
-    --text: #e1e1e1;
-    --glow: rgba(93, 93, 93, 0.5);
+    --background: hsl(0, 0%, 10%);
+    --text: hsl(0, 0%, 88%);
+    --glow: hsla(0, 0%, 36%, 0.5);
   }
 
   picture,
