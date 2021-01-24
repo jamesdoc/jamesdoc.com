@@ -26,3 +26,39 @@
     content: '⇢';
   }
 }
+
+.yearList {
+  h2 {
+    display: inline-block;
+
+    &:before {
+      content: "/";
+    }
+
+    &:after {
+      color: var(--theme);
+      content: "_";
+    }
+  }
+
+  ol {
+    list-style: disc;
+  }
+
+  h3 {
+    border-bottom: 1px solid var(--theme);
+    margin-bottom: 0;
+    transition: color 0.25s, border 0.25s;
+  }
+
+  a {
+    border-bottom: 0;
+    display: block;
+  }
+
+  a:hover h3 {
+    border-bottom-color: black;
+  }
+
+
+}

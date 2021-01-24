@@ -1,12 +1,19 @@
 ---
-title: Thoughts
-layout: listing
-eleventyExcludeFromCollections: true
+  title: Thoughts
+  layout: listing
+  eleventyExcludeFromCollections: true
+  permalink: "blog/{% if pagination.pageNumber > 0 %}{{ posts }}/{% endif %}index.html"
+  pagination:
+    data: collections.postsByYear
+    size: 1
+    alias: posts
+    reverse: true
+
 ---
-<h1>Thoughts</h1>
+<h1>Thoughts from {{ posts }}</h1>
 
 <ul class="listing">
-{% for post in collections.posts | reverse %}
+{% for post in collections.postsByYear[posts] | reverse %}
   <li>
     {% if post.data.canonical %}
     <a href="{{ post.data.canonical }}" target="_blank" rel="noopener" class="listing__remote">
@@ -14,9 +21,25 @@ eleventyExcludeFromCollections: true
     <a href="{{ post.url }}" class="listing__local">
     {% endif %}
       <date>{{ post.data.date | readableDate }}</date>
+      {{ post.data.year }}
       <h2>{{ post.data.title }}</h2>
       <p>{{ post.data.intro }}</p>
     </a>
   </li>
 {% endfor %}
 </ul>
+
+<div class="yearList">
+  <h2>Year archive</h2>
+
+  <ol>
+  {%- for pageEntry in pagination.pages %}
+      <li>
+        <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>
+          <h3>{{ pageEntry }}</h3>
+          {{ collections.postsByYear[pageEntry] |length }} thoughts
+        </a>
+      </li>
+  {%- endfor %}
+  </ol>
+</div>
