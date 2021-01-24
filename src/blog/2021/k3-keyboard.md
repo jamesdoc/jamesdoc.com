@@ -5,6 +5,7 @@ author: James Doc
 date: 2021-01-12
 intro: Over the last 12 months, I've been working through my working-from-home equipment making a few upgrades. Most recently, I switched to the Keychron K3 keyboard…
 leadImage: /_assets/img/blog/2021/k3-keyboard.jpg
+themeColor: hsl(7, 93%, 65%)
 ---
 
 While there are many good things about owning a MacBook, the keyboards in the 2017 model are not one of them! Low travel, sticky keys, falling off keys… the keyboard is just not the dream. While later models fixed these issues, I'm stuck with the 2017 model…

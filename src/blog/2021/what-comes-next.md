@@ -5,6 +5,7 @@ author: James Doc
 date: 2021-01-07
 intro: Books about leadership have a bad tendency to be dense; dry and hard work to read, I've tended to stay away from this section of the library. So, when your friends write a book, post it to you… then tell you it's a leadership book you approach with a little bit of trepidation.
 leadImage: /_assets/img/blog/2021/what-comes-next.jpg
+themeColor: hsl(101, 55% ,46%)
 ---
 
 Books about leadership have a bad tendency to be dense; dry and hard work to read, and that's before you get to the unobtainable objectives such as like read a book before you've lifted your head from the pillow in the morning. Maybe I've been reading the wrong books… but I've tended to stay away from this section of the library.
