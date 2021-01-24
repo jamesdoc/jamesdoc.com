@@ -1,5 +1,6 @@
 const { buildSrc, buildDest } = require("./paths");
 const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
 const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -70,9 +71,34 @@ module.exports = function (eleventyConfig) {
     },
   };
 
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  })
+    // .use(markdownItAnchor, {
+    //   permalink: true,
+    //   permalinkClass: "direct-link",
+    //   permalinkSymbol: "#",
+    // })
+    .use(markdownItFootnote)
+    .use(markdownItResponsive, rwdOptions);
+
+  markdownLibrary.renderer.rules.footnote_block_open = () => {
+    return '<div class="footnotes">\n' +
+      '<h4>Footnotes</h4>\n' +
+      '<ol class="footnotes-list">\n'
+  }
+
+  markdownLibrary.renderer.rules.footnote_block_close = () => {
+    return '</ol>\n' +
+    '</div>\n'
+  }
+
   eleventyConfig.setLibrary(
     "md",
-    markdownIt(options).use(markdownItResponsive, rwdOptions)
+    markdownLibrary
   );
 
   eleventyConfig.setDataDeepMerge(true);

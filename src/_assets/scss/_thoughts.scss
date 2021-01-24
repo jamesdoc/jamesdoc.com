@@ -6,13 +6,18 @@
   margin-top: 1rem;
 
   img {
-    border-bottom: 5px solid $themeGreen;
+    border-bottom: 5px solid var(--theme);
     max-width: 550px;
     width: 100%;
   }
 
   li {
     line-height: inherit;
+  }
+
+  .footnote-ref {
+    vertical-align: super;
+    font-size: 0.5em;
   }
 }
 
@@ -23,8 +28,27 @@
 }
 
 .thought-lead-image {
-  border-bottom: 5px solid $themeGreen;
+  border-bottom: 5px solid var(--theme);
   margin: 1rem 0;
   max-width: 550px;
   width: 100%;
+}
+
+.thought-content .footnotes {
+  h4 {
+    display: inline-block;
+
+    &:before {
+      content: "/";
+    }
+
+    &:after {
+      color: var(--theme);
+      content: "_";
+    }
+  }
+
+  li {
+    font-size: 0.825em;
+  }
 }
