@@ -28,3 +28,5 @@ Simple static site via [Eleventy](https://www.11ty.io), deploying to [Netlify](h
 - [Responsive images in 11ty](https://jamesdoc.com/blog/2018/rwd-img-11ty/)
 - [RSS in 11ty](https://jamesdoc.com/blog/2019/adding-rss/)
 - [Degulpification of Eleventy](https://jamesdoc.com/blog/2020/degulpification/)
+- [Putting Netlify CMS behind 11ty](https://jamesdoc.com/blog/2021/netlify-cms/)
+- [Grouping collections by year](https://jamesdoc.com/blog/2021/11ty-posts-by-year/)
