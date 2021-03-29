@@ -71,6 +71,12 @@ You'll find two `.exe` files there, one called `launcher.exe` and the other call
 - Delete `Launcher.exe`
 - Rename `AoK HD.exe` to `Launcher.exe`
 
-## Step Seven - Profit?
+## Maybe? Step Seven - Solve the Texture Problem.
+
+[Luis Reid noted that there may be texture problems](https://twitter.com/luisrgtel/status/1376240158400462855), while I didn't have this issue, he did, and solved it by:
+
+> In the Launcher.exe directory you will find `D3D9_DLLBACKUP` directory. Copy from that directory the DLL -> `d3dx9_43.dll` to the directory where `Launcher.exe` is. This solves the texture problem. [Ref](https://twitter.com/luisrgtel/status/1376242073003819012).
+
+## Step Eight - Profit?
 
 That was enough for me to be able to get AoE2 up and running. Your milage may vary. As I said, this pathway was modified from [this gist](https://gist.github.com/contra/554f541f7fa93c12499e0829439860eb), there are further helpful comments there which might help if you're on a different set up.
