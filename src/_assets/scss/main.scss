@@ -1,4 +1,4 @@
-$themeGreen: hsl(101 ,57%, 70%);
+$themeGreen: hsl(101, 57%, 70%);
 $kingdomcodeOrange: hsl(3, 82%, 63%);
 $globeOrange: hsl(12, 59%, 55%);
 $livewiresBlue: hsl(197, 69%, 51%);
@@ -14,7 +14,7 @@ $sparksBlack: hsl(0, 0%, 0%);
   --background: hsl(0, 0%, 100%);
   --text: hsl(97, 32%, 8%);
   --theme: hsl(101, 57%, 70%);
-  --glow: hsla(0, 0%, 78%,  0.50);
+  --glow: hsla(0, 0%, 78%, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +26,7 @@ $sparksBlack: hsl(0, 0%, 0%);
 
   picture,
   img {
-    filter: brightness(.8) contrast(1.2);
+    filter: brightness(0.8) contrast(1.2);
   }
 }
 
@@ -114,6 +114,12 @@ code {
 code {
   color: darken($themeGreen, 40%);
   font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: $themeGreen;
+  }
 }
 
 a {
