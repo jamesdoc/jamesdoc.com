@@ -44,94 +44,122 @@
   height: 0;
   padding-bottom: 100%;
   text-indent: -99999px;
-  transition: background-size .5s ease-out;
+  transition: background-size 0.5s ease-out;
   width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
   .things li a {
-    filter: brightness(.8) contrast(1.2);
+    filter: brightness(0.8) contrast(1.2);
   }
 }
 
-.things li a[href^="https://kingdom"] {
-  background-color: $kingdomcodeOrange;
-  background-image: url('/_assets/svg/kingdomcode.svg');
+.things li a[href^="https://vixen"]
+{
+  background-color: $vixenOrange;
+  background-image: url("/_assets/svg/vixen.svg");
   background-size: 50%;
 }
 
-.things li a[href^="https://kingdom"]:hover {
+.things li a[href^="https://vixen"]:hover
+{
+  background-size: 50%;
+}
+
+.things li a[href^="https://kingdom"]
+{
+  background-color: $kingdomcodeOrange;
+  background-image: url("/_assets/svg/kingdomcode.svg");
+  background-size: 50%;
+}
+
+.things li a[href^="https://kingdom"]:hover
+{
   background-size: 25%;
 }
 
-.things li a[href^="https://onesheep"] {
+.things li a[href^="https://onesheep"]
+{
   background-color: $onesheepPink;
-  background-image: url('/_assets/svg/onesheep.svg');
+  background-image: url("/_assets/svg/onesheep.svg");
   background-size: 100%;
 }
 
-.things li a[href^="https://onesheep"]:hover {
+.things li a[href^="https://onesheep"]:hover
+{
   background-size: 50%;
 }
 
-.things li a[href^="https://www.globe"] {
+.things li a[href^="https://www.globe"]
+{
   background-color: $globeOrange;
-  background-image: url('/_assets/svg/globe.svg');
-  transition: all .2s ease-out;
+  background-image: url("/_assets/svg/globe.svg");
+  transition: all 0.2s ease-out;
 }
 
-.things li a[href^="https://www.globe"]:hover {
+.things li a[href^="https://www.globe"]:hover
+{
   border-radius: 50%;
   transform: scale(1.3);
 }
 
-.things li a[href^="https://live"] {
+.things li a[href^="https://live"]
+{
   background-color: $livewiresBlue;
-  background-image: url('/_assets/svg/livewires.svg');
+  background-image: url("/_assets/svg/livewires.svg");
   background-size: 40%;
 }
 
-.things li a[href^="https://live"]:hover {
+.things li a[href^="https://live"]:hover
+{
   background-size: 25%;
 }
 
-.things li a[href^="https://www.lincoln"] {
+.things li a[href^="https://www.lincoln"]
+{
   background-color: $lincolnGreen;
-  background-image: url('/_assets/svg/university-of-lincoln.svg');
+  background-image: url("/_assets/svg/university-of-lincoln.svg");
   background-size: 50%;
 }
 
-.things li a[href^="https://www.lincoln"]:hover {
+.things li a[href^="https://www.lincoln"]:hover
+{
   background-size: 30%;
 }
 
-.things li a[href^="https://ifes"] {
+.things li a[href^="https://ifes"]
+{
   background-color: $ifesBlackcurrent;
-  background-image: url('/_assets/svg/ifes.svg');
+  background-image: url("/_assets/svg/ifes.svg");
   background-size: 40%;
 }
 
-.things li a[href^="https://ifes"]:hover {
+.things li a[href^="https://ifes"]:hover
+{
   background-size: 25%;
 }
 
-.things li a[href^="https://vam"] {
+.things li a[href^="https://vam"]
+{
   background-color: $vandaTeal;
-  background-image: url('/_assets/svg/v-and-a.svg');
+  background-image: url("/_assets/svg/v-and-a.svg");
   background-size: 75%;
 }
 
-.things li a[href^="https://vam"]:hover {
+.things li a[href^="https://vam"]:hover
+{
   background-size: 50%;
 }
 
-.things li a[href^="https://www.sparks"] {
+.things li a[href^="https://www.sparks"]
+{
   background-color: $sparksBlack;
-  background-image: url('/_assets/svg/sparks.svg');
+  background-image: url("/_assets/svg/sparks.svg");
   background-size: 120%;
 }
 
-.things li a[href^="https://www.sparks"]:hover {
+.things li a[href^="https://www.sparks"]:hover
+{
   background-size: 100%;
 }
 
@@ -161,14 +189,14 @@ footer {
 }
 
 .social_links li:after {
-  content: '.';
+  content: ".";
 }
 
 .social_links a {
   border-bottom: 1px solid white;
   color: var(--text);
   text-decoration: none;
-  transition: color .2s, border-color .2s;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .social_links a:hover {
@@ -185,22 +213,26 @@ footer {
   border-color: #a3de87;
 }
 
-.social_links a[href^="https://twitter"]:hover {
+.social_links a[href^="https://twitter"]:hover
+{
   color: #1da1f1;
   border-color: #1da1f1;
 }
 
-.social_links a[href^="https://instagram"]:hover {
+.social_links a[href^="https://instagram"]:hover
+{
   border-color: #9e35c3;
   color: #9e35c3;
 }
 
-.social_links a[href^="https://last"]:hover {
+.social_links a[href^="https://last"]:hover
+{
   border-color: #d21308;
   color: #d21308;
 }
 
-.social_links a[href^="https://github"]:hover {
+.social_links a[href^="https://github"]:hover
+{
   border-color: #4078c0;
   color: #4078c0;
 }
