@@ -1,4 +1,4 @@
-const dayjs = require('dayjs');
+const dayjs = require("dayjs");
 
 module.exports = {
   siteData: {
@@ -7,35 +7,35 @@ module.exports = {
   },
   now: {
     location: {
-      name: 'London',
-      url: 'https://en.wikipedia.org/wiki/London'
+      name: "London",
+      url: "https://en.wikipedia.org/wiki/London",
     },
     employer: {
-      name: 'OneSheep',
-      url: 'https://www.onesheep.org'
+      name: "Vixen Labs",
+      url: "https://vixenlabs.co",
     },
     toolbox: [
       {
-        name: 'Eleventy',
-        url: 'https://11ty.dev',
+        name: "Eleventy",
+        url: "https://11ty.dev",
       },
       {
-        name: 'Laravel',
-        url: 'https://laravel.com',
+        name: "Laravel",
+        url: "https://laravel.com",
       },
       {
-        name: 'Mix',
-        url: 'https://laravel-mix.com',
+        name: "Mix",
+        url: "https://laravel-mix.com",
       },
       {
-        name: 'Rails',
-        url: 'https://rubyonrails.org',
-      }
-    ]
+        name: "Rails",
+        url: "https://rubyonrails.org",
+      },
+    ],
   },
   trello: {
     readingList: {
-      boardId: 'HQyrNteG',
+      boardId: "HQyrNteG",
     },
   },
-}
+};
