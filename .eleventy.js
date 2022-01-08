@@ -34,6 +34,7 @@ module.exports = function (eleventyConfig) {
 
   // Copy these assets straight across
   eleventyConfig.addPassthroughCopy({ "./src/_assets/svg": "_assets/svg" });
+  eleventyConfig.addPassthroughCopy({ "./src/_assets/img": "_assets/img" });
 
   // Alias these layouts
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
@@ -47,29 +48,29 @@ module.exports = function (eleventyConfig) {
     linkify: true,
   };
 
-  const rwdOptions = {
-    responsive: {
-      srcset: {
-        "*": [
-          {
-            width: 320,
-            rename: {
-              suffix: "-320",
-            },
-          },
-          {
-            width: 550,
-            rename: {
-              suffix: "-550",
-            },
-          },
-        ],
-      },
-      sizes: {
-        "*": "(max-width: 550px) calc(100vw - 120px), 550px",
-      },
-    },
-  };
+  // const rwdOptions = {
+  //   responsive: {
+  //     srcset: {
+  //       "*": [
+  //         {
+  //           width: 320,
+  //           rename: {
+  //             suffix: "-320",
+  //           },
+  //         },
+  //         {
+  //           width: 550,
+  //           rename: {
+  //             suffix: "-550",
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     sizes: {
+  //       "*": "(max-width: 550px) calc(100vw - 120px), 550px",
+  //     },
+  //   },
+  // };
 
   let markdownLibrary = markdownIt({
     html: true,
@@ -82,29 +83,27 @@ module.exports = function (eleventyConfig) {
     //   permalinkClass: "direct-link",
     //   permalinkSymbol: "#",
     // })
-    .use(markdownItFootnote)
-    .use(markdownItResponsive, rwdOptions);
+    .use(markdownItFootnote);
+  // .use(markdownItResponsive, rwdOptions);
 
   markdownLibrary.renderer.rules.footnote_block_open = () => {
-    return '<div class="footnotes">\n' +
-      '<h4>Footnotes</h4>\n' +
+    return (
+      '<div class="footnotes">\n' +
+      "<h4>Footnotes</h4>\n" +
       '<ol class="footnotes-list">\n'
-  }
+    );
+  };
 
   markdownLibrary.renderer.rules.footnote_block_close = () => {
-    return '</ol>\n' +
-    '</div>\n'
-  }
+    return "</ol>\n" + "</div>\n";
+  };
 
-  eleventyConfig.setLibrary(
-    "md",
-    markdownLibrary
-  );
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.setDataDeepMerge(true);
 
   return {
-    templateFormats: ["html", "njk", "md", "11ty.js"],
+    templateFormats: ["html", "njk", "md"],
     pathPrefix: "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
