@@ -4,8 +4,8 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy --serve  & mix watch",
-    "build": "node utils/books.js && ELEVENTY_ENV=production eleventy & mix --production"
+    "dev": "ELEVENTY_ENV=development eleventy --serve && mix watch",
+    "build": "node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production"
   },
   "author": "James Doc",
   "license": "ISC",
