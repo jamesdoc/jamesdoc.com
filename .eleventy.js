@@ -86,20 +86,18 @@ module.exports = function (eleventyConfig) {
     .use(markdownItResponsive, rwdOptions);
 
   markdownLibrary.renderer.rules.footnote_block_open = () => {
-    return '<div class="footnotes">\n' +
-      '<h4>Footnotes</h4>\n' +
+    return (
+      '<div class="footnotes">\n' +
+      "<h4>Footnotes</h4>\n" +
       '<ol class="footnotes-list">\n'
-  }
+    );
+  };
 
   markdownLibrary.renderer.rules.footnote_block_close = () => {
-    return '</ol>\n' +
-    '</div>\n'
-  }
+    return "</ol>\n" + "</div>\n";
+  };
 
-  eleventyConfig.setLibrary(
-    "md",
-    markdownLibrary
-  );
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.setDataDeepMerge(true);
 
