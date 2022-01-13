@@ -1,0 +1,11 @@
+---
+eleventyExcludeFromCollections: true
+layout: listing
+permalink: /blog/tags/index.html
+---
+
+<ul>
+{% for tag, posts in collections | dictsort %}
+  <li><a href="/blog/tags/{{ tag|slug }}">{{ tag }} ({{ posts | length }} posts)</a></li>
+{% endfor %}
+</ul>
