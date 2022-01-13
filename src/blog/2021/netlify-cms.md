@@ -1,6 +1,8 @@
 ---
 title: Lessons from Netlify CMS
 type: article
+tags:
+  - 11ty
 author: James Doc
 date: 2021-01-19
 intro: Notes for future James, and maybe current you, about implementing Netlify CMS.

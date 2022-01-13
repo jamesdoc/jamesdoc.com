@@ -2,7 +2,7 @@
 title: Six Great Tips Before Using QR Codes
 intro: Guest post on OneSheep blog about good contexts to use a QR code
 type: article
-tags: post
+tags:
 date: 2012-02-26
 canonical: https://onesheep.org/6-great-tips-before-using-qr-codes/
 ---

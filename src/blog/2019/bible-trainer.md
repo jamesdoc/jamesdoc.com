@@ -2,7 +2,8 @@
 title: BibleTrainer
 intro: Let the word of Christ dwell in you richly… over the last few months I've been putting some time into a simple project to help you commit Bible passages to memory.
 type: article
-tags: post, kingdom code
+tags:
+  - Kingdom Code
 date: 2019-02-24
 leadImage: /_assets/img/blog/2019/bible-trainer.jpg
 ---

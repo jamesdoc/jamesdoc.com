@@ -1,7 +1,7 @@
 ---
 title: Lessons learnt from live streaming church
 type: article
-tags: post
+tags:
 date: 2020-03-24
 intro: On Sunday we all learnt a lot of lessons about livestreaming… Here are the lessons we learnt at The Globe Church.
 ---

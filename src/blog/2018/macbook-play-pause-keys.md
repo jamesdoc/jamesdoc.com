@@ -2,7 +2,7 @@
 title: Play/Pause keys not working
 intro: My Macbook's Play/Pause media keys have been playing up. Turns out that Google Chrome and Play Music were the problem.
 type: article
-tags: post
+tags:
 date: 2018-08-30
 ---
 

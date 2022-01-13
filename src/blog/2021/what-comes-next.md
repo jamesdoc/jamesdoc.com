@@ -1,6 +1,8 @@
 ---
 title: What Comes Next?
 type: article
+tags:
+  - book
 author: James Doc
 date: 2021-01-07
 intro: Books about leadership have a bad tendency to be dense; dry and hard work to read, I've tended to stay away from this section of the library. So, when your friends write a book, post it to you… then tell you it's a leadership book you approach with a little bit of trepidation.

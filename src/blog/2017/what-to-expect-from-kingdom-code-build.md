@@ -1,6 +1,8 @@
 ---
 title: What to expect from Kingdom Code BUILD
-tags: build, kingdom code
+tags:
+  - BUILD
+  - Kingdom Code
 type: article
 author: James Doc
 date: 2017-08-03
@@ -39,7 +41,7 @@ Should everything get too much, then you can take a break with [Princess, the In
 
 At lunchtime on Sunday, building stops and projects are submitted, but that’s not the end of our weekend together. We rest over lunch together and then we come together for our afternoon celebration. Over the course of the weekend we’ll have times to pray together, on Sunday afternoon we’ll have an extended period of worship, praying and hearing from God’s word.
 
-We’ll also be celebrating the work that has been done over the course of the weekend. As per Friday night, each team will have an opportunity to present their final project. The format is simple:  two minutes to remind everyone in the room what they were working on and to do a demo. Be prepared to be asked questions from our judging panel and from the rest of the crowd!
+We’ll also be celebrating the work that has been done over the course of the weekend. As per Friday night, each team will have an opportunity to present their final project. The format is simple: two minutes to remind everyone in the room what they were working on and to do a demo. Be prepared to be asked questions from our judging panel and from the rest of the crowd!
 
 The judging panel will break away for a discussion over which project best meets the spirit of each challenge. Meanwhile you get a chance to vote for your favourite project of the weekend.
 
@@ -55,7 +57,7 @@ Seriously! [Get yourself registered](https://kingdomcode.org.uk/build). Think ab
 
 At the beginning of September the challenges will appear on the website (and if you’re on the mailing list, in your inbox). Start thinking about projects and ideas. Check out other people’s ideas that will start appearing on Trello (link will be published mid-September), see how your skillset could help one of the teams or add your own idea.
 
-On Monday 11th September we’re hosting a meeting all about ideation – how you go from a challenge or a problem to an idea. Come and hear from each of the sponsors, find out about their  challenges, and then start the ideation process…
+On Monday 11th September we’re hosting a meeting all about ideation – how you go from a challenge or a problem to an idea. Come and hear from each of the sponsors, find out about their challenges, and then start the ideation process…
 
 <hr />
 

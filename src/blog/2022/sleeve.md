@@ -5,6 +5,7 @@ author: James Doc
 date: 2022-01-08
 intro: I've been using Bowtie as a simple way of displaying currently playing music for over 10 years… it's time for a replacement.
 leadImage: /_assets/img/blog/2022/sleeve.png
+tags: ["tech", "software"]
 ---
 
 [Bowtie](http://bowtieapp.com/) is an app that I've been using pretty much since I switched to running a Mac. A simple utility application; it hooks into iTunes, Spotify, etc and displays the currently playing track on the desktop. It's simple, elegant, customisable, and regrettably abandoned.

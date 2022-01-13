@@ -2,7 +2,7 @@
 title: Beeline
 intro: This small little puck on my handlebars has completely transformed how I cycle around London.
 type: article
-tags: post,
+tags:
 date: 2019-02-28
 leadImage: /_assets/img/blog/2019/beeline.jpg
 ---

@@ -1,6 +1,7 @@
 ---
 title: Hear back from BUILD 2019
-tags: kingdom-code
+tags:
+  - Kingdom Code
 type: article
 author: James Doc
 date: 2019-11-01

@@ -2,7 +2,7 @@
 title: Designing a new Wi-Fi splash screen
 intro: At the V&A we've recently relaunched the Wi-Fi splash screen, the page which visitors first see when they connect to our free Wi-Fi
 type: article
-tags: post
+tags:
 date: 2014-10-20
 canonical: https://www.vam.ac.uk/blog/digital/designing-a-new-wi-fi-splash-screen
 ---

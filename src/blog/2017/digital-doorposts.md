@@ -2,7 +2,7 @@
 title: Digital Doorposts
 intro: These words should be on your heart. You shall teach them diligently... bind them on your hands... write them on your doorposts and gates.
 type: article
-tags: post
+tags:
 date: 2017-04-27
 canonical: https://www.globe.church/resources/digital-doorposts
 ---

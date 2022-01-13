@@ -2,7 +2,7 @@
 title: The Next Few Months for Kingdom Code
 intro: As life begins to find a bit more rhythm, I want to share with you our thinking for Kingdom Code over the next few months…
 type: article
-tags: post
+tags:
 date: 2020-04-20
 canonical: https://kingdomcode.org.uk/blog/2020/the-next-few-months/
 ---

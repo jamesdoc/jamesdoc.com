@@ -2,7 +2,8 @@
 title: Part of something bigger…
 date: 2019-10-08
 type: article
-tags: post, kingdom code
+tags:
+  - Kingdom Code
 intro: Kingdom Code BUILD is part of a global set of hackathons hosted by Indigitous. During two weekend in October over 30 different cities of technologists come together to apply their skillsets. Here's how we can be praying for them…
 canonical: https://kingdomcode.org.uk/blog/2019/prayer-for-a-hackathon/
 ---

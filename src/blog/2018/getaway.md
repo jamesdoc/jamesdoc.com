@@ -2,7 +2,8 @@
 title: Globe GetAway- Moving Forward
 intro: Each year at the end of October, The Globe Church set aside a Saturday for a day away together. This year the theme is 'Moving Forward'.
 type: article
-tags: post, The Globe Church
+tags:
+  - The Globe Church
 date: 2018-10-05
 canonical: https://www.globe.church/resources/globe-getaway-moving-forward
 ---

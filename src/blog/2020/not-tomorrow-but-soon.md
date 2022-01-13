@@ -2,7 +2,7 @@
 title: Not tomorrow… but soon.
 intro: The Second of May was due to have been our wedding day. As a result of what's happening globally, our plans have had to be postponed…
 type: article
-tags: post
+tags:
 date: 2020-05-01
 ---
 

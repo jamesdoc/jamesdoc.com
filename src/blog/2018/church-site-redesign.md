@@ -2,7 +2,7 @@
 title: Redesigning your church website – where to start?!
 intro: Church Train asked me to share some thoughts around the process I went through to build The Globe Church's new website.
 type: article
-tags: post
+tags:
 date: 2018-01-24
 canonical: https://www.churchtrain.uk/blog/church-website-redesign/
 ---

@@ -2,7 +2,7 @@
 title: Where's all the paper gone?
 intro: Ahead of Kingdom Code's 2017 hackathon I shared some thoughts about paper on the Fusion blog.
 type: article
-tags: post
+tags:
 date: 2017-07-17
 canonical: https://www.fusionmovement.org/blog/1133/where-s-all-the-paper-gone
 ---

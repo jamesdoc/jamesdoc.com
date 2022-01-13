@@ -2,7 +2,8 @@
 title: Responsive images in Eleventy
 intro: Adding responsive images to my 11ty build has been on my to-do list for a while… I've finally got it working 🎉
 type: article
-tags: post
+tags:
+  - 11ty
 date: 2018-12-26
 leadImage: /_assets/img/blog/2018/rwd-images-11ty.jpg
 ---

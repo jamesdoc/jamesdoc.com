@@ -2,7 +2,8 @@
 title: One21 Launch
 intro: One of the projects that I've been working on at The Globe Church is One21, a tool to help the church disciple one another.
 type: article
-tags: post
+tags:
+  - The Globe Church
 date: 2018-01-22
 canonical: https://www.globe.church/resources/one21-launch
 ---

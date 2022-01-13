@@ -2,7 +2,7 @@
 title: Twitterbots; Is This the Start of a Revolution?
 intro: In the advent of Tay, Microsoft's AI chatbot, is there space in the church for similar things?
 type: article
-tags: post
+tags:
 date: 2016-05-04
 canonical: https://www.premierdigital.org.uk/Resources/Social-Media/Twitterbots-Is-This-the-Start-of-a-Revolution
 ---

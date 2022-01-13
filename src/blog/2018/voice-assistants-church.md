@@ -2,7 +2,7 @@
 title: Voice Assistants and the Church
 intro: Alexa, Siri, Google Home… all these voice assistants look like they are here to stay. But do they have a place within the church?
 type: article
-tags: post
+tags:
 date: 2018-09-06
 canonical: https://www.churchtrain.uk/blog/church-voice-assistants/
 ---

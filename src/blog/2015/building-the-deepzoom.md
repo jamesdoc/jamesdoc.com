@@ -2,7 +2,7 @@
 title: Building the DeepZoom- Concept to Creation
 intro: A quick review on the building process behind digitising one of the artist in residence's work at the V&A
 type: article
-tags: post
+tags:
 date: 2015-04-28
 canonical: https://www.vam.ac.uk/blog/digital/building-the-deepzoom
 ---

@@ -2,7 +2,7 @@
 title: The Evolution of the Address Bar
 intro: While studying at the University of Lincoln one of their research projects looked at the value of their ac.uk domain. I was asked to write a short post about the changes happening in address bars of 'modern' browsers.
 type: article
-tags: post
+tags:
 date: 2011-04-18
 canonical: https://linkingyou.blogs.lincoln.ac.uk/2011/04/18/the-evolution-of-the-address-bar/
 ---

@@ -2,7 +2,7 @@
 title: Getting Ideas Out of the Notebook
 intro: Guest post on The Media Net blog about working on implementing ideas, not just thinking about implementing them.
 type: article
-tags: post
+tags:
 date: 2015-09-17
 ---
 

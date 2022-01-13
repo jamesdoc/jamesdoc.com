@@ -2,7 +2,8 @@
 title: Getting to know Jonny Miller and the role of the eldership
 intro: I interviewed Jonny Miller, the new elder within The Globe Church, to get to know him a bit more and to find out more of the role of the elders within Globe.
 type: article
-tags: post, The Globe Church
+tags:
+  - The Globe Church
 date: 2018-09-20
 canonical: https://www.globe.church/resources/getting-to-know-jonny-miller-and-the-role-of-the
 ---

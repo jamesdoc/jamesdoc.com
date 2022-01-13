@@ -2,7 +2,7 @@
 title: Holding out hope in Southeast Asia
 intro: At The Globe Church we want to be a people who are confidently living to make Christ known to all people, and we long to be a church committed to doing that globally…
 type: article
-tags: post
+tags:
 date: 2018-09-17
 canonical: https://www.globe.church/resources/holding-out-hope-in-southeast-asia
 ---

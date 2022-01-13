@@ -1,6 +1,8 @@
 ---
 title: Moving your ideas forward
-tags: Build, post
+tags:
+  - Kingdom Code
+  - BUILD
 author: James Doc
 type: article
 date: 2018-09-19

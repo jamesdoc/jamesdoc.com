@@ -2,7 +2,8 @@
 title: Moving your ideas forward
 intro: Ideas are cheap… so how do you get your idea ready for a hackathon? Here are four ideas that you can work on before coming to Kingdom Code BUILD.
 type: article
-tags: post, kingdom code
+tags:
+  - Kingdom Code
 date: 2018-09-19
 canonical: https://kingdomcode.org.uk/blog/moving-your-ideas-forward/
 ---

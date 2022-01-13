@@ -1,7 +1,8 @@
 ---
 title: One of the BUILD projects in the wild…
 type: article
-tags: post, kingdom code
+tags:
+  - Kingdom Code
 date: 2019-10-01
 intro: Last year Dan Rackham came to BUILD with an idea that had been mulling in the back of his mind for a while. James sat down with him and talked to him about GoChatter, coming to BUILD and getting a team together around an idea…
 canonical: https://kingdomcode.org.uk/blog/2019/go-chatter-custom-videos-dan-rackham/

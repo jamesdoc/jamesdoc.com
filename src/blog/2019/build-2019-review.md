@@ -1,12 +1,14 @@
 ---
 title: Reviewing BUILD 2019
 type: article
-tags: post, kingdom code
+tags:
+  - Kingdom Code
 author: James Doc
 date: 2019-10-16
 intro: In Christ we, though many, form one body… as BUILD 2019 comes to an end we share what has happened during the twenty four hour hackathon.
 canonical: https://kingdomcode.org.uk/blog/2019/build-2019-review/
 ---
+
 **_In Christ we, though many, form one body, and each member belonging to all the others. We have different gifts, according the grace given to each of us…_ (Romans 12v5-6).** At Kingdom Code BUILD this year we spent the weekend dwelling on these rich words from Paul to the church in Rome as we put hands to keyboards for a weekend of designing, ideating, and coding.
 
 We are all a part of Christ's body the church. Each designer, developer, project manager, entrepreneur, administrator, tester… whatever your skillset, it is given by God as a gift as part of His body. The Kingdom Code community is one part of the church, never an end-in-itself.
@@ -21,9 +23,9 @@ So at BUILD 2019 we spent the weekend together exploring what that looks like in
 
 Three teams stood out and left with a Kingdom Code mixtape as we gathered at the end of our time together to celebrate the work that had been done…
 
-*Value Navigator*, which won the Christianity Explored Ministries challenge, was led by Claire Angus. Over the course of the weekend the team of eight explored how they might help people uncover what people value in life, in line with the Life Explored course. The team developed a BuzzFeed style quiz which ended helping the quiz-taker understand these themes in terms of how God created them in light of relevant passages from the Bible.
+_Value Navigator_, which won the Christianity Explored Ministries challenge, was led by Claire Angus. Over the course of the weekend the team of eight explored how they might help people uncover what people value in life, in line with the Life Explored course. The team developed a BuzzFeed style quiz which ended helping the quiz-taker understand these themes in terms of how God created them in light of relevant passages from the Bible.
 
-Christians Against Poverty awarded their challenge prize to a prototype project called *Find the Need*. Pitched on the Friday night by Alasdair Munday, this team built on top on the national census data to reveal some of the areas of deprivation around your local church, and to suggest specific ministries that you might be able to support in those contexts.
+Christians Against Poverty awarded their challenge prize to a prototype project called _Find the Need_. Pitched on the Friday night by Alasdair Munday, this team built on top on the national census data to reveal some of the areas of deprivation around your local church, and to suggest specific ministries that you might be able to support in those contexts.
 
 <img class="img img--pull-left" src="/_assets/_img/blog/2019/build-19-go-chatter.jpg" alt="Go Chatter Team" />
 

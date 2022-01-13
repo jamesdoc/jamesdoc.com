@@ -2,7 +2,8 @@
 title: Importing old posts
 intro: I've been writing blog posts (of varying quality) since 2006. One of the things that I always dread about moving blogging platforms is the export and import process…
 type: article
-tags: post
+tags:
+  - 11ty
 date: 2018-09-01
 ---
 

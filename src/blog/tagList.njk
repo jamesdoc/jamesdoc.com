@@ -10,6 +10,7 @@ eleventyComputed:
   title: Tagged “{{ tag }}”
 ---
 <h1>Thoughts tagged with “{{ tag }}”</h1>
+<p><a href="/blog/tags">See all tags</a></p>
 
 <ul class="listing">
 {% set taglist = collections[ tag ] %}
