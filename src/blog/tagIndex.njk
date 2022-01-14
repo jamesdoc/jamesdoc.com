@@ -1,12 +1,16 @@
 ---
 eleventyExcludeFromCollections: true
 layout: listing
+breadcrumbs:
+  - ['/blog', 'Thoughts']
 permalink: /blog/tags/index.html
 ---
 
+<h1>Thoughts… tagged</h1>
+
 <div class="yearList">
 <ol>
-{% for tag, posts in collections | dictsort %}
+{% for tag, posts in collections | tagFilter(["all", "posts", "postsByYear"]) | dictsort %}
   <li>
     <a href="/blog/tags/{{ tag|slug }}">
       <h3>{{ tag }}</h3>

@@ -4,6 +4,11 @@ layout: layouts/base.njk
 
   <nav class="breadcrumbs">
     <a href="/">James Doc</a>
+    {% if breadcrumbs %}
+    {% for crumb in breadcrumbs %}
+      <a href="{{ crumb[0] }}">{{ crumb[1] }}</a>
+    {% endfor %}
+    {% endif %}
   </nav>
 
 {{ layoutContent | safe }}

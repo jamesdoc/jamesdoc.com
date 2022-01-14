@@ -6,11 +6,17 @@ pagination:
   data: collections
   size: 1
   alias: tag
+  filter:
+  - postsByYear
+  - posts
+  - all
+breadcrumbs:
+  - ['/blog', 'Thoughts']
+  - ['/blog/tags', 'Tagged']
 eleventyComputed:
   title: Tagged “{{ tag }}”
 ---
 <h1>Thoughts tagged with “{{ tag }}”</h1>
-<p><a href="/blog/tags">See all tags</a></p>
 
 <ul class="listing">
 {% set taglist = collections[ tag ] %}
@@ -28,3 +34,5 @@ eleventyComputed:
     </a>
   </li>{% endfor %}
 </ul>
+
+<a href="/blog/tags" class="btn">See all tags</a>
