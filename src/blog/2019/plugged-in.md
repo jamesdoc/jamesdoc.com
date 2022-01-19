@@ -3,7 +3,7 @@ title: Plugged In
 date: 2019-10-24
 intro: Of course there is the obligatory chapter facing the question 'is it okay for Christians to watch Game of Thrones, or insert any other controversial topic?', but Daniel Strange takes four chapters to get there, because Plugged In is about a lot more than that.
 type: article
-tags: book
+tags: ["Book Review"]
 leadImage: /_assets/img/blog/2019/plugged-in-daniel-strange.jpg
 ---
 

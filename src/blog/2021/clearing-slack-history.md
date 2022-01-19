@@ -3,7 +3,7 @@ title: Clearing a Slack Channel History
 type: article
 author: James Doc
 date: 2021-07-19
-intro: …
+tags: ["tech"]
 themeColor: hsl(341, 77%, 50%)
 ---
 

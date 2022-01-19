@@ -3,6 +3,7 @@ title: A note about livestreaming and song licensing in churches
 type: article
 author: James Doc
 date: 2020-03-16
+tags: ["faith", "tech"]
 intro: In light of Covid-19 and lots of churches moving their services online I had a chat with CCLI and PRS around the legalities of live streaming the sung worship in your church…
 ---
 

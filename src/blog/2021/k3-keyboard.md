@@ -3,6 +3,7 @@ title: K3 Keyboard
 type: article
 author: James Doc
 date: 2021-01-12
+tags: ["tech"]
 intro: Over the last 12 months, I've been working through my working-from-home equipment making a few upgrades. Most recently, I switched to the Keychron K3 keyboard…
 leadImage: /_assets/img/blog/2021/k3-keyboard.jpg
 themeColor: hsl(7, 93%, 65%)

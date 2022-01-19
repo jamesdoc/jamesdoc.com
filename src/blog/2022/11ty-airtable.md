@@ -4,7 +4,8 @@ type: article
 author: James Doc
 date: 2022-01-17
 intro: On a recent project I've been experimenting with adding Airtable as a content management system for Eleventy. In this post I document the notes around how I've got a simple set up running…
-tags: ["tech", "11ty"]
+tags: ["tech", "11ty", "code"]
+themeColor: hsl(344, 99%, 58%)
 ---
 
 On a recent project I've been experimenting with adding Airtable as a content management system for Eleventy (11ty). Below I document the notes around how I've got a simple set up running…

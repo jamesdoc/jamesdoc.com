@@ -2,8 +2,8 @@
 title: Side Project - Trello Overview
 intro: I kicked off a side project which pulls in multiple cards on different Trello boards…
 type: article
-tags:
 date: 2020-07-12
+tags: ["11ty", "code"]
 leadImage: /_assets/img/blog/2020/trello-overview.jpg
 ---
 

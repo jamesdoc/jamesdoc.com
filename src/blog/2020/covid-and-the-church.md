@@ -1,8 +1,7 @@
 ---
 title: Technologists Serving the Church During Coronavirus
 type: article
-tags:
-  - Kingdom Code
+tags: ["Kingdom Code", "tech", "faith"]
 date: 2020-03-16
 intro: As the government encourages us to reduce the amount of social interaction now is the perfect time for the Kingdom Code community to serve the local church
 canonical: https://kingdomcode.org.uk/blog/2020/covid-and-the-church/

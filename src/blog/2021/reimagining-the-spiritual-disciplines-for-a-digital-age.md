@@ -1,8 +1,7 @@
 ---
 title: "Book Review: Reimagining the Spiritual Disciplines for a Digital Age"
 type: article
-tags:
-  - book
+tags: ["Book Review", "faith"]
 author: James Doc
 date: 2021-01-31
 intro: In just under 25 pages, Sara Schumacher packs in more clarity, focus, and personal encouragement than books 10 times the length on the subject of spiritual disciplines.

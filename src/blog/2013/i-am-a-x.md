@@ -1,7 +1,6 @@
 ---
 title: I am a 'x'
 type: article
-tags: reading
 date: 2013-07-10 19:27:22
 ---
 

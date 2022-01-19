@@ -3,7 +3,7 @@ title: The Gospel Comes with a House Key
 date: 2019-10-22
 intro: In The Gospel Comes with a House Key, Rosaria Butterfield shows through part autobiography, part Bible teaching why hospitality isn't an optional extra in the Christian life, but an essential part, and what living it looks like in her family life.
 type: article
-tags: book
+tags: ["Book Review"]
 leadImage: /_assets/img/blog/2019/the-gospel-comes-with-a-house-key.jpg
 ---
 

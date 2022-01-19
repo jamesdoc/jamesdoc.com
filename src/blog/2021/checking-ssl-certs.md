@@ -3,6 +3,7 @@ title: Checking Which SSL Cert is Being Served
 type: article
 author: James Doc
 date: 2021-03-18
+tags: ["tech"]
 intro: How can you quickly check what SSL cert is being served up for a domain? Sure you could check in the browser, but you might want to use the command line…
 ---
 

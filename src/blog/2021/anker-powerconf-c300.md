@@ -4,6 +4,7 @@ type: article
 author: James Doc
 date: 2021-05-08
 intro: As the whole 'working-from-home' thing became a thing the built in camera on my laptop decided that it was a good time to die…
+tags: ["tech"]
 themeColor: hsl(196, 98%, 45%)
 ---
 As the whole 'working-from-home' thing became a thing the built in camera on my laptop decided that it was a good time to die.  And because everyone else had a need to buy a webcam there was a bit of a shortage, that meant that I ended up with a perfectly functional stop gap. Recently Anker entered the webcam and conferencing gear, were offering a decent discount, so I decided that now was the time to upgrade to their new [PowerConf C300](https://uk.anker.com/collections/conferencing-equipment/products/a3361).

@@ -3,6 +3,7 @@ title: Running Age of Empires 2 on Big Sur
 type: article
 author: James Doc
 date: 2020-12-28
+tags: ["tech"]
 intro: In an effort to avoid recreational coding during the Christmas break I've got Age of Empires 2 running on Big Sur…
 ---
 

@@ -3,8 +3,7 @@ title: Grouping blog posts by year in Eleventy
 intro: Create an archive page grouped by year (or anything you want!) using 11ty's built in pagination and a modified collection.
 type: article
 author: James Doc
-tags:
-  - 11ty
+tags: ["11ty", "code"]
 date: 2021-01-26
 leadImage: /_assets/img/blog/2021/group-by-year.png
 themeColor: hsl(187, 97%, 42%)

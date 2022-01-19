@@ -1,7 +1,7 @@
 ---
 title: Jane Eyre
 type: article
-tags: reading
+tags: ["Book Review"]
 date: 2011-10-04 13:30:00
 leadImage: /_assets/img/blog/imported/banners/jane-eyre.gif
 ---

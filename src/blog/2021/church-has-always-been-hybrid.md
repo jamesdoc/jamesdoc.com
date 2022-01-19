@@ -3,6 +3,7 @@ title: Preparing to Move to Hybrid Church
 type: article
 author: James Doc
 date: 2021-05-05
+tags: ["tech", "faith"]
 intro: As the UK begins to head back into something that looks to be 'normal' the new buzz word is 'hybrid'. A lot of church leaders are worried about the extra burden it'll be. But I don't think that hybrid church is anything new…
 ---
 

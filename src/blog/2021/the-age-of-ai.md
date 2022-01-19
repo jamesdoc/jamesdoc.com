@@ -3,6 +3,7 @@ title: "Book Review: The Age of AI"
 type: article
 author: James Doc
 date: 2021-01-24
+tags: ["Book Review"]
 intro: Over the last week I've been reading through Jason Thacker's book 'The Age of AI' - a primer looking at the questions that are being asked as artificial intelligence comes to the foreground.
 leadImage: /_assets/img/blog/2021/the-age-of-ai-jason-thacker.jpg
 themeColor: hsl(53, 99%, 62%)

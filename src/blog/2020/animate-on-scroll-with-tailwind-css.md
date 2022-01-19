@@ -3,6 +3,7 @@ title: Animate on scroll with Tailwind CSS
 type: article
 author: James Doc
 date: 2020-07-31
+tags: ["code"]
 intro: With the release of Tailwind CSS 1.6.0 which includes animation support, how can we use it for animate on scroll?
 canonical: https://onesheep.org/insights/animate-on-scroll-with-tailwind-css
 ---
