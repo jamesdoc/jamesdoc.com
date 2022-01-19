@@ -21,12 +21,12 @@ eleventyExcludeFromCollections: true
     <a href="{{ now.employer.url }}">{{ now.employer.name }}</a>
   </li>
 
-  <li>
+  {# <li>
     Current toolbox:<br />
     {% for tool in now.toolbox %}
       <a href="{{ tool.url }}" target="_blank" rel="noopener">{{ tool.name }}</a>{% if loop.last != true %}, {% endif %}
     {% endfor %}
-  </li>
+  </li> #}
 
   <li>
     Latest blog post:<br />
