@@ -18,7 +18,7 @@
         <li><a href="https://thegoodbook.co.uk/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">The Good Book Company</a></li>
         {% else %}
         <li><a href="https://amazon.co.uk/s?k={{ book.additional.isbn }}" target="_blank" rel="noopener">Amazon</a></li>
-        <li><a href="https://waterstones.com/book/{{ book.additional.isbn }}" target="_blank" rel="noopener">Waterstones</a></li>
+        <li><a href="https://www.waterstones.com/books/search/term/{{ book.additional.isbn }}" target="_blank" rel="noopener">Waterstones</a></li>
         <li><a href="https://abebooks.co.uk/servlet/SearchResults?isbn={{ book.additional.isbn }}" target="_blank" rel="noopener">Abebooks</a></li>
         {% endif %}
         <li><a href="https://goodreads.com/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">GoodReads</a></li>
