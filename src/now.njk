@@ -2,6 +2,7 @@
 title: Now
 layout: listing
 eleventyExcludeFromCollections: true
+itemtype: 'https://schema.org/FAQPage'
 ---
 {% set currentBooks = readingList | activeBook %}
 {% set latestPost = collections.posts | reverse | first %}
@@ -11,14 +12,18 @@ eleventyExcludeFromCollections: true
 <p>Rather than an about page… this is a list of things that are going on <a href="https://nownownow.com/about">now</a>.</p>
 
 <ul class="nowList">
-  <li>
-    Location:<br />
-    <a href="{{ now.location.url }}">{{ now.location.name }}</a>
+  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+   <span itemprop="name">Where are you?</span>
+   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <span itemprop="text"><a href="{{ now.location.url }}">{{ now.location.name }}</a></span>
+   </div>
   </li>
 
-  <li>
-    Employer:<br />
-    <a href="{{ now.employer.url }}">{{ now.employer.name }}</a>
+  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <span itemprop="name">Where are you working?</span>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <span itemprop="text"><a href="{{ now.employer.url }}">{{ now.employer.name }}</a></span>
+    </div>
   </li>
 
   {# <li>
@@ -28,16 +33,23 @@ eleventyExcludeFromCollections: true
     {% endfor %}
   </li> #}
 
-  <li>
-    Latest blog post:<br />
-    <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
+  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <span itemprop="name">What's the latest blog post?</span>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <span itemprop="text"><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></span>
+    </div>
   </li>
 
-  <li>
-    <a href="/reading-list">Currently reading</a>:<br />
-    {% for book in currentBooks %}
-      {{ book.name }} <em>({{ book.additional.author }})</em>{% if loop.last != true %},{% endif %}<br />
-    {% endfor %}
+  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <span itemprop="name">What books are being read right now?</span>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <span itemprop="text">
+      {% for book in currentBooks %}
+        {{ book.name }} <em>({{ book.additional.author }})</em>{% if loop.last != true %},{% endif %}<br />
+      {% endfor %}
+      <a href="/reading-list">View the full reading list</a>
+      </span>
+    </div>
   </li>
 </ul>
 

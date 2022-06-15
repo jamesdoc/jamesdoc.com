@@ -1,5 +1,9 @@
 <!doctype html>
+{% if itemtype %}
+  <html lang="en" itemscope itemtype="{{ itemtype }}">
+{% else %}
 <html lang="en">
+{% endif %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
