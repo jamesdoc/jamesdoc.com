@@ -9,7 +9,29 @@ $lincolnGreen: hsl(61, 98%, 35%);
 $sparksBlack: hsl(0, 0%, 0%);
 $vixenOrange: hsl(14, 75%, 51%);
 
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/* latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_assets/fonts/space400.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_assets/fonts/space700.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
 
 :root {
   --background: hsl(0, 0%, 100%);
@@ -42,15 +64,17 @@ body {
 }
 
 .avatar {
-  background: url("/_assets/img/james.png") no-repeat bottom right;
-  background-size: 100%;
   bottom: 0;
-  height: 0;
-  max-width: 200px;
-  padding-bottom: 50%;
+  height: 150px;
   position: fixed;
   right: 0;
-  width: 50%;
+  width: 150px;
+
+  &__img {
+    max-width: initial;
+    width: 100%;
+    height: auto;
+  }
 }
 
 body {

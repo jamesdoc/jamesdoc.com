@@ -1,7 +1,7 @@
 const eleventyImage = require("@11ty/eleventy-img");
 
 module.exports = {
-  imgBookCover: async function(filepath, alt, widths, classes, sizes) {
+  imgBookCover: async function (filepath, alt, widths, classes, sizes) {
     if (!filepath) {
       return;
     }
@@ -22,10 +22,16 @@ module.exports = {
       sizes: sizes || "(min-width: 22em) 30vw, 100vw",
       class: classes,
     });
-
   },
 
-  rwdImg: (src, alt, sizes = "100vw", classes = " ") => {
+  rwdImg: (
+    src,
+    alt,
+    sizes = "100vw",
+    classes = " ",
+    widths = [320, 550, 800, 1000, 1200],
+    formats = ["webp", "jpeg"]
+  ) => {
     if (!src) {
       return;
     }
@@ -33,8 +39,8 @@ module.exports = {
     src = `./src${src}`;
 
     const options = {
-      widths: [320, 550, 800, 1000, 1200],
-      formats: ["webp", "jpeg"],
+      widths,
+      formats,
       urlPath: "/_assets/img/",
       outputDir: "./dist/_assets/img",
     };

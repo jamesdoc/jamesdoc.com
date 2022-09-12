@@ -1,6 +1,6 @@
 <!doctype html>
 {% if itemtype %}
-  <html lang="en" itemscope itemtype="{{ itemtype }}">
+<html lang="en" itemscope itemtype="{{ itemtype }}">
 {% else %}
 <html lang="en">
 {% endif %}
@@ -57,9 +57,11 @@
       {{ layoutContent | safe }}
     </section>
 
-    <span class="avatar"></span>
+    <span class="avatar">
+      {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"] %}
+    </span>
 
-    <script src="/_assets/js/index.js"></script>
+    <script async src="/_assets/js/index.js"></script>
     <!-- last build: {{ build.env }} {{ build.timestamp }} -->
   </body>
 </html>
