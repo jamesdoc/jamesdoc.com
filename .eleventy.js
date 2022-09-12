@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  // eleventyConfig.addPlugin(directoryOutputPlugin);
+  eleventyConfig.addPlugin(directoryOutputPlugin);
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
