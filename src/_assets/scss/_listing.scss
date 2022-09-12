@@ -9,7 +9,8 @@
     font-size: 0.825rem;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     display: list-item;
     list-style-type: disc;
     margin: 0;
@@ -23,13 +24,21 @@
 
   a.listing__remote h2:after {
     color: $themeGreen;
-    content: '⇢';
+    content: "⇢";
   }
 
   img {
     max-width: initial;
     width: 100%;
     height: auto;
+  }
+
+  &--reading--cols {
+    @media (min-width: 1000px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
   }
 
   &--reading li {
@@ -41,7 +50,8 @@
       border-radius: 3px;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
       display: block;
       list-style-type: none;
       margin: 0;

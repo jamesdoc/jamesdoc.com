@@ -10,16 +10,16 @@ eleventyExcludeFromCollections: false
   <h2>Currently reading:</h2>
   <div class="listing listing--reading">
   {% for book in currentBooks %}
-    <li>
+    <li itemscope itemtype="https://schema.org/Book">
       {% if (book.list === "On the go") and (book.cover.scaled) %}
         {% set cover = book.cover.scaled | last %}
         {% imgBookCover cover.url, "Book Cover", [75, 100, 150], "", "150px" %}
       {% endif %}
 
       <div>
-      <h3>{{ book.name }}</h3>
+      <h3 itemprop="name">{{ book.name }}</h3>
       {% if book.additional.author %}
-      <p>Author: {{ book.additional.author }}</p>
+      <p itemprop="author" itemscope itemtype="https://schema.org/Person">{{ book.additional.author }}</p>
       {% endif %}
 
       {% if book.readDate %}
@@ -52,7 +52,7 @@ eleventyExcludeFromCollections: false
 {% endif %}
 
 <h2>Previously read:</h2>
-<div class="listing listing--reading">
+<div class="listing listing--reading listing--reading--cols">
 {% for book in readingList|sort(true, true, 'epoch') %}
   {% if book.readDate %}
 
@@ -65,7 +65,7 @@ eleventyExcludeFromCollections: false
     <div>
     <h3>{{ book.name }}</h3>
     {% if book.additional.author %}
-    <p>Author: {{ book.additional.author }}</p>
+    <p>{{ book.additional.author }}</p>
     {% endif %}
 
     {% if book.readDate %}
