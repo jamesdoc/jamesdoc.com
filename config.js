@@ -11,6 +11,7 @@ module.exports = {
       url: "https://en.wikipedia.org/wiki/London",
     },
     employer: {
+      role: "Head of Tech",
       name: "Vixen Labs",
       url: "https://vixenlabs.co",
     },

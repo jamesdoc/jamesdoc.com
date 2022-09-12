@@ -11,12 +11,12 @@ const collections = require("./utils/collections.js");
 const shortcodes = require("./utils/shortcodes.js");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setQuietMode(true);
+  eleventyConfig.setQuietMode(false);
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPlugin(directoryOutputPlugin);
+  // eleventyConfig.addPlugin(directoryOutputPlugin);
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
@@ -29,7 +29,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode("imgBookCover", shortcodes.imgBookCover);
+  eleventyConfig.addNunjucksAsyncShortcode(
+    "imgBookCover",
+    shortcodes.imgBookCover
+  );
   eleventyConfig.addNunjucksShortcode("rwdImg", shortcodes.rwdImg);
 
   // Object.keys(shortcodes).forEach((shortcodeName) => {

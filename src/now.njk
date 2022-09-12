@@ -8,21 +8,20 @@ itemtype: 'https://schema.org/FAQPage'
 {% set latestPost = collections.posts | reverse | first %}
 
 <h1>Now</h1>
-
 <p>Rather than an about page… this is a list of things that are going on <a href="https://nownownow.com/about">now</a>.</p>
 
 <ul class="nowList">
   <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-   <span itemprop="name">Where are you?</span>
+   <strong><span itemprop="name">Where are you?</span></strong>
    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-    <span itemprop="text"><a href="{{ now.location.url }}">{{ now.location.name }}</a></span>
+    Since 2014 I've been living in <span itemprop="text"><a href="{{ now.location.url }}">{{ now.location.name }}, UK</a></span>. And for the immediate future I don't see myself leaving anytime soon.
    </div>
   </li>
 
   <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <span itemprop="name">Where are you working?</span>
+    <strong><span itemprop="name">Where are you working?</span></strong>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <span itemprop="text"><a href="{{ now.employer.url }}">{{ now.employer.name }}</a></span>
+      I'm currently a {{ now.employer.role }} for <strong itemprop="text"><a href="{{ now.employer.url }}">{{ now.employer.name }}</a></strong>. You can see a full employment history on my <a href="https://www.linkedin.com/in/jamesdoc/" rel="me noopener" target="_blank">LinkedIn profile</a>.
     </div>
   </li>
 
@@ -34,20 +33,21 @@ itemtype: 'https://schema.org/FAQPage'
   </li> #}
 
   <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <span itemprop="name">What's the latest blog post?</span>
+    <strong><span itemprop="name">What's the latest blog post?</span></strong>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <span itemprop="text"><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></span>
+      I used to write blog posts semi-regularly… now not so much! Most recently I wrote <strong itemprop="text"><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></strong>.
+      You can <a href="/blog">view a list of all blog posts here</a>.
     </div>
   </li>
 
   <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <span itemprop="name">What books are being read right now?</span>
+    <strong><span itemprop="name">What are you reading?</span></strong>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <span itemprop="text">
+      <span itemprop="text">Right now I'm reading
       {% for book in currentBooks %}
-        {{ book.name }} <em>({{ book.additional.author }})</em>{% if loop.last != true %},{% endif %}<br />
-      {% endfor %}
-      <a href="/reading-list">View the full reading list</a>
+        <strong>{{ book.name }}</strong> by <em>{{ book.additional.author }}</em>{% if loop.last != true %},{% else %}.{% endif %}
+      {% endfor %} I keep track of all the books I'm reading through a big reading list in Trello and then pull them into this site.
+      You can <a href="/reading-list">view the full reading list</a>.
       </span>
     </div>
   </li>

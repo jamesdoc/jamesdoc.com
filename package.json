@@ -4,7 +4,7 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy --serve & mix watch",
+    "dev": "ELEVENTY_ENV=development eleventy --serve --incremental & mix watch",
     "build": "node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production"
   },
   "author": "James Doc",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@11ty/eleventy-img": "^2.0.1",
     "laravel-mix": "^6.0.39",
+    "netlify-plugin-cache": "^1.0.3",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.47.0",
     "sass-loader": "^12.4.0"
