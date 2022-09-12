@@ -25,6 +25,34 @@
     color: $themeGreen;
     content: '⇢';
   }
+
+  img {
+    max-width: initial;
+    width: 100%;
+    height: auto;
+  }
+
+  &--reading li {
+    max-width: initial;
+
+    img {
+      max-width: 150px;
+      box-shadow: 0 0 20px 5px var(--glow);
+      border-radius: 3px;
+    }
+
+    h2, h3 {
+      display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: 465px) {
+      display: flex;
+      gap: 1rem;
+    }
+  }
 }
 
 .yearList {
@@ -59,6 +87,4 @@
   a:hover h3 {
     border-bottom-color: black;
   }
-
-
 }

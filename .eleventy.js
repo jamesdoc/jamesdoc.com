@@ -4,15 +4,19 @@ const markdownItFootnote = require("markdown-it-footnote");
 const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 const filters = require("./utils/filters.js");
 const collections = require("./utils/collections.js");
 const shortcodes = require("./utils/shortcodes.js");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setQuietMode(true);
+
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  // eleventyConfig.addPlugin(directoryOutputPlugin);
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
@@ -25,9 +29,12 @@ module.exports = function (eleventyConfig) {
   });
 
   // Shortcodes
-  Object.keys(shortcodes).forEach((shortcodeName) => {
-    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  });
+  eleventyConfig.addNunjucksAsyncShortcode("imgBookCover", shortcodes.imgBookCover);
+  eleventyConfig.addNunjucksShortcode("rwdImg", shortcodes.rwdImg);
+
+  // Object.keys(shortcodes).forEach((shortcodeName) => {
+  //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+  // });
 
   // Watch assets folder for changes
   eleventyConfig.addWatchTarget("./src/_assets");
@@ -48,30 +55,6 @@ module.exports = function (eleventyConfig) {
     linkify: true,
   };
 
-  // const rwdOptions = {
-  //   responsive: {
-  //     srcset: {
-  //       "*": [
-  //         {
-  //           width: 320,
-  //           rename: {
-  //             suffix: "-320",
-  //           },
-  //         },
-  //         {
-  //           width: 550,
-  //           rename: {
-  //             suffix: "-550",
-  //           },
-  //         },
-  //       ],
-  //     },
-  //     sizes: {
-  //       "*": "(max-width: 550px) calc(100vw - 120px), 550px",
-  //     },
-  //   },
-  // };
-
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
@@ -84,7 +67,6 @@ module.exports = function (eleventyConfig) {
     //   permalinkSymbol: "#",
     // })
     .use(markdownItFootnote);
-  // .use(markdownItResponsive, rwdOptions);
 
   markdownLibrary.renderer.rules.footnote_block_open = () => {
     return (

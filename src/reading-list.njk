@@ -3,27 +3,103 @@ title: Reading list
 layout: listing
 eleventyExcludeFromCollections: false
 ---
-{% import "./_includes/macros/book.njk" as mBook %}
 <h1>Reading list</h1>
 
 {% set currentBooks = readingList | activeBook %}
 {% if currentBooks | length > 0 %}
   <h2>Currently reading:</h2>
-  <ul class="listing">
+  <div class="listing listing--reading">
   {% for book in currentBooks %}
-    {{ mBook.listItem(book) }}
+    <li>
+      {% if (book.list === "On the go") and (book.cover.scaled) %}
+        {% set cover = book.cover.scaled | last %}
+        {% imgBookCover cover.url, "Book Cover", [75, 100, 150], "", "150px" %}
+      {% endif %}
+
+      <div>
+      <h3>{{ book.name }}</h3>
+      {% if book.additional.author %}
+      <p>Author: {{ book.additional.author }}</p>
+      {% endif %}
+
+      {% if book.readDate %}
+        <date>Finished: {{ book.readDate | readableDate }}</date>
+      {% endif %}
+
+      {% if book.additional.isbn %}
+        <div class="shopLinks">
+          Find on:
+          <ul class="shopLinks__list">
+            {% if book.additional.christian %}
+            <li><a href="https://10ofthose.com/uk/products?q={{ book.additional.isbn }}" target="_blank" rel="noopener">10ofThose.com</a></li>
+            <li><a href="https://thegoodbook.co.uk/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">The Good Book Company</a></li>
+            {% else %}
+            <li><a href="https://amazon.co.uk/s?k={{ book.additional.isbn }}" target="_blank" rel="noopener">Amazon</a></li>
+            <li><a href="https://www.waterstones.com/books/search/term/{{ book.additional.isbn }}" target="_blank" rel="noopener">Waterstones</a></li>
+            <li><a href="https://abebooks.co.uk/servlet/SearchResults?isbn={{ book.additional.isbn }}" target="_blank" rel="noopener">Abebooks</a></li>
+            {% endif %}
+            <li><a href="https://goodreads.com/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">GoodReads</a></li>
+            <li><a href="https://worldcat.org/search?q=bn%3A{{ book.additional.isbn }}" target="_blank" rel="noopener">Local library</a></li>
+          </ul>
+        </div>
+      {% endif %}
+      </div>
+
+    </li>
+
   {% endfor %}
-  </ul>
+  </div>
 {% endif %}
 
 <h2>Previously read:</h2>
-<ul class="listing">
+<div class="listing listing--reading">
 {% for book in readingList|sort(true, true, 'epoch') %}
   {% if book.readDate %}
-  {{ mBook.listItem(book) }}
+
+  <li>
+    {% if (book.cover.scaled) %}
+      {% set cover = book.cover.scaled | last %}
+      {% imgBookCover cover.url, "Book Cover", [150, 300], "", "150px" %}
+    {% endif %}
+
+    <div>
+    <h3>{{ book.name }}</h3>
+    {% if book.additional.author %}
+    <p>Author: {{ book.additional.author }}</p>
+    {% endif %}
+
+    {% if book.readDate %}
+      <date>Finished: {{ book.readDate | readableDate }}</date>
+    {% endif %}
+
+    {% if (book.list === "On the go") and (book.cover.scaled) %}
+      {% set cover = book.cover.scaled | last %}
+      {% imgBookCover cover.url, "Book Cover", [100] %}
+    {% endif %}
+
+    {% if book.additional.isbn %}
+      <div class="shopLinks">
+        Find on:
+        <ul class="shopLinks__list">
+          {% if book.additional.christian %}
+          <li><a href="https://10ofthose.com/uk/products?q={{ book.additional.isbn }}" target="_blank" rel="noopener">10ofThose.com</a></li>
+          <li><a href="https://thegoodbook.co.uk/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">The Good Book Company</a></li>
+          {% else %}
+          <li><a href="https://amazon.co.uk/s?k={{ book.additional.isbn }}" target="_blank" rel="noopener">Amazon</a></li>
+          <li><a href="https://www.waterstones.com/books/search/term/{{ book.additional.isbn }}" target="_blank" rel="noopener">Waterstones</a></li>
+          <li><a href="https://abebooks.co.uk/servlet/SearchResults?isbn={{ book.additional.isbn }}" target="_blank" rel="noopener">Abebooks</a></li>
+          {% endif %}
+          <li><a href="https://goodreads.com/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">GoodReads</a></li>
+          <li><a href="https://worldcat.org/search?q=bn%3A{{ book.additional.isbn }}" target="_blank" rel="noopener">Local library</a></li>
+        </ul>
+      </div>
+    {% endif %}
+    </div>
+  </li>
+
   {% endif %}
 {% endfor %}
-</ul>
+</div>
 
 <hr />
 
