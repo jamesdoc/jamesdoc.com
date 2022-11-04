@@ -1,12 +1,14 @@
 const dayjs = require("dayjs");
+const advancedFormat = require('dayjs/plugin/advancedFormat')
+dayjs.extend(advancedFormat)
 
 module.exports = {
   readableDate: (dateObj) => {
     return dayjs(dateObj).format("dddd, D MMMM YYYY");
   },
 
-  htmlDateString: (dateObj) => {
-    return dayjs(dateObj).format("YYYY-MM-DD");
+  htmlDateString: (dateObj, format = 'YYYY-MM-DD') => {
+    return dayjs(dateObj).format(format);
   },
 
   dateComparison: (dateObj, compareWith) => {
@@ -36,4 +38,24 @@ module.exports = {
 
     return returnPosts;
   },
+
+  splitlines: (input) => {
+    const parts = input.split(' ');
+    const lines = parts.reduce(function(prev, current) {
+      if (!prev.length) {
+        return [current];
+      }
+
+      let lastOne = prev[prev.length - 1];
+
+      if (lastOne.length + current.length > 19) {
+        return [...prev, current];
+      }
+
+      prev[prev.length - 1] = lastOne + ' ' + current;
+
+      return prev;
+    }, []);
+    return lines;
+  }
 };

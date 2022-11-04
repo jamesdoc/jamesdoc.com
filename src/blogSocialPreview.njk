@@ -1,0 +1,36 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: preview
+permalink: "/_assets/socialPreviews/{{ preview.date | htmlDateString('YYYY') }}-{{ preview.data.title | slugify}}.svg"
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="675" viewBox="0 0 1200 675" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  {% set titleInLines = preview.data.title | splitlines %}
+  <g fill="#ffffff" fill-rule="evenodd">
+
+    <path d="m0 0h1200v675h-1200z" fill="#fff"/>
+    <rect fill="#fff" height="633" rx="6" stroke="#979797" width="1152" x="24" y="21"/>
+    <path d="m1176 411v237c0 3.313708-2.68629 6-6 6h-237z" fill="#a3de87"/>
+
+    <text fill="#131b0e" font-family="SpaceGrotesk-Medium, Space Grotesk, sans-serif" font-size="30">
+      <tspan x="48" y="88">{{ preview.date | htmlDateString('dddd, Do MMMM YYYY') }}</tspan>
+    </text>
+
+    <text fill="#131b0e" font-size="100" font-family="SpaceGrotesk-Medium, Space Grotesk, sans-serif" font-weight="400">
+    {% for line in titleInLines %}
+      {% if loop.index <= 4 %}
+        <tspan x="48" y="{{200 + loop.index0 * 100}}">
+          {{line}}{% if loop.length > 4 and loop.index == 4 %}…{% endif %}
+        </tspan>
+      {% endif %}
+    {% endfor %}
+    </text>
+
+    <text font-size="28" font-family="SpaceGrotesk-Medium, Space Grotesk, sans-serif" font-weight="400">
+      <tspan fill="#131b0e" x="48" y="622">jamesdoc.com ⇢</tspan>
+    </text>
+  </g>
+</svg>

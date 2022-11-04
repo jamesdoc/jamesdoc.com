@@ -1,5 +1,5 @@
 ---
-title: Moving your ideas forward
+title: Moving your ideas forwards
 tags:
   - Kingdom Code
   - BUILD
