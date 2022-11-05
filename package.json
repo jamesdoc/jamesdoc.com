@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "ELEVENTY_ENV=development eleventy --serve --incremental & mix watch",
-    "build": "node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production"
+    "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production",
+    "netlify": "bash utils/fontInstall.sh && node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production"
   },
   "author": "James Doc",
   "license": "ISC",

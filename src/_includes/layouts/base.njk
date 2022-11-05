@@ -30,8 +30,14 @@
     <meta name="twitter:description" content="{{ intro if intro else metadata.description }}">
     <meta property="og:description" content="{{ intro if intro else metadata.description }}">
     <meta name="twitter:creator" content="@jamesdoc">
-    <meta name="twitter:image" content="{{ leadImage if leadImage else metadata.metaImg }}">
-    <meta property="og:image" content="{{ leadImage if leadImage else metadata.metaImg }}">
+
+    {% if generatedOGimg %}
+      <meta name="twitter:image" content="https://jamesdoc.com/_assets/socialPreviews/{{ page.date | htmlDateString('YYYY') }}-{{ title | slugify }}.jpeg">
+      <meta property="og:image" content="https://jamesdoc.com/_assets/socialPreviews/{{ page.date | htmlDateString('YYYY') }}-{{ title | slugify }}.jpeg">
+    {% else %}
+      <meta name="twitter:image" content="{{ leadImage if leadImage else metadata.metaImg }}">
+      <meta property="og:image" content="{{ leadImage if leadImage else metadata.metaImg }}">
+    {% endif %}
 
     <link rel="alternate" type="application/rss+xml" title="Blog RSS" href="/blog/feed.xml" />
     <link rel="icon" type="image/svg" href="/_assets/svg/favicon.svg" />
