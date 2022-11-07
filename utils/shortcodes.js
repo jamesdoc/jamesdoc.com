@@ -2,15 +2,18 @@ const eleventyImage = require("@11ty/eleventy-img");
 
 module.exports = {
   imgBookCover: async function (filepath, alt, widths, classes, sizes) {
-    if (!filepath) {
-      return;
-    }
+    if (!filepath) { return; }
 
     let options = {
       formats: ["webp", "jpg"],
       widths: widths || [null],
       urlPath: "/_assets/img/bookCovers/",
       outputDir: "./dist/_assets/img/bookCovers/",
+      cacheOptions: {
+        duration: "2y",
+        directory: ".cache",
+        removeUrlQueryParams: false,
+      },
     };
 
     let stats = await eleventyImage(filepath, options);

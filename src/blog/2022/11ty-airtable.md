@@ -39,7 +39,7 @@ The three packages we're using here are:
 - **Airtable JS Library** - to do the heavy lifting of talking to Airtable and handling the response
 - **dotenv** - so we don't have to hard code any API keys into our code.
 
-```
+```bash
 npm install @11ty/eleventy-cache-assets airtable dotenv
 ```
 
