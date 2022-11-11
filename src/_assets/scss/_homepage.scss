@@ -219,6 +219,12 @@ footer {
   border-color: #1da1f1;
 }
 
+.social_links a[href^="https://octodon"]:hover
+{
+  color: #6364ff;
+  border-color: #6364ff;
+}
+
 .social_links a[href^="https://instagram"]:hover
 {
   border-color: #9e35c3;
