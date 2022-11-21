@@ -13,7 +13,7 @@ module.exports = () => {
     },
     metaImg: "/_assets/img/twitter.jpg",
     description:
-      "Tech Lead at Vixen Labs | Living in London | Sitting at the intersection of Christianity and Technology | Tweeting @jamesdoc",
+      "Tech Lead at Vixen Labs | Living in London | Sitting at the intersection of Christianity and Technology",
     readingListId: trello.readingList.boardId,
   };
 };
