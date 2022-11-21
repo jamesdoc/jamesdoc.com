@@ -44,13 +44,16 @@
 
     <meta name="generator" content="{{ eleventy.generator }}" />
 
-    {% if themeColor %}
-    <style>
+    <link rel="me" href="https://octodon.social/@jamesdoc" />
+    <link rel="me" href="https://instagram.com/thejamesdoc" />
+    <link rel="me" href="https://last.fm/user/jamesdoc" />
+    <link rel="me" href="https://github.com/jamesdoc" />
+
+    {% if themeColor %}<style>
     :root {
       --theme: {{ themeColor }}
     }
-    </style>
-    {% endif %}
+    </style>{% endif %}
   </head>
 
   <body>
