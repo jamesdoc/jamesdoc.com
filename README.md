@@ -14,6 +14,10 @@ Simple static site via [Eleventy](https://www.11ty.io), deploying to [Netlify](h
 - `npm run importReadingList` - Hydrate the reading list
 - `npm run dev` - Build the site for dev
 
+## Data
+
+If you want things importing nicely (eg Last.fm) you'll need to get the `.env` file looking right…
+
 ## Deploying
 
 - `npm run build` - Build the production assets

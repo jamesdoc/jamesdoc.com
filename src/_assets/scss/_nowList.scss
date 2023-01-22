@@ -1,3 +1,10 @@
 .nowList{
-  padding-bottom: 40px;;
+  padding-bottom: 40px;
+}
+
+.nowList__album {
+  height: 1.1em;
+  width: 1.1em;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px var(--glow);
 }

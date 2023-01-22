@@ -40,6 +40,21 @@ itemtype: 'https://schema.org/FAQPage'
     </div>
   </li>
 
+  <li>
+    <strong>Albums this month</strong>
+    <div>
+      This month I've been enjoying
+
+      {% for album in lastfm %}
+        {% if loop.last %} and {% endif %}
+        {% imgBookCover album.image[0]['#text'], album.name + " Cover", [35, 75], "nowList__album", "1.1em" %}
+        <a href="{{ album.url }}" target="_blank" rel="noopener"><strong>{{ album.name }}</strong></a> by <em>{{ album.artist.name }}</em>
+        {% if loop.last == false %}, {% endif %}
+      {% endfor %}.
+      My music listening gets logged in <a href="https://last.fm/user/jamesdoc">Last.fm</a> by <a href="/blog/2022/sleeve">Sleeve</a>.
+    </div>
+  </li>
+
   <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <strong><span itemprop="name">What are you reading?</span></strong>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">

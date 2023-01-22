@@ -22,7 +22,9 @@
     "url-slug": "^3.0.4"
   },
   "devDependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.1",
+    "dotenv": "^16.0.3",
     "laravel-mix": "^6.0.49",
     "netlify-plugin-cache": "^1.0.3",
     "resolve-url-loader": "^5.0.0",

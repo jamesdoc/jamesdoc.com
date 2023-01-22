@@ -14,7 +14,7 @@ const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setQuietMode(false);
+  eleventyConfig.setQuietMode(true);
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
