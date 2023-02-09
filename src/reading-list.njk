@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: false
 {% set currentBooks = readingList | activeBook %}
 {% if currentBooks | length > 0 %}
   <h2>Currently reading:</h2>
-  <div class="listing listing--reading">
+  <ul class="listing listing--reading">
 
   {% for book in currentBooks %}
     <li>
@@ -22,11 +22,11 @@ eleventyExcludeFromCollections: false
     </li>
   {% endfor %}
 
-  </div>
+  </ul>
 {% endif %}
 
 <h2>Previously read:</h2>
-<div class="listing listing--reading listing--reading--cols">
+<ul class="listing listing--reading listing--reading--cols">
 {% for book in readingList|sort(true, true, 'epoch') %}
   {% if book.readDate %}
 
@@ -41,7 +41,7 @@ eleventyExcludeFromCollections: false
 
   {% endif %}
 {% endfor %}
-</div>
+</ul>
 
 <hr />
 

@@ -1,5 +1,6 @@
 .listing {
   list-style: none;
+  padding: 0;
 
   li {
     padding: 0 0 1.5rem;
@@ -48,6 +49,15 @@
       max-width: 150px;
       box-shadow: 0 0 20px 5px var(--glow);
       border-radius: 3px;
+      transition: all 0.25s;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    picture, img {
+      flex: 0 0 auto;
     }
 
     h2,
