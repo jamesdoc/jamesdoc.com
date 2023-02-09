@@ -51,7 +51,11 @@ itemtype: 'https://schema.org/FAQPage'
         <a href="{{ album.url }}" target="_blank" rel="noopener"><strong>{{ album.name }}</strong></a> by <em>{{ album.artist.name }}</em>
         {% if loop.last == false %}, {% endif %}
       {% endfor %}.
+
+      <div class="js-nowPlaying"></div>
+
       My music listening gets logged in <a href="https://last.fm/user/jamesdoc">Last.fm</a> by <a href="/blog/2022/sleeve">Sleeve</a>.
+
     </div>
   </li>
 

@@ -8,3 +8,10 @@
   border-radius: 2px;
   box-shadow: 0 0 5px 2px var(--glow);
 }
+
+.recent-played,
+.recent-played-track {
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+}
