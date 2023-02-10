@@ -1,0 +1,18 @@
+name: "Auto-Deploy"
+
+on:
+  schedule:
+    # Run at 6am on Sunday, Monday, Wednesday, Saturday
+    - cron: '0 0 27 * *'
+
+jobs:
+  deploy:
+    name: 'Auto Deploy'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger our build webhook on Netlify
+        env:
+          TOKEN: ${​{ secrets.NETLIFY_BUILD_HOOK_ID }​}
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/${TOKEN}
+
