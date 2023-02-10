@@ -13,9 +13,9 @@ generatedOGimg: true
   <date>{{ date | readableDate }}</date>
 </header>
 
-{% if date | dateComparison('2015-12-31') %}
-<div class="boxedMessage boxedMessage--alert">
-  <p class="boxedMessage__heading">⚠️ This is an old post</p>
+{% if date | dateComparison('2011-12-31') %}
+<aside class="boxedMessage boxedMessage--alert">
+  <p class="boxedMessage__heading">⚠️ This is really old post.</p>
   <p>
     It's possibly been exported and imported from at least
     three different blogging platforms over the years. That probably means, at
@@ -26,7 +26,12 @@ generatedOGimg: true
     But it's here because it's part of my past, not my present.
   </p>
   <p>You've been warned! Onwards…</p>
-</div>
+</aside>
+{% elseif date | dateComparison('2018-08-01') %}
+<aside class="boxedMessage boxedMessage--alert">
+  <p class="boxedMessage__heading">⚠️ You're reading an old post.</p>
+  <p>{{ date | readableDate }} was a long time ago, and as such I'd encourage you to tread carefully through this post. Links maybe dead, recommendations given may no longer be seen as good best practice, and technical implementation may at best be dated, if not entirely outdated. You've been warned!</p>
+</aside>
 {% endif %}
 
 {% if leadImage %}
