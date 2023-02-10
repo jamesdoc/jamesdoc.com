@@ -2,7 +2,6 @@ name: "Auto-Deploy"
 
 on:
   schedule:
-    # Run at 6am on Sunday, Monday, Wednesday, Saturday
     - cron: '0 0 27 * *'
 
 jobs:
