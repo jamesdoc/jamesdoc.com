@@ -50,11 +50,11 @@
 
   <body>
 
-    <section>
+    <section role="main">
       {{ layoutContent | safe }}
     </section>
 
-    <span class="avatar">
+    <span class="avatar" aria-hidden="true">
       {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"] %}
     </span>
 
