@@ -8,10 +8,10 @@ eleventyExcludeFromCollections: false
 {% set currentBooks = readingList | activeBook %}
 {% if currentBooks | length > 0 %}
   <h2>Currently reading:</h2>
-  <ul class="listing listing--reading">
+  <div class="listing listing--reading">
 
   {% for book in currentBooks %}
-    <li>
+    <div class="listing--reading__book">
       {# For some reason Nunjucks doesn't like this going into the partial #}
       {% if book.cover.scaled %}
         {% set cover = book.cover.scaled | last %}
@@ -19,29 +19,37 @@ eleventyExcludeFromCollections: false
       {% endif %}
 
       {% include "./_includes/partials/bookDetails.njk" %}
-    </li>
+    </div>
   {% endfor %}
 
-  </ul>
+  </div>
 {% endif %}
 
 <h2>Previously read:</h2>
-<ul class="listing listing--reading listing--reading--cols">
+{% set y = null %}
+<div class="listing listing--reading listing--reading--cols">
 {% for book in readingList|sort(true, true, 'epoch') %}
   {% if book.readDate %}
 
-  <li>
+  {% if y != book.readDate | htmlDateString('YYYY') %}
+    {% set y = book.readDate | htmlDateString('YYYY') %}
+    <div class="listing__header">
+      {{ y }}
+    </div>
+  {% endif %}
+
+  <div class="listing--reading__book">
     {% if book.cover.scaled %}
       {% set cover = book.cover.scaled | last %}
       {% imgBookCover cover.url, "Book Cover", [150, 300], "", "150px" %}
     {% endif %}
 
     {% include "./_includes/partials/bookDetails.njk" %}
-  </li>
+  </div>
 
   {% endif %}
 {% endfor %}
-</ul>
+</div>
 
 <hr />
 
