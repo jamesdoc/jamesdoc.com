@@ -2,7 +2,7 @@
 title: The Story Conference 2015 – Reflections from a Web Developer
 intro: Somehow I ended up attending The Story Conference. It's a conference about story telling…
 type: article
-tags:
+tags: vam
 date: 2015-02-23
 canonical: https://www.vam.ac.uk/blog/digital/the-story-conference-2015-reflections-from-a-web-developer
 ---

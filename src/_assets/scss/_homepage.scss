@@ -33,142 +33,16 @@
   }
 }
 
-.things li a {
-  border-radius: 2px;
-  box-shadow: 0 0 40px 10px var(--glow);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 75%;
-  border-radius: 2px;
-  display: block;
-  height: 0;
-  padding-bottom: 100%;
-  text-indent: -99999px;
-  transition: background-size 0.5s ease-out;
-  width: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  .things li a {
-    filter: brightness(0.8) contrast(1.2);
-  }
-}
-
-.things li a[href^="https://vixen"]
-{
-  background-color: $vixenOrange;
-  background-image: url("/_assets/svg/vixen.svg");
-  background-size: 50%;
-}
-
-.things li a[href^="https://vixen"]:hover
-{
-  background-size: 25%;
-}
-
-.things li a[href^="https://kingdom"]
-{
-  background-color: $kingdomcodeOrange;
-  background-image: url("/_assets/svg/kingdomcode.svg");
-  background-size: 50%;
-}
-
-.things li a[href^="https://kingdom"]:hover
-{
-  background-size: 25%;
-}
-
-.things li a[href^="https://onesheep"]
-{
-  background-color: $onesheepPink;
-  background-image: url("/_assets/svg/onesheep.svg");
-  background-size: 100%;
-}
-
-.things li a[href^="https://onesheep"]:hover
-{
-  background-size: 50%;
-}
-
-.things li a[href^="https://www.globe"]
-{
-  background-color: $globeOrange;
-  background-image: url("/_assets/svg/globe.svg");
-  transition: all 0.2s ease-out;
-}
-
-.things li a[href^="https://www.globe"]:hover
-{
-  border-radius: 50%;
-  transform: scale(1.3);
-}
-
-.things li a[href^="https://live"]
-{
-  background-color: $livewiresBlue;
-  background-image: url("/_assets/svg/livewires.svg");
-  background-size: 40%;
-}
-
-.things li a[href^="https://live"]:hover
-{
-  background-size: 25%;
-}
-
-.things li a[href^="https://www.lincoln"]
-{
-  background-color: $lincolnGreen;
-  background-image: url("/_assets/svg/university-of-lincoln.svg");
-  background-size: 50%;
-}
-
-.things li a[href^="https://www.lincoln"]:hover
-{
-  background-size: 30%;
-}
-
-.things li a[href^="https://ifes"]
-{
-  background-color: $ifesBlackcurrent;
-  background-image: url("/_assets/svg/ifes.svg");
-  background-size: 40%;
-}
-
-.things li a[href^="https://ifes"]:hover
-{
-  background-size: 25%;
-}
-
-.things li a[href^="https://vam"]
-{
-  background-color: $vandaTeal;
-  background-image: url("/_assets/svg/v-and-a.svg");
-  background-size: 75%;
-}
-
-.things li a[href^="https://vam"]:hover
-{
-  background-size: 50%;
-}
-
-.things li a[href^="https://www.sparks"]
-{
-  background-color: $sparksBlack;
-  background-image: url("/_assets/svg/sparks.svg");
-  background-size: 120%;
-}
-
-.things li a[href^="https://www.sparks"]:hover
-{
-  background-size: 100%;
-}
-
 footer {
   padding-top: 40px;
+}
 
-  @media (min-height: 600px) and (min-width: 600px) {
-    bottom: 40px;
-    position: absolute;
+.homepage {
+  footer {
+    @media (min-height: 600px) and (min-width: 600px) {
+      bottom: 40px;
+      position: absolute;
+    }
   }
 }
 
@@ -203,11 +77,8 @@ footer {
   border-bottom: 1px solid;
 }
 
-.social_links a[href^="/now"]:hover {
-  color: #a3de87;
-  border-color: #a3de87;
-}
-
+.social_links a[href^="/now"]:hover,
+.social_links a[href^="/resume"]:hover,
 .social_links a[href^="/blog"]:hover {
   color: #a3de87;
   border-color: #a3de87;
@@ -219,10 +90,10 @@ footer {
   border-color: #1da1f1;
 }
 
-.social_links a[href^="https://octodon"]:hover
+.social_links a[href^="https://mas.to"]:hover
 {
-  color: #6364ff;
-  border-color: #6364ff;
+  color: #595aff;
+  border-color: #595aff;
 }
 
 .social_links a[href^="https://instagram"]:hover

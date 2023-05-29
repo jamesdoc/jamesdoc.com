@@ -61,6 +61,7 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.5s;
+  scroll-behavior: smooth;
 }
 
 .avatar {
@@ -93,6 +94,10 @@ section {
     margin: 40px;
     min-height: calc(100vh - 160px);
   }
+}
+
+h1, h2, h3 {
+  scroll-margin-top: 1rem;
 }
 
 h1 {
@@ -206,5 +211,9 @@ hr {
 @import "boxedMessage";
 @import "embedWrapper";
 @import "nowList";
+@import "role";
+@import "logo";
+@import "bio";
+@import "utility";
 
 @import "prism";

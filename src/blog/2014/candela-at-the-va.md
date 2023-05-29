@@ -1,7 +1,7 @@
 ---
 title: Candela at the V&A
 type: article
-tags: design
+tags: design, vam
 date: 2014-09-19 20:08:16
 ---
 <iframe src="//player.vimeo.com/video/106610828?title=0&amp;byline=0&amp;portrait=0&amp;color=b05000" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

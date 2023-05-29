@@ -21,7 +21,7 @@ itemtype: 'https://schema.org/FAQPage'
   <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <strong><span itemprop="name">Where are you working?</span></strong>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      I'm currently a {{ now.employer.role }} for <strong itemprop="text"><a href="{{ now.employer.url }}">{{ now.employer.name }}</a></strong>. You can see a full employment history on my <a href="https://www.linkedin.com/in/jamesdoc/" rel="me noopener" target="_blank">LinkedIn profile</a>.
+      I'm currently a {{ now.employment[0].role }} for <strong itemprop="text"><a href="{{ now.employment[0].url }}">{{ now.employment[0].name }}</a></strong>. You can see a full employment history on my <a href="/resume">resume</a>.
     </div>
   </li>
 
@@ -52,7 +52,7 @@ itemtype: 'https://schema.org/FAQPage'
         {% if loop.last == false %}, {% endif %}
       {% endfor %}.
 
-      <div class="js-nowPlaying"></div>
+      <span class="js-nowPlaying"></span>
 
       My music listening gets logged in <a href="https://last.fm/user/jamesdoc">Last.fm</a> by <a href="/blog/2022/sleeve">Sleeve</a>.
 

@@ -1,0 +1,101 @@
+.role {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1rem;
+  max-width: 940px;
+  margin-bottom: 1rem;
+
+  @media (min-width: 824px) {
+    grid-template-columns: 0.75fr 2fr 2fr;
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 0.8rem;
+  }
+
+  p, a, li, summary {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  &__details {
+    grid-column-start: 2;
+    max-width: 600px;
+
+    @media (min-width: 824px) {
+      grid-column-start: unset;
+      padding-top: 0.8rem;
+    }
+
+    summary {
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+      display: block;
+      position: relative;
+
+      &:before {
+        content: '';
+        border-width: .4rem;
+        border-style: solid;
+        border-color: transparent transparent transparent var(--theme);
+        position: absolute;
+        top: 0.45rem;
+        left: 0;
+        transform: rotate(0);
+        transform-origin: .2rem 50%;
+        transition: .25s transform ease;
+      }
+
+      &::marker {
+        display: none;
+      }
+
+      span {
+        border-bottom: 1px solid var(--theme);
+        transition: color 0.25s, border 0.25s;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom-color: black;
+        }
+      }
+    }
+
+    // Animate the summary arrow
+    &[open] > summary:before {
+      transform: rotate(90deg);
+    }
+
+    // Animate the text entrance
+    &[open] li {
+      animation: sweep .5s ease-in-out forwards;
+    }
+
+    ul {
+      margin-left: 0.8rem;
+    }
+    li {
+      opacity: 0;
+      margin-bottom: 0.2rem;
+    }
+
+    &[open] li:nth-child(1) { animation-delay: .25s }
+    &[open] li:nth-child(2) { animation-delay: .5s }
+    &[open] li:nth-child(3) { animation-delay: .75s }
+    &[open] li:nth-child(4) { animation-delay: 1s }
+  }
+
+}
+
+@keyframes sweep {
+  0%    {
+    opacity: 0;
+    transform: translateX(-10px)
+  }
+  100%  {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
