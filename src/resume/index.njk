@@ -1,0 +1,135 @@
+---
+title: Let's work together
+layout: listing
+eleventyExcludeFromCollections: false
+avatar: hidden
+---
+
+<h1>Let's work together</h1>
+
+<div class="bio">
+  {% rwdImg "/_assets/img/face.jpg", "James Doc", "50%", "", [150, 300], ["webp", "png"] %}
+
+  <div class="bio__text">
+    <p>I’m James, a developer and designer based in London, UK. For the last 10 years, I’ve been working in teams building accessible and performant digital tools and services for businesses, charities, and agencies such as the V&amp;A, Vixen Labs, Dyson, Nespresso, Alpha International, and&nbsp;more…</p>
+    <ul class="bio__text__links">
+      <li><a href="#professional">Professional</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#voluntary">Voluntary</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<h2 id="professional">Professional</h2>
+
+{% for job in now.employment %}
+  <div class="role">
+
+    <a class="role__logo logo" href="{{ job.url }}" aria-label="{{ job.name }}" target="_blank" rel="noopener">
+      {{ job.name }}
+    </a>
+
+    <div>
+      <h3 class="role__title">{{ job.role }}</h3>
+      <a class="role__org" href="{{ job.url }}" target="_blank" rel="noopener">{{ job.name }}</a>
+      <p class="role__location">{{ job.location }}</p>
+      <p class="role__dates">{{ job.start | htmlDateString("MMMM YYYY") }}{% if job.end %} – {{ job.end | htmlDateString("MMMM YYYY") }}{% endif %}</p>
+    </div>
+
+    {% if job.summary and job.info %}
+    <details class="role__details">
+      <summary>
+        {{ job.summary }} <span>More…</span>
+      </summary>
+      <ul>
+        {% for infoline in job.info %}
+        <li>{{ infoline | safe }}</li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+
+    {% if job.summary and job.info == undefined %}
+    <div class="role__details">
+      {{ job.summary }}
+    </div>
+    {% endif %}
+  </div>
+{% endfor %}
+
+<h2 id="education">Education</h2>
+
+<div class="role">
+
+  <a class="role__logo logo" href="https://lincoln.ac.uk" aria-label="University of Lincoln" target="_blank" rel="noopener">
+    University of Lincoln
+  </a>
+
+  <div>
+    <h3 class="role__title">Web Computing (BSc Hons)</h3>
+    <a class="role__org" href="https://lincoln.ac.uk" target="_blank" rel="noopener">University of Lincoln</a>
+    <p class="role__location">Lincoln, UK</p>
+    <p class="role__dates">September 2008 &#8211; May 2011</p>
+  </div>
+</div>
+
+<h2 id="voluntary">Voluntary</h2>
+
+<div class="role">
+
+  <a class="role__logo logo" href="https://kingdomcode.org.uk" aria-label="Kingdom Code" target="_blank" rel="noopener">
+    Kingdom Code
+  </a>
+
+  <div>
+    <h3 class="role__title">Co-Leader</h3>
+    <a class="role__org" href="https://kingdomcode.org.uk" target="_blank" rel="noopener">Kingdom Code</a>
+    <p class="role__location">UK</p>
+    <p class="role__dates">January 2014 – current</p>
+  </div>
+</div>
+
+<div class="role">
+
+  <a class="role__logo logo" href="https://content.scriptureunion.org.uk/holidays-events" aria-label="Scripture Union" target="_blank" rel="noopener">
+    Scripture Union
+  </a>
+
+  <div>
+    <h3 class="role__title">Holiday Leader</h3>
+    <a class="role__org" href="https://content.scriptureunion.org.uk/holidays-events" target="_blank" rel="noopener">Scripture Union</a>
+    <p class="role__location">Cardiff and Salisbury, UK</p>
+    <p class="role__dates">August 2008 – current</p>
+  </div>
+</div>
+
+<div class="role">
+
+  <a class="role__logo logo" href="https://globe.church" aria-label="The Globe Church" target="_blank" rel="noopener">
+    The Globe Church
+  </a>
+
+  <div>
+    <h3 class="role__title">Trustee / Elder</h3>
+    <a class="role__org" href="https://globe.church" target="_blank" rel="noopener">The Globe Church</a>
+    <p class="role__location">London, UK</p>
+    <p class="role__dates">February 2023 – current</p>
+  </div>
+</div>
+
+<div class="role">
+
+  <a class="role__logo logo" href="https://www.churchofengland.org/" aria-label="The Church of England" target="_blank" rel="noopener">
+    The Church of England
+  </a>
+
+  <div>
+    <h3 class="role__title">Digital Advisor</h3>
+    <a class="role__org" href="https://www.churchofengland.org/" target="_blank" rel="noopener">The Church of England</a>
+    <p class="role__location">London, UK</p>
+    <p class="role__dates">January 2018 – January 2021</p>
+  </div>
+</div>
+
+{% include '../_includes/partials/footer.njk' %}

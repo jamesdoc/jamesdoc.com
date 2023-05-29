@@ -54,9 +54,9 @@
       {{ layoutContent | safe }}
     </section>
 
-    <span class="avatar" aria-hidden="true">
+    {% if avatar != "hidden" %}<span class="avatar" aria-hidden="true">
       {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"] %}
-    </span>
+    </span>{% endif %}
 
     <script async defer src="/_assets/js/index.js"></script>
     <!-- last build: {{ build.env }} {{ build.timestamp }} -->

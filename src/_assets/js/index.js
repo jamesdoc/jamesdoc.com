@@ -11,10 +11,9 @@ if (nowPlaying) {
     fetch(path)
     .then((response) => response.json())
     .then((data) => {
-        nowcontainer = document.createElement('div')
+        nowcontainer = document.createElement('span')
         nowcontainer.className = 'recent-played'
-        nowcontainer.style
-        nowcontainer.innerHTML = `The most recent track scrobbled to Last.Fm was ${data.content}.`
+        nowcontainer.innerHTML = `The most recent track scrobbled to Last.Fm was ${data.content.replace('🎧 ','')}.`
         nowPlaying.appendChild(nowcontainer)
     })
 }

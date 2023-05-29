@@ -4,14 +4,14 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy --serve --incremental & mix watch",
+    "dev": "ELEVENTY_ENV=development eleventy --serve & mix watch",
     "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production",
     "netlify": "bash utils/fontInstall.sh && node utils/books.js && ELEVENTY_ENV=production eleventy && mix --production"
   },
   "author": "James Doc",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",

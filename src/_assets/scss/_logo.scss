@@ -1,0 +1,147 @@
+.logo {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 40px 10px var(--glow);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  border-radius: 2px;
+  display: block;
+  height: 0;
+  padding-bottom: 100%;
+  text-indent: -99999px;
+  transition: background-size 0.5s ease-out;
+  width: 100%;
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.8) contrast(1.2);
+  }
+
+  &[href^="https://vixen"]
+  {
+    background-color: $vixenOrange;
+    background-image: url("/_assets/svg/vixen.svg");
+    background-size: 50%;
+
+    &:hover {background-size: 25%;}
+  }
+
+  &[href^="https://kingdom"]
+  {
+    background-color: $kingdomcodeOrange;
+    background-image: url("/_assets/svg/kingdomcode.svg");
+    background-size: 50%;
+  }
+
+  &[href^="https://kingdom"]:hover
+  {
+    background-size: 25%;
+  }
+
+  &[href^="https://onesheep"]
+  {
+    background-color: $onesheepPink;
+    background-image: url("/_assets/svg/onesheep.svg");
+    background-size: 100%;
+  }
+
+  &[href^="https://onesheep"]:hover
+  {
+    background-size: 50%;
+  }
+
+  &[href^="https://globe"]
+  {
+    background-color: $globeOrange;
+    background-image: url("/_assets/svg/globe.svg");
+    transition: all 0.2s ease-out;
+  }
+
+  &[href^="https://globe"]:hover
+  {
+    border-radius: 50%;
+  }
+
+  &[href^="https://content.scriptureunion.org.uk"]
+  {
+    background-color: $livewiresBlue;
+    background-image: url("/_assets/svg/scripture-union.svg");
+    background-size: 40%;
+  }
+
+  &[href^="https://content.scriptureunion.org.uk"]:hover
+  {
+    background-size: 25%;
+  }
+
+  &[href^="https://live"]
+  {
+    background-color: $livewiresBlue;
+    background-image: url("/_assets/svg/livewires.svg");
+    background-size: 40%;
+  }
+
+  &[href^="https://live"]:hover
+  {
+    background-size: 25%;
+  }
+
+  &[href^="https://lincoln"]
+  {
+    background-color: $lincolnGreen;
+    background-image: url("/_assets/svg/university-of-lincoln-original.svg");
+    background-size: 65%;
+  }
+
+  &[href^="https://lincoln"]:hover
+  {
+    background-size: 50%;
+  }
+
+  &[href^="https://ifes"]
+  {
+    background-color: $ifesBlackcurrent;
+    background-image: url("/_assets/svg/ifes.svg");
+    background-size: 40%;
+  }
+
+  &[href^="https://ifes"]:hover
+  {
+    background-size: 25%;
+  }
+
+  &[href^="https://vam"]
+  {
+    background-color: $vandaTeal;
+    background-image: url("/_assets/svg/v-and-a.svg");
+    background-size: 75%;
+  }
+
+  &[href^="https://vam"]:hover
+  {
+    background-size: 50%;
+  }
+
+  &[href^="https://www.sparks"]
+  {
+    background-color: $sparksBlack;
+    background-image: url("/_assets/svg/sparks.svg");
+    background-size: 120%;
+  }
+
+  &[href^="https://www.sparks"]:hover
+  {
+    background-size: 100%;
+  }
+
+  &[href^="https://www.churchofengland"]
+  {
+    background-color: #9669a9;
+    background-image: url("/_assets/svg/coe.svg");
+  }
+
+  &[href^="https://www.churchofengland"]:hover
+  {
+    background-size: 60%;
+  }
+}

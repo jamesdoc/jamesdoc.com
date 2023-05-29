@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi Splash Screen
 type: article
-tags: design
+tags: design, vam
 date: 2014-10-20 18:20:20
 leadImage: /_assets/img/blog/imported/banners/wi-fi-splash-screen.jpg
 ---

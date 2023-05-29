@@ -1,0 +1,47 @@
+.bio {
+  margin: 5rem 0;
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: 824px) {
+    max-width: 940px;
+    grid-template-columns: 2.75fr 2fr;
+  }
+
+  img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    max-width: 50%;
+    height: auto;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 40px 10px var(--glow);
+  }
+
+  &__text {
+
+    @media (min-width: 824px) {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    &__links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline;
+        padding-right: 10px;
+
+        @media (min-width: 600px) {
+          padding-right: 20px;
+        }
+      }
+
+      li:after {
+        content: ".";
+      }
+    }
+  }
+}
