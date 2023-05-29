@@ -1,0 +1,28 @@
+@media not (prefers-reduced-motion: reduce) {
+  .post__banner {
+    view-transition-name: var(--name);
+  }
+
+  .vt-thought-title {
+    view-transition-name: var(--name);
+  }
+
+  .vt-thoughts {
+    view-transition-name: thoughts;
+  }
+
+  @keyframes thoughtsIn {
+    from {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  ::view-transition-new(thoughts) {
+    animation: thoughtsIn 0.3s;
+  }
+}

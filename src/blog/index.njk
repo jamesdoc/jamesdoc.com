@@ -20,9 +20,10 @@
     {% else %}
     <a href="{{ post.url }}" class="listing__local">
     {% endif %}
-      <date>{{ post.data.date | readableDate }}</date>
-      {{ post.data.year }}
+      <span class="vt-thought-title" style="--name: post-{{ post.fileSlug }}">
       <h2>{{ post.data.title }}</h2>
+      <date>{{ post.data.date | readableDate }}</date>
+      </span>
       <p>{{ post.data.intro }}</p>
     </a>
   </li>

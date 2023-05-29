@@ -3,14 +3,15 @@ layout: layouts/base.njk
 generatedOGimg: true
 ---
 
-<header role="banner" class="">
+<header role="banner">
   <nav class="breadcrumbs">
     <a href="/">James Doc</a>
-    <a href="/blog">Thoughts</a>
+    <a href="/blog" class="vt-thoughts">Thoughts</a>
   </nav>
-
-  <h1 itemprop="name">{{ title }}</h1>
-  <date>{{ date | readableDate }}</date>
+  <div class="post__banner" style="--name: post-{{ page.fileSlug }}">
+    <h1 itemprop="name">{{ title }}</h1>
+    <date>{{ date | readableDate }}</date>
+  </div>
 </header>
 
 {% if date | dateComparison('2011-12-31') %}
