@@ -1,5 +1,5 @@
 const axios = require("axios");
-const urlSlug = require("url-slug");
+const { convert, LOWERCASE_TRANSFORMER } = require('url-slug')
 const fs = require("fs");
 const { trello } = require("../config.js");
 const dayjs = require("dayjs");
@@ -21,9 +21,9 @@ let log = function (message) {
 const slug = (str) => {
   const conf = {
     separator: "-",
-    transformer: urlSlug.LOWERCASE_TRANSFORMER,
+    transformer: LOWERCASE_TRANSFORMER,
   };
-  return urlSlug(str, conf);
+  return convert(str, conf);
 };
 
 const refLookup = (refType) => {
