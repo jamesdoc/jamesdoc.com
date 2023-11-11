@@ -19,12 +19,13 @@ module.exports = {
         url: "https://vixenlabs.co",
         start: '20210801',
         end: null,
-        summary: "Member of the senior leadership team of an agency focused on developing more human interactions with technology; through voice or natural language.",
+        summary: "Member of the senior leadership team of an agency focused on developing more human and conversational interactions with technology through voice, natural language, and generative AI.",
         info: [
-          "Implemented experimental Alexa Shopping Kit functionalty to the <a href='https://vixenlabs.co/learn-how-to-do-anything-with-the-wikihow-alexa-skill'>wikiHow skill</a> to be demonstrated in the opening session of the <a href='https://developer.amazon.com/en-US/alexa/alexa-live'>2022 Alexa Live conference</a>.",
+          "Implemented experimental Alexa Shopping Kit functionalty to the <a href='https://vixenlabs.co/learn-how-to-do-anything-with-the-wikihow-alexa-skill' target='_blank' rel='noopener'>wikiHow skill</a> to be demonstrated in the opening session of the <a href='https://developer.amazon.com/en-US/alexa/alexa-live' target='_blank' rel='noopener'>2022 Alexa Live conference</a>.",
           "Lead the technical discovery process ahead of design and build process for clients such as TuneIn, Dyson, Nespresso, and HBO.",
+          "Developed a number of technical proof-of-concepts including an <a href='https://www.gloo.us/gloo-hackathon-alpha-international' target='_blank' rel='noopener'>award winning generative AI powered chatbot</a> at the 2023 <a href='https://www.gloo.us/hackathon' target='_blank' rel='noopener'>Gloo hackathon</a>.",
           "Managed relationship with both internal developers and external development partners.",
-          "Responsible for the implementation and management of Vixen Labs' <a href='https://vixenlabs.co/vixen-labs-is-iso-27001-certified'>ISO 27001 accreditation</a>."
+          "Responsible for the implementation and management of Vixen Labs' <a href='https://vixenlabs.co/vixen-labs-is-iso-27001-certified' target='_blank' rel='noopener'>ISO 27001 accreditation</a>."
         ]
       },
       {
@@ -51,7 +52,7 @@ module.exports = {
         url: "https://www.sparks-studio.com/",
         start: '20181001',
         end: '20190930',
-        summary: "Part time role to test the need for a DPM role, and to support the studio as they implement brand and design work into digital products.",
+        summary: "Part time role to validate the need for a DPM role, and to support the studio as they implement brand and design work into digital products.",
         info: [
           "Management for the build and deployment of <a href='https://christiansinsport.org.uk/'>Christians in Sport</a> from a legacy platform.",
           "Supported the technical discovery, build, and handover of the digital implementation of the rebrand for the FinTech company <a href='https://www.iress.com/'>Iress</a>.",
