@@ -20,3 +20,7 @@ exports.postsByYear = collection => {
 exports.posts = collection => {
   return collection.getFilteredByGlob(["./src/blog/**/*.md"]);
 }
+
+exports.events = collection => {
+  return collection.getFilteredByGlob(["./src/events/**/*.md"]);
+}

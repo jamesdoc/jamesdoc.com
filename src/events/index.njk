@@ -1,0 +1,44 @@
+---
+  title: Events
+  layout: listing
+  eleventyExcludeFromCollections: true
+---
+
+<h1>Events</h1>
+
+<div class="timeline">
+{% set y = null %}
+{% for event in collections.events | reverse %}
+
+  {% if event.data.date | htmlDateString('YYYY') !== y %}
+    <h2>{{ event.data.date | htmlDateString('YYYY') }}</h2>
+    {% set y = event.data.date | htmlDateString('YYYY') %}
+  {% endif %}
+
+  <div class="timeline__event">
+
+    <img src="https://v1.indieweb-avatar.11ty.dev/{{ event.data.externalUrl | urlencode }}/" alt="{{ event.data.title }} logo" loading="lazy" decoding="async" width="50" height="50">
+
+    <div>
+      <div class="timeline__event__title">
+        <span>{{ event.data.organiser }}</span>
+        {{ event.data.title }}
+      </div>
+
+      <p>{{ event.data.role | capitalize }}</p>
+      <date>{{ event.data.date | dateRange(event.data.endDate) }}</date>
+      <p>{{ event.data.location.city | capitalize }}{% if event.data.location.country %}, {{ event.data.location.country }}{% endif %}</p>
+
+      <p>
+        {% if event.content %}
+          <a href="{{ event.url }}">My notes</a> |
+        {% endif %}
+        {% if event.data.summaryUrl %}
+          <a href="{{ event.data.summaryUrl }}">Event summary</a> |
+        {% endif %}
+        <a href="{{ event.data.externalUrl }}" target="_blank" rel="noopener">Event page</a>
+      </p>
+    </div>
+  </div>
+{% endfor %}
+</div>

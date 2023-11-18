@@ -6,22 +6,24 @@ itemtype: 'https://schema.org/FAQPage'
 ---
 {% set currentBooks = readingList | activeBook %}
 {% set latestPost = collections.posts | reverse | first %}
+{% set previousEvent = collections.events | pastFromCollection | last %}
+{% set nextEvent = collections.events | futureFromCollection | first %}
 
 <h1>Now</h1>
 <p>Rather than an about page… this is a list of things that are going on <a href="https://nownownow.com/about">now</a>.</p>
 
 <ul class="nowList">
-  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-   <strong><span itemprop="name">Where are you?</span></strong>
-   <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+  <li>
+   <strong>Location</strong>
+   <div>
     Since 2014 I've been living in <span itemprop="text"><a href="{{ now.location.url }}">{{ now.location.name }}, UK</a></span>. And for the immediate future I don't see myself leaving anytime soon.
    </div>
   </li>
 
-  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <strong><span itemprop="name">Where are you working?</span></strong>
-    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      I'm currently a {{ now.employment[0].role }} for <strong itemprop="text"><a href="{{ now.employment[0].url }}">{{ now.employment[0].name }}</a></strong>. You can see a full employment history on my <a href="/resume">resume</a>.
+  <li>
+    <strong>Employment</strong>
+    <div>
+      I'm currently a {{ now.employment[0].role }} for <strong><a href="{{ now.employment[0].url }}">{{ now.employment[0].name }}</a></strong>. You can see a full employment history on my <a href="/resume">resume</a>.
     </div>
   </li>
 
@@ -32,10 +34,10 @@ itemtype: 'https://schema.org/FAQPage'
     {% endfor %}
   </li> #}
 
-  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <strong><span itemprop="name">What's the latest blog post?</span></strong>
-    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      I used to write blog posts semi-regularly… now not so much! Most recently I wrote <strong itemprop="text"><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></strong>.
+  <li>
+    <strong>Blogging</strong>
+    <div>
+      I used to write blog posts semi-regularly… now not so much! Most recently I wrote <strong><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></strong>.
       You can <a href="/blog">view a list of all blog posts here</a>.
     </div>
   </li>
@@ -59,16 +61,25 @@ itemtype: 'https://schema.org/FAQPage'
     </div>
   </li>
 
-  <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <strong><span itemprop="name">What are you reading?</span></strong>
-    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <span itemprop="text">Right now I'm reading
+  <li>
+    <strong>Reading list</strong>
+    <div>
+      Right now I'm reading
       {% for book in currentBooks %}
         <strong>{{ book.name }}</strong> by <em>{{ book.additional.author }}</em>{% if loop.last != true %},{% else %}.{% endif %}
       {% endfor %} I keep track of all the books I'm reading through a big reading list in Trello and then pull them into this site.
       You can <a href="/reading-list">view the full reading list</a>.
-      </span>
     </div>
+  </li>
+
+  <li>
+    <strong>Events in the diary</strong>
+    <div>
+    The last event I was at was <img src="https://v1.indieweb-avatar.11ty.dev/{{ previousEvent.data.externalUrl | urlencode }}/" alt="{{ previousEvent.data.title }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ previousEvent.data.externalUrl }}" target="_blank" rel="noopener">{{ previousEvent.data.organiser }} – {{ previousEvent.data.title }}</a></strong> on {{ previousEvent.data.date | readableDate }} ({{ previousEvent.data.role }}).
+    {% if nextEvent %}
+    Next up is <img src="https://v1.indieweb-avatar.11ty.dev/{{ nextEvent.data.externalUrl | urlencode }}/" alt="{{ nextEvent.data.title }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ nextEvent.data.externalUrl }}" target="_blank" rel="noopener">{{ nextEvent.data.title }}</a></strong> on {{ nextEvent.data.date | readableDate }} in {{ nextEvent.data.location.city }} ({{ nextEvent.data.role }}).
+    {% endif %}
+    You can <a href="/events">see a full list of upcoming and previous events</a>.</div>
   </li>
 </ul>
 

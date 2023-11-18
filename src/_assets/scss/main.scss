@@ -60,6 +60,7 @@ body {
   font-size: 100%;
   margin: 0;
   padding: 0;
+  text-wrap: pretty;
   transition: background-color 0.5s;
   scroll-behavior: smooth;
 }
@@ -214,6 +215,7 @@ hr {
 @import "logo";
 @import "bio";
 @import "utility";
+@import "timeline";
 @import "viewTransitions";
 
 @import "prism";
