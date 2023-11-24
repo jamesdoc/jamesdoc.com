@@ -6,7 +6,7 @@ author: James Doc
 intro: There's been a trend floating around the blogosphere this month looking at the default apps people are using… I like that. This is mine.
 ---
 
-There's been a trend floating around the blogosphere this month looking at the default apps people are using… I like that. This is my list:
+There's been a [trend floating](https://defaults.rknight.me/network/) [around](https://rknight.me/app-defaults/) [the](https://birchtree.me/blog/my-default-apps-at-the-end-of-2023/) [blogosphere](https://jasonfry.co.uk/blog/app-defaults/) [this](https://calebhearth.com/apps-i-use-2023) [month](https://www.josemunozmatos.com/blog/my-app-defaults-2023-edition) looking at the default apps people are using… I like that. This is my list:
 
 ## 📨 Mail Client
 
@@ -74,5 +74,5 @@ Spotify. Not sure if I should feel bad about this one at the moment.
 
 ## 🔐 Password Management
 
-I've been running off KeePass for years, running [MacPass](https://macpassapp.org/) on MacOS, and [Keepass2Android](https://play.google.com/store/apps/details?id=keepass2android.keepass2android&hl=en_GB&gl=US) on my phone
+I've been running off KeePass for years, running [MacPass](https://macpassapp.org/) on MacOS, and [Keepass2Android](https://play.google.com/store/apps/details?id=keepass2android.keepass2android&hl=en_GB&gl=US) on my phone.
 
