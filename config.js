@@ -22,7 +22,7 @@ module.exports = {
         summary: "Member of the senior leadership team of an agency focused on developing more human and conversational interactions with technology through voice, natural language, and generative AI.",
         info: [
           "Implemented experimental Alexa Shopping Kit functionalty to the <a href='https://vixenlabs.co/learn-how-to-do-anything-with-the-wikihow-alexa-skill' target='_blank' rel='noopener'>wikiHow skill</a> to be demonstrated in the opening session of the <a href='https://developer.amazon.com/en-US/alexa/alexa-live' target='_blank' rel='noopener'>2022 Alexa Live conference</a>.",
-          "Lead the technical discovery process ahead of design and build process for clients such as TuneIn, Dyson, Nespresso, and HBO.",
+          "Led the technical discovery process ahead of design and build process for clients such as TuneIn, Dyson, Nespresso, and HBO.",
           "Developed a number of technical proof-of-concepts including an <a href='https://www.gloo.us/gloo-hackathon-alpha-international' target='_blank' rel='noopener'>award winning generative AI powered chatbot</a> at the 2023 <a href='https://www.gloo.us/hackathon' target='_blank' rel='noopener'>Gloo hackathon</a>.",
           "Managed relationship with both internal developers and external development partners.",
           "Responsible for the implementation and management of Vixen Labs' <a href='https://vixenlabs.co/vixen-labs-is-iso-27001-certified' target='_blank' rel='noopener'>ISO 27001 accreditation</a>."
