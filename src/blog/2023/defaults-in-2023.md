@@ -70,7 +70,7 @@ Spotify. Not sure if I should feel bad about this one at the moment.
 
 ## 🎤 Podcasts
 
-[Pocketcasts](https://pocketcasts.com/) has been solid for years. It also has a simple Amazon Alexa skill which works well.
+[Pocket Casts](https://pocketcasts.com/) has been solid for years. It also has a simple Amazon Alexa skill which works well.
 
 ## 🔐 Password Management
 
