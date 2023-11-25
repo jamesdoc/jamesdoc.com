@@ -12,8 +12,6 @@
 
   h2,
   h3 {
-    display: list-item;
-    list-style-type: disc;
     margin: 0;
     padding: 0;
   }
@@ -21,6 +19,14 @@
   p {
     font-size: 100%;
     margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  date {
+    border-bottom: 1px solid var(--theme);
   }
 
   a.listing__remote h2:after {

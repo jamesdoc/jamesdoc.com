@@ -23,7 +23,7 @@ itemtype: 'https://schema.org/FAQPage'
   <li>
     <strong>Employment</strong>
     <div>
-      I'm currently a {{ now.employment[0].role }} for <strong><a href="{{ now.employment[0].url }}">{{ now.employment[0].name }}</a></strong>. You can see a full employment history on my <a href="/resume">resume</a>.
+      I'm currently a {{ now.employment[0].role }} for <img src="https://v1.indieweb-avatar.11ty.dev/{{ now.employment[0].url | urlencode }}/" alt="{{ now.employment[0].name }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ now.employment[0].url }}">{{ now.employment[0].name }}</a></strong>. You can see a full employment history on my <a href="/resume">resume</a>.
     </div>
   </li>
 
@@ -45,14 +45,18 @@ itemtype: 'https://schema.org/FAQPage'
   <li>
     <strong>Albums this month</strong>
     <div>
-      This month I've been enjoying
+      This month I've been enjoying:
+    </div>
+
+     <ul class="nowList__list">
 
       {% for album in lastfm %}
-        {% if loop.last %} and {% endif %}
-        {% imgBookCover album.image[0]['#text'], album.name + " Cover", [35, 75], "nowList__album", "1.1em" %}
-        <a href="{{ album.url }}" target="_blank" rel="noopener"><strong>{{ album.name }}</strong></a> by <em>{{ album.artist.name }}</em>
-        {% if loop.last == false %}, {% endif %}
-      {% endfor %}.
+        <li>
+          {% imgBookCover album.image[0]['#text'], album.name + " Cover", [35, 75], "", "1.1em" %}
+          <span><a href="{{ album.url }}" target="_blank" rel="noopener"><strong>{{ album.name }}</strong></a> by <em>{{ album.artist.name }}</em></span>
+        </li>
+      {% endfor %}
+      </ul>
 
       <span class="js-nowPlaying"></span>
 
@@ -70,6 +74,26 @@ itemtype: 'https://schema.org/FAQPage'
       {% endfor %} I keep track of all the books I'm reading through a big reading list in Trello and then pull them into this site.
       You can <a href="/reading-list">view the full reading list</a>.
     </div>
+  </li>
+
+  <li>
+    <strong>Recently on the internet</strong>
+    <div>
+      I keep track of articles and blogposts I'm reading (or want to get around to reading) in <a href="https://getpocket.com/" target="_blank" rel="noopener">Pocket</a>. Here are five articles that I've read recently:
+    </div>
+
+    <ul class="nowList__list">
+    {% for article in pocket %}
+      {% if (loop.index <= 5) %}
+        <li>
+          <img src="https://v1.indieweb-avatar.11ty.dev/{{ article.resolved_url | urlencode }}/" alt="" loading="lazy" decoding="async" width="34" height="34">
+          <span><a href="{{ article.resolved_url }}" rel="noopener" target="_blank">
+          {{ article.resolved_title }}</a>.<br />
+          Read on {{ article.time_read | readableDate }}.</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
   </li>
 
   <li>

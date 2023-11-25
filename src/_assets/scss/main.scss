@@ -153,14 +153,14 @@ code {
 }
 
 a {
-  border-bottom: 1px solid var(--theme);
+  text-decoration: underline;
+  text-decoration-color: var(--theme);
   color: var(--text);
   outline: none;
-  text-decoration: none;
   transition: color 0.25s, border 0.25s;
 
   &:hover {
-    border-bottom-color: black;
+    text-decoration-color: var(--text);
   }
 }
 

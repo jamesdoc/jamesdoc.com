@@ -1,5 +1,9 @@
 .nowList{
-  padding-bottom: 40px;
+  padding:  0 0 40px;
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .nowList__album {
@@ -7,6 +11,27 @@
   width: 1.1em;
   border-radius: 2px;
   box-shadow: 0 0 5px 2px var(--glow);
+}
+
+.nowList__list {
+  margin: 1rem 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+
+  picture, img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 2px var(--glow);
+    flex-shrink: 0;
+  }
 }
 
 .recent-played,
