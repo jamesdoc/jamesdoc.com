@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Trigger our build webhook on Netlify
-        env:
-          TOKEN: ${​{ secrets.NETLIFY_BUILD_HOOK_ID }​}
-        run: curl -X POST -d {} https://api.netlify.com/build_hooks/${TOKEN}
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Deploy Stage
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.NETLIFY_DEPLOY_HOOK }}
+          method: 'POST'
 
