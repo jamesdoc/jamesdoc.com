@@ -3,6 +3,7 @@ console.log('There\'s not much in JSland, but feel free to go and poke around');
 console.log('All the code is on GitHub. Go have a poke around');
 console.log('https://github.com/jamesdoc/jamesdoc.com');
 
+const tinylyticsCode = 'e4xmTUEjYDgdBLDNRF6w';
 
 const nowPlaying = document.querySelector('.js-nowPlaying');
 
@@ -17,3 +18,9 @@ if (nowPlaying) {
         nowPlaying.appendChild(nowcontainer)
     })
 }
+
+let script = document.createElement("script");
+script.type = "text/javascript";
+script.defer = true;
+script.src = `https://tinylytics.app/embed/${tinylyticsCode}.js`;
+document.body.appendChild(script);
