@@ -83,7 +83,7 @@ body {
   color: var(--text);
 }
 
-section {
+.outline {
   border-radius: 4px;
   box-shadow: 0 0 40px 10px var(--glow);
   margin: 20px;
@@ -217,5 +217,6 @@ hr {
 @import "utility";
 @import "timeline";
 @import "viewTransitions";
+@import "yearGrid";
 
 @import "prism";

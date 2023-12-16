@@ -11,6 +11,33 @@
 ---
 <h1>Thoughts from {{ posts }}</h1>
 
+<section class="yearGrid">
+  <div class="yearGrid__months">
+      <abbr title="January">J</abbr>
+      <abbr title="February">F</abbr>
+      <abbr title="March">M</abbr>
+      <abbr title="April">A</abbr>
+      <abbr title="May">M</abbr>
+      <abbr title="June">J</abbr>
+      <abbr title="July">J</abbr>
+      <abbr title="August">A</abbr>
+      <abbr title="September">S</abbr>
+      <abbr title="October">O</abbr>
+      <abbr title="November">N</abbr>
+      <abbr title="December">D</abbr>
+  </div>
+  <div class="yearGrid__squares">
+    {% for day in range(1, posts|daysInYear + 1) %}
+      {% set foundSlug = day|hasPostOnDay(collections.postsByYear[posts]) %}
+      {% if foundSlug %}
+        <a href="{{ foundSlug.url }}" title="{{ foundSlug.title }}" class="yearGrid__squares__day hasPost"></a>
+      {% else %}
+        <span class="yearGrid__squares__day"></span>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
 <ul class="listing">
 {% for post in collections.postsByYear[posts] | reverse %}
   <li>

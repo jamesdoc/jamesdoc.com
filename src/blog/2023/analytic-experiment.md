@@ -1,6 +1,6 @@
 ---
 title: Experimenting with analytics via Tinylytics
-date: 2023-12-16
+date: 2023-12-15
 intro: I ripped Google Analytics out of my blog a number of years ago, and now I'm experimenting with Tinylytics…
 tags: ["tech"]
 ---

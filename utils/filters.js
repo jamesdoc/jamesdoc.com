@@ -1,11 +1,15 @@
 const dayjs = require("dayjs");
 const isSameOrBefore = require('dayjs/plugin/isSameOrBefore');
 const isSameOrAfter = require('dayjs/plugin/isSameOrAfter');
-const advancedFormat = require('dayjs/plugin/advancedFormat')
+const advancedFormat = require('dayjs/plugin/advancedFormat');
+const isLeapYear = require('dayjs/plugin/isLeapYear');
+const dayOfYear = require('dayjs/plugin/dayOfYear');
 dayjs
   .extend(advancedFormat)
   .extend(isSameOrBefore)
-  .extend(isSameOrAfter);
+  .extend(isSameOrAfter)
+  .extend(isLeapYear)
+  .extend(dayOfYear);
 
 module.exports = {
   readableDate: (dateObj) => {
@@ -104,5 +108,25 @@ module.exports = {
       return prev;
     }, []);
     return lines;
+  },
+
+  daysInYear: (year) => {
+    if (dayjs(`${year}-01-01`).isLeapYear()) {
+      return 366
+    }
+    return 365
+  },
+
+  hasPostOnDay: (day, posts) => {
+    const p = posts.find((post) => day === dayjs(post.date).dayOfYear());
+
+    if (!p) {
+      return false;
+    }
+
+    return {
+      url: p.data.page.url,
+      title: p.data.title
+    };
   }
 };
