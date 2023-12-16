@@ -17,6 +17,25 @@
     filter: brightness(0.8) contrast(1.2);
   }
 
+  &[href^="https://creation"]
+  {
+    background-color: $creationBlue;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("/_assets/svg/creation.svg");
+      inset: 0;
+      position: absolute;
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: 1s;
+    }
+
+    &:hover::after {transform: rotate(360deg);}
+  }
+
   &[href^="https://vixen"]
   {
     background-color: $vixenOrange;
