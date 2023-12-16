@@ -7,6 +7,13 @@ tags: ["tech"]
 intro: In an effort to avoid recreational coding during the Christmas break I've got Age of Empires 2 running on Big Sur…
 ---
 
+---
+
+**2023 update**
+This tutorial works nicely playing Age of Empires 2: HD Edition on an Intel based Mac… You'll have no luck with Definitive Edition, or running on Apple Silicon macs using this guide.
+
+---
+
 As with all technical blog posts as the technology gets updated things will break - this post will probably become out of date very quickly.
 
 My setup is a 2017 Macbook Pro running Big Sur, playing Age of Empires 2 HD (not the newer definitive edition)… This will almost certainly _not_ work with the new Apple hardware on Apple Silicon.
