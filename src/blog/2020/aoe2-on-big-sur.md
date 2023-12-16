@@ -12,6 +12,8 @@ intro: In an effort to avoid recreational coding during the Christmas break I've
 **2023 update**
 This tutorial works nicely playing Age of Empires 2: HD Edition on an Intel based Mac… You'll have no luck with Definitive Edition, or running on Apple Silicon macs using this guide.
 
+Have a look at [Running AoE 2 on Apple Silicon](/blog/2023/aoe2-on-apple-silicon/) instead. 👀
+
 ---
 
 As with all technical blog posts as the technology gets updated things will break - this post will probably become out of date very quickly.
