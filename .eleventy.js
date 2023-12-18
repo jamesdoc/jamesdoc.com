@@ -111,7 +111,7 @@ module.exports = function (eleventyConfig) {
         })
       }
     })
-});
+  });
 
   return {
     templateFormats: ["html", "njk", "md"],

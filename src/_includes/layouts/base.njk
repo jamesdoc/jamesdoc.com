@@ -60,6 +60,10 @@
     </span>{% endif %}
 
     <script async defer src="/_assets/js/index.js"></script>
-    <!-- last build: {{ build.env }} {{ build.timestamp }} -->
+    <!--
+      generator: {{ eleventy.generator }}
+      last build: {{ build.env }} – {{ build.timestamp }}
+      last commit: https://github.com/jamesdoc/jamesdoc.com/commit/{{ build.commitHash }} – {{ build.commitMessage }}
+    -->
   </body>
 </html>
