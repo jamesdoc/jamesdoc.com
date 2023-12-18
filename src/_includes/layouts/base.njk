@@ -15,6 +15,8 @@
     }
     </style>{% endif %}
 
+    <link rel="preconnect" href="https://tinylytics.app"/>
+
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="view-transition" content="same-origin">
 
@@ -50,7 +52,7 @@
     </section>
 
     {% if avatar != "hidden" %}<span class="avatar" aria-hidden="true">
-      {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"] %}
+      {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"], false %}
     </span>{% endif %}
 
     <script async defer src="/_assets/js/index.js"></script>

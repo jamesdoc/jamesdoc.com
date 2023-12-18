@@ -33,7 +33,8 @@ module.exports = {
     sizes = "100vw",
     classes = " ",
     widths = [320, 550, 800, 1000, 1200],
-    formats = ["webp", "jpeg"]
+    formats = ["webp", "jpeg"],
+    lazy = true
   ) => {
     if (!src) {
       return;
@@ -52,7 +53,7 @@ module.exports = {
       class: classes,
       alt: alt,
       sizes: sizes,
-      loading: "lazy",
+      loading: lazy ? "lazy": "",
       decoding: "async",
     };
 
