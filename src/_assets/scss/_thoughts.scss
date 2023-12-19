@@ -31,9 +31,11 @@
   width: 100%;
 }
 
-.thought-content .footnotes {
-  h4 {
+.thought-content .footnotes,
+.thought-changelog {
+  h2, h4 {
     display: inline-block;
+    font-size: 1.125rem;
     margin-bottom: 0;
 
     &:before {

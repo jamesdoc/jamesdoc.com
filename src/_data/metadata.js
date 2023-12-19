@@ -11,6 +11,7 @@ module.exports = () => {
     author: {
       name: "James Doc",
     },
+    gitRepo: "https://github.com/jamesdoc/jamesdoc.com/",
     metaImg: "/_assets/img/twitter.jpg",
     description:
       "Head of Technology at Vixen Labs | Living in London | Sitting at the intersection of Christianity and Technology",

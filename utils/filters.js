@@ -1,3 +1,4 @@
+const childProcess = require('child_process');
 const dayjs = require("dayjs");
 const isSameOrBefore = require('dayjs/plugin/isSameOrBefore');
 const isSameOrAfter = require('dayjs/plugin/isSameOrAfter');
@@ -128,5 +129,31 @@ module.exports = {
       url: p.data.page.url,
       title: p.data.title
     };
+  },
+
+  changelog: (filePath) => {
+    /*
+     tformat - appends a new line after each commit
+     %h  - abbr hash
+     %cs - YYYYMMDD
+     %s  - subject
+     Read more: https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt
+     */
+    let fileHistory = childProcess
+      .execSync(`git log --pretty=tformat:"%h | %cs | %s" ${filePath}`)
+      .toString()
+      .trim();
+
+    if (fileHistory == "") { return false }
+
+    const fileLog = [];
+
+    fileHistory.split(/\r?\n/).forEach((change) => {
+      const commitInfo = change.split(' | ');
+      const [hash, date, subject] = commitInfo;
+      fileLog.push({hash, date, subject});
+    });
+
+    return fileLog;
   }
 };
