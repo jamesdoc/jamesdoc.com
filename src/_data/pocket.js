@@ -22,7 +22,6 @@ module.exports = async function() {
       type: "json"
     });
 
-
     let formattedPocket = [];
     Object.keys(pocketResults.list).forEach((r) => {
       pocketResults.list[r].sort = pocketResults.list[r].time_favorited;
@@ -36,8 +35,6 @@ module.exports = async function() {
     formattedPocket = formattedPocket.sort((a, b) => {
       return b.sort - a.sort;
     });
-
-    // console.log(dayjs.unix(formattedPocket[0].time_read))
 
     console.log('[ 💾 ] Imported from Pocket')
     pocketCache.save(formattedPocket, "json");

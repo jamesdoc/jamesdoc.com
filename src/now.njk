@@ -89,7 +89,7 @@ itemtype: 'https://schema.org/FAQPage'
           <img src="https://v1.indieweb-avatar.11ty.dev/{{ article.resolved_url | urlencode }}/" alt="" loading="lazy" decoding="async" width="34" height="34">
           <span><a href="{{ article.resolved_url }}" rel="noopener" target="_blank">
           {{ article.resolved_title }}</a>.<br />
-          Read on {{ article.time_read | readableDate }}.</span>
+          Read on {{ article.time_favorited | readableDate }}.</span>
         </li>
       {% endif %}
     {% endfor %}
