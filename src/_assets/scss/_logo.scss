@@ -62,6 +62,17 @@
     border-radius: 50%;
   }
 
+  &[href^="https://discipleship"]
+  {
+    background-color: $dtOrange;
+    background-image: url("/_assets/svg/discipleship-tech.svg");
+    background-size: 75%;
+
+    &:hover {
+      background-size: 50%;
+    }
+  }
+
   &[href^="https://content.scriptureunion.org.uk"]
   {
     background-color: $livewiresBlue;
