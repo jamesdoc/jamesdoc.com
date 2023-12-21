@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
-    <link rel="stylesheet" href="/_assets/css/main.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/_assets/css/main{% if build.env === 'production' %}.min{% endif %}.css" media="screen" type="text/css">
     {% if themeColor %}<style>
     :root {
       --theme: {{ themeColor }}
@@ -55,9 +55,9 @@
       {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"], false %}
     </span>{% endif %}
 
-    <script async defer src="/_assets/js/index.js"></script>
+    <script async defer src="/_assets/js/index{% if build.env === 'production' %}.min{% endif %}.js"></script>
     <!--
-      generator: {{ eleventy.generator }}
+      generator: Eleventy {{ build.eleventyVersion }}
       last build: {{ build.env }} – {{ build.timestamp }}
       last commit: https://github.com/jamesdoc/jamesdoc.com/commit/{{ build.commitHash }} – {{ build.commitMessage }}
     -->

@@ -1,3 +1,4 @@
+const eleventyPackage = require("@11ty/eleventy/package.json");
 const childProcess = require('child_process');
 
 const commitMessage = childProcess
@@ -12,5 +13,6 @@ module.exports = {
   env: process.env.ELEVENTY_ENV,
   timestamp: new Date(),
   commitMessage,
-  commitHash
+  commitHash,
+  eleventyVersion: eleventyPackage.version
 }
