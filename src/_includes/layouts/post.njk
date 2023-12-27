@@ -45,6 +45,7 @@ generatedOGimg: true
 
 </div>
 
+{% if build.env === 'production' %}
 {% set changeLog = page.inputPath | changelog %}
 {% if changeLog %}
 <div class="thought-changelog">
@@ -56,6 +57,7 @@ generatedOGimg: true
   {% endfor %}
   </ul>
 </div>
+{% endif %}
 {% endif %}
 
 <a href="/blog" class="btn">Back to all posts</a>
