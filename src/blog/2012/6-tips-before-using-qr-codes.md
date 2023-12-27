@@ -4,7 +4,6 @@ intro: Guest post on OneSheep blog about good contexts to use a QR code
 type: article
 tags:
 date: 2012-02-26
-canonical: https://onesheep.org/6-great-tips-before-using-qr-codes/
 ---
 
 If we do not really know what QR codes are or what they do, we are starting to see them in many places. Guest blogger, James Doc, says that his first draft for this subject quickly became a very long rant that even he didn’t want to read! So he shelved it for a bit and later condensed his thoughts into a ‘_how to use QR codes well_‘ post.
@@ -56,3 +55,7 @@ Seriously think about why you are using them. Ask questions like ‘will this br
 One final thing; if you are in any doubt about using a QR code please head on over to ‘[shouldiuseaqrcode.com](http://shouldiuseaqrcode.com)‘. It provides some helpful advice.
 
 Your comments welcome.
+
+<aside class="boxedMessage boxedMessage--info">
+  <p>This post originally appears on onesheep.org. Their website shutdown in Dec 2023.</p>
+</aside>

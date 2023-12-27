@@ -3,7 +3,7 @@ title: Voice Assistants and the Church
 intro: Alexa, Siri, Google Home… all these voice assistants look like they are here to stay. But do they have a place within the church?
 type: article
 tags:
-date: 2018-09-06
+date: 2018-09-05
 canonical: https://www.churchtrain.uk/blog/church-voice-assistants/
 ---
 
@@ -17,7 +17,7 @@ But what place can voice assistants have as we walk as Christians in a digital w
 
 Unsurprisingly, [Life.Church](https://www.life.church/), the church behind [the Bible App](https://www.youversion.com/the-bible-app/), were one of the first groups to enter the market. Their [Google Assistant app](https://www.youversion.com/the-bible-app/bible-for-voice/bible-app-for-voice-on-google-assistant/) and [Amazon Echo skill](https://www.youversion.com/the-bible-app/bible-for-voice/bible-app-for-voice-on-amazon-alexa/) enable you to look up a passage and have your device read you specific passages from the Bible translation of your choice. This results in a great way to help you engage with scripture as you listen as it is read to you.
 
-Two years ago at [Kingdom Code BUILD](https://www.kingdomcode.org.uk/build), a weekend event for Christians who are involved in making and shaping technology, a team of developers and designers [started to explore the, then new, capabilities of the Amazon Echo](https://onesheep.org/biblechat/). Over the course of the weekend they built [BibleChat](https://biblech.at/) – a skill for the Amazon Echo which works to answer the top questions that Non-Christians and Christians alike have about the Jesus, the Bible and Christianity.
+Two years ago at [Kingdom Code BUILD](https://www.kingdomcode.org.uk/build), a weekend event for Christians who are involved in making and shaping technology, a team of developers and designers started to explore the, then new, capabilities of the Amazon Echo. Over the course of the weekend they built [BibleChat](https://web.archive.org/web/20230608154407/https://biblech.at/) – a skill for the Amazon Echo which works to answer the top questions that Non-Christians and Christians alike have about the Jesus, the Bible and Christianity.
 
 Once installed, the skill works like this: you simply ask Alexa questions like ‘Can you tell me who Jesus is?’ or more broadly, ‘Tell me about the meaning of life’. BibleChat then responds with a short answer, and gives the option for more details to be sent to your phone, giving Bible references and places to dig deeper.
 

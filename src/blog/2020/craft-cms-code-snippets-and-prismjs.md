@@ -4,7 +4,6 @@ type: article
 author: James Doc
 date: 2020-06-10
 intro: Over at OneSheepland we've been tinkering a lot with CraftCMS. One of the recent challenges was to output code snippets from a Redactor text field…
-canonical: https://onesheep.org/insights/craft-cms-code-snippets-and-prismjs
 ---
 
 In the coming weeks and months ahead in this Insights section we're going to be posting a few tips and tricks that we've discovered as we have been building sites for our partners. One of the key things we've needed on this site to make that possible is the ability to display code snippets in these blog posts…
@@ -126,3 +125,7 @@ All we have to do now is remember to go back and finish off that class to indica
 - [PrismJS](https://prismjs.com/#basic-usage)
 - [Redactor Config in Craft](https://github.com/craftcms/redactor#redactor)
 - [Redactor Custom Styles Plugin](https://github.com/carlcs/craft-redactorcustomstyles)
+
+<aside class="boxedMessage boxedMessage--info">
+  <p>This post originally appears on onesheep.org. Their website shutdown in Dec 2023.</p>
+</aside>

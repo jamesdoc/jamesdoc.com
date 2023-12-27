@@ -5,7 +5,6 @@ author: James Doc
 date: 2020-07-31
 tags: ["code"]
 intro: With the release of Tailwind CSS 1.6.0 which includes animation support, how can we use it for animate on scroll?
-canonical: https://onesheep.org/insights/animate-on-scroll-with-tailwind-css
 ---
 
 One of the requirements of a classic brochureware website these days is animated elements that fade into view as the visitor scrolls to the website. There are a number of Javascript libraries to help you do this, like [Michał Sajnoóg's](https://github.com/michalsnik) [AOS - Animate on Scroll Library](https://michalsnik.github.io/aos/)… but how do you do this kind of thing with Tailwind CSS and as little JavaScript as you can get away with?!
@@ -133,3 +132,7 @@ if (entry.isIntersecting) {
   entry.target.classList.add(animationType);
 }
 ```
+
+<aside class="boxedMessage boxedMessage--info">
+  <p>This post originally appears on onesheep.org. Their website shutdown in Dec 2023.</p>
+</aside>
