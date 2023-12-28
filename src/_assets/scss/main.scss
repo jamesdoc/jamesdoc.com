@@ -103,9 +103,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   letter-spacing: 1.5px;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0 0 10px;
   padding: 0;
 
@@ -119,21 +119,20 @@ h1 {
   }
 
   @media (min-width: 485px) {
-    font-size: 3em;
+    font-size: 3rem;
   }
 }
 
 li,
 p,
 code {
-  font-size: 1em;
-  line-height: 1.45em;
+  font-size: 1rem;
+  line-height: 1.6;
   margin: 0 0 1em;
   width: 100%;
 
   @media (min-width: 485px) {
-    font-size: 1.25em;
-    line-height: 1.6em;
+    font-size: 1.25rem;
   }
   @media (min-width: 630px) {
     max-width: 550px;
@@ -145,7 +144,7 @@ code {
 
 code {
   color: darken($themeGreen, 40%);
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -222,3 +221,8 @@ hr {
 @import "yearGrid";
 
 @import "prism";
+@import "~lite-youtube-embed/src/lite-yt-embed.css";
+
+lite-youtube {
+  margin: 0 0 1em;
+}
