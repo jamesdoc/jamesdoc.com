@@ -10,8 +10,12 @@ For those who don't know [Pleo](http://www.pleoworld.com/) is an amazing animatr
 
 However some sad, sick, strange person decided to stick it in against a robot from robot wars… WHY WOULD YOU DO THIS TO AN INNOCENT PLEO? I advice that you watch this only if you have a strong nervous disposition:
 
-<div class="embedWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/95MAyWE0ERk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+<lite-youtube videoid="95MAyWE0ERk">
+  <a href="https://youtube.com/watch?v=95MAyWE0ERk" class="lty-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">Play Video: Pleo dinosaur versus Robot Wars</span>
+  </a>
+</lite-youtube>
 
 I am still shocked.
 

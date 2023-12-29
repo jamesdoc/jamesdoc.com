@@ -19,9 +19,11 @@ In contrast these songs also teach us a lot about the people singing them, and i
 > Israel, put your hope in the Lord, for with the Lord is unfailing love and with him is full redemption.
 > He himself will redeem Israel from all their sins.
 
-<div class="embedWrapper">
-<iframe src="https://www.youtube.com/embed/v5jARqq8j8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<lite-youtube videoid="v5jARqq8j8c">
+  <a href="https://youtube.com/watch?v=v5jARqq8j8c" class="lty-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">Play Video</span>
+  </a>
+</lite-youtube>
 
 Over the last few weeks I have felt myself fraying - all the uncertainty, the unknowns; it has felt like my ends are coming undone. Outwardly that has been stress, anger, worry, sadness, unrest… Over-working to distract myself from what is happening outside these four walls.
 

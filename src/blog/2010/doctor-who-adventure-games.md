@@ -17,8 +17,10 @@ At the moment the plot and titles of these new interactive stories are being kep
 
 More screenshots from the games are currently on the Doctor Who website (<a href="https://www.bbc.co.uk/doctorwho">bbc.co.uk/doctorwho</a>). All four of the interactive episodes will be completely free for both Mac and PC, with the first episode being made available from the Doctor Who website in June 2010.
 
-<div class="embedWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_SKVRuyozV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<lite-youtube videoid="_SKVRuyozV4">
+  <a href="https://youtube.com/watch?v=_SKVRuyozV4" class="lty-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">Play Video: Doctor Who Adventure Game</span>
+  </a>
+</lite-youtube>
 
 PS. While I would love to write a review of each Doctor Who episode, I just don't have time at the moment. The site Blogtor Who are writing reviews of each episode, and fair ones too. Do check them out at <a href="http://blogtorwho.blogspot.com/2010/04/review-victory-of-daleks.html">www.blogtorwho.blogspot.com</a>.

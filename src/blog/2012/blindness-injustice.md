@@ -21,7 +21,13 @@ leadImage: /_assets/img/blog/imported/banners/blindness-injustice.jpg
 <p>
  I&#39;ve been listening to Brandon Heath&#39;s song titled &#39;Give Me Your Eyes&#39;, the lyrics reflect my prayers this week, I want to encourage you to watch <a href="https://www.youtube.com/watch?v=P5AkNqLuVgY" target="_null">the video below</a> and listen to the lyrics.</p>
 <p>
- <iframe allowfullscreen="" frameborder="0" height="450" src="https://www.youtube.com/embed/P5AkNqLuVgY" width="800"></iframe></p>
+
+ <lite-youtube videoid="P5AkNqLuVgY" >
+  <a href="https://youtube.com/watch?v=P5AkNqLuVgY" class="lty-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">Play Video: Brandon Heath – Give me Your Eyes</span>
+  </a>
+</lite-youtube>
+
 <hr />
 <p>
  Footnotes:</p>
