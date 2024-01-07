@@ -13,7 +13,17 @@
 
   .footnote-ref {
     vertical-align: super;
-    font-size: 0.5rem;
+    font-size: 50%;
+    margin-left: 5px;
+    letter-spacing: 3px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--theme);
+    }
   }
 }
 

@@ -7,7 +7,7 @@ tags: ["tech"]
 
 Outlook, Google Calendar, Apple Calendar have functionality that allow you to subscribe to calendar feeds; add the URL of the feed, and then it will appear (and update) automatically in your calendar. There is a standardised format called `ical` [^ical], and it contains as you would expect – events on a calendar. This is useful to subscribing to public holiday calendar feeds, key dates within shared within your company, etc.
 
-[Skip to something to copy and paste…](#something-to-copy-and-paste)
+[[toc]]
 
 I'm currently using an iCal feed to power [The Globe Church public calendar](https://www.globe.church/calendar). Behind the scenes the events are stored in Microsoft365 which exposes an iCal feed, this is then imported to the website (via Eleventy, obviously… [have a look at the code if you want](https://github.com/theglobechurch/globe-static/blob/main/src/_data/events.js)), and then from there the feed is parsed, reformatted, and turned into a beautiful page.
 

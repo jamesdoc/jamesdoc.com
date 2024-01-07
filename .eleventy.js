@@ -1,11 +1,9 @@
 const { buildSrc, buildDest } = require("./paths");
 const markdownIt = require("markdown-it");
-const markdownItFootnote = require("markdown-it-footnote");
-const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
-const mila = require("markdown-it-link-attributes");
+// const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+// const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 const filters = require("./utils/filters.js");
 const collections = require("./utils/collections.js");
@@ -57,24 +55,29 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Override Markdown config
-  const options = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
-
-  let markdownLibrary = markdownIt({
+  const markdownItOptions = {
     html: true,
     breaks: true,
     linkify: true,
     typographer: true,
-  })
-    // .use(markdownItAnchor, {
-    //   permalink: true,
-    //   permalinkClass: "direct-link",
-    //   permalinkSymbol: "#",
-    // })
-    .use(markdownItFootnote);
+  };
+
+  let markdownLibrary = markdownIt(markdownItOptions);
+
+  const mdiLinkAttrsOpts = {
+    matcher(href) {
+      return href.match(/^https?:\/\//);
+    },
+    attrs: {
+      target: "_blank",
+      rel: "noopener",
+    },
+  };
+
+  markdownLibrary.use(require("markdown-it-footnote"));
+  markdownLibrary.use(require("markdown-it-link-attributes"), mdiLinkAttrsOpts);
+  markdownLibrary.use(require('markdown-it-anchor'));
+  markdownLibrary.use(require("markdown-it-table-of-contents"));
 
   markdownLibrary.renderer.rules.footnote_block_open = () => {
     return (
@@ -87,19 +90,6 @@ module.exports = function (eleventyConfig) {
   markdownLibrary.renderer.rules.footnote_block_close = () => {
     return "</ol>\n" + "</div>\n";
   };
-
-  const milaOptions = {
-    matcher(href) {
-      return href.match(/^https?:\/\//);
-    },
-    attrs: {
-      target: "_blank",
-      rel: "noopener",
-    },
-  };
-
-  markdownLibrary.use(mila, milaOptions)
-  markdownLibrary.use(require('markdown-it-named-headings'))
 
   eleventyConfig.setLibrary("md", markdownLibrary);
 
