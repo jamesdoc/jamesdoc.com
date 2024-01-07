@@ -99,10 +99,9 @@ module.exports = function (eleventyConfig) {
   };
 
   markdownLibrary.use(mila, milaOptions)
+  markdownLibrary.use(require('markdown-it-named-headings'))
 
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(mila, milaOptions));
 
   eleventyConfig.setDataDeepMerge(true);
 
