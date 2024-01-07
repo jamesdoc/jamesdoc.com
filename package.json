@@ -21,6 +21,7 @@
     "dayjs": "^1.11.10",
     "lite-youtube-embed": "^0.3.0",
     "markdown-it-footnote": "^3.0.3",
+    "markdown-it-link-attributes": "^4.0.1",
     "url-slug": "^4.0.1"
   },
   "devDependencies": {

@@ -2,6 +2,7 @@ const { buildSrc, buildDest } = require("./paths");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
+const mila = require("markdown-it-link-attributes");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
@@ -87,7 +88,21 @@ module.exports = function (eleventyConfig) {
     return "</ol>\n" + "</div>\n";
   };
 
+  const milaOptions = {
+    matcher(href) {
+      return href.match(/^https?:\/\//);
+    },
+    attrs: {
+      target: "_blank",
+      rel: "noopener",
+    },
+  };
+
+  markdownLibrary.use(mila, milaOptions)
+
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(mila, milaOptions));
 
   eleventyConfig.setDataDeepMerge(true);
 
