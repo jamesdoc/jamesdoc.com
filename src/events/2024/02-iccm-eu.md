@@ -15,6 +15,8 @@ avatar: hidden
 
 # ICCM Europe 2024
 
+[[toc]]
+
 ## Day 1: Use
 
 ### Part one
@@ -72,3 +74,71 @@ Something to think about…
 - Read Galatians 5:22 - Fruit of the Spirit
 - Now pick a piece of technology that you use everyday and think about the ways in which it might shape and change you.
 - How does that area of technology help / hinder you in living out the Fruit of the Spirit or more broadly your walk with Christ?
+
+## Day 2: Deploy
+
+### Part One
+
+#### Matthew 5:13-16
+
+> You are the salt of the earth. But if the salt loses its saltiness, how can it be made salty again? It is no longer good for anything, except to be thrown out and trampled underfoot.
+> You are the light of the world. A town built on a hill cannot be hidden. Neither do people light a lamp and put it under a bowl. Instead they put it on its stand, and it gives light to everyone in the house. In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven.
+
+#### Discussion
+
+**Personal integration**
+
+- How does your identity as a Christian shape your thinking about your work?
+- When making decisions about the tech that we build, how can we ensure that our choices reflect our commitment to serving God?
+
+**Planning**
+
+- In what ways can we incorporate Christian principles into the planning and implementation of technological solutions?
+- Are there guidelines or questions we can we establish as a team to ensure that our technology deployments align with our Christian values?
+
+**Distinctiveness**
+
+- How can we maintain our identity as Kingdom people amidst the fast-paced and often secular environment of technology development and deployment?
+
+**Improvement**
+
+- How can we regularly assess and reflect on our technology deployment practices to ensure that they continue to honour and glorify God?
+- What mechanisms can we put in place to facilitate ongoing dialogue and accountability regarding the alignment of our technology deployment efforts with our Christian faith?
+
+---
+
+#### The Tower (Genesis 11)
+
+
+#### The Tabernacle (Exodus 35)
+
+#### Discussion
+
+**Start here**
+
+- Which of the four principles resonates or challenges you the most: glorifying God, serving others, thinking through consequences, or being prayerful?
+
+**Glory**
+
+- Have you ever felt pressured to build your own “tower" of success or identity? What did that look like for you?
+- How can we recognise when we're prioritising our, or our organisation’s, glory over God's glory in our work?
+
+**Service**
+
+- Think about yourself, and the team that you work with; what are the examples where you see service motivated by love?
+- How might you deepen and grow that?
+
+**Consequences**
+
+- How do you currently  look at the tech you’re involved with to think about God’s Kingdom?
+- Can you think of a specific instance where failing to consider consequences led to unintended outcomes in a project or decision?
+- What steps can we take to ensure that our efforts contribute to advancing God's kingdom purposes (eg: promoting justice, reconciliation, serving others)?
+
+**Prayerful**
+
+- How might you cultivate a deeper dependance on God through prayer when thinking about what technology to implement?
+- Who do you know around your who models this well? How can you learn from them?
+
+**Other**
+
+- How can we support and encourage each other in maintaining a focus on glorifying God and serving others in our technological endeavours? What could you set up within your teams to support this?
