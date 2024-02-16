@@ -186,3 +186,4 @@ Something to think about…
 - [From the Garden to the City - John Dyer](https://www.amazon.com/dp/B0B5B8P2S2)
 - [Analog Church - Jay Y. Kim](https://www.amazon.com/dp/B07ZG769MW/)
 - [The Tech-Wise Family - Andy Crouch](https://www.amazon.com/dp/B01M1SDHYT/)
+- [The Faithtech Playbook](https://faithtech.com/wp-content/uploads/The-FaithTech-Playbook.pdf)
