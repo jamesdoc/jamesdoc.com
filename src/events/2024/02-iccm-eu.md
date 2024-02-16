@@ -75,6 +75,8 @@ Something to think about…
 - Now pick a piece of technology that you use everyday and think about the ways in which it might shape and change you.
 - How does that area of technology help / hinder you in living out the Fruit of the Spirit or more broadly your walk with Christ?
 
+---
+
 ## Day 2: Deploy
 
 ### Part One
@@ -142,3 +144,45 @@ Something to think about…
 **Other**
 
 - How can we support and encourage each other in maintaining a focus on glorifying God and serving others in our technological endeavours? What could you set up within your teams to support this?
+
+---
+
+## Day 3: Lead
+
+### Part One - Leading in our organisations
+
+#### Leadership in hiring and training
+
+#### Leadership in serving
+
+#### Leading in staying up to date
+
+#### Discussion
+
+- How does the idea of being a leader within your organisation make you feel? Is it something that comes naturally, or something your are fearful of?
+- How can your leadership within your organisation be more shaped by Christ?
+- Who models good leadership around you? How might you learn from them?
+
+---
+
+### Part Two - Leadership with our wider influence
+
+#### Leadership in our churches
+
+#### Leadership in our family and friends
+
+#### Leadership with others in tech
+
+#### Discussion
+
+- Who are the people around you who you can get together to start talking about faith and technology?
+- What are the questions that people around you are asking about technology? How can you bring your faith more into those answers?
+- What example do we set for our families with our use of technology?
+
+---
+
+## Further resources
+
+- [From the Garden to the City - John Dyer](https://www.amazon.com/dp/B0B5B8P2S2)
+- [Analog Church - Jay Y. Kim](https://www.amazon.com/dp/B07ZG769MW/)
+- [The Tech-Wise Family - Andy Crouch](https://www.amazon.com/dp/B01M1SDHYT/)
