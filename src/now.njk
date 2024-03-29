@@ -68,10 +68,16 @@ itemtype: 'https://schema.org/FAQPage'
   <li>
     <strong>Reading list</strong>
     <div>
+      {% if currentBooks.length > 0 %}
       Right now I'm reading
       {% for book in currentBooks %}
         <strong>{{ book.name }}</strong> by <em>{{ book.additional.author }}</em>{% if loop.last != true %},{% else %}.{% endif %}
-      {% endfor %} I keep track of all the books I'm reading through a big reading list in Trello and then pull them into this site.
+      {% endfor %}
+      {% else %}
+      {% set b = readingList | sort(true, true, 'epoch') | first %}
+      {% set cover = b.cover.scaled | last %}
+      I've just finished reading {#{% imgBookCover cover.url, b.name + " Cover", [35, 75], "", "1.1em" %}#} <strong>{{ b.name }}</strong> by {{ b.additional.author }}.
+      {% endif %} I keep track of all the books I'm reading through a big reading list in Trello and then pull them into this site.
       You can <a href="/reading-list">view the full reading list</a>.
     </div>
   </li>
