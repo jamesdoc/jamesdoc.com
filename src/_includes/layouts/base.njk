@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
+    <title>{% if title %}{{ title }} &middot; {% endif %}{{ metadata.title }}</title>
     <link rel="stylesheet" href="/_assets/css/main{% if build.env === 'production' %}.min{% endif %}.css" media="screen" type="text/css">
     {% if themeColor %}<style>
     :root {
@@ -23,7 +23,7 @@
     <meta name="description" content="{{ intro if intro else metadata.description }}" />
     <meta itemprop="description" content="{{ intro if intro else metadata.description }}">
     <meta property="og:site_name" content="James Doc" />
-    <meta property="og:title" content="James Doc{% if title %} - {{ title }}{% endif %}" />
+    <meta property="og:title" content="{% if title %}{{ title }} &middot; {% endif %}{{ metadata.title }}" />
     <meta property="og:url" content="https://jamesdoc.com{{ page.url }}" />
     <meta property="og:type" content="website" />
     {% if generatedOGimg %}<meta property="og:image" content="https://jamesdoc.com/_assets/socialPreviews/{{ page.date | htmlDateString('YYYY') }}-{{ title | slugify }}.jpeg">
