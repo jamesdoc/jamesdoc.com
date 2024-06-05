@@ -52,7 +52,7 @@ itemtype: 'https://schema.org/FAQPage'
 
       {% for album in lastfm %}
         <li>
-          {% imgBookCover album.image[0]['#text'], album.name + " Cover", [35, 75], "", "1.1em" %}
+          <img src="{{ album.image[0]['#text'] }}" alt="{{ album.name }} Cover" loading="lazy" decoding="async" width="34" height="34" />
           <span><a href="{{ album.url }}" target="_blank" rel="noopener"><strong>{{ album.name }}</strong></a> by <em>{{ album.artist.name }}</em></span>
         </li>
       {% endfor %}

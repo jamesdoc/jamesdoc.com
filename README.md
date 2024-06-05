@@ -11,7 +11,7 @@ Simple static site via [Eleventy](https://www.11ty.io), deploying to [Netlify](h
 ## Getting going (dev)
 
 - `npm install` - Install dev dependancies
-- `npm run importReadingList` - Hydrate the reading list
+- `node utils/books.js` - Hydrate the reading list
 - `npm run dev` - Build the site for dev
 
 ## Data
