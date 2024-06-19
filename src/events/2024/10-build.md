@@ -1,7 +1,7 @@
 ---
 title: BUILD 2024
 organiser: Kingdom Code
-role: organiser
+role: co-organiser
 location:
   city: London
   country: UK

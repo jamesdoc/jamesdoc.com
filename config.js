@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         role: "Head of Technology",
-        name: "Vixen Labs",
+        name: "Vixen Labs (now part of House 337)",
         type: "full time",
         location: "London, UK",
         url: "https://vixenlabs.co",
