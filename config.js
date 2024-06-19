@@ -19,14 +19,13 @@ module.exports = {
         url: "https://creation.co",
         start: '20240101',
         end: null,
-        // summary: "Member of the senior leadership team of an agency focused on developing more human and conversational interactions with technology through voice, natural language, and generative AI.",
-        // info: [
-        //   "Implemented experimental Alexa Shopping Kit functionalty to the <a href='https://vixenlabs.co/learn-how-to-do-anything-with-the-wikihow-alexa-skill' target='_blank' rel='noopener'>wikiHow skill</a> to be demonstrated in the opening session of the <a href='https://developer.amazon.com/en-US/alexa/alexa-live' target='_blank' rel='noopener'>2022 Alexa Live conference</a>.",
-        //   "Led the technical discovery process ahead of design and build process for clients such as TuneIn, Dyson, Nespresso, and HBO.",
-        //   "Developed a number of technical proof-of-concepts including an <a href='https://www.gloo.us/gloo-hackathon-alpha-international' target='_blank' rel='noopener'>award winning generative AI powered chatbot</a> at the 2023 <a href='https://www.gloo.us/hackathon' target='_blank' rel='noopener'>Gloo hackathon</a>.",
-        //   "Managed relationship with both internal developers and external development partners.",
-        //   "Responsible for the implementation and management of Vixen Labs' <a href='https://vixenlabs.co/vixen-labs-is-iso-27001-certified' target='_blank' rel='noopener'>ISO 27001 accreditation</a>."
-        // ]
+        summary: "SLT member responsible for establishing and leading an in-house technology team to develop and maintain a custom-built social media listening tool.",
+        info: [
+          "Led the migration and reimplementation of the v2 Twitter/X API to enable the dataset to remain up-to-date.",
+          "Developed a proof of concept to explore how Reddit data might be integrated into the system (using NodeJS, Adonis, Redis, OpenAI APIs, etc).",
+          "Led the implementation of the UK's <a href='https://www.ncsc.gov.uk/cyberessentials/overview' target='_blank' rel='noopener'>Nataional Cyber Security Centre's Cyber Essentials Plus</a> certification within CREATION.",
+          "Managed relationships and project work delivered by contractors and external development partners.",
+        ]
       },
       {
         role: "Head of Technology",
@@ -58,6 +57,7 @@ module.exports = {
           "Rapid prototype for <a href='https://alpha.org/alpha-online/'>the Alpha Course online</a> during covid-19 pandemic on top of Twilio's WebRTC SDKs.",
           "Design and build on the marketing site for <a href='https://carneliansearch.com/'>Carnelian Search</a> on top of Eleventy and Decap CMS.",
           "Design and build for the CMS behind the reimplementation of the <a href='https://bibleinoneyear.org/'>Bible in One Year</a> app on top of Laravel and Cachefly. Also implemented the multilingual marketing site.",
+          "Intergration of different Customer Relationship Management systems, such as Donorfy and Raiser's Edge, into the frontend of different client's websites",
           "Design and build on <a href='https://justsow.org'>JustSow</a>, a funding platform for Christian ministry entrepreneurs with Laravel and InertiaJS."
         ]
       },
