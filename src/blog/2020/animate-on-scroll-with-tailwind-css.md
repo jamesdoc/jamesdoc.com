@@ -119,7 +119,7 @@ With that bit of Javascript in place, all that remains is for you to update your
 
 There is a lot more you could do, from more complicated animations, through to customising which animations are used by using a `data-attribute` on the HTML.
 
-With this method, it becomes customise which animation you are using in the JS (just make sure you whitelist the [PurgeCSS](https://github.com/tailwindlabs/tailwindcss/pull/1639) because you have enabled PurgeCSS right… right?!)
+With this method, it becomes customised which animation you are using in the JS (just make sure you whitelist the [PurgeCSS](https://github.com/tailwindlabs/tailwindcss/pull/1639) because you have enabled PurgeCSS right… right?!)
 
 ```html
 <div … data-animate-type="motion-safe:animate-fadeIn">…</div>
