@@ -18,7 +18,7 @@ module.exports = {
         location: "London, UK / Maidstone, UK",
         url: "https://creation.co",
         start: '20240101',
-        end: null,
+        end: '20240931',
         summary: "SLT member responsible for establishing and leading an in-house technology team to develop and maintain a custom-built social media listening tool.",
         info: [
           "Led the migration and reimplementation of the v2 Twitter/X API to enable the dataset to remain up-to-date.",
