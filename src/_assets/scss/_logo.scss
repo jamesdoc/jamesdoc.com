@@ -17,6 +17,39 @@
     filter: brightness(0.8) contrast(1.2);
   }
 
+  &[href^="https://beacon"]
+  {
+    background-color: $beaconPink;
+    position: relative;
+    transition: 0.4s;
+
+
+    &::after {
+      content: "";
+      background-image: url("/_assets/svg/beacon.svg");
+      inset: 0;
+      position: absolute;
+      background-size: 65%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: 0.4s;
+    }
+
+    &:hover {
+      background-color: #FFB902;
+    }
+
+    &:hover::after {background-size: 50%;}
+    // &:hover::before {
+    //   content: "";
+    //   background-color: #000F4F;
+    //   inset: 15% 33% 56%;
+    //   display: inline-block;
+    //   z-index: 1;
+    //   position: absolute;
+    // }
+  }
+
   &[href^="https://creation"]
   {
     background-color: $creationBlue;

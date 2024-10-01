@@ -12,6 +12,15 @@ module.exports = {
     },
     employment: [
       {
+        role: "Software Engineer",
+        name: "Beacon",
+        type: "full time",
+        location: "London, UK",
+        url: "https://beaconcrm.org",
+        start: '20241001',
+        end: null,
+      },
+      {
         role: "Head of Technology",
         name: "Creation.co",
         type: "full time",
