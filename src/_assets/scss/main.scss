@@ -56,6 +56,10 @@ $beaconPink: hsl(335.13, 100%, 49.94%);
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 html,
 body {
   background-color: var(--background);
@@ -100,7 +104,9 @@ body {
   }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   scroll-margin-top: 1rem;
 }
 
@@ -136,9 +142,11 @@ code {
   @media (min-width: 485px) {
     font-size: 1.25rem;
   }
+
   @media (min-width: 630px) {
     max-width: 550px;
   }
+
   &:last-child {
     margin-bottom: 0;
   }
