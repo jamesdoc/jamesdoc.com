@@ -8,12 +8,9 @@ location:
 externalUrl: https://iccm-europe.org/
 date: 2024-02-14
 endDate: 2024-02-17
-layout: default
+layout: event
 avatar: hidden
 ---
-
-
-# ICCM Europe 2024
 
 [[toc]]
 

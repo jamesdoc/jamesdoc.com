@@ -10,40 +10,45 @@ generatedOGimg: true
   </nav>
   <div class="post__banner" style="--name: post-{{ page.fileSlug }}">
     <h1 itemprop="name">{{ title }}</h1>
+    {% if date | readableDate === endDate | readableDate %}
     <date>{{ date | readableDate }}</date>
+    {% else %}
+    <date>{{ date | readableDate }} – {{ endDate | readableDate }}</date>
+    {% endif %}
   </div>
 </header>
 
-{% if leadImage %}
-{% rwdImg leadImage, "" , "(min-width: 550px) 550px, calc(100vw - 120px)", "thought-lead-image" %}
-{% endif %}
+{% if leadImage %} {% rwdImg leadImage, "" , "(min-width: 550px) 550px,
+calc(100vw - 120px)", "thought-lead-image" %} {% endif %}
 
-<div class="thought-content">
+<div class="thought-content">{{ content | safe }}</div>
 
-  {{ content | safe }}
-
-</div>
-
-{% if build.env === 'production' %}
-{% set changeLog = page.inputPath | changelog %}
-{% if changeLog %}
+{% if build.env === 'production' %} {% set changeLog = page.inputPath |
+changelog %} {% if changeLog %}
 <div class="thought-changelog">
   <h2>Post changelog</h2>
 
   <ul role="list">
-  {% for change in changeLog %}
-    <li>{{ change.date }} – <a href="{{ metadata.gitRepo }}commit/{{ change.hash }}" target="_blank" rel="noopener">{{ change.subject }}</a></li>
-  {% endfor %}
+    {% for change in changeLog %}
+    <li>
+      {{ change.date }} –
+      <a
+        href="{{ metadata.gitRepo }}commit/{{ change.hash }}"
+        target="_blank"
+        rel="noopener"
+        >{{ change.subject }}</a
+      >
+    </li>
+    {% endfor %}
   </ul>
 </div>
-{% endif %}
-{% endif %}
+{% endif %} {% endif %}
 
 <a href="/events" class="btn">Back to all events</a>
 
 {% if canonical %}
-<small class="thought-canonical">This post originally appeared at:<br /><a href="{{ canonical }}">{{ canonical }}<a/></small>
+<small class="thought-canonical">
+  This post originally appeared at:<br />
+  <a href="{{ canonical }}">{{ canonical }}</a>
+</small>
 {% endif %}
-
-
-
