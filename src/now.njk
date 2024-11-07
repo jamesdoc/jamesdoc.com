@@ -8,6 +8,9 @@ itemtype: 'https://schema.org/FAQPage'
 {% set latestPost = collections.posts | reverse | first %}
 {% set previousEvent = collections.events | pastFromCollection | last %}
 {% set nextEvent = collections.events | futureFromCollection | first %}
+{% if previousEvent == nextEvent %}
+  {% set nextEvent = false %}
+{% endif %}
 
 <h1>Now</h1>
 <p>Rather than an about page… this is a list of things that are going on <a href="https://nownownow.com/about">now</a>.</p>
@@ -109,7 +112,7 @@ itemtype: 'https://schema.org/FAQPage'
     {% if nextEvent %}
     Next up is <img src="https://v1.indieweb-avatar.11ty.dev/{{ nextEvent.data.externalUrl | urlencode }}/" alt="{{ nextEvent.data.title }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ nextEvent.data.externalUrl }}" target="_blank" rel="noopener">{{ nextEvent.data.title }}</a></strong> on {{ nextEvent.data.date | readableDate }} in {{ nextEvent.data.location.city }} ({{ nextEvent.data.role }}).
     {% endif %}
-    You can <a href="/events">see a full list of upcoming and previous events</a>.</div>
+    <a href="/events">View the full list</a>.</div>
   </li>
 </ul>
 

@@ -53,6 +53,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("listing", "layouts/listing.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("event", "layouts/event.njk");
 
   // Override Markdown config
   const markdownItOptions = {
@@ -107,7 +108,7 @@ module.exports = function (eleventyConfig) {
               formats: ["jpg"],
               outputDir: "./" + socialPreviewImagesDir,
               filenameFormat: function (id, src, width, format, options) {
-                let outputFilename = filename.substring(0, (filename.length-4));
+                let outputFilename = filename.substring(0, (filename.length - 4));
                 return `${outputFilename}.${format}`;
               }
             });

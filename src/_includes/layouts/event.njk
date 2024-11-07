@@ -1,0 +1,49 @@
+---
+layout: default
+generatedOGimg: true
+---
+
+<header role="banner">
+  <nav class="breadcrumbs">
+    <a href="/">James Doc</a>
+    <a href="/events" class="vt-thoughts">Events</a>
+  </nav>
+  <div class="post__banner" style="--name: post-{{ page.fileSlug }}">
+    <h1 itemprop="name">{{ title }}</h1>
+    <date>{{ date | readableDate }}</date>
+  </div>
+</header>
+
+{% if leadImage %}
+{% rwdImg leadImage, "" , "(min-width: 550px) 550px, calc(100vw - 120px)", "thought-lead-image" %}
+{% endif %}
+
+<div class="thought-content">
+
+  {{ content | safe }}
+
+</div>
+
+{% if build.env === 'production' %}
+{% set changeLog = page.inputPath | changelog %}
+{% if changeLog %}
+<div class="thought-changelog">
+  <h2>Post changelog</h2>
+
+  <ul role="list">
+  {% for change in changeLog %}
+    <li>{{ change.date }} – <a href="{{ metadata.gitRepo }}commit/{{ change.hash }}" target="_blank" rel="noopener">{{ change.subject }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+{% endif %}
+
+<a href="/events" class="btn">Back to all events</a>
+
+{% if canonical %}
+<small class="thought-canonical">This post originally appeared at:<br /><a href="{{ canonical }}">{{ canonical }}<a/></small>
+{% endif %}
+
+
+
