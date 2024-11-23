@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently npm:dev-11ty npm:dev-sass",
+    "prod": "node utils/books.js && concurrently npm:prod-11ty npm:prod-sass",
+    "netlify": "bash utils/fontInstall.sh && node utils/books.js && concurrently npm:prod-11ty npm:prod-sass",
 
     "dev-11ty": "ELEVENTY_ENV=development eleventy --serve",
     "dev-sass": "sass --load-path=node_modules/lite-youtube-embed/src --watch src/_assets/scss:dist/_assets/css",
 
-    "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve",
-    "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy",
-    "netlify": "bash utils/fontInstall.sh && node utils/books.js && ELEVENTY_ENV=production eleventy"
-  },
+    "prod-11ty": "ELEVENTY_ENV=production eleventy",
+    "prod-sass": "sass --load-path=node_modules/lite-youtube-embed/src src/_assets/scss:dist/_assets/css",
+
+    "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve"  },
   "author": "James Doc",
   "license": "ISC",
   "dependencies": {
