@@ -80,8 +80,8 @@ footer {
 .social_links a[href^="/now"]:hover,
 .social_links a[href^="/resume"]:hover,
 .social_links a[href^="/blog"]:hover {
-  color: #a3de87;
-  border-color: #a3de87;
+  color: var(--theme);
+  border-color: var(--theme);
 }
 
 .social_links a[href^="https://twitter"]:hover

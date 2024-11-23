@@ -19,7 +19,7 @@
 
   &[href^="https://beacon"]
   {
-    background-color: $beaconPink;
+    background-color: var(--color-beaconPink);
     position: relative;
     transition: 0.4s;
 
@@ -52,7 +52,7 @@
 
   &[href^="https://creation"]
   {
-    background-color: $creationBlue;
+    background-color: var(--color-creationBlue);
     position: relative;
 
     &::after {
@@ -71,7 +71,7 @@
 
   &[href^="https://vixen"]
   {
-    background-color: $vixenOrange;
+    background-color: var(--color-vixenOrange);
     background-image: url("/_assets/svg/vixen.svg");
     background-size: 50%;
 
@@ -80,7 +80,7 @@
 
   &[href^="https://kingdom"]
   {
-    background-color: $kingdomcodeOrange;
+    background-color: var(--color-kingdomcodeOrange);
     background-image: url("/_assets/svg/kingdomcode.svg");
     background-size: 50%;
   }
@@ -92,7 +92,7 @@
 
   &[href^="https://onesheep"]
   {
-    background-color: $onesheepPink;
+    background-color: var(--color-onesheepPink);
     background-image: url("/_assets/svg/onesheep.svg");
     background-size: 100%;
   }
@@ -104,7 +104,7 @@
 
   &[href^="https://globe"]
   {
-    background-color: $globeOrange;
+    background-color: var(--color-globeOrange);
     background-image: url("/_assets/svg/globe.svg");
     transition: all 0.2s ease-out;
   }
@@ -116,7 +116,7 @@
 
   &[href^="https://discipleship"]
   {
-    background-color: $dtOrange;
+    background-color: var(--color-dtOrange);
     background-image: url("/_assets/svg/discipleship-tech.svg");
     background-size: 75%;
 
@@ -127,7 +127,7 @@
 
   &[href^="https://content.scriptureunion.org.uk"]
   {
-    background-color: $livewiresBlue;
+    background-color: var(--color-livewiresBlue);
     background-image: url("/_assets/svg/scripture-union.svg");
     background-size: 40%;
   }
@@ -139,7 +139,7 @@
 
   &[href^="https://live"]
   {
-    background-color: $livewiresBlue;
+    background-color: var(--color-livewiresBlue);
     background-image: url("/_assets/svg/livewires.svg");
     background-size: 40%;
   }
@@ -151,7 +151,7 @@
 
   &[href^="https://lincoln"]
   {
-    background-color: $lincolnGreen;
+    background-color: var(--color-lincolnGreen);
     background-image: url("/_assets/svg/university-of-lincoln-original.svg");
     background-size: 65%;
   }
@@ -163,7 +163,7 @@
 
   &[href^="https://ifes"]
   {
-    background-color: $ifesBlackcurrent;
+    background-color: var(--color-ifesBlackcurrent);
     background-image: url("/_assets/svg/ifes.svg");
     background-size: 40%;
   }
@@ -175,7 +175,7 @@
 
   &[href^="https://vam"]
   {
-    background-color: $vandaTeal;
+    background-color: var(--color-vandaTeal);
     background-image: url("/_assets/svg/v-and-a.svg");
     background-size: 75%;
   }
@@ -187,7 +187,7 @@
 
   &[href^="https://www.sparks"]
   {
-    background-color: $sparksBlack;
+    background-color: var(--color-sparksBlack);
     background-image: url("/_assets/svg/sparks.svg");
     background-size: 120%;
   }

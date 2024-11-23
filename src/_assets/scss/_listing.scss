@@ -31,7 +31,7 @@
   }
 
   a.listing__remote h2:after {
-    color: $themeGreen;
+    color: var(--theme);
     content: "⇢";
   }
 

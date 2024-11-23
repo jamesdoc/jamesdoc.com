@@ -3,7 +3,7 @@
 	padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   margin: 1em 0;
-  border-bottom: 5px solid $themeGreen;
+  border-bottom: 5px solid var(--theme);;
 
   iframe {
     position: absolute;

@@ -7,7 +7,7 @@
     "dev": "concurrently npm:dev-11ty npm:dev-sass",
 
     "dev-11ty": "ELEVENTY_ENV=development eleventy --serve",
-    "dev-sass": "sass --watch src/_assets/scss:dist/_assets/css",
+    "dev-sass": "sass --load-path=node_modules/lite-youtube-embed/src --watch src/_assets/scss:dist/_assets/css",
 
     "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve",
     "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy",

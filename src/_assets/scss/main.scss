@@ -1,16 +1,6 @@
-$themeGreen: hsl(101, 57%, 70%);
-$kingdomcodeOrange: hsl(3, 82%, 63%);
-$globeOrange: hsl(12, 59%, 55%);
-$livewiresBlue: hsl(197, 69%, 51%);
-$onesheepPink: hsl(338, 100%, 57%);
-$ifesBlackcurrent: hsl(248, 43%, 21%);
-$vandaTeal: hsl(189, 100%, 32%);
-$lincolnGreen: hsl(61, 98%, 35%);
-$sparksBlack: hsl(0, 0%, 0%);
-$vixenOrange: hsl(14, 75%, 51%);
-$dtOrange: hsl(36, 82%, 59%);
-$creationBlue: hsl(209, 53%, 17%);
-$beaconPink: hsl(335.13, 100%, 49.94%);
+@use "sass:color";
+@use "sass:meta";
+@use "lite-yt-embed.css";
 
 /* latin */
 @font-face {
@@ -41,6 +31,19 @@ $beaconPink: hsl(335.13, 100%, 49.94%);
   --text: hsl(97, 32%, 8%);
   --theme: hsl(101, 57%, 70%);
   --glow: hsla(0, 0%, 78%, 0.5);
+
+  --color-kingdomcodeOrange: hsl(3, 82%, 63%);
+  --color-globeOrange: hsl(12, 59%, 55%);
+  --color-livewiresBlue: hsl(197, 69%, 51%);
+  --color-onesheepPink: hsl(338, 100%, 57%);
+  --color-ifesBlackcurrent: hsl(248, 43%, 21%);
+  --color-vandaTeal: hsl(189, 100%, 32%);
+  --color-lincolnGreen: hsl(61, 98%, 35%);
+  --color-sparksBlack: hsl(0, 0%, 0%);
+  --color-vixenOrange: hsl(14, 75%, 51%);
+  --color-dtOrange: hsl(36, 82%, 59%);
+  --color-creationBlue: hsl(209, 53%, 17%);
+  --color-beaconPink: hsl(335.13, 100%, 49.94%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -153,13 +156,13 @@ code {
 }
 
 code {
-  color: darken($themeGreen, 40%);
+  color: var(--theme);
   font-size: 1.1rem;
 }
 
 @media (prefers-color-scheme: dark) {
   code {
-    color: $themeGreen;
+    color: var(--theme);
   }
 }
 
@@ -214,24 +217,23 @@ hr {
   margin-bottom: 1em;
 }
 
-@import "homepage";
-@import "thoughts";
-@import "listing";
-@import "btn";
-@import "shopLinks";
-@import "boxedMessage";
-@import "embedWrapper";
-@import "nowList";
-@import "role";
-@import "logo";
-@import "bio";
-@import "utility";
-@import "timeline";
-@import "viewTransitions";
-@import "yearGrid";
+@include meta.load-css("homepage");
+@include meta.load-css("thoughts");
+@include meta.load-css("listing");
+@include meta.load-css("btn");
+@include meta.load-css("shopLinks");
+@include meta.load-css("boxedMessage");
+@include meta.load-css("embedWrapper");
+@include meta.load-css("nowList");
+@include meta.load-css("role");
+@include meta.load-css("logo");
+@include meta.load-css("bio");
+@include meta.load-css("utility");
+@include meta.load-css("timeline");
+@include meta.load-css("viewTransitions");
+@include meta.load-css("yearGrid");
 
-@import "prism";
-@import "~lite-youtube-embed/src/lite-yt-embed.css";
+@include meta.load-css("prism");
 
 lite-youtube {
   margin: 0 0 1em;
