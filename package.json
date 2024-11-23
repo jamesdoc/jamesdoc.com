@@ -22,6 +22,7 @@
     "axios": "^1.7.7",
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
+    "esbuild": "^0.24.0",
     "laravel-mix": "^6.0.49",
     "lite-youtube-embed": "^0.3.3",
     "markdown-it-anchor": "^9.2.0",

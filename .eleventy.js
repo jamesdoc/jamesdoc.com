@@ -119,7 +119,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["html", "njk", "md"],
+    templateFormats: ["html", "njk", "md", "11ty.js"],
     pathPrefix: "/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
