@@ -12,28 +12,26 @@
   "author": "James Doc",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.18",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-fetch": "^4.0.1",
+    "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
-    "@11ty/eleventy-plugin-rss": "^2.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@gerhobbelt/markdown-it-responsive": "^0.1.1-3",
-    "axios": "^1.7.2 ",
-    "dayjs": "^1.11.10",
-    "lite-youtube-embed": "^0.3.2",
-    "markdown-it-anchor": "^8.6.7",
-    "markdown-it-footnote": "^3.0.3",
-    "markdown-it-link-attributes": "^4.0.1",
-    "markdown-it-table-of-contents": "^0.6.0",
-    "url-slug": "^4.0.1"
-  },
-  "devDependencies": {
-    "@11ty/eleventy-fetch": "^4.0.1",
-    "@11ty/eleventy-img": "^3.1.6",
-    "dotenv": "^16.3.1",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
     "laravel-mix": "^6.0.49",
+    "lite-youtube-embed": "^0.3.3",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-link-attributes": "^4.0.1",
+    "markdown-it-table-of-contents": "^0.8.0",
     "netlify-plugin-cache": "^1.0.3",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.69.5",
-    "sass-loader": "^13.3.2"
+    "sass-loader": "^13.3.2",
+    "url-slug": "^4.0.1"
   }
 }
