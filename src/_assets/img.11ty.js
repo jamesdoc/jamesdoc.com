@@ -3,7 +3,6 @@ const util = require('util');
 const glob = require('glob');
 const sharp = require('sharp');
 const mkdirp = require('mkdirp');
-const { options } = require('cssesc');
 
 const outputPath = 'dist/_assets/img/';
 
