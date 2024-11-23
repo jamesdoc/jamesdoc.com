@@ -4,16 +4,9 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently npm:dev-11ty npm:dev-sass",
-    "prod": "node utils/books.js && concurrently npm:prod-11ty npm:prod-sass",
-    "netlify": "bash utils/fontInstall.sh && node utils/books.js && concurrently npm:prod-11ty npm:prod-sass",
-
-    "dev-11ty": "ELEVENTY_ENV=development eleventy --serve",
-    "dev-sass": "sass --load-path=node_modules/lite-youtube-embed/src --watch src/_assets/scss:dist/_assets/css",
-
-    "prod-11ty": "ELEVENTY_ENV=production eleventy",
-    "prod-sass": "sass --load-path=node_modules/lite-youtube-embed/src src/_assets/scss:dist/_assets/css",
-
+    "dev": "ELEVENTY_ENV=development eleventy --serve",
+    "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy",
+    "netlify": "bash utils/fontInstall.sh && node utils/books.js && ELEVENTY_ENV=production eleventy",
     "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve"  },
   "author": "James Doc",
   "license": "ISC",
@@ -26,7 +19,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@gerhobbelt/markdown-it-responsive": "^0.1.1-3",
     "axios": "^1.7.7",
-    "concurrently": "^9.1.0",
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
     "esbuild": "^0.24.0",
