@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         role: "Designer and Developer",
-        name: "OneSheep",
+        name: "OneSheep (now Scout and Redeem)",
         type: "full time",
         location: "Remote",
         url: "https://onesheep.org",

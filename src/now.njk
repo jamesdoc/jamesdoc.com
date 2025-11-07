@@ -2,117 +2,203 @@
 title: Now
 layout: listing
 eleventyExcludeFromCollections: false
-itemtype: 'https://schema.org/FAQPage'
+itemtype: "https://schema.org/FAQPage"
 ---
-{% set currentBooks = readingList | activeBook %}
-{% set latestPost = collections.posts | reverse | first %}
-{% set previousEvent = collections.events | pastFromCollection | last %}
-{% set nextEvent = collections.events | futureFromCollection | first %}
-{% if previousEvent == nextEvent %}
-  {% set nextEvent = false %}
-{% endif %}
+
+{% set currentBooks = readingList | activeBook %} {% set latestPost =
+collections.posts | reverse | first %} {% set previousEvent = collections.events
+| pastFromCollection | last %} {% set nextEvent = collections.events |
+futureFromCollection | first %} {% if previousEvent == nextEvent %} {% set
+nextEvent = false %} {% endif %}
 
 <h1>Now</h1>
-<p>Rather than an about page… this is a list of things that are going on <a href="https://nownownow.com/about">now</a>.</p>
+<p>
+  Rather than an about page… this is a list of things that are going on
+  <a href="https://nownownow.com/about" target="_blank" rel="noopener">now</a>.
+</p>
 
 <ul class="nowList">
   <li>
-   <strong>Location</strong>
-   <div>
-    Since 2014 I've been living in <span itemprop="text"><a href="{{ now.location.url }}">{{ now.location.name }}, UK</a></span>. And for the immediate future I don't see myself leaving anytime soon.
-   </div>
+    <strong>Location</strong>
+    <div>
+      Since 2014 I've been living in
+      <span itemprop="text"
+        ><a href="{{ now.location.url }}" target="_blank" rel="noopener"
+          >{{ now.location.name }}, UK</a
+        ></span
+      >. And for the immediate future I don't see myself leaving anytime soon.
+    </div>
   </li>
 
   <li>
     <strong>Employment</strong>
     <div>
-      I'm currently a {{ now.employment[0].role }} for <img src="https://v1.indieweb-avatar.11ty.dev/{{ now.employment[0].url | urlencode }}/" alt="{{ now.employment[0].name }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ now.employment[0].url }}">{{ now.employment[0].name }}</a></strong>. You can see a full employment history on my <a href="/resume">resume</a>.
+      I'm currently a {{ now.employment[0].role }} for
+      <img
+        src="https://v1.indieweb-avatar.11ty.dev/{{ now.employment[0].url | urlencode }}/"
+        alt="{{ now.employment[0].name }} logo"
+        loading="lazy"
+        decoding="async"
+        width="34"
+        height="34"
+        class="nowList__album"
+      />
+      <strong
+        ><a href="{{ now.employment[0].url }}" target="_blank" rel="noopener"
+          >{{ now.employment[0].name }}</a
+        ></strong
+      >. You can see a full employment history on my
+      <a href="/resume">resume</a>.
     </div>
   </li>
 
-  {# <li>
+  {#
+  <li>
     Current toolbox:<br />
     {% for tool in now.toolbox %}
-      <a href="{{ tool.url }}" target="_blank" rel="noopener">{{ tool.name }}</a>{% if loop.last != true %}, {% endif %}
-    {% endfor %}
-  </li> #}
+    <a href="{{ tool.url }}" target="_blank" rel="noopener">{{ tool.name }}</a
+    >{% if loop.last != true %}, {% endif %} {% endfor %}
+  </li>
+  #}
 
   <li>
     <strong>Blogging</strong>
     <div>
-      I used to write blog posts semi-regularly… now not so much! Most recently I wrote <strong><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></strong>.
-      You can <a href="/blog">view a list of all blog posts here</a>.
+      I used to write blog posts semi-regularly… now not so much! Most recently
+      I wrote
+      <strong
+        ><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></strong
+      >. You can <a href="/blog">view a list of all blog posts here</a>.
     </div>
   </li>
 
   <li>
     <strong>Albums this month</strong>
-    <div>
-      This month I've been enjoying:
-    </div>
+    <div>This month I've been enjoying:</div>
 
-     <ul class="nowList__list">
-
+    <ul class="nowList__list">
       {% for album in lastfm %}
-        <li>
-          <img src="{{ album.image[0]['#text'] }}" alt="{{ album.name }} Cover" loading="lazy" decoding="async" width="34" height="34" />
-          <span><a href="{{ album.url }}" target="_blank" rel="noopener"><strong>{{ album.name }}</strong></a> by <em>{{ album.artist.name }}</em></span>
-        </li>
+      <li>
+        <img
+          src="{{ album.image[0]['#text'] }}"
+          alt="{{ album.name }} Cover"
+          loading="lazy"
+          decoding="async"
+          width="34"
+          height="34"
+        />
+        <span
+          ><a href="{{ album.url }}" target="_blank" rel="noopener"
+            ><strong>{{ album.name }}</strong></a
+          >
+          by <em>{{ album.artist.name }}</em></span
+        >
+      </li>
       {% endfor %}
-      </ul>
+    </ul>
 
+    <p>
       <span class="js-nowPlaying"></span>
 
-      My music listening gets logged in <a href="https://last.fm/user/jamesdoc">Last.fm</a> by <a href="/blog/2022/sleeve">Sleeve</a>.
-
-    </div>
+      My music listening gets logged to
+      <a href="https://last.fm/user/jamesdoc">Last.fm</a> by
+      <a href="/blog/2022/sleeve">Sleeve</a>.
+    </p>
   </li>
 
   <li>
     <strong>Reading list</strong>
     <div>
-      {% if currentBooks.length > 0 %}
-      Right now I'm reading
-      {% for book in currentBooks %}
-        <strong>{{ book.name }}</strong> by <em>{{ book.additional.author }}</em>{% if loop.last != true %},{% else %}.{% endif %}
-      {% endfor %}
-      {% else %}
-      {% set b = readingList | sort(true, true, 'epoch') | first %}
-      {% set cover = b.cover.scaled | last %}
-      I've just finished reading {#{% imgBookCover cover.url, b.name + " Cover", [35, 75], "", "1.1em" %}#} <strong>{{ b.name }}</strong> by {{ b.additional.author }}.
-      {% endif %} I keep track of all the books I'm reading through a big reading list in Trello and then pull them into this site.
-      You can <a href="/reading-list">view the full reading list</a>.
+      {% if currentBooks.length > 0 %} Right now I'm reading {% for book in
+      currentBooks %}
+      <strong>{{ book.name }}</strong> by
+      <em>{{ book.additional.author }}</em>{% if loop.last != true %},{% else
+      %}.{% endif %} {% endfor %} {% else %} {% set b = readingList | sort(true,
+      true, 'epoch') | first %} {% set cover = b.cover.scaled | last %} I've
+      just finished reading {#{% imgBookCover cover.url, b.name + " Cover", [35,
+      75], "", "1.1em" %}#} <strong>{{ b.name }}</strong> by {{
+      b.additional.author }}. {% endif %} I keep track of all the books I'm
+      reading through a big reading list in Trello and then pull them into this
+      site. You can <a href="/reading-list">view the full reading list</a>.
     </div>
   </li>
 
   <li>
     <strong>Recently on the internet</strong>
     <div>
-      I keep track of articles and blogposts I'm reading (or want to get around to reading) in <a href="https://getpocket.com/" target="_blank" rel="noopener">Pocket</a>. Here are five articles that I've read recently:
+      I keep track of articles and blogposts I'm reading (or want to get around
+      to reading) in
+      <a href="https://getpocket.com/" target="_blank" rel="noopener">Pocket</a
+      >. Here are five articles that I've read recently:
     </div>
 
     <ul class="nowList__list">
-    {% for article in pocket %}
-      {% if (loop.index <= 5) %}
-        <li>
-          <img src="https://v1.indieweb-avatar.11ty.dev/{{ article.resolved_url | urlencode }}/" alt="" loading="lazy" decoding="async" width="34" height="34">
-          <span><a href="{{ article.resolved_url }}" rel="noopener" target="_blank">
-          {{ article.resolved_title }}</a>.<br />
-          Read on {{ article.time_favorited | readableDate }}.</span>
-        </li>
-      {% endif %}
-    {% endfor %}
+      {% for article in pocket %} {% if (loop.index <= 5) %}
+      <li>
+        <img
+          src="https://v1.indieweb-avatar.11ty.dev/{{ article.resolved_url | urlencode }}/"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          width="34"
+          height="34"
+        />
+        <span
+          ><a href="{{ article.resolved_url }}" rel="noopener" target="_blank">
+            {{ article.resolved_title }}</a
+          >.<br />
+          Read on {{ article.time_favorited | readableDate }}.</span
+        >
+      </li>
+      {% endif %} {% endfor %}
     </ul>
   </li>
 
   <li>
     <strong>Events in the diary</strong>
     <div>
-    The last event I was at was <img src="https://v1.indieweb-avatar.11ty.dev/{{ previousEvent.data.externalUrl | urlencode }}/" alt="{{ previousEvent.data.title }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ previousEvent.data.externalUrl }}" target="_blank" rel="noopener">{{ previousEvent.data.organiser }} – {{ previousEvent.data.title }}</a></strong> on {{ previousEvent.data.date | readableDate }} ({{ previousEvent.data.role }}).
-    {% if nextEvent %}
-    Next up is <img src="https://v1.indieweb-avatar.11ty.dev/{{ nextEvent.data.externalUrl | urlencode }}/" alt="{{ nextEvent.data.title }} logo" loading="lazy" decoding="async" width="34" height="34" class="nowList__album"> <strong><a href="{{ nextEvent.data.externalUrl }}" target="_blank" rel="noopener">{{ nextEvent.data.title }}</a></strong> on {{ nextEvent.data.date | readableDate }} in {{ nextEvent.data.location.city }} ({{ nextEvent.data.role }}).
-    {% endif %}
-    <a href="/events">View the full list</a>.</div>
+      The last event I was at was
+      <img
+        src="https://v1.indieweb-avatar.11ty.dev/{{ previousEvent.data.externalUrl | urlencode }}/"
+        alt="{{ previousEvent.data.title }} logo"
+        loading="lazy"
+        decoding="async"
+        width="34"
+        height="34"
+        class="nowList__album"
+      />
+      <strong
+        ><a
+          href="{{ previousEvent.data.externalUrl }}"
+          target="_blank"
+          rel="noopener"
+          >{{ previousEvent.data.organiser }} – {{ previousEvent.data.title
+          }}</a
+        ></strong
+      >
+      on {{ previousEvent.data.date | readableDate }} ({{
+      previousEvent.data.role }}). {% if nextEvent %} Next up is
+      <img
+        src="https://v1.indieweb-avatar.11ty.dev/{{ nextEvent.data.externalUrl | urlencode }}/"
+        alt="{{ nextEvent.data.title }} logo"
+        loading="lazy"
+        decoding="async"
+        width="34"
+        height="34"
+        class="nowList__album"
+      />
+      <strong
+        ><a
+          href="{{ nextEvent.data.externalUrl }}"
+          target="_blank"
+          rel="noopener"
+          >{{ nextEvent.data.title }}</a
+        ></strong
+      >
+      on {{ nextEvent.data.date | readableDate }} in {{
+      nextEvent.data.location.city }} ({{ nextEvent.data.role }}). {% endif %}
+      <a href="/events">View the full list</a>.
+    </div>
   </li>
 </ul>
 
