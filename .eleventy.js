@@ -55,6 +55,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("event", "layouts/event.njk");
 
+  // Skip archived posts
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+    if ((data.archived || data.draft) && process.env.ELEVENTY_RUN_MODE === "build") {
+      return false;
+    }
+  });
+
   // Override Markdown config
   const markdownItOptions = {
     html: true,

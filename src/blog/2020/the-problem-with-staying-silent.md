@@ -5,6 +5,7 @@ author: James Doc
 date: 2020-06-07
 intro: Silence is… violence, compliance, betrayal, consent, deafening… All these phrases, all on the same theme; by staying silent on a topic is an acceptance of the way things are. I've been thinking a lot about that this week…
 leadImage: /_assets/img/blog/2020/silence.jpg
+archived: true
 ---
 
 _"Silence is violence"._ These three words were written on one of the placards I saw in the Black Lives Matter protests this week. Start typing "silence is…" into Google and the suggestions you are given show this isn't a new sentiment; Silence is… compliance, betrayal, consent, deafening…
