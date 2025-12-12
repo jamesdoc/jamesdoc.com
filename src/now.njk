@@ -124,37 +124,6 @@ nextEvent = false %} {% endif %}
   </li>
 
   <li>
-    <strong>Recently on the internet</strong>
-    <div>
-      I keep track of articles and blogposts I'm reading (or want to get around
-      to reading) in
-      <a href="https://getpocket.com/" target="_blank" rel="noopener">Pocket</a
-      >. Here are five articles that I've read recently:
-    </div>
-
-    <ul class="nowList__list">
-      {% for article in pocket %} {% if (loop.index <= 5) %}
-      <li>
-        <img
-          src="https://v1.indieweb-avatar.11ty.dev/{{ article.resolved_url | urlencode }}/"
-          alt=""
-          loading="lazy"
-          decoding="async"
-          width="34"
-          height="34"
-        />
-        <span
-          ><a href="{{ article.resolved_url }}" rel="noopener" target="_blank">
-            {{ article.resolved_title }}</a
-          >.<br />
-          Read on {{ article.time_favorited | readableDate }}.</span
-        >
-      </li>
-      {% endif %} {% endfor %}
-    </ul>
-  </li>
-
-  <li>
     <strong>Events in the diary</strong>
     <div>
       The last event I was at was
