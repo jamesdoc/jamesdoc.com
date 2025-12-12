@@ -1,4 +1,3 @@
-const axios = require("axios");
 const { convert, LOWERCASE_TRANSFORMER } = require('url-slug')
 const fs = require("fs");
 const { trello } = require("../config.js");
@@ -26,52 +25,65 @@ const slug = (str) => {
   return convert(str, conf);
 };
 
-const refLookup = (refType) => {
-  const ref = [];
+const refLookup = async (refType) => {
+  try {
+    const response = await fetch(apiCallUrl[refType]);
 
-  return axios
-    .get(apiCallUrl[refType])
-    .then((response) => {
-      response.data.forEach((i) => {
-        ref[i.id] = i.name;
-      });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-      return ref;
-    })
-    .catch((error) => console.log("Error :", error));
+    const data = await response.json();
+    const ref = [];
+
+    data.forEach((i) => {
+      ref[i.id] = i.name;
+    });
+
+    return ref;
+  } catch (error) {
+    console.log("Error :", error);
+  }
 };
 
-const cardLookup = (lists, customFields) => {
-  return axios
-    .get(apiCallUrl.cards)
-    .then((response) => {
-      var cards = [];
+const cardLookup = async (lists, customFields) => {
+  try {
+    const response = await fetch(apiCallUrl.cards);
 
-      response.data.forEach((item) => {
-        const additional = {};
-        item.customFieldItems.map((v) => {
-          additional[slug(customFields[v.idCustomField])] =
-            v.value.text || v.value.checked;
-        });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-        cards.push({
-          id: item.id,
-          list: lists[item.idList],
-          name: item.name,
-          url: item.shortUrl,
-          additional: additional,
-          readDate: item.due,
-          epoch: dayjs(item.due).unix(),
-          labels: item.labels,
-          cover: item.cover,
-          active: lists[item.idList] === "On the go" ? true : false,
-        });
-        // log(`📖 ${item.name}`);
+    const data = await response.json();
+    const cards = [];
+
+    data.forEach((item) => {
+      const additional = {};
+      item.customFieldItems.map((v) => {
+        additional[slug(customFields[v.idCustomField])] =
+          v.value.text || v.value.checked;
       });
-      storeCards(cards);
-      return cards;
-    })
-    .catch((error) => console.log("Error :", error));
+
+      cards.push({
+        id: item.id,
+        list: lists[item.idList],
+        name: item.name,
+        url: item.shortUrl,
+        additional: additional,
+        readDate: item.due,
+        epoch: dayjs(item.due).unix(),
+        labels: item.labels,
+        cover: item.cover,
+        active: lists[item.idList] === "On the go" ? true : false,
+      });
+      // log(`📖 ${item.name}`);
+    });
+
+    storeCards(cards);
+    return cards;
+  } catch (error) {
+    console.log("Error :", error);
+  }
 };
 
 const storeCards = (cards) => {
@@ -84,8 +96,11 @@ const storeCards = (cards) => {
   });
 };
 
-axios.all([refLookup("lists"), refLookup("customFields")]).then(
-  axios.spread(function (lists, customFields) {
-    cards = cardLookup(lists, customFields);
-  })
-);
+(async () => {
+  const [lists, customFields] = await Promise.all([
+    refLookup("lists"),
+    refLookup("customFields")
+  ]);
+
+  const cards = await cardLookup(lists, customFields);
+})();
