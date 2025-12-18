@@ -123,6 +123,37 @@ nextEvent = false %} {% endif %}
     </div>
   </li>
 
+    <li>
+    <strong>Recently on the internet</strong>
+    <div>
+      I keep track of articles and blogposts I'm reading (or want to get around
+      to reading) in
+      <a href="https://instapaper.com/p/jamesdoc" target="_blank" rel="noopener">Instapaper</a
+      >. Here are five articles that I've enjoyed recently:
+    </div>
+
+    <ul class="nowList__list">
+      {% for article in instapaper %} {% if (loop.index <= 5) %}
+      <li>
+        <img
+          src="https://v1.indieweb-avatar.11ty.dev/{{ article.url | urlencode }}/"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          width="34"
+          height="34"
+        />
+        <span
+          ><a href="{{ article.url }}" rel="noopener" target="_blank">
+            {{ article.title }}</a
+          >.<br />
+          Read on {{ article.time | readableDate }}.</span
+        >
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+  </li>
+
   <li>
     <strong>Events in the diary</strong>
     <div>

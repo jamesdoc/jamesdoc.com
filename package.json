@@ -7,7 +7,8 @@
     "dev": "ELEVENTY_ENV=development eleventy --serve",
     "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy",
     "netlify": "bash utils/fontInstall.sh && node utils/books.js && ELEVENTY_ENV=production eleventy",
-    "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve"  },
+    "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve"
+  },
   "author": "James Doc",
   "license": "ISC",
   "dependencies": {
@@ -27,6 +28,7 @@
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-table-of-contents": "^0.8.0",
     "netlify-plugin-cache": "^1.0.3",
+    "oauth-1.0a": "^2.2.6",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.81.0",
     "url-slug": "^4.0.1"
