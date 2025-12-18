@@ -83,8 +83,6 @@ module.exports = async function () {
           : null,
       }));
 
-    console.log(formattedBookmarks);
-
     console.log("[ 💾 ] Imported from Instapaper");
     instapaperCache.save(formattedBookmarks, "json");
 
