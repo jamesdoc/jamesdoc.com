@@ -1,6 +1,7 @@
-const { trello } = require("../../config.js");
+import config from "../../config.js";
+const { trello } = config;
 
-module.exports = () => {
+export default () => {
   return {
     title: "James Doc",
     subtitle: "Sitting at the intersection of Christianity and technology…",

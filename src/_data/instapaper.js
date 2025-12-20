@@ -1,12 +1,13 @@
-require("dotenv").config();
-const EleventyFetch = require("@11ty/eleventy-fetch");
-const OAuth = require("oauth-1.0a");
-const crypto = require("node:crypto");
-const dayjs = require("dayjs");
+import dotenv from "dotenv";
+dotenv.config();
+import EleventyFetch from "@11ty/eleventy-fetch";
+import OAuth from "oauth-1.0a";
+import crypto from "node:crypto";
+import dayjs from "dayjs";
 
-const cacheLength = "1d";
+const cacheLength = "1w";
 
-module.exports = async function () {
+export default async function () {
   if (!process.env.INSTAPAPER_CONSUMER_ID || !process.env.INSTAPAPER_CONSUMER_SECRET) {
     console.error("[ 🚨 ] Oh no! No Instapaper API key in the env…");
     return false;

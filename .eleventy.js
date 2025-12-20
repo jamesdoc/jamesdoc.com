@@ -1,18 +1,20 @@
-const { buildSrc, buildDest } = require("./paths");
-const markdownIt = require("markdown-it");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+import { buildSrc, buildDest } from "./paths.js";
+import markdownIt from "markdown-it";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-// const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+import filters from "./utils/filters.js";
+import collections from "./utils/collections.js";
 
-const filters = require("./utils/filters.js");
-const collections = require("./utils/collections.js");
+import fs from "fs";
+import Image from "@11ty/eleventy-img";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownItLinkAttributes from "markdown-it-link-attributes";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItTableOfContents from "markdown-it-table-of-contents";
 
-const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
-
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
   // Plugins
@@ -28,9 +30,6 @@ module.exports = function (eleventyConfig) {
       },
     },
   });
-
-
-  // eleventyConfig.addPlugin(directoryOutputPlugin);
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
@@ -83,10 +82,10 @@ module.exports = function (eleventyConfig) {
     },
   };
 
-  markdownLibrary.use(require("markdown-it-footnote"));
-  markdownLibrary.use(require("markdown-it-link-attributes"), mdiLinkAttrsOpts);
-  markdownLibrary.use(require('markdown-it-anchor'));
-  markdownLibrary.use(require("markdown-it-table-of-contents"));
+  markdownLibrary.use(markdownItFootnote);
+  markdownLibrary.use(markdownItLinkAttributes, mdiLinkAttrsOpts);
+  markdownLibrary.use(markdownItAnchor);
+  markdownLibrary.use(markdownItTableOfContents);
 
   markdownLibrary.renderer.rules.footnote_block_open = () => {
     return (

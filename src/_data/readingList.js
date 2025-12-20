@@ -1,14 +1,15 @@
-require("dotenv").config();
-const { AssetCache } = require("@11ty/eleventy-fetch");
-const slugify = require("@sindresorhus/slugify").default;
-const { trello } = require("../../config.js");
-const dayjs = require("dayjs");
+import dotenv from "dotenv";
+dotenv.config();
+import { AssetCache } from "@11ty/eleventy-fetch";
+import slugify from "@sindresorhus/slugify";
+import config from "../../config.js";
+const { trello } = config;
+import dayjs from "dayjs";
 
-const cacheLength = "1d";
+const cacheLength = "1w";
 const trelloApiBase = `https://api.trello.com/1/boards/${trello.readingList.boardId}/`;
 
-
-module.exports = async function () {
+export default async function () {
   if (!trello.readingList.boardId) {
     console.error("[ 🚨 ] Oh no! No Trello board ID in the config…");
     return [];

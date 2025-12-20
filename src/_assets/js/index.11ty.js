@@ -1,4 +1,6 @@
-module.exports = class {
+import esbuild from 'esbuild';
+
+export default class {
   data() {
     return {
       layout: '',
@@ -8,7 +10,7 @@ module.exports = class {
   }
 
   async render(data) {
-    require('esbuild')
+    esbuild
       .build({
         entryPoints: ['./src/_assets/js/index.js'],
         bundle: true,

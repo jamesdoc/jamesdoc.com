@@ -11,6 +11,7 @@
   },
   "author": "James Doc",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^4.0.0-alpha.6",
     "@11ty/eleventy-fetch": "^5.1.1",

@@ -1,18 +1,23 @@
-const package = require("../../package.json");
-const childProcess = require('child_process');
+import { readFileSync } from 'fs';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-const commitMessage = childProcess
-  .execSync('git show -s --format=%s')
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const packageJson = JSON.parse(readFileSync(join(__dirname, '../../package.json'), 'utf8'));
+
+const commitMessage = execSync('git show -s --format=%s')
   .toString().trim()
 
-const commitHash = childProcess
-  .execSync('git rev-parse --short HEAD')
+const commitHash = execSync('git rev-parse --short HEAD')
   .toString().trim();
 
-module.exports = {
+export default {
   env: process.env.ELEVENTY_ENV,
   timestamp: new Date(),
   commitMessage,
   commitHash,
-  eleventyVersion: package.dependencies["@11ty/eleventy"]
+  eleventyVersion: packageJson.dependencies["@11ty/eleventy"]
 }
