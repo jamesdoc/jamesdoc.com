@@ -8,6 +8,9 @@ date: 2018-12-26
 leadImage: /_assets/img/blog/2018/rwd-images-11ty.jpg
 ---
 
+> ⚠️ This post is not how I do things any more
+> The official [Images plugin from Eleventy](https://www.11ty.dev/docs/plugins/image/) is great, and solves all my responsive image needs.
+
 There's nothing quite like a little bit of Christmas eve coding… Adding responsive images to my [Eleventy](https://www.11ty.io/) (11ty) build has been on my to-do list for a while… I've finally got it working 🎉. And on the basis that I couldn't find a write up of how other people have done it… this is how I've got mine set up.
 
 ## Generate all the images
