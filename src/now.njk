@@ -115,8 +115,7 @@ nextEvent = false %} {% endif %}
       <em>{{ book.additional.author }}</em>{% if loop.last != true %},{% else
       %}.{% endif %} {% endfor %} {% else %} {% set b = readingList | sort(true,
       true, 'epoch') | first %} {% set cover = b.cover.scaled | last %} I've
-      just finished reading {#{% imgBookCover cover.url, b.name + " Cover", [35,
-      75], "", "1.1em" %}#} <strong>{{ b.name }}</strong> by {{
+      just finished reading <strong>{{ b.name }}</strong> by {{
       b.additional.author }}. {% endif %} I keep track of all the books I'm
       reading through a big reading list in Trello and then pull them into this
       site. You can <a href="/reading-list">view the full reading list</a>.

@@ -14,7 +14,7 @@ An example of this is:
 &lt;img src=&quot;https://www.google.com/s2/u/0/favicons?domain_url=http://google.com&quot;&gt;
 </pre>
 
-Which outputs: <img src="https://www.google.com/s2/u/0/favicons?domain_url=http://google.com" />
+Which outputs: <img src="https://www.google.com/s2/u/0/favicons?domain_url=http://google.com" alt="" />
 
 For a full demo of this head over the <a href="http://jamesdoc.com/snippets/favicons">snippet page</a>
 

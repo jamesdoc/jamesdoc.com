@@ -1,8 +1,9 @@
 const { buildSrc, buildDest } = require("./paths");
 const markdownIt = require("markdown-it");
-// const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 // const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 const filters = require("./utils/filters.js");
@@ -18,6 +19,8 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+
   // eleventyConfig.addPlugin(directoryOutputPlugin);
 
   // Filters
@@ -29,13 +32,6 @@ module.exports = function (eleventyConfig) {
   Object.keys(collections).forEach((collectionName) => {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
-
-  // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode(
-    "imgBookCover",
-    shortcodes.imgBookCover
-  );
-  eleventyConfig.addNunjucksShortcode("rwdImg", shortcodes.rwdImg);
 
   // Object.keys(shortcodes).forEach((shortcodeName) => {
   //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);

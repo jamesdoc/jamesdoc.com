@@ -36,7 +36,7 @@ generatedOGimg: true
 {% endif %}
 
 {% if leadImage %}
-{% rwdImg leadImage, "" , "(min-width: 550px) 550px, calc(100vw - 120px)", "thought-lead-image" %}
+<img src="{{ leadImage}}" sizes="(min-width: 550px) 550px, calc(100vw - 120px)" alt="" eleventy:formats="jpg,webp" class="thought-lead-image" eleventy:widths="550,1100" />
 {% endif %}
 
 <div class="thought-content">

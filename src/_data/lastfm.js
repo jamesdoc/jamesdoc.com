@@ -1,5 +1,4 @@
 require("dotenv").config();
-const fetch = require("node-fetch");
 const { AssetCache } = require("@11ty/eleventy-fetch");
 
 module.exports = () => {
