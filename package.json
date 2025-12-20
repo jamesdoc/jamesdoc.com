@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "ELEVENTY_ENV=development eleventy --serve",
-    "prod": "node utils/books.js && ELEVENTY_ENV=production eleventy",
-    "netlify": "bash utils/fontInstall.sh && node utils/books.js && ELEVENTY_ENV=production eleventy",
+    "prod": "ELEVENTY_ENV=production eleventy",
+    "netlify": "bash utils/fontInstall.sh && ELEVENTY_ENV=production eleventy",
     "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development eleventy --serve"
   },
   "author": "James Doc",
