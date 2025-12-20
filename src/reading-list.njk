@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: false
       {# For some reason Nunjucks doesn't like this going into the partial #}
       {% if book.cover.scaled %}
         {% set cover = book.cover.scaled | last %}
-        <img src="{{cover.url}}" alt="{{ book.name }} cover" loading="lazy" eleventy:widths="100,200" eleventy:formats="jpg,webp" />
+        <img src="{{cover.url}}" alt="{{ book.name }} cover" loading="lazy" eleventy:widths="100,200" />
       {% endif %}
 
       {% include "./_includes/partials/bookDetails.njk" %}
@@ -41,7 +41,7 @@ eleventyExcludeFromCollections: false
   <div class="listing--reading__book">
     {% if book.cover.scaled %}
       {% set cover = book.cover.scaled | last %}
-      <img src="{{cover.url}}" alt="{{ book.name }} cover" loading="lazy" eleventy:widths="150,300" eleventy:formats="jpg,webp" />
+      <img src="{{cover.url}}" alt="{{ book.name }} cover" loading="lazy" eleventy:widths="150,300" />
     {% endif %}
 
     {% include "./_includes/partials/bookDetails.njk" %}

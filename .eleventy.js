@@ -19,7 +19,17 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    widths: ["auto"],
+    formats: ["webp", "jpg"],
+    htmlOptions: {
+			imgAttributes: {
+				loading: "lazy",
+				decoding: "async",
+			},
+		},
+  });
+
 
   // eleventyConfig.addPlugin(directoryOutputPlugin);
 
@@ -32,10 +42,6 @@ module.exports = function (eleventyConfig) {
   Object.keys(collections).forEach((collectionName) => {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
-
-  // Object.keys(shortcodes).forEach((shortcodeName) => {
-  //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  // });
 
   // Watch assets folder for changes
   eleventyConfig.addWatchTarget("./src/_assets");
