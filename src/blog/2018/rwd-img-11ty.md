@@ -11,7 +11,7 @@ leadImage: /_assets/img/blog/2018/rwd-images-11ty.jpg
 > ⚠️ This post is not how I do things any more
 > The official [Images plugin from Eleventy](https://www.11ty.dev/docs/plugins/image/) is great, and solves all my responsive image needs.
 
-There's nothing quite like a little bit of Christmas eve coding… Adding responsive images to my [Eleventy](https://www.11ty.io/) (11ty) build has been on my to-do list for a while… I've finally got it working 🎉. And on the basis that I couldn't find a write up of how other people have done it… this is how I've got mine set up.
+There's nothing quite like a little bit of Christmas eve coding… Adding responsive images to my [Eleventy](https://www.11ty.dev/) (11ty) build has been on my to-do list for a while… I've finally got it working 🎉. And on the basis that I couldn't find a write up of how other people have done it… this is how I've got mine set up.
 
 ## Generate all the images
 
@@ -23,9 +23,9 @@ You can see the (basic) configuration I'm using over in this [Github commit](htt
 
 ## From the front matter
 
-My blog posts are all written in Markdown, they have a little bit of custom meta-data stored in [Front Matter](https://www.11ty.io/docs/data-frontmatter/). One specific bit is the lead image which is output at the top of this blog post.
+My blog posts are all written in Markdown, they have a little bit of custom meta-data stored in [Front Matter](https://www.11ty.dev/docs/data-frontmatter/). One specific bit is the lead image which is output at the top of this blog post.
 
-The front matter stores the original image path, which is fine, however the new image tag requires the modified filename which includes the image width. To get this working I've added a [universal filter](https://www.11ty.io/docs/filters/#universal-filters) in my 11ty config file which takes in an image path and an image size and returns the correct URL for the image:
+The front matter stores the original image path, which is fine, however the new image tag requires the modified filename which includes the image width. To get this working I've added a [universal filter](https://www.11ty.dev/docs/filters/#universal-filters) in my 11ty config file which takes in an image path and an image size and returns the correct URL for the image:
 
 <script src="https://gist.github.com/jamesdoc/a6b6c38b0b7e6addc1611c833dc7513e.js"></script>
 
