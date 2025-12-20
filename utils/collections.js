@@ -1,6 +1,6 @@
-const dayjs = require('dayjs');
+import dayjs from 'dayjs';
 
-function getByDate(collection, dateFormat) {
+const getByDate = (collection, dateFormat) => {
   let postsByDate = {};
   let posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);
   posts.forEach(function (post) {
@@ -17,15 +17,41 @@ function getByDate(collection, dateFormat) {
   return postsByDate;
 }
 
-exports.postsByYear = collection => {
-  return getByDate(collection, 'YYYY');;
-}
+export default {
+  postsByYear: collection => {
+    return getByDate(collection, 'YYYY');;
+  },
 
-exports.posts = collection => {
-  const posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);
-  return posts.filter((post) => post.data.archived !== true);
-}
+  posts: collection => {
+    const posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);
+    return posts.filter((post) => post.data.archived !== true);
+  },
 
-exports.events = collection => {
-  return collection.getFilteredByGlob(["./src/events/**/*.md"]);
+  events: collection => {
+    return collection.getFilteredByGlob(["./src/events/**/*.md"]);
+  },
+
+  tagList: collection => {
+    // Get all posts
+    const posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);
+    const tagSet = new Set();
+
+    // Extract all unique tags from posts
+    posts.forEach(post => {
+      if (post.data.tags) {
+        const tags = Array.isArray(post.data.tags)
+          ? post.data.tags
+          : post.data.tags.split(/[,\s]+/).filter(t => t);
+
+        tags.forEach(tag => {
+          if (tag && tag.trim()) {
+            tagSet.add(tag.trim());
+          }
+        });
+      }
+    });
+
+    return Array.from(tagSet).sort();
+
+  }
 }

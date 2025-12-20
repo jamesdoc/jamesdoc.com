@@ -1,4 +1,2 @@
-module.exports = {
-  buildSrc: 'src',
-  buildDest: 'dist',
-};
+export const buildSrc = 'src';
+export const buildDest = 'dist';

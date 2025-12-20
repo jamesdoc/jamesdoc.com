@@ -12,7 +12,7 @@ permalink: /blog/tags/index.html
 <ol>
 {% for tag, posts in collections | tagFilter(["all", "posts", "postsByYear"]) | dictsort %}
   <li>
-    <a href="/blog/tags/{{ tag|slug }}">
+    <a href="/blog/tags/{{ tag | slugify }}">
       <h3>{{ tag }}</h3>
       {{ posts | length }} Thoughts
     </a>

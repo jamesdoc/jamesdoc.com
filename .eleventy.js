@@ -1,24 +1,35 @@
-const { buildSrc, buildDest } = require("./paths");
-const markdownIt = require("markdown-it");
-// const markdownItResponsive = require("@gerhobbelt/markdown-it-responsive");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-// const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+import { buildSrc, buildDest } from "./paths.js";
+import markdownIt from "markdown-it";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
-const filters = require("./utils/filters.js");
-const collections = require("./utils/collections.js");
-const shortcodes = require("./utils/shortcodes.js");
+import filters from "./utils/filters.js";
+import collections from "./utils/collections.js";
 
-const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
+import fs from "fs";
+import Image from "@11ty/eleventy-img";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownItLinkAttributes from "markdown-it-link-attributes";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItTableOfContents from "markdown-it-table-of-contents";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  // eleventyConfig.addPlugin(directoryOutputPlugin);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    widths: ["auto"],
+    formats: ["webp", "jpg"],
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+    },
+  });
 
   // Filters
   Object.keys(filters).forEach((filterName) => {
@@ -29,17 +40,6 @@ module.exports = function (eleventyConfig) {
   Object.keys(collections).forEach((collectionName) => {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
-
-  // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode(
-    "imgBookCover",
-    shortcodes.imgBookCover
-  );
-  eleventyConfig.addNunjucksShortcode("rwdImg", shortcodes.rwdImg);
-
-  // Object.keys(shortcodes).forEach((shortcodeName) => {
-  //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  // });
 
   // Watch assets folder for changes
   eleventyConfig.addWatchTarget("./src/_assets");
@@ -82,10 +82,10 @@ module.exports = function (eleventyConfig) {
     },
   };
 
-  markdownLibrary.use(require("markdown-it-footnote"));
-  markdownLibrary.use(require("markdown-it-link-attributes"), mdiLinkAttrsOpts);
-  markdownLibrary.use(require('markdown-it-anchor'));
-  markdownLibrary.use(require("markdown-it-table-of-contents"));
+  markdownLibrary.use(markdownItFootnote);
+  markdownLibrary.use(markdownItLinkAttributes, mdiLinkAttrsOpts);
+  markdownLibrary.use(markdownItAnchor);
+  markdownLibrary.use(markdownItTableOfContents);
 
   markdownLibrary.renderer.rules.footnote_block_open = () => {
     return (

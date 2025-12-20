@@ -1,5 +1,6 @@
-const { now } = require("../../config.js");
+import config from "../../config.js";
+const { now } = config;
 
-module.exports = () => {
+export default () => {
   return now;
 };

@@ -1,10 +1,10 @@
-const childProcess = require('child_process');
-const dayjs = require("dayjs");
-const isSameOrBefore = require('dayjs/plugin/isSameOrBefore');
-const isSameOrAfter = require('dayjs/plugin/isSameOrAfter');
-const advancedFormat = require('dayjs/plugin/advancedFormat');
-const isLeapYear = require('dayjs/plugin/isLeapYear');
-const dayOfYear = require('dayjs/plugin/dayOfYear');
+import { execSync } from 'child_process';
+import dayjs from "dayjs";
+import isSameOrBefore from 'dayjs/plugin/isSameOrBefore.js';
+import isSameOrAfter from 'dayjs/plugin/isSameOrAfter.js';
+import advancedFormat from 'dayjs/plugin/advancedFormat.js';
+import isLeapYear from 'dayjs/plugin/isLeapYear.js';
+import dayOfYear from 'dayjs/plugin/dayOfYear.js';
 dayjs
   .extend(advancedFormat)
   .extend(isSameOrBefore)
@@ -12,7 +12,7 @@ dayjs
   .extend(isLeapYear)
   .extend(dayOfYear);
 
-module.exports = {
+export default {
   readableDate: (dateObj) => {
     return dayjs(dateObj).format("dddd, D MMMM YYYY");
   },
@@ -26,14 +26,14 @@ module.exports = {
   },
 
   pastFromCollection: (collection) => {
-    startDate = dayjs();
+    const startDate = dayjs();
     return collection.filter(item => {
       return dayjs(item.data.date).isSameOrBefore(startDate, "day");
     })
   },
 
   futureFromCollection: (collection) => {
-    startDate = dayjs();
+    const startDate = dayjs();
     return collection.filter(item => {
       return dayjs(item.data.date).isSameOrAfter(startDate, "day");
     })
@@ -91,7 +91,7 @@ module.exports = {
     return returnPosts;
   },
 
-  splitlines: (input) => {
+  splitLines: (input) => {
     const parts = input.split(' ');
     const lines = parts.reduce(function(prev, current) {
       if (!prev.length) {
@@ -139,8 +139,7 @@ module.exports = {
      %s  - subject
      Read more: https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt
      */
-    let fileHistory = childProcess
-      .execSync(`git log --pretty=tformat:"%h | %cs | %s" ${filePath}`)
+    let fileHistory = execSync(`git log --pretty=tformat:"%h | %cs | %s" ${filePath}`)
       .toString()
       .trim();
 

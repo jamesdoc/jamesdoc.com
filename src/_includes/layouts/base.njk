@@ -52,7 +52,7 @@
     </section>
 
     {% if avatar != "hidden" %}<span class="avatar" aria-hidden="true">
-      {% rwdImg "/_assets/img/james.png", "", "150px", "avatar__img", [150, 300], ["webp", "png"], false %}
+      <img src="/_assets/img/james.png" alt="" loading="lazy" class="avatar__img" eleventy:formats="png,webp", eleventy:widths="150,300" />
     </span>{% endif %}
 
     <script async defer src="/_assets/js/index.js"></script>

@@ -1,7 +1,7 @@
-const path = require('path')
-const sass = require('sass')
+import path from 'path';
+import * as sass from 'sass'
 
-module.exports = class {
+export default class {
   async data() {
     return {
       permalink: '_assets/css/main.css',

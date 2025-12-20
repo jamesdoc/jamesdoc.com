@@ -1,51 +1,41 @@
-require("dotenv").config();
-const fetch = require("node-fetch");
-const { AssetCache } = require("@11ty/eleventy-fetch");
+import dotenv from "dotenv";
+dotenv.config();
+import { AssetCache } from "@11ty/eleventy-fetch";
 
-module.exports = () => {
+const cacheLength = "1w";
 
+export default async function () {
   if (!process.env.LASTFM) {
     console.error("[ 🚨 ] Oh no! No Last.FM API key in the env…");
-    return false;
+    return [];
   }
 
   let albumCache = new AssetCache("albums");
 
-  if (albumCache.isCacheValid('1d')) {
-    console.log("[ 📻 ]  Serving albums from the cache…");
+  if (albumCache.isCacheValid(cacheLength)) {
+    console.log("[ 📻 ] Serving albums from the cache…");
     return albumCache.getCachedValue();
   }
 
   console.log('[ 📻 ] Fetching albums from Last.FM');
 
-  return new Promise(async (resolve, reject) => {
-    const albums = await fetchAlbums();
+  const albums = await fetchAlbums();
 
-    albumCache.save(albums, "json");
-    console.log(`[ 💾 ] Imported ${albums.length} albums`);
-    resolve(albums);
-  });
-
+  albumCache.save(albums, "json");
+  console.log(`[ 💾 ] Imported ${albums.length} albums`);
+  return albums;
 }
 
-function fetchAlbums() {
+async function fetchAlbums() {
   const lastFmApiKey = process.env.LASTFM;
   const albumEndpoint = `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=jamesdoc&api_key=${lastFmApiKey}&format=json&period=1month&limit=5`;
 
-  return fetch(albumEndpoint)
-    .then((res) => {
-      return {
-        statusCode: res.status,
-        data: res.json()
-      };
-    })
-    .then((res) => {
+  const res = await fetch(albumEndpoint);
+  if (!res.ok) {
+    console.error(`[ 🚨 ] Last.FM fetch error: ${res.status}`);
+    return [];
+  }
 
-      const albums = res.data.then(lastFmData => {
-        return lastFmData.topalbums.album;
-      });
-
-      return albums;
-    })
-
+  const lastFmData = await res.json();
+  return lastFmData.topalbums.album;
 }

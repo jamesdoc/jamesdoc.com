@@ -1,16 +1,16 @@
 # JamesDoc.com
 
-Simple static site via [Eleventy](https://www.11ty.io), deploying to [Netlify](https://jamesdoc.com).
+Simple static site via [Eleventy](https://www.11ty.dev), deploying to [Netlify](https://jamesdoc.com).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/44c5f763-2223-448e-bcd8-f137d8c778b8/deploy-status)](https://app.netlify.com/sites/jamesdoc/deploys)
 
 ## What's in the box?
 
-- [Eleventy](https://www.11ty.io)
+- [Eleventy](https://www.11ty.dev)
 
 ## Getting going (dev)
 
-- `npm install` - Install dev dependancies
+- `npm install` - Install dependencies
 - `node utils/books.js` - Hydrate the reading list
 - `npm run dev` - Build the site for dev
 
