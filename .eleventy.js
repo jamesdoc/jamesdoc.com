@@ -8,7 +8,6 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 const filters = require("./utils/filters.js");
 const collections = require("./utils/collections.js");
-const shortcodes = require("./utils/shortcodes.js");
 
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
@@ -23,11 +22,11 @@ module.exports = function (eleventyConfig) {
     widths: ["auto"],
     formats: ["webp", "jpg"],
     htmlOptions: {
-			imgAttributes: {
-				loading: "lazy",
-				decoding: "async",
-			},
-		},
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+    },
   });
 
 
