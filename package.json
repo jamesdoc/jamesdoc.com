@@ -20,7 +20,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.27.2",
     "lite-youtube-embed": "^0.3.3",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-footnote": "^4.0.0",
@@ -28,7 +28,6 @@
     "markdown-it-table-of-contents": "^0.8.0",
     "netlify-plugin-cache": "^1.0.3",
     "oauth-1.0a": "^2.2.6",
-    "resolve-url-loader": "^5.0.0",
     "sass": "^1.81.0"
   }
 }
