@@ -1,4 +1,5 @@
-const { convert, LOWERCASE_TRANSFORMER } = require('url-slug')
+// const { convert, LOWERCASE_TRANSFORMER } = require('url-slug')
+const slugify = require("@sindresorhus/slugify").default;
 const fs = require("fs");
 const { trello } = require("../config.js");
 const dayjs = require("dayjs");
@@ -17,13 +18,13 @@ let log = function (message) {
   console.log(message);
 };
 
-const slug = (str) => {
-  const conf = {
-    separator: "-",
-    transformer: LOWERCASE_TRANSFORMER,
-  };
-  return convert(str, conf);
-};
+// const slug = (str) => {
+//   const conf = {
+//     separator: "-",
+//     transformer: LOWERCASE_TRANSFORMER,
+//   };
+//   return convert(str, conf);
+// };
 
 const refLookup = async (refType) => {
   try {
@@ -60,7 +61,7 @@ const cardLookup = async (lists, customFields) => {
     data.forEach((item) => {
       const additional = {};
       item.customFieldItems.map((v) => {
-        additional[slug(customFields[v.idCustomField])] =
+        additional[slugify(customFields[v.idCustomField])] =
           v.value.text || v.value.checked;
       });
 

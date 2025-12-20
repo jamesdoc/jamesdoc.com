@@ -29,7 +29,6 @@
     "netlify-plugin-cache": "^1.0.3",
     "oauth-1.0a": "^2.2.6",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.81.0",
-    "url-slug": "^4.0.1"
+    "sass": "^1.81.0"
   }
 }
