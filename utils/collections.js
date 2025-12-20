@@ -29,3 +29,27 @@ exports.posts = collection => {
 exports.events = collection => {
   return collection.getFilteredByGlob(["./src/events/**/*.md"]);
 }
+
+exports.tagList = collection => {
+  // Get all posts
+  const posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);
+  const tagSet = new Set();
+
+  // Extract all unique tags from posts
+  posts.forEach(post => {
+    if (post.data.tags) {
+      const tags = Array.isArray(post.data.tags)
+        ? post.data.tags
+        : post.data.tags.split(/[,\s]+/).filter(t => t);
+
+      tags.forEach(tag => {
+        if (tag && tag.trim()) {
+          tagSet.add(tag.trim());
+        }
+      });
+    }
+  });
+
+  // Return as an array of tag names
+  return Array.from(tagSet).sort();
+}

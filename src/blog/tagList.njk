@@ -1,20 +1,16 @@
 ---
 eleventyExcludeFromCollections: true
 layout: listing
-permalink: blog/tags/{{ tag | slug }}/index.html
+permalink: blog/tags/{{ tag | slugify }}/index.html
 pagination:
-  data: collections
+  data: collections.tagList
   size: 1
   alias: tag
-  filter:
-  - postsByYear
-  - posts
-  - all
 breadcrumbs:
   - ['/blog', 'Thoughts']
   - ['/blog/tags', 'Tagged']
 eleventyComputed:
-  title: Tagged “{{ tag }}”
+  title: Tagged "{{ tag }}"
 ---
 <h1>Thoughts tagged with “{{ tag }}”</h1>
 

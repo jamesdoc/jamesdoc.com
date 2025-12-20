@@ -12,7 +12,7 @@
   "author": "James Doc",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^4.0.0-alpha.6",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
@@ -27,6 +27,7 @@
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-table-of-contents": "^0.8.0",
+    "mkdirp": "^3.0.1",
     "netlify-plugin-cache": "^1.0.3",
     "oauth-1.0a": "^2.2.6",
     "resolve-url-loader": "^5.0.0",
