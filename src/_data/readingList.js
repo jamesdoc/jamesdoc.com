@@ -64,10 +64,17 @@ export default async function () {
       const cards = [];
 
       data.forEach((item) => {
+
         const additional = {};
         item.customFieldItems.map((v) => {
-          additional[slugify(customFields[v.idCustomField])] =
-            v.value.text || v.value.checked;
+
+          const fieldKey = slugify(customFields[v.idCustomField]);
+
+          // Value of a field is returned as text, checked, or number…
+          const value = v.value?.text ?? v.value?.checked ?? v.value?.number;
+          if (value !== undefined) {
+            additional[fieldKey] = value;
+          }
         });
 
         cards.push({
@@ -76,7 +83,9 @@ export default async function () {
           name: item.name,
           url: item.shortUrl,
           additional: additional,
+          startDate: item.start,
           readDate: item.due,
+          notes: item.desc,
           epoch: item.due ? dayjs(item.due).unix() : null,
           labels: item.labels,
           cover: item.cover,
