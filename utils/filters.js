@@ -131,6 +131,24 @@ export default {
     };
   },
 
+  /**
+   * Parse a star rating (string or number, 0–5, possibly decimal) into an array
+   * of 5 items: 'full' | 'half' | 'empty' for use in a visual star display.
+   */
+  starRating: (value) => {
+    const rating = Math.min(5, Math.max(0, parseFloat(value) || 0));
+    const full = Math.floor(rating);
+    const remainder = rating - full;
+    const hasHalf = remainder >= 0.25 && remainder < 0.75;
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      if (i < full) stars.push('full');
+      else if (i === full && hasHalf) stars.push('half');
+      else stars.push('empty');
+    }
+    return stars;
+  },
+
   changelog: (filePath) => {
     /*
      tformat - appends a new line after each commit

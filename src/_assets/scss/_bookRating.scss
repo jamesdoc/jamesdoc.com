@@ -1,0 +1,35 @@
+.book-rating {
+  margin: 0 0 1em;
+
+  &__stars {
+    display: inline-flex;
+    gap: 0.1em;
+  }
+}
+
+.book-rating .star {
+  color: var(--theme);
+  font-style: normal;
+
+  &--empty {
+    color: var(--glow);
+  }
+
+  &--half {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "☆";
+      color: var(--glow);
+    }
+
+    .star--full {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+}

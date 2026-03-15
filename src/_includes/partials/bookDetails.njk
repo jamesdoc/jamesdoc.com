@@ -33,6 +33,15 @@
   {% endif %}
 
   {% if book.additional.stars %}
-  <p>{{ book.additional.stars }} {{ "star" if book.additional.stars == "1" else "stars" }}</p>
+  {% set starStates = book.additional.stars | starRating %}
+  <p class="book-rating" aria-label="{{ book.additional.stars }} out of 5 stars">
+    <span aria-hidden="true" class="book-rating__stars">
+      {% for state in starStates %}
+        {% if state == "full" %}<span class="star star--full">★</span>{% endif %}
+        {% if state == "half" %}<span class="star star--half"><span class="star star--full">★</span></span>{% endif %}
+        {% if state == "empty" %}<span class="star star--empty">☆</span>{% endif %}
+      {% endfor %}
+    </span>
+  </p>
   {% endif %}
 </div>
