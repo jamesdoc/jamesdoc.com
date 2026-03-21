@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ quiet: true });
 import { AssetCache } from "@11ty/eleventy-fetch";
 
 const cacheLength = "1w";

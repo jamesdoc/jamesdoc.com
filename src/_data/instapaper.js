@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ quiet: true });
 import EleventyFetch from "@11ty/eleventy-fetch";
 import OAuth from "oauth-1.0a";
 import crypto from "node:crypto";

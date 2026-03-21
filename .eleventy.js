@@ -18,6 +18,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setQuietMode(true);
 
   // Plugins
+  // [TODO] Explore https://www.11ty.dev/docs/plugins/rss/#virtual-template in 3.0.0
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
