@@ -10,9 +10,8 @@ Simple static site via [Eleventy](https://www.11ty.dev), deploying to [Netlify](
 
 ## Getting going (dev)
 
-- `npm install` - Install dependencies
-- `node utils/books.js` - Hydrate the reading list
-- `npm run dev` - Build the site for dev
+- `pnpm install` - Install dependencies
+- `pnpm run dev` - Build the site for dev
 
 ## Data
 
@@ -20,7 +19,7 @@ If you want things importing nicely (eg Last.fm) you'll need to get the `.env` f
 
 ## Deploying
 
-- `npm run build` - Build the production assets
+- `pnpm run build` - Build the production assets
 - `scp -r dist jimmy@jimmyserve.com:/www/` - Move it to your server\*
 
 * Other methods are possible, eg automated deploys via Github + Netlify
