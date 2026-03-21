@@ -13,24 +13,24 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^4.0.0-alpha.7",
-    "@11ty/eleventy-fetch": "^5.1.1",
+    "@11ty/eleventy": "4.0.0-alpha.7",
+    "@11ty/eleventy-fetch": "^5.1.2",
     "@11ty/eleventy-img": "^6.0.4",
-    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@sindresorhus/slugify": "^3.0.0",
-    "dayjs": "^1.11.13",
-    "dotenv": "^16.4.5",
-    "esbuild": "^0.27.2",
-    "lite-youtube-embed": "^0.3.3",
+    "dayjs": "^1.11.20",
+    "dotenv": "^17.3.1",
+    "esbuild": "^0.27.4",
+    "lite-youtube-embed": "^0.3.4",
     "markdown-it": "^14.1.1",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-link-attributes": "^4.0.1",
-    "markdown-it-table-of-contents": "^0.8.0",
+    "markdown-it-table-of-contents": "^1.1.0",
     "netlify-plugin-cache": "^1.0.3",
     "oauth-1.0a": "^2.2.6",
-    "sass": "^1.81.0"
+    "sass": "^1.98.0"
   },
   "packageManager": "pnpm@10.28.2"
 }
