@@ -42,8 +42,10 @@
   }
 
   &--reading--cols {
+    display: grid;
+    gap: 1rem;
+
     @media (min-width: 1000px) {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
     }
