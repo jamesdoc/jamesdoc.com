@@ -218,6 +218,17 @@ hr {
   margin-bottom: 1em;
 }
 
+.mainNav {
+  top: 60px;
+  position: absolute;
+  right: 60px;
+  z-index: 1;
+
+  a {
+    padding-left: 20px;
+  }
+}
+
 @include meta.load-css("homepage");
 @include meta.load-css("thoughts");
 @include meta.load-css("listing");

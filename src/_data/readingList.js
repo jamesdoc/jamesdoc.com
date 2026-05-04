@@ -1,5 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config({ quiet: true });
 import { AssetCache } from "@11ty/eleventy-fetch";
 import slugify from "@sindresorhus/slugify";
 import config from "../../config.js";

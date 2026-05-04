@@ -43,7 +43,7 @@ export default function (eleventyConfig) {
   });
 
   // Watch assets folder for changes
-  eleventyConfig.addWatchTarget("./src/_assets");
+  eleventyConfig.addWatchTarget("./src/_assets/**");
 
   // Copy these assets straight across
   eleventyConfig.addPassthroughCopy({ "./src/_assets/svg": "_assets/svg" });

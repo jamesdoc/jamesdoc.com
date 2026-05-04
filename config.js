@@ -22,6 +22,7 @@ export default {
         summary: "Working within the engineering team to build a CRM that meets the needs of charities large and small, with a specific focus on building integrations with third party platforms.",
         info: [
           "Managed the existing library of <a href='https://www.beaconcrm.org/integrations' target='_blank'>integrations with third parties</a>, including the development of the integration between <a href='https://www.beaconcrm.org/blog/introducing-beacons-fundraise-up-integration' target='_blank'>Beacon CRM and Fundraise Up</a>",
+          "Working within the the team to migrate the main database from <a href='https://www.beaconcrm.org/blog/beacon-product-update---march-2026' target='_blank'>PostgresSQL to Google Spanner.</a>",
           "Part of a team effort to migrate a set of microservices from JavaScript to TypeScript.",
           "Supported the implementation of information security practices including <a href='https://www.beaconcrm.org/blog/product-update-september-2025' target='_blank'>ISO 20071:2022</a> and CyberEssentials Plus accreditation."
         ]
