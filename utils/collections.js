@@ -31,6 +31,18 @@ export default {
     return collection.getFilteredByGlob(["./src/events/**/*.md"]);
   },
 
+  now: collection => {
+    // Get all posts…
+    const posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);
+
+    // Limit it down to the posts with the tag 'now'
+    return posts
+      .filter((post) => post.data.tags && post.data.tags.includes('now'))
+      .sort((a, b) => {
+        return new Date(b.data.date) - new Date(a.data.date);
+      });
+  },
+
   tagList: collection => {
     // Get all posts
     const posts = collection.getFilteredByGlob(["./src/blog/**/*.md"]);

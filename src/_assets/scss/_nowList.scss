@@ -1,3 +1,14 @@
+.nowGrid {
+  display: grid;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+  }
+}
+
 .nowList{
   padding:  0 0 40px;
 
