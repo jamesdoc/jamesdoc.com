@@ -7,13 +7,24 @@
     gap: 2rem;
     max-width: 1000px;
   }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 3fr 2fr;
+    max-width: 1400px;
+  }
 }
 
 .nowList{
   padding:  0 0 40px;
 
+  @media (min-width: 1200px) {
+    column-count: 2;
+    gap: 2rem;
+  }
+
   li {
     list-style-type: none;
+    break-inside: avoid-column;
   }
 }
 

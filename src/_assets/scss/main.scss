@@ -29,6 +29,7 @@
 :root {
   --background: hsl(0, 0%, 100%);
   --text: hsl(97, 32%, 8%);
+  --text-muted: hsl(0, 0%, 56%);
   --theme: hsl(101, 57%, 70%);
   --glow: hsla(0, 0%, 78%, 0.5);
 
@@ -140,7 +141,7 @@ p,
 code {
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0 0 1em;
+  margin: 0 0 1.25em;
   width: 100%;
 
   @media (min-width: 485px) {
@@ -237,7 +238,7 @@ hr {
 @include meta.load-css("boxedMessage");
 @include meta.load-css("embedWrapper");
 @include meta.load-css("nowList");
-@include meta.load-css("bookRating");
+@include meta.load-css("book");
 @include meta.load-css("role");
 @include meta.load-css("logo");
 @include meta.load-css("bio");

@@ -1,14 +1,24 @@
 <div itemscope itemtype="https://schema.org/Book">
-  <h3 itemprop="name">{{ book.name }}</h3>
+  <h3 itemprop="name" class="book__title">{{ book.name }}</h3>
 
   {% if book.additional.author %}
-  <p itemprop="author" itemscope itemtype="https://schema.org/Person">{{ book.additional.author }}</p>
+  <p itemprop="author" itemscope itemtype="https://schema.org/Person" class="book__author">{{ book.additional.author }}</p>
   {% endif %}
 
-  {% if book.readDate %}
-    <p>Finished: {{ book.readDate | readableDate }}</p>
+  {% if book.additional.stars %}
+  {% set starStates = book.additional.stars | starRating %}
+  <p class="book__rating" aria-label="{{ book.additional.stars }} out of 5 stars">
+    <span aria-hidden="true" class="book__rating__stars">
+      {% for state in starStates %}
+        {% if state == "full" %}<span class="star star--full">★</span>{% endif %}
+        {% if state == "half" %}<span class="star star--half"><span class="star star--full">★</span></span>{% endif %}
+        {% if state == "empty" %}<span class="star star--empty">☆</span>{% endif %}
+      {% endfor %}
+    </span>
+  </p>
   {% endif %}
 
+  {#
   {% if book.additional.isbn %}
     <p>
       Find on:
@@ -27,21 +37,13 @@
         <a href="https://goodreads.com/search?q={{ book.additional.isbn }}" target="_blank" rel="noopener">GoodReads</a>
     </p>
   {% endif %}
+  #}
 
   {% if book.additional['page-count'] %}
-  <p>{{ book.additional['page-count'] }} pages</p>
+    <p class="book__page-count">{{ book.additional['page-count'] }} pages</p>
   {% endif %}
 
-  {% if book.additional.stars %}
-  {% set starStates = book.additional.stars | starRating %}
-  <p class="book-rating" aria-label="{{ book.additional.stars }} out of 5 stars">
-    <span aria-hidden="true" class="book-rating__stars">
-      {% for state in starStates %}
-        {% if state == "full" %}<span class="star star--full">★</span>{% endif %}
-        {% if state == "half" %}<span class="star star--half"><span class="star star--full">★</span></span>{% endif %}
-        {% if state == "empty" %}<span class="star star--empty">☆</span>{% endif %}
-      {% endfor %}
-    </span>
-  </p>
+  {% if book.readDate %}
+    <p class="book__complete-date">Finished on {{ book.readDate | readableDate }}</p>
   {% endif %}
 </div>

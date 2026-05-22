@@ -43,10 +43,15 @@
 
   &--reading--cols {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 695px) {
       grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
     }
   }
@@ -58,21 +63,13 @@
 
   &--reading__book {
     max-width: initial;
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 5px var(--glow);
+    display: flex;
+    gap: 1rem;
 
-    img {
-      max-width: 150px;
-      box-shadow: 0 0 20px 5px var(--glow);
-      border-radius: 3px;
-      transition: all 0.25s;
-
-      &:hover {
-        box-shadow: none;
-      }
-    }
-
-    picture, img {
-      flex: 0 0 auto;
-    }
 
     h2,
     h3 {
@@ -80,11 +77,6 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-    }
-
-    @media (min-width: 465px) {
-      display: flex;
-      gap: 1rem;
     }
   }
 }
