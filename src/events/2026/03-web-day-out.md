@@ -7,7 +7,6 @@ location:
   country: UK
 externalUrl: https://webdayout.com/
 date: 2026-03-12
-endDate: 2025-03-12
 layout: event
 avatar: hidden
 
