@@ -9,6 +9,8 @@ leadImage: /_assets/img/blog/2023/aoe2-macos.png
 tags: ["tech", "software"]
 ---
 
+> May 2026 Update: [Age of Empires 2 is now runs on MacOS](https://www.ageofempires.com/news/age-of-empires-ii-definitive-edition-available-now-on-mac/); just download it from Steam. You can safely ignore the rest of this post.
+
 My setup for running Age of Empires 2 is on M1 MacBook Pro running MacOS Sonoma (14.2), the following steps worked for me. Your milage may vary.
 
 ## Step One: Buy Age of Empires
