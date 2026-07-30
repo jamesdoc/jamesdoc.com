@@ -14,60 +14,50 @@ generatedOGimg: true
   </div>
 </header>
 
-{% if date | dateComparison('2011-12-31') %}
-<aside class="boxedMessage boxedMessage--alert">
-  <p class="boxedMessage__heading">⚠️ This is really old post.</p>
-  <p>
-    It's possibly been exported and imported from at least
-    three different blogging platforms over the years. That probably means, at
-    best, there are broken images and links. If the post is technical in nature,
-    any advice is probably out of date and irrelevant. Or it is <em>really</em> old, it was
-    the wafflings of a teenager with too much time on his hands working out what
-    blogging is… If it is the latter I would probably cringe if I re-read it.
-    But it's here because it's part of my past, not my present.
-  </p>
-  <p>You've been warned! Onwards…</p>
-</aside>
-{% elseif date | dateComparison('2018-08-01') %}
-<aside class="boxedMessage boxedMessage--alert">
-  <p class="boxedMessage__heading">⚠️ You're reading an old post.</p>
-  <p>{{ date | readableDate }} was a long time ago, and as such I'd encourage you to tread carefully through this post. Links maybe dead, recommendations given may no longer be seen as good best practice, and technical implementation may at best be dated, if not entirely outdated. You've been warned!</p>
-</aside>
+{% if date | isDateBefore('2015-12-31') %}
+  <p>This post no longer exists.</p>
+{% else %}
+  {% if date | isDateBefore('2018-08-01') %}
+    <aside class="boxedMessage boxedMessage--alert">
+      <p class="boxedMessage__heading">⚠️ You're reading an old post.</p>
+      <p>{{ date | readableDate }} was a long time ago, and as such I'd encourage you to tread carefully through this post. Links maybe dead, recommendations given may no longer be seen as good best practice, and technical implementation may at best be dated, if not entirely outdated. You've been warned!</p>
+    </aside>
+  {% endif %}
+
+  {% if leadImage %}
+  <img src="{{ leadImage}}" sizes="(min-width: 550px) 550px, calc(100vw - 120px)" alt="" class="thought-lead-image" eleventy:widths="550,1100" />
+  {% endif %}
+
+  <div class="thought-content">
+
+    {{ content | safe }}
+
+  </div>
+
+  {% if build.env === 'production' %}
+  {% set changeLog = page.inputPath | changelog %}
+  {% if changeLog %}
+  <div class="thought-changelog">
+    <h2>Post changelog</h2>
+
+    <ul role="list">
+    {% for change in changeLog %}
+      <li>{{ change.date }} – <a href="{{ metadata.gitRepo }}commit/{{ change.hash }}" target="_blank" rel="noopener">{{ change.subject }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% endif %}
+
+  <a href="/blog" class="btn">Back to all posts</a>
+
+  {% if canonical %}
+  <small class="thought-canonical">
+    This post originally appeared at:<br />
+    <a href="{{ canonical }}">{{ canonical }}</a>
+  </small>
+  {% endif %}
+
 {% endif %}
-
-{% if leadImage %}
-<img src="{{ leadImage}}" sizes="(min-width: 550px) 550px, calc(100vw - 120px)" alt="" class="thought-lead-image" eleventy:widths="550,1100" />
-{% endif %}
-
-<div class="thought-content">
-
-  {{ content | safe }}
-
-</div>
-
-{% if build.env === 'production' %}
-{% set changeLog = page.inputPath | changelog %}
-{% if changeLog %}
-<div class="thought-changelog">
-  <h2>Post changelog</h2>
-
-  <ul role="list">
-  {% for change in changeLog %}
-    <li>{{ change.date }} – <a href="{{ metadata.gitRepo }}commit/{{ change.hash }}" target="_blank" rel="noopener">{{ change.subject }}</a></li>
-  {% endfor %}
-  </ul>
-</div>
-{% endif %}
-{% endif %}
-
-<a href="/blog" class="btn">Back to all posts</a>
-
-{% if canonical %}
-<small class="thought-canonical">
-  This post originally appeared at:<br />
-  <a href="{{ canonical }}">{{ canonical }}</a>
-</small>
-{% endif %}
-
 
 

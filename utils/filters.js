@@ -21,7 +21,7 @@ export default {
     return dayjs(dateObj).format(format);
   },
 
-  dateComparison: (dateObj, compareWith) => {
+  isDateBefore: (dateObj, compareWith) => {
     return dayjs(dateObj).isBefore(dayjs(compareWith));
   },
 
