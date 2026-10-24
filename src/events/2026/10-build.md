@@ -5,7 +5,9 @@ role: team
 location:
   city: London
   country: UK
-externalUrl: https://www.faithtech.com/create-events/faithtech-london-build-2026
+externalUrl: https://ftbuild.org.uk/
 date: 2026-10-09
 endDate: 2026-10-10
+layout: event
+avatar: hidden
 ---
