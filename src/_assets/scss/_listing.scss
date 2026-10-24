@@ -57,8 +57,17 @@
   }
 
   &__header {
-    grid-column: 1/-1;
+    background: color-mix(in srgb, var(--background) 65%, transparent);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 3px 0 3px 3px;
     font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   &--reading__book {
@@ -113,4 +122,17 @@
   a:hover h3 {
     border-bottom-color: black;
   }
+}
+
+// Section headings with a subtle dividing line
+.sectionHeading {
+  border-bottom: 1px solid var(--glow);
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+// Each year of the reading list is its own section so its heading stays
+// stuck to the top of the screen until the next year takes over
+.yearGroup + .yearGroup {
+  margin-top: 2rem;
 }

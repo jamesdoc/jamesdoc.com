@@ -69,7 +69,7 @@
     }
 
     // Animate the text in and out. These are transitions rather than keyframe
-    // animations so they run in both directions and replay on every toggle
+    // animations so they run in both directions and replay on every toggle.
     ul {
       margin-left: 0.8rem;
     }
@@ -122,4 +122,36 @@
     }
   }
 
+}
+
+// Smaller cards for secondary roles (eg. voluntary), laid out in a grid
+.roleGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem 2rem;
+  max-width: 940px;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.role--compact {
+  grid-template-columns: 4rem 1fr;
+  align-items: start;
+  gap: 0.75rem;
+  margin-bottom: 0;
+
+  @media (min-width: 824px) {
+    grid-template-columns: 4rem 1fr;
+  }
+
+  h3 {
+    padding-top: 0;
+  }
+}
+
+// Keep the resume section headings in line with the role cards
+.roleSection {
+  max-width: 940px;
 }

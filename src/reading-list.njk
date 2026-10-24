@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 
 {% set currentBooks = readingList | activeBook %}
 {% if currentBooks | length > 0 %}
-  <h2>Currently reading:</h2>
+  <h2 class="sectionHeading">Currently reading</h2>
   <div class="listing listing--reading">
 
   {% for book in currentBooks %}
@@ -25,17 +25,20 @@ eleventyExcludeFromCollections: false
   </div>
 {% endif %}
 
-<h2>Previously read:</h2>
+<h2 class="sectionHeading">Previously read</h2>
 {% set y = null %}
-<div class="listing listing--reading listing--reading--cols">
 {% for book in readingList|sort(true, true, 'epoch') %}
   {% if book.readDate %}
 
   {% if y != book.readDate | htmlDateString('YYYY') %}
+    {% if y %}
+      </div>
+    </section>
+    {% endif %}
     {% set y = book.readDate | htmlDateString('YYYY') %}
-    <div class="listing__header">
-      {{ y }}
-    </div>
+    <section class="yearGroup">
+      <div class="listing__header">{{ y }}</div>
+      <div class="listing listing--reading listing--reading--cols">
   {% endif %}
 
   <div class="listing--reading__book book">
@@ -49,7 +52,10 @@ eleventyExcludeFromCollections: false
 
   {% endif %}
 {% endfor %}
-</div>
+{% if y %}
+  </div>
+</section>
+{% endif %}
 
 <hr />
 
