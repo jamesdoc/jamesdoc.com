@@ -68,34 +68,58 @@
       transform: rotate(90deg);
     }
 
-    // Animate the text entrance
-    &[open] li {
-      animation: sweep .5s ease-in-out forwards;
-    }
-
+    // Animate the text in and out. These are transitions rather than keyframe
+    // animations so they run in both directions and replay on every toggle
     ul {
       margin-left: 0.8rem;
     }
+
     li {
-      opacity: 0;
       margin-bottom: 0.2rem;
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: opacity .25s ease-in-out, transform .25s ease-in-out;
     }
 
-    &[open] li:nth-child(1) { animation-delay: .25s }
-    &[open] li:nth-child(2) { animation-delay: .5s }
-    &[open] li:nth-child(3) { animation-delay: .75s }
-    &[open] li:nth-child(4) { animation-delay: 1s }
+    &[open] li {
+      opacity: 1;
+      transform: translateX(0);
+      transition-duration: .5s;
+
+      @starting-style {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+    }
+
+    @for $i from 1 through 12 {
+      &[open] li:nth-child(#{$i}) { transition-delay: $i * .25s }
+    }
+
+    // Grow and shrink the space the bullets take up, and keep the content
+    // rendered while it does (needs a recent Chromium, otherwise it just snaps)
+    interpolate-size: allow-keywords;
+
+    &::details-content {
+      height: 0;
+      overflow: clip;
+      transition: height .3s ease-in-out, content-visibility .3s allow-discrete;
+    }
+
+    &[open]::details-content {
+      height: auto;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      li, &[open] li {
+        transition: none;
+        transform: none;
+      }
+
+      &::details-content {
+        transition: none;
+      }
+    }
   }
 
-}
-
-@keyframes sweep {
-  0%    {
-    opacity: 0;
-    transform: translateX(-10px)
-  }
-  100%  {
-    opacity: 1;
-    transform: translateX(0)
-  }
 }

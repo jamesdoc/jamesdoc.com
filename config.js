@@ -24,7 +24,7 @@ export default {
           "Manage the library of <a href='https://www.beaconcrm.org/integrations' target='_blank'>integrations with third parties</a>, including the development of the integration between <a href='https://www.beaconcrm.org/blog/introducing-beacons-fundraise-up-integration' target='_blank'>Beacon CRM and Fundraise Up</a>.",
           "Working within the the team to migrate the main database from <a href='https://www.beaconcrm.org/blog/beacon-product-update---march-2026' target='_blank'>PostgresSQL to Google Spanner</a>.",
           "Part of a team effort to migrate a set of microservices from JavaScript to TypeScript.",
-          "Supported the implementation of information security practices including <a href='https://www.beaconcrm.org/blog/product-update-september-2025' target='_blank'>ISO 20071:2022</a> and CyberEssentials Plus accreditation."
+          "Supported the implementation of information security practices including <a href='https://www.beaconcrm.org/blog/product-update-september-2025' target='_blank'>ISO 20071:2022</a> and <a href='https://www.beaconcrm.org/blog/product-update-december-2025' target='_blank'>CyberEssentials Plus accreditation</a>."
         ]
       },
       {
@@ -45,7 +45,7 @@ export default {
       },
       {
         role: "Head of Technology",
-        name: "Vixen Labs (now part of House 337)",
+        name: "Vixen Labs (now Elvis London)",
         type: "full time",
         location: "London, UK",
         url: "https://vixenlabs.co",
@@ -53,11 +53,11 @@ export default {
         end: '20231231',
         summary: "Member of the senior leadership team of an agency focused on developing more human and conversational interactions with technology through voice, natural language, and generative AI.",
         info: [
-          "Implemented experimental Alexa Shopping Kit functionality to the <a href='https://vixenlabs.co/learn-how-to-do-anything-with-the-wikihow-alexa-skill' target='_blank' rel='noopener'>wikiHow skill</a> to be demonstrated in the opening session of the <a href='https://developer.amazon.com/en-US/alexa/alexa-live' target='_blank' rel='noopener'>2022 Alexa Live conference</a>.",
+          "Implemented experimental Alexa Shopping Kit functionality to the <a href='https://www.youtube.com/watch?v=9s7p_U-VpKQ' target='_blank' rel='noopener'>wikiHow skill</a> to be demonstrated in the opening session of the <a href='https://developer.amazon.com/en-US/alexa/alexa-live' target='_blank' rel='noopener'>2022 Alexa Live conference</a>.",
           "Led the technical discovery process ahead of design and build process for clients such as TuneIn, Dyson, Nespresso, and HBO.",
           "Developed a number of technical proof-of-concepts including an <a href='https://www.youtube.com/watch?v=8YOAwinB6wo' target='_blank' rel='noopener'>award winning generative AI powered chatbot</a> at the 2023 <a href='https://www.gloo.us/hackathon' target='_blank' rel='noopener'>Gloo hackathon</a>.",
           "Managed relationship with both internal developers and external development partners.",
-          "Responsible for the implementation and management of Vixen Labs' <a href='https://vixenlabs.co/vixen-labs-is-iso-27001-certified' target='_blank' rel='noopener'>ISO 27001 accreditation</a>."
+          "Responsible for the implementation and management of Vixen Labs' <a href='https://web.archive.org/web/20251205051634/https://vixenlabs.co/vixen-labs-is-iso-27001-certified' target='_blank' rel='noopener'>ISO 27001 accreditation</a>."
         ]
       },
       {

@@ -31,6 +31,8 @@
 }
 
 .book img {
+  display: block;
+  transform-origin: center;
   width: 100%;
   box-shadow: 0 0 20px 5px var(--glow);
   border-radius: 3px;
@@ -41,6 +43,32 @@
   @media (min-width: 465px) {
     max-width: 150px;
     margin-bottom: 0;
+  }
+}
+
+@keyframes book-cover-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) scale(0.96);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .book:hover img {
+    box-shadow: 0 0 25px 8px var(--glow);
+    transform: scale(1.04);
+  }
+
+  .listing:has(.book:hover) .book:not(:hover) img {
+    filter: saturate(0.6);
+  }
+
+  @supports (animation-timeline: view()) {
+    .book > picture {
+      animation: book-cover-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
   }
 }
 
