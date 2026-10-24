@@ -17,7 +17,8 @@ avatar: hidden
 
   <div class="bio__text">
     <p>
-      I’m James, a developer and designer based in London, UK. For the last 10
+      I’m James, a developer and designer based in London, UK. For the last
+      {{ (employment | sort(false, false, "start") | first).start | yearsSince }}
       years, I’ve been working in teams building accessible and performant
       digital tools and services for businesses, charities, and agencies such as
       the V&amp;A, Dyson, Nespresso, Alpha International, Beacon CRM
@@ -31,31 +32,11 @@ avatar: hidden
   </div>
 </div>
 
-<h2 id="professional">Professional</h2>
+<h2 id="professional" class="sectionHeading roleSection">Professional</h2>
 
-{% for job in now.employment %}
+{% for job in employment %}
 <div class="role">
-  <a
-    class="role__logo logo"
-    href="{{ job.url }}"
-    aria-label="{{ job.name }}"
-    target="_blank"
-    rel="noopener"
-  >
-    {{ job.name }}
-  </a>
-
-  <div>
-    <h3 class="role__title">{{ job.role }}</h3>
-    <a class="role__org" href="{{ job.url }}" target="_blank" rel="noopener"
-      >{{ job.name }}</a
-    >
-    <p class="role__location">{{ job.location }}</p>
-    <p class="role__dates">
-      {{ job.start | htmlDateString("MMMM YYYY") }}{% if job.end %} – {{ job.end
-      | htmlDateString("MMMM YYYY") }}{% endif %}
-    </p>
-  </div>
+  {% include "partials/role.njk" %}
 
   {% if job.summary and job.info %}
   <details class="role__details">
@@ -74,158 +55,22 @@ avatar: hidden
 </div>
 {% endfor %}
 
-<h2 id="education">Education</h2>
+<h2 id="education" class="sectionHeading roleSection">Education</h2>
 
+{% for job in education %}
 <div class="role">
-  <a
-    class="role__logo logo"
-    href="https://lincoln.ac.uk"
-    aria-label="University of Lincoln"
-    target="_blank"
-    rel="noopener"
-  >
-    University of Lincoln
-  </a>
-
-  <div>
-    <h3 class="role__title">Web Computing (BSc Hons)</h3>
-    <a
-      class="role__org"
-      href="https://lincoln.ac.uk"
-      target="_blank"
-      rel="noopener"
-      >University of Lincoln</a
-    >
-    <p class="role__location">Lincoln, UK</p>
-    <p class="role__dates">September 2008 &#8211; May 2011</p>
-  </div>
+  {% include "partials/role.njk" %}
 </div>
+{% endfor %}
 
-<h2 id="voluntary">Voluntary</h2>
+<h2 id="voluntary" class="sectionHeading roleSection">Voluntary</h2>
 
-<div class="role">
-  <a
-    class="role__logo logo"
-    href="https://globe.church"
-    aria-label="The Globe Church"
-    target="_blank"
-    rel="noopener"
-  >
-    The Globe Church
-  </a>
-
-  <div>
-    <h3 class="role__title">Trustee / Elder</h3>
-    <a
-      class="role__org"
-      href="https://globe.church"
-      target="_blank"
-      rel="noopener"
-      >The Globe Church</a
-    >
-    <p class="role__location">London, UK</p>
-    <p class="role__dates">2023 &#8211; current</p>
+<div class="roleGrid">
+  {% for job in volunteering %}
+  <div class="role role--compact">
+    {% include "partials/role.njk" %}
   </div>
-</div>
-
-<div class="role">
-  <a
-    class="role__logo logo"
-    href="https://discipleship.tech"
-    aria-label="Discipleship Tech"
-    target="_blank"
-    rel="noopener"
-  >
-    Discipleship Tech
-  </a>
-
-  <div>
-    <h3 class="role__title">Mentor / Project Manager</h3>
-    <a
-      class="role__org"
-      href="https://discipleship.tech"
-      target="_blank"
-      rel="noopener"
-      >Discipleship Tech</a
-    >
-    <p class="role__location">London, UK</p>
-    <p class="role__dates">March 2023 – Ongoing</p>
-  </div>
-</div>
-
-<div class="role">
-  <a
-    class="role__logo logo"
-    href="https://kingdomcode.org.uk"
-    aria-label="Kingdom Code"
-    target="_blank"
-    rel="noopener"
-  >
-    Kingdom Code
-  </a>
-
-  <div>
-    <h3 class="role__title">Co-Leader</h3>
-    <a
-      class="role__org"
-      href="https://kingdomcode.org.uk"
-      target="_blank"
-      rel="noopener"
-      >Kingdom Code</a
-    >
-    <p class="role__location">UK</p>
-    <p class="role__dates">2014 – 2025</p>
-  </div>
-</div>
-
-<div class="role">
-  <a
-    class="role__logo logo"
-    href="https://content.scriptureunion.org.uk/holidays-events"
-    aria-label="Scripture Union"
-    target="_blank"
-    rel="noopener"
-  >
-    Scripture Union
-  </a>
-
-  <div>
-    <h3 class="role__title">Holiday Leader</h3>
-    <a
-      class="role__org"
-      href="https://content.scriptureunion.org.uk/holidays-events"
-      target="_blank"
-      rel="noopener"
-      >Scripture Union</a
-    >
-    <p class="role__location">Cardiff and Salisbury, UK</p>
-    <p class="role__dates">2008 – 2024</p>
-  </div>
-</div>
-
-<div class="role">
-  <a
-    class="role__logo logo"
-    href="https://www.churchofengland.org/"
-    aria-label="The Church of England"
-    target="_blank"
-    rel="noopener"
-  >
-    The Church of England
-  </a>
-
-  <div>
-    <h3 class="role__title">Digital Advisor</h3>
-    <a
-      class="role__org"
-      href="https://www.churchofengland.org/"
-      target="_blank"
-      rel="noopener"
-      >The Church of England</a
-    >
-    <p class="role__location">London, UK</p>
-    <p class="role__dates">2018 – 2021</p>
-  </div>
+  {% endfor %}
 </div>
 
 {% include '../_includes/partials/footer.njk' %}

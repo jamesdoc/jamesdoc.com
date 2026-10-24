@@ -125,6 +125,20 @@
     }
   }
 
+  &[href^="https://www.faithtech"]
+  {
+    background-color: var(--color-faithtechYellow);
+    background-image: url("/_assets/svg/faithtech.svg");
+    background-size: 40%;
+    transition: background-size 0.5s ease-out, border-radius 0.5s ease-out;
+  }
+
+  &[href^="https://www.faithtech"]:hover
+  {
+    background-size: 50%;
+    border-radius: 6%;
+  }
+
   &[href^="https://content.scriptureunion.org.uk"]
   {
     background-color: var(--color-livewiresBlue);

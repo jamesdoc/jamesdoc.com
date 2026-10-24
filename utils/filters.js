@@ -21,6 +21,10 @@ export default {
     return dayjs(dateObj).format(format);
   },
 
+  yearsSince: (dateObj) => {
+    return dayjs().diff(dayjs(dateObj), "year");
+  },
+
   isDateBefore: (dateObj, compareWith) => {
     return dayjs(dateObj).isBefore(dayjs(compareWith));
   },

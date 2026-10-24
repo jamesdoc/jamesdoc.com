@@ -34,10 +34,11 @@ nextEvent = false %} {% endif %}
     <li>
       <strong>Location</strong>
       <div>
-        Since 2014 I've been living in
+        {% set currentLocation = locations[0] %}
+        Since {{ currentLocation.start | htmlDateString("YYYY") }} I've been living in
         <span itemprop="text"
-          ><a href="{{ now.location.url }}" target="_blank" rel="noopener"
-            >{{ now.location.name }}, UK</a
+          ><a href="{{ currentLocation.url }}" target="_blank" rel="noopener"
+            >{{ currentLocation.name }}, {{ currentLocation.country }}</a
           ></span
         >. And for the immediate future I don't see myself leaving anytime soon.
       </div>
@@ -46,10 +47,10 @@ nextEvent = false %} {% endif %}
     <li>
       <strong>Employment</strong>
       <div>
-        I'm currently a {{ now.employment[0].role }} for
+        I'm currently a {{ employment[0].role }} for
         <img
-          src="https://v1.indieweb-avatar.11ty.dev/{{ now.employment[0].url | urlencode }}/"
-          alt="{{ now.employment[0].name }} logo"
+          src="https://v1.indieweb-avatar.11ty.dev/{{ employment[0].url | urlencode }}/"
+          alt="{{ employment[0].name }} logo"
           loading="lazy"
           decoding="async"
           width="34"
@@ -57,22 +58,13 @@ nextEvent = false %} {% endif %}
           class="nowList__album"
         />
         <strong
-          ><a href="{{ now.employment[0].url }}" target="_blank" rel="noopener"
-            >{{ now.employment[0].name }}</a
+          ><a href="{{ employment[0].url }}" target="_blank" rel="noopener"
+            >{{ employment[0].name }}</a
           ></strong
         >. You can see a full employment history on my
         <a href="/resume">resume</a>.
       </div>
     </li>
-
-    {#
-    <li>
-      Current toolbox:<br />
-      {% for tool in now.toolbox %}
-      <a href="{{ tool.url }}" target="_blank" rel="noopener">{{ tool.name }}</a
-      >{% if loop.last != true %}, {% endif %} {% endfor %}
-    </li>
-    #}
 
     <li>
       <strong>Blogging</strong>

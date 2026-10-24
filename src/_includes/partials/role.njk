@@ -1,0 +1,22 @@
+<a
+  class="role__logo logo"
+  href="{{ job.url }}"
+  aria-label="{{ job.name }}"
+  target="_blank"
+  rel="noopener"
+>
+  {{ job.name }}
+</a>
+
+<div>
+  <h3 class="role__title">{{ job.role }}</h3>
+  <a class="role__org" href="{{ job.url }}" target="_blank" rel="noopener"
+    >{{ job.name }}</a
+  >
+  <p class="role__location">{{ job.location }}</p>
+  <p class="role__dates">
+    {%- set startYear = job.start | htmlDateString("YYYY") -%} {%- set endYear =
+    job.end | htmlDateString("YYYY") if job.end else "ongoing" -%} {{ startYear
+    if startYear == endYear else startYear + " – " + endYear }}
+  </p>
+</div>

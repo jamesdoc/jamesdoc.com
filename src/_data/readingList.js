@@ -1,14 +1,14 @@
 import { AssetCache } from "@11ty/eleventy-fetch";
 import slugify from "@sindresorhus/slugify";
-import config from "../../config.js";
-const { trello } = config;
+import metadata from "./metadata.js";
 import dayjs from "dayjs";
 
 const cacheLength = "1w";
-const trelloApiBase = `https://api.trello.com/1/boards/${trello.readingList.boardId}/`;
+const { readingListId } = metadata();
+const trelloApiBase = `https://api.trello.com/1/boards/${readingListId}/`;
 
 export default async function () {
-  if (!trello.readingList.boardId) {
+  if (!readingListId) {
     console.error("[ 🚨 ] Oh no! No Trello board ID in the config…");
     return [];
   }

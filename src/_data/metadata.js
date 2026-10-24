@@ -1,6 +1,3 @@
-import config from "../../config.js";
-const { trello } = config;
-
 export default () => {
   return {
     title: "James Doc",
@@ -16,6 +13,6 @@ export default () => {
     metaImg: "/_assets/img/twitter.jpg",
     description:
       "Software Developer at Beacon CRM | Living in London | Sitting at the intersection of Christianity and Technology",
-    readingListId: trello.readingList.boardId,
+    readingListId: "HQyrNteG",
   };
 };
