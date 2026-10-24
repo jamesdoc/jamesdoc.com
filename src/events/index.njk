@@ -17,7 +17,11 @@
 
   <div class="timeline__event">
 
+    {% if event.data.externalUrl %}
     <img src="https://v1.indieweb-avatar.11ty.dev/{{ event.data.externalUrl | urlencode }}/" alt="{{ event.data.title }} logo" loading="lazy" decoding="async" width="50" height="50">
+    {% else %}
+    <span class="timeline__event__placeholder" style="--theme: {{ event.data.themeColor }}" aria-hidden="true"></span>
+    {% endif %}
 
     <div>
       <div class="timeline__event__title">
@@ -31,12 +35,16 @@
 
       <p>
         {% if event.content %}
-          <a href="{{ event.url }}">My notes</a> |
+          <a href="{{ event.url }}">My notes</a>
         {% endif %}
         {% if event.data.summaryUrl %}
-          <a href="{{ event.data.summaryUrl }}">Event summary</a> |
+          {% if event.content %}|{% endif %}
+          <a href="{{ event.data.summaryUrl }}">Event summary</a>
         {% endif %}
-        <a href="{{ event.data.externalUrl }}" target="_blank" rel="noopener">Event page</a>
+        {% if event.data.externalUrl %}
+          {% if event.content or event.data.summaryUrl %}|{% endif %}
+          <a href="{{ event.data.externalUrl }}" target="_blank" rel="noopener">Event page</a>
+        {% endif %}
       </p>
     </div>
   </div>

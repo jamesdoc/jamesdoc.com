@@ -129,7 +129,7 @@ nextEvent = false %} {% endif %}
           Right now I'm reading
           {% for book in currentBooks %}
             <strong>{{ book.name }}</strong> by
-            <em>{{ book.additional.author }}</em>{% if not loop.last %},{% else %}.{% endif %}
+            <em>{{ book.additional.author }}</em>{% if loop.last %}.{% elif loop.revindex == 2 %}{% if loop.length > 2 %},{% endif %} and{% else %},{% endif %}
           {% endfor %}
 
         {% else %}
@@ -178,6 +178,7 @@ nextEvent = false %} {% endif %}
       <strong>Events in the diary</strong>
       <div>
         The last event I was at was
+        {% if previousEvent.data.externalUrl %}
         <img
           src="https://v1.indieweb-avatar.11ty.dev/{{ previousEvent.data.externalUrl | urlencode }}/"
           alt="{{ previousEvent.data.title }} logo"
@@ -192,12 +193,14 @@ nextEvent = false %} {% endif %}
             href="{{ previousEvent.data.externalUrl }}"
             target="_blank"
             rel="noopener"
-            >{{ previousEvent.data.organiser }} – {{ previousEvent.data.title
-            }}</a
+            >{% if previousEvent.data.organiser %}{{ previousEvent.data.organiser }} – {% endif %}{{ previousEvent.data.title }}</a
           ></strong
         >
-        on {{ previousEvent.data.date | readableDate }} ({{
-        previousEvent.data.role }}). {% if nextEvent %} Next up is
+        {% else %}
+        <strong>{% if previousEvent.data.organiser %}{{ previousEvent.data.organiser }} – {% endif %}{{ previousEvent.data.title }}</strong>
+        {% endif %}
+        on {{ previousEvent.data.date | readableDate }}. {% if nextEvent %} Next up is
+        {% if nextEvent.data.externalUrl %}
         <img
           src="https://v1.indieweb-avatar.11ty.dev/{{ nextEvent.data.externalUrl | urlencode }}/"
           alt="{{ nextEvent.data.title }} logo"
@@ -212,11 +215,14 @@ nextEvent = false %} {% endif %}
             href="{{ nextEvent.data.externalUrl }}"
             target="_blank"
             rel="noopener"
-            >{{ nextEvent.data.title }}</a
+            >{% if nextEvent.data.organiser %}{{ nextEvent.data.organiser }} – {% endif %}{{ nextEvent.data.title }}</a
           ></strong
         >
+        {% else %}
+        <strong>{% if nextEvent.data.organiser %}{{ nextEvent.data.organiser }} – {% endif %}{{ nextEvent.data.title }}</strong>
+        {% endif %}
         on {{ nextEvent.data.date | readableDate }} in {{
-        nextEvent.data.location.city }} ({{ nextEvent.data.role }}). {% endif %}
+        nextEvent.data.location.city }}. {% endif %}
         <a href="/events">View the full list</a>.
       </div>
     </li>

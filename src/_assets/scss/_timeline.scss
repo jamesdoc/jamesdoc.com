@@ -16,7 +16,8 @@
     display: flex;
     position: relative;
 
-    img {
+    img,
+    &__placeholder {
       border: 1px solid var(--theme);
       height: 2rem;
       margin-right: 0.5rem;
@@ -24,6 +25,12 @@
       width: 2rem;
       position: sticky;
       top: 2.75rem;
+    }
+
+    &__placeholder {
+      background: var(--theme);
+      background-clip: content-box;
+      flex-shrink: 0;
     }
 
     &__title {
