@@ -10,7 +10,7 @@ collections.posts | reverse | first %} {% set previousEvent = collections.events
 | pastFromCollection | last %} {% set nextEvent = collections.events |
 futureFromCollection | first %} {% if previousEvent == nextEvent %} {% set
 nextEvent = false %} {% endif %}
-{% set currentNowUpdate = collections.now | last %}
+{% set currentNowUpdate = collections.now | first %}
 
 <h1>Now</h1>
 
@@ -21,10 +21,12 @@ nextEvent = false %} {% endif %}
     {{ currentNowUpdate.content | safe }}
 
     {% if collections.now | length > 1 %}
-    <h3>All now updates</h3>
+    <h3>Previous 'now' updates</h3>
     <ul>
-      {% for update in collections.now | slice(1) %}
+      {% for update in collections.now %}
+      {% if not loop.first %}
       <li><a href="{{ update.url }}">{{ update.data.title }}</a></li>
+      {% endif %}
       {% endfor %}
     </ul>
     {% endif %}
