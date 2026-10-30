@@ -1,4 +1,7 @@
 <div itemscope itemtype="https://schema.org/Book">
+  {% if eyebrow %}
+  <p class="book__eyebrow">{{ eyebrow }}</p>
+  {% endif %}
   <h3 itemprop="name" class="book__title">{{ book.name }}</h3>
 
   {% if book.additional.author %}
@@ -44,6 +47,6 @@
   {% endif %}
 
   {% if book.readDate %}
-    <p class="book__complete-date">Finished on {{ book.readDate | readableDate }}</p>
+    <p class="book__complete-date">Finished {{ book.readDate | htmlDateString('D MMM') }}</p>
   {% endif %}
 </div>

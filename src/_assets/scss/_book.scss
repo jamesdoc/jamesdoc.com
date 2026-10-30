@@ -117,3 +117,123 @@
     color: var(--text-muted);
   }
 }
+
+// "Currently reading": cover on the left, details on the right (desktop)
+.book--current {
+  // Grid of small squares behind the content. A couple of coarser layers repaint
+  // some of them in the theme green.
+  isolation: isolate;
+  margin-top: 2rem;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    inset: -1rem;
+    mask-repeat: repeat;
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    background: var(--glow);
+    mask-image:
+      linear-gradient(to right, #000 30%, transparent 90%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect x='8.5' y='8.5' width='3' height='3'/%3E%3C/svg%3E");
+    mask-composite: intersect;
+  }
+
+  &::after {
+    background: var(--theme);
+    mask-image:
+      linear-gradient(to right, #000 30%, transparent 90%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect x='48.5' y='48.5' width='3' height='3'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Crect x='68.5' y='68.5' width='3' height='3'/%3E%3C/svg%3E");
+    mask-composite: intersect, add, add;
+    mask-position: 0 0, 0 0, 40px 60px;
+  }
+
+  .book__rating {
+    margin: 0;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 465px) {
+    flex-direction: row;
+    gap: 2rem;
+
+    > div {
+      flex: 1;
+    }
+
+    .book__title {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (min-width: 900px) {
+    > picture {
+      flex-basis: 250px;
+      width: 250px;
+    }
+
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
+.book__eyebrow {
+  color: var(--theme);
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+// "Previously read": text below the cover so more books fit on a row.
+// Each book spans two rows of the parent grid (cover, text) using subgrid so
+// the text lines up across a row however tall the covers are.
+.listing--reading--cols .book {
+  display: grid;
+  font-size: 0.875rem;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  padding-bottom: 3rem;
+
+  @media (max-width: 599px) {
+    font-size: 0.75rem;
+    padding-bottom: 2.5rem;
+  }
+
+  > picture {
+    align-self: end;
+    width: 100%;
+  }
+
+  > div {
+    align-self: start;
+    padding-top: 0.125rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .book__title {
+    font-size: 1rem;
+
+    @media (max-width: 599px) {
+      font-size: 0.8125rem;
+    }
+  }
+
+  .book__rating {
+    margin: 0.25em 0 0;
+  }
+}

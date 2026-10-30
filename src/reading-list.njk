@@ -7,15 +7,15 @@ eleventyExcludeFromCollections: false
 
 {% set currentBooks = readingList | activeBook %}
 {% if currentBooks | length > 0 %}
-  <h2 class="sectionHeading">Currently reading</h2>
   <div class="listing listing--reading">
 
   {% for book in currentBooks %}
-    <div class="listing--reading__book book">
+    <div class="listing--reading__book book book--current">
+      {% set eyebrow = "Currently reading" %}
       {# For some reason Nunjucks doesn't like this going into the partial #}
       {% if book.cover.scaled %}
         {% set cover = book.cover.scaled | last %}
-        <img src="{{cover.url}}" alt="{{ book.name }} cover" loading="lazy" eleventy:widths="100,200" class="book__cover" />
+        <img src="{{cover.url}}" alt="{{ book.name }} cover" loading="lazy" eleventy:widths="250,500" class="book__cover" />
       {% endif %}
 
       {% include "./_includes/partials/bookDetails.njk" %}
